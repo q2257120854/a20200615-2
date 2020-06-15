@@ -1,0 +1,10 @@
+public function comments($tid)
+    {
+        $model = S('post');
+        $comments = $model->query('select post.*,user.user from hy_post as post,hy_user as user where post.uid=user.uid and post.isthread=0 and post.tid=' . $tid . ' limit 6')->fetchAll(2);
+        $comments = array_map(function ($item) {
+            $item['content'] = strip_tags($item['content']);
+            return $item;
+        }, $comments);
+        return $comments;
+    }

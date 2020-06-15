@@ -1,0 +1,2 @@
+//{hook a_user_add_6}
+            $uid = $User->add_user($user,$pass1,$email

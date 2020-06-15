@@ -1,0 +1,178 @@
+/*帮助中心*/
+body.helpcenter {
+    background-color: #f2f2f2;
+}
+
+.helpcenter > section {
+    background-color: #fff;
+    padding: 40px 30px;
+    margin: 30px auto;
+    min-height: 544px;
+}
+
+.helpcenter h2.title {
+	font-weight: normal;
+    color: #333;
+    line-height: 65px;
+    height: 65px;
+    padding-left: 40px;
+    font-size: 20px;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.helpcenter .area {
+    margin-bottom: 20px;
+}
+
+    .helpcenter .area p {
+        height: 20px;
+	    border-left: 4px solid #ff500a;
+	    color: #333;
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-left: 40px;
+	    padding-left: 10px;
+	    position: relative;
+	    cursor: pointer;
+    }
+    .helpcenter .area p:hover{
+    	color: #ED1818;
+    }
+    .helpcenter .area p:hover .select_help{
+    	border-top: 9px solid #ED1818;
+    }
+
+    .helpcenter .area ul {
+        margin-top: 10px;
+    }
+
+    .helpcenter .area li {
+	    width: 100%;
+	    padding-left: 55px;
+	    line-height: 40px;
+	    position: relative;
+    }
+    .helpcenter .area a {
+        color: #666;
+        cursor: pointer;
+        font-size: 16px;
+   		display: block;
+    }
+    .helpcenter .area li:hover{
+    	background-color: #ED1818;
+    }
+    .helpcenter .area li:hover:after{
+    	content: '';
+	    display: inline-block;
+	    border-bottom: 10px solid transparent;
+	    border-left: 15px solid #ED1818;
+	    border-right: 15px solid transparent;
+	    border-top: 10px solid transparent;
+	    position: absolute;
+	    top: 50%;
+    	transform: translateY(-50%);
+	    right: -30px;
+    }
+    .helpcenter .area li:hover a{
+    	color: #fff;
+    }
+	
+	.helpcenter .area li.hover{
+		background-color: #ED1818;
+	}
+	.helpcenter .area li.hover:after{
+    	content: '';
+	    display: inline-block;
+	    border-bottom: 10px solid transparent;
+	    border-left: 15px solid #ED1818;
+	    border-right: 15px solid transparent;
+	    border-top: 10px solid transparent;
+	    position: absolute;
+	    top: 50%;
+    	transform: translateY(-50%);
+	    right: -30px;
+    }
+    .helpcenter .area li.hover a{
+    	color: #fff;
+    }
+        .helpcenter .site a:hover {
+            color: #ff500a;
+        }
+
+.helpcenter .site {
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 10px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+    .helpcenter .site a {
+        color: #999;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .helpcenter .site span {
+        margin-left: 5px;
+    }
+
+.helpcenter .q-row {
+    font-size: 20px;
+    color: #666;
+    height: 65px;
+    line-height: 65px;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-left: 40px;
+}
+
+.helpcenter .a-row {
+    line-height: 2;
+    font-size: 16px;
+    color: #999;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+section {
+    padding: 40px 30px;
+    margin: 30px auto;
+    min-height: 1000px;
+    overflow: hidden;
+}
+.question {
+    display: block;
+    float: left;
+    width: 25%;
+    background-color: #fff;
+    height: 978px;
+}
+.answer{
+	display: block;
+    float: right;
+    width: 70%;
+    background-color: #fff;
+    height: 978px;  
+}
+.select_help{
+	border-bottom: 9px solid transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #000;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    right: 35px;
+}
+.select_help:after{
+	content: '';
+    display: inline-block;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    position: absolute;
+    top: -10px;
+    right: -8px;
+}

@@ -1,0 +1,37 @@
+elseif($method == 'usergroup'){//用户组
+            if(!IS_LOGIN)
+                return $this->message("未登录，无法查看用户组！");
+            
+            $data = $User->read($uid);
+            $data['avatar'] = $this->avatar($data['user']);
+            $this->v('data',$data);
+            $this->v("title","用户组");
+            $this->display('user_group');
+}elseif($method == 'ryxz'){//勋章
+            
+            $data = $User->read($uid);
+            $data['avatar'] = $this->avatar($data['user']);
+            $this->v('data',$data);
+            $this->v("title",$data['user']);
+            $this->display('ryxz');
+}elseif($method == 'gold'){//积分
+            if(!IS_LOGIN)
+                return $this->message("未登录，无法查看！");
+            if(NOW_UID != $uid)
+                return $this->message("你不能查看他人积分!");
+            $data = $User->read($uid);
+            $data['avatar'] = $this->avatar($data['user']);
+            $this->v('data',$data);
+            $this->v("title","我的积分");
+            $this->display('user_gold');
+}elseif($method == 'cz'){//充值
+            if(!IS_LOGIN)
+                return $this->message("未登录，无法访问充值页面！");
+            if(NOW_UID != $uid)
+                return $this->message("你不能访问他人充值页面!");
+            $data = $User->read($uid);
+            $data['avatar'] = $this->avatar($data['user']);
+            $this->v('data',$data);
+            $this->v("title","充值");
+            $this->display('user_cz');
+}elseif($method == 'log'){

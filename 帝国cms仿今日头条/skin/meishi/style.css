@@ -1,0 +1,158 @@
+﻿/*评论
+------------*/
+.decmt-box2{
+	width:100%;
+	padding:0px 5px;
+	margin:0px auto;
+	overflow:hidden;
+	clear:both;
+}
+.decmt-box2 ul li{
+	width:100%;
+	border-bottom:1px dashed #ccc;
+	padding-bottom:10px;
+	overflow:hidden;
+        clear:both;
+	}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+}
+.comtItem {
+    background: url("images/comment-bg.gif") repeat-y;
+	min-height:50px;
+}
+.comtItem .userInfo {
+
+    border-top: 1px solid #DBDBDB;
+    float: left;
+    width: 60px;height: 75px;
+}
+.comtItem .comtInfo {
+    border-top: 1px solid #E7E7E7;
+    float: right;
+    padding: 0 15px 0 20px;
+    width: 605px;
+}
+.comtItem .userInfo .name {
+    background: none repeat scroll 0 0 #F6F4F0;
+    border-bottom: 1px solid #E7E7E7;
+    height: 23px;
+    line-height: 26px;
+    text-align: center;
+    overflow: hidden;
+}
+.comtItem .userInfo .photo {
+    background: none repeat scroll 0 0 #F6F4F0;
+    padding: 0px 0;
+    text-align: center;
+}
+.comtItem .pubTime {
+    border-bottom: 1px solid #E7E7E7;
+    color: #999999;
+    height: 23px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+.comtItem .comtCont {
+    font-size: 12px;
+    line-height: 1.6;
+}
+.mgr10 {
+    margin-right: 10px;
+}
+.comtItem .action {
+    font-size: 12px;
+    margin-top: 3px;
+    padding-top: 3px;
+    height:30px;
+}
+.comtItem .action .useful {
+
+    color: #444444;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 2px;
+    padding-left: 20px;
+    width: 50px;
+	float:left;
+}
+.comtItem .action .reply {
+
+    color: #444444;
+    display: block;
+    height: 2px;
+    line-height: 2px;
+    margin-right: 2px;
+    padding-left: 30px;
+    width: 10px;
+	float:left;
+}
+.comtItem .comtCont .reply_c {
+  min-height: 10px;  
+}
+.replyform{ padding-bottom:2px; display:none}
+.wInput {
+    border: 1px solid #CCCCCC;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 1px 0 0;
+    padding: 5px 40px 5px 5px;
+    position: relative;
+    top: 0;
+    width: 480px;
+    z-index: 1;
+}
+.wOk {
+    background: none repeat scroll 0 0 #52B5FE;
+    border-color: #007CA6;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 10px;
+}
+.retxt{border-top:1px dashed #ccc; padding:10px 0px 10px 0px}
+.retxt .photo{ float: left;    line-height: 1;    margin-right: 12px;}
+.retxt a{color: #2172A3;}
+.retxt .reretxt{ min-height:20px;}
+.sharearea{float:left; padding:6px 0px 0px 10px;}
+.sharebtn{width:68px; height:28px; float:left; text-align:center; line-height:28px; margin-right:5px;}
+.sharebtn a{color:#FFF;}
+.sicon1{background:url(../images/colorbtn.png) no-repeat 0px 0px;}
+.sicon2{background:url(../images/colorbtn.png) no-repeat 0px -33px;}
+.sicon3{background:url(../images/colorbtn.png) no-repeat 0px -68px;}
+.huifu{float:right;width:683px;border:1px solid #CCC; position:relative;}
+.huifu textarea{width:672px; height:80px; border:0px; background:url(images/bg_01.gif) no-repeat;margin: 0 0 3px; padding: 5px;}
+.reface{border-bottom:2px solid #CCC; height:28px; line-height:28px; padding-left:5px; display:block; background:#F1F1F1}
+#qqface {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    height: 45px;
+    left: -1px;
+        padding: 1px;
+    position: absolute;
+    top: 23px !important;
+	*top: 45px;
+    width: 285px;
+	*width: 290px;
+	display:none;
+}
+#qqface img{ cursor:pointer}
+.epages {
+    clear: both;
+    padding-top: 10px;
+}
+.epages a {
+    background: url("../default/images/t3.png") repeat scroll 0 0 transparent;
+    border: 1px solid #DCDCDC;
+    padding: 3px 5px;
+}

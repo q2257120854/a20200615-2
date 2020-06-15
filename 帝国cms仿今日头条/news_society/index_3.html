@@ -1,0 +1,1258 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.test.dede168.com/news_society" >
+    <meta charset="gb2312" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script><script type="text/javascript">uaredirect("http://m.test.dede168.com/news_society");</script>
+<script src="/e/data/js/ajax.js">    
+<script type="text/javascript">
+        if(!('console' in window)) {window.console = {log: function(msg) {}};}
+    </script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="/style/nbase_cf47e58.css">
+
+
+    
+    
+    <title>仿今日头条社会频道 - 你关心的，才是头条！</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="/style/core_b666bd6.css">
+<link rel="stylesheet" type="text/css" href="/style/newindex_b0deca1.css">
+<script type="text/javascript" charset="gb2312" src="/style/lib_538033e.js"></script>
+
+<script>
+var curpage = 2;
+var totalpage = 8;
+var geturl = '/e/extend/list/?classid=2&orderby=newstime&page='; 
+</script>
+<script>
+$(function(){
+	$('.listBox li').each(function(i,k){
+		if($(k).find('.lbox a img').attr('src')=='/e/data/images/notimg.gif'){
+			$(k).find('.lbox').remove();
+			$(k).find('.rbox').removeClass('rbox');
+		}
+	});
+})
+</script>
+<script type="text/javascript" charset="gb2312" src="/style/scrollpagination.js"></script>
+</head>
+<body class="v2016">
+    
+    <div id="wrapper" class="index-wrapper">
+    <div id="pagelet-nnav" >
+	<!--反馈 start-->
+<script>
+$(function(){
+	$('.feedbtn').click(function(){$('.feedback_dialog').toggleClass('on')});
+	$('.feedback_dialog .close').click(function(){$('.feedback_dialog').removeClass('on')})
+});
+function submitfeedback(obj){
+  var name='匿名';
+var email=$('[name=email]').val();
+var lytext=$('[name=lytext]').val();
+if(!email){alert('请填写联系方式');return false;}
+if(!lytext){alert('您的意见');return false;}
+
+}
+</script>
+<div class="dialog feedback_dialog">
+    <div class="dialog-header">
+        <h3>意见反馈</h3>
+    </div>
+    <div class="dialog-inner" data-node="inner">
+        <div class="feedback_panel">
+            <form action="/e/enews/index.php" method="post" name="form1" onsubmit="return submitfeedback(this)">
+                <ul>
+                    <li>
+                        <p class="label">联系方式（必填）</p>
+                        <div class="input-group">
+                            <input class="email" placeholder="您的邮箱" type="text" name="email">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="label">您的意见（必填）</p>
+                        <div class="input-group">
+                            <textarea style="height:100px;" name="lytext" class="content" maxlength="140" placeholder="请填写您的意见，不超过140字"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                               <input name="name" type="hidden" id="name" value="匿名">
+                            <input type="submit" name="Submit3" class="submit-btn" value="提交">
+                                <input name="enews" type="hidden" id="enews" value="AddGbook" />
+                                <input type="hidden" name="ecmsfrom" value="/">
+                            <span class="msg" data-node="msg"></span>
+                            <a data-node="close" class="close" href="javascript:;">[关闭]</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<!--反馈 end-->
+<div class="topbarWrapper" class="clearfix">
+		
+		<ul class="left">
+			<li class="tb-item"><a class="tb-link" href="/desktop.php?name=仿今日头条" >放到桌面</a></li>
+			<li class="tb-item"><a class="tb-link add-favorite" data-node="addToFavorites" ga_event="nav_pin" href="javascript:;"onclick="alert('请按Ctrl+D收藏');">添加到收藏夹</a></li>
+		</ul>
+		
+
+		<ul class="right">
+			<li class="tb-item"><span><script src="/e/member/login/loginjs2.php"></script></span></li>
+			<li class="tb-item" id="mth"><a class="tb-link" href="/e/member/login/">媒体号</a></li>
+			<li class="tb-item"><a class="tb-link feedbtn" href="javascript:;" js_ga_event="nav_feedback" data-node="navFeedback">反馈</a></li>
+			<li class="tb-item right-more" data-node="more">
+				<a class="tb-link" href="/about/" ga_event="nav_more">更多</a>
+				<div class="layer">
+					<ul>
+						
+	                    <li><a href="http://m.test.dede168.com" class="layer-item">手机版</a></li>
+                            
+						<li><a href="/about/about.html" class="layer-item">关于我们</a></li>
+						<li><a href="/about/join.html" class="layer-item">加入头条</a></li>
+						<li><a href="/about/report.html" class="layer-item">媒体报道</a></li>
+						<li><a href="/about/media_partners.html" class="layer-item">媒体合作</a></li>
+						<li><a href="/about/cooperation.html" class="layer-item">产品合作</a></li>
+						<li><a href="/about/media_cooperation.html" class="layer-item">合作说明</a></li>
+						<li><a href="/about/contact.html" class="layer-item">联系我们</a></li>
+						<li><a href="/about/user_agreement.html" class="layer-item">用户协议</a></li>
+						<li><a href="/about/complain.html" class="layer-item">投诉指引</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!--[if lt IE 9 ]><style>.midbarWrapper{border-bottom:1px solid #e8e8e8;}</style><![endif]-->
+	<div class="midbarWrapper">
+		<div class="midbar-inner">
+			<div class="logo-box">
+				<a class="logo-link" href="/" ga_event="nav_icon"><img class="logo" src="/style/logo.png"></a>
+			</div>
+			<div class="search-box">
+				<form action="/e/search/" method="post" data-node="searchForm" target="_blank">
+	                <div class="input-group clearfix">
+	                    <input autocomplete="off" ga_event="nav_search_input" data-node="searchInput" name="keyboard" type="text" placeholder="搜索我关心的..." value="">
+	                    <div class="btn-submit">
+                                <input type="hidden" name="show" value="title">
+                                <input type="hidden" name="tempid" value="1">
+                                <input type="hidden" name="tbname" value="news">
+	                        <button ga_event="nav_search" type="submit" href="javascript:;">
+	                            <i class="icon icon-search"></i>
+	                        </button>
+	                    </div>
+	                </div>
+	            </form>
+			</div>
+			<div class="user-box" data-node="userbox" >
+				
+				<div class="username-box clearfix" data-node="username">
+					<a ga_event="nav_login" class="nav-login user-item" href="javascript:;" data-node="login">
+						<span></span>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	</div>
+
+        <div id="container" class="clearfix">
+            <div class="index-left">
+                <div id="pagelet-channels" class="">
+	<ul class="channel-box" data-node="channelBox">
+		<li class="channel-item itemi">
+			<a ga_event="news_recommend" class="item item_index " href="/" data-node="category" data-category="__all__"><span class="channel-tag">推荐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_1 " href="/news_hot/" data-category="news_hot"><span class="channel-tag news_hot">热点</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_2 " href="/news_society/" data-category="news_society"><span class="channel-tag news_society">社会</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_3 " href="/news_entertainment/" data-category="news_entertainment"><span class="channel-tag news_entertainment">娱乐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_4 " href="/news_tech/" data-category="news_tech"><span class="channel-tag news_tech">科技</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_5 " href="/news_car/" data-category="news_car"><span class="channel-tag news_car">汽车</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_6 " href="/news_sports/" data-category="news_sports"><span class="channel-tag news_sports">体育</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_7 " href="/news_finance/" data-category="news_finance"><span class="channel-tag news_finance">财经</span></a>
+		</li>
+		
+		
+		
+		<!--<li class="channel-item more-item magic-btn" data-node="foldBox">
+			<a ga_event="click_hide_channel" class="item" href="javascript:;" data-node="fold"><span class="channel-tag fold">收起</span></a>
+		</li>-->
+		</ul>
+		<div class="moreBox" data-node="moreBox">
+			<a ga_event="click_show_channel" class="moreBtn" href="javascript:;"><span class="channel-tag more">更多</span></a>
+			<ul class="more-channels" data-node="moreChannels">
+				
+												<li class="channel-item item_news_military">
+					<a class="item item_8" href="/news_military/"><span class="channel-tag news_military">军事</span></a>
+				</li>
+												<li class="channel-item item_news_world">
+					<a class="item item_9" href="/news_world/"><span class="channel-tag news_world">国际</span></a>
+				</li>
+												<li class="channel-item item_news_fashion">
+					<a class="item item_10" href="/news_fashion/"><span class="channel-tag news_fashion">时尚</span></a>
+				</li>
+												<li class="channel-item item_news_travel">
+					<a class="item item_11" href="/news_travel/"><span class="channel-tag news_travel">旅游</span></a>
+				</li>
+												<li class="channel-item item_news_discovery">
+					<a class="item item_12" href="/news_discovery/"><span class="channel-tag news_discovery">探索</span></a>
+				</li>
+												<li class="channel-item item_news_baby">
+					<a class="item item_13" href="/news_baby/"><span class="channel-tag news_baby">育儿</span></a>
+				</li>
+												<li class="channel-item item_news_regimen">
+					<a class="item item_14" href="/news_regimen/"><span class="channel-tag news_regimen">养生</span></a>
+				</li>
+												<li class="channel-item item_news_story">
+					<a class="item item_15" href="/news_story/"><span class="channel-tag news_story">故事</span></a>
+				</li>
+												<li class="channel-item item_news_essay">
+					<a class="item item_16" href="/news_essay/"><span class="channel-tag news_essay">美文</span></a>
+				</li>
+												<li class="channel-item item_news_game">
+					<a class="item item_17" href="/news_game/"><span class="channel-tag news_game">游戏</span></a>
+				</li>
+												<li class="channel-item item_news_history">
+					<a class="item item_18" href="/news_history/"><span class="channel-tag news_history">历史</span></a>
+				</li>
+												<li class="channel-item item_news_food">
+					<a class="item item_19" href="/news_food/"><span class="channel-tag news_food">美食</span></a>
+				</li>
+							</ul>
+		</div>
+	
+</div>
+            </div>
+<script type="text/javascript">
+$(".item_2").addClass("selected");
+
+var cla=$(".more-channels .item_2.selected").parent().attr('class');
+var html=$(".more-channels .item_2.selected").parent().html();
+$(".more-channels .item_2.selected").parent().remove();
+if(cla && html){
+      $('#pagelet-channels .channel-box').append('<li class="'+cla+'">'+html+'</li>');
+}
+var clai=$(".itemi").eq(7).attr('class');
+var htmli=$(".itemi").eq(7).html();
+if(clai && htmli && html){
+      $(".itemi").eq(7).remove();
+      $('.more-channels').prepend('<li class="'+clai+'">'+htmli+'</li>');
+}
+</script>
+
+            <div class="index-main">
+                <div id="pagelet-nfeedlist">
+	<div class="feedcomm" data-node="commItem">
+		<span class="comm-close" data-node="commClose"></span>
+		<a ga_event="click_banner" target="_blank" data-node="commLink"></a>
+	</div>
+	<p class="alert-msg" data-node="alertMsg">
+        <img src="http://test.dede168.com//style/loading_50c5e3e.gif">
+        <span>推荐数据加载中...</span>
+    </p>
+	<div class="unread" data-node="unread" ga_event="click_feed_update"><span>您有未读新闻，点击查看</span></div>
+	<ul data-node="listBox" class="listBox">
+		<li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2480.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/51d000d2853ba304c64?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2480.html" target="_blank" data-node="title">
+								代管彩票惹的祸:彩民中600万大奖三年要不回
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2480.html" target="_blank">中了彩票大奖本应是一件很让人非常开心的事情，但如果因为让他人代为保管彩票并被冒领奖金的话，就非常纠结了。下面两个案例就讲述了什么叫“代管彩票惹的祸”。安徽彩民60</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2480&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2480&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2477.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/2190004f6f38cf57f0e?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2477.html" target="_blank" data-node="title">
+								你爱猜谜了吗？这些谜语许多人老喜欢了！这些名人你知知道吗?
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2477.html" target="_blank">元宵节到了。在城市中，因为雾霾，我们不再放爆竹；因为人多易发生事故，我们不再能看到灯展。就这样，元宵节悄悄的到了，又悄悄的走了。一点痕迹也没有，只记得有人猜谜语</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">小桔灯&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2477&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2477&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2475.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/484000614071afec539?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2475.html" target="_blank" data-node="title">
+								看完这条信息，我保证你不会再超速驾驶！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2475.html" target="_blank">超速行驶是道路交通安全的第一杀手。那些超速事故，有着飞一般的赶脚，灰飞烟灭的收场，你还敢超速吗？！◆ ◆ ◆ ◆ ◆不要命的节奏…◆ ◆ ◆ ◆ ◆竟然高速下急打方向盘</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">新疆网警巡查执法&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2475&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2475&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2472.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/2cc000a296ef830700b?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2472.html" target="_blank" data-node="title">
+								《海贼王》最新扉页上色版（by上色达人Nanjiroh作品）
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2472.html" target="_blank">本文图片授权转自微博网友@Nanjiroh 的作品<br />
+转载请向博主索要授权<br />
+<br />
+本文图片授权转自微博网友@Nanjiroh 的作品<br />
+转载请向博主索要授权<br />
+<br />
+本文图片授权转自微博网友@Nanjiro</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">鼠绘漫画网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2472&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2472&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2470.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51800039b0ddfcf0ba9?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2470.html" target="_blank" data-node="title">
+								“宁波交警”全面入驻支付宝 这些业务都可网上办
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2470.html" target="_blank">4月20日起，“宁波交警”将全面上线支付宝城市服务，这意味着只要是通过了支付宝实名认证的车主，都能通过手机轻松处理违章扣分、缴纳交通违法罚款、机动车自主选号、补领行</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2470&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2470&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2469.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2469.html" target="_blank" data-node="title">
+								他跟母亲吵架后离家出走，来到了小摊前老板娘的一句话让他落泪
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2469.html" target="_blank">情感微小说：这只是微小说，目的是传播正能量，人间有爱，小故事大感动，不喜勿喷。谢谢！（一）少年时他跟母亲大吵一架，离家出走。夜晚，四处游荡的他万分饥饿，不知不觉</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">张怡然&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2469&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2469&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2467.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/5010003a3a5551a2bdc?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2467.html" target="_blank" data-node="title">
+								乘客因客车发生交通事故受伤 如何行使索赔权？
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2467.html" target="_blank">【编者按】：日常生活中，坐车出行是再正常不过的事了。可就是在这看似非常正常的事，乘客胡某却因为出租车发生车祸导致伤残，那么乘客胡某该如何行使索赔权呢？【案情】：</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">民生法治&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2467&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2467&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2464.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2464.html" target="_blank" data-node="title">
+								测试：TA是猪朋狗友还是患难之交
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2464.html" target="_blank">	<br />
+		 <br />
+		<br />
+			<br />
+		<br />
+		<br />
+		<br />
+			 <br />
+		<br />
+<br />
+		<br />
+				<br />
+				<br />
+						<br />
+							<br />
+							<br />
+								有一天，你临时缺钱，向朋友借钱，你的朋友的反应是： <br />
+							<br />
+							<br />
+							<br />
+							</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">听语&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2464&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2464&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2463.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/3e40009892a72eed866?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2463.html" target="_blank" data-node="title">
+								何为“驾考族”？驾考失分点在哪？如何避免成为“驾考族”？
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2463.html" target="_blank">首先进行这篇文章之前需要对没流行多久的新词‘驾考族”进行解释。那么何为“驾考族”呢？所谓“驾考族”是指在学车时，迟迟毕不了业的学员。许多学员反映，驾考科目一还是</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">极速学车&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2463&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2463&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2462.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/50100049153cdfcfa68?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2462.html" target="_blank" data-node="title">
+								今晚餐饮圈里服务最赞的企业，竟然不止是海底捞
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2462.html" target="_blank">来源：餐饮好案例（微信id：canyin120）忘川 原创近年来，服务营销以它独特的魅力与餐饮业有机结合，引起餐饮业的一次大变革。我国餐饮业的“服务营销”这一概念已渐渐灌输</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">餐饮好案例&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2462&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2462&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2459.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/486000a38769ea1a4e3?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2459.html" target="_blank" data-node="title">
+								法官谈民间借贷的13个热点问题
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2459.html" target="_blank">第一部分　民间借贷案件的受理1、出借人将自己资金账户控制权转移交给他人使用，双方之间发生的纠纷属于什么性质？在实践审判中颇有争议，王法官认为个案如何定性，主要看双</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">陕西检察&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2459&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2459&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2458.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51b00024cf9f7b66518?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2458.html" target="_blank" data-node="title">
+								台诈骗犯回台后组团赴酒店狂欢包小姐 称&quot;回来真爽&quot;
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2458.html" target="_blank">在马来西亚涉诈骗的20名台湾嫌犯，遭马来西亚驱逐出境搭机返台。参考消息网4月20日报道 “回来有够爽！”前民代蔡正元在社交网站上爆料，在4月15日晚，由马来西亚被遣返的2</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">参考消息&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2458&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2458&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2456.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/501000729467bd7d04b?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2456.html" target="_blank" data-node="title">
+								驾驶机动车违反规定占用应急车道，罚款3000元，记6分！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2456.html" target="_blank">车牌号为粤B9VQ75的小车，于2016年4月19日在滨海大道沙河东立交东往西，驾驶机动车违反规定占用应急车道。该违法行为已被摄录取证录入系统，罚款3000元、记6分。交警提醒：</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">深圳交警交通科技&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2456&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2456&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2454.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/3e80006885b292ce598?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2454.html" target="_blank" data-node="title">
+								被淘汰的选美小姐只好坐路边了
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2454.html" target="_blank">被淘汰的选美小姐只好坐路边了<br />
+<br />
+被淘汰的选美小姐只好坐路边了<br />
+<br />
+被淘汰的选美小姐只好坐路边了<br />
+<br />
+被淘汰的选美小姐只好坐路边了<br />
+<br />
+被淘汰的选美小姐只好坐路边了</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">小说家夏汉志&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2454&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2454&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2453.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51800068b16599827ee?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2453.html" target="_blank" data-node="title">
+								安庆岳西县：让乡村旅游成为农民致富的“金饭碗”
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2453.html" target="_blank">岳西位于大别山腹地、皖西南边陲，地跨长江、淮河两大流域，素有“八山一水半分田，半分道路和庄园”之说。正是缘于这样的地貌特征以及历史因素，岳西县一直是安徽省、以及</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2453&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2453&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2452.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/50100069b698a0a810c?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2452.html" target="_blank" data-node="title">
+								货车司机的辛与酸，痛在心里
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2452.html" target="_blank">为了生计，常年奔波在来往异乡的路上，货运司机们“跑长途”背后，有啥酸甜苦辣的故事？驾驶后座 就是“睡床”郑师傅说，以前的道路很不好走，运一趟货物往往需要三四天，有</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">我游我精彩&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2452&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2452&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2451.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/4830006f5ca2e1a0d49?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2451.html" target="_blank" data-node="title">
+								贾府正枝玄孙，贵比宝玉！存在感为何超低？元宵节失踪无人发现！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2451.html" target="_blank">更多文章请点链接贾府工资最高的人居然是她？！怪道连王熙凤都嫉妒呢......<br />
+李纨竟是铁齿铜牙纪晓岚里的陶三姑！现实生活中还是个大导演呢！<br />
+红楼梦里宝玉最爱的零食居然</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">凡话红楼&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2451&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2451&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2450.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/ce00026cb41123dd17?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2450.html" target="_blank" data-node="title">
+								说说看，你是怎样离开那个混蛋的？
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2450.html" target="_blank"></a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">小二聊斋&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2450&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2450&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2449.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/52e00000f8375c5a015?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2449.html" target="_blank" data-node="title">
+								老赖敢欠钱？咋办？！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2449.html" target="_blank">贵贵小溪，隔壁老王欠我10万元，老是不还给我，我想去法院打官司，该怎么做呢？到人民法院立案庭去起诉他小溪贵贵哎哟，憋提啦！这我能不知道？！我去法院立案庭了，但他们</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">贵溪市人民检察院&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2449&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2449&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2447.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/3260007710730eba2ef?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2447.html" target="_blank" data-node="title">
+								相亲相爱的“萌”兄妹，好暖心！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2447.html" target="_blank">不要丢下我啊.<br />
+<br />
+哥哥牵着妹妹走.<br />
+<br />
+哥哥最疼妹妹了.<br />
+<br />
+哥哥给妹妹讲故事.<br />
+<br />
+我会保护你的.<br />
+<br />
+哥哥给妹妹一个额头吻。<br />
+<br />
+我们是好兄妹.</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">宝宝育儿经&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2447&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2447&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_society/2446.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51b0004e6079f80c851?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_society/2446.html" target="_blank" data-node="title">
+								恐怖！小伙网吧给手机充电，拔线时一声尖叫口吐白沫，最后
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_society/2446.html" target="_blank">本文为杭州交通91.8整理综合编辑：慧慧资讯版权归原作者所有啥情况！一直到今日，熊峰都没有想明白，18岁的弟弟熊旋，只不过在网吧电脑上给手机充了一会电，怎么就会因为触</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">杭州交通91.8&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=2&id=2446&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=2&id=2446&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<a href="javascript:;" class="loadmore" data-node="loadMore">正在为您加载更多...</a>
+        <div class="indexListLoading" id="nomoreresults" style="display:none">所有内容加载完毕</div>
+
+         <div class="pageBox pageNo">
+          <a title="Total record">&nbsp;<b>71</b> </a>&nbsp;&nbsp;<a href="/news_society/index.html">首页</a>&nbsp;<a href="/news_society/index_2.html">上一页</a>&nbsp;<a href="/news_society/index.html">1</a>&nbsp;<a href="/news_society/index_2.html">2</a>&nbsp;<b>3</b>
+         </div>
+</div>
+            </div>
+            <div class="index-right">
+                <div id="pagelet-weather">
+					<iframe allowtransparency="true" frameborder="0" width="250" height="98" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=1&bd=0&k=000000&f=&q=1&e=1&a=1&c=54511&w=250&h=98&align=center"></iframe>
+				</div>
+
+                
+                <div id="pagelet-commbox">
+					<!--<a ga_event="click_banner" class="img-box" target="_blank" data-node="link">
+						<img data-node="img" onload="this.style.opacity=1">
+					</a>
+					<span class="comm-label">推广</span>-->
+					<!--广告位 右侧250x250_1 start-->
+					<script src="/d/js/acmsd/thea1.js" type="text/javascript"></script>
+					<!--广告位 右侧250x250_1 end-->
+				</div>
+
+                <div id="pagelet-hotnews">
+					<div class="head">
+					  实时要闻
+					</div>
+					<div class="news">
+											</div>
+				</div>
+
+                <div id="pagelet-stock">
+				  <div class="stock_head">
+					
+				  </div>
+				</div>
+
+                <div id="pagelet-company">
+				  <div class="company" id="toutiaoCompanyWrapper">
+					<span class="J-company-name">&#169; 2016 仿今日头条 http://test.dede168.com/</span>
+					<a href="http://www.12377.cn/" target="_blank" ga_event="click_about">中国互联网举报中心</a>
+					<a href="http://www.miibeian.gov.cn/" target="_blank" ga_event="click_about">京公网安备 11010802020116号</a>
+					<a href="/license/" class="icp" target="_blank">网络文化经营许可证</a>
+					<a href="/chengnuoshu/" target="_blank">跟帖评论自律管理承诺书 </a>
+					<span>违法和不良信息举报：xxx@xxx.com</span>
+					<span style="display:none">统计代码填到这里 </span>
+					
+				  </div>
+
+				  
+				</div>
+<link type="text/css" rel="stylesheet" href="/style/loginbox.css">
+<div id="bgDiv" style="display:none;"></div> 
+
+<script type="text/javascript">
+var IsMousedown,LEFT,TOP,lggood;
+	document.getElementById("Mdown").onmousedown=function(e){
+
+	lggood = document.getElementById("lggoodBox");
+	IsMousedown = true;
+	e = e||event;
+	LEFT = e.clientX - parseInt(lggood.style.left);
+	TOP = e.clientY - parseInt(lggood.style.top);
+	document.onmousemove = function(e){
+		e = e||event;
+		if (IsMousedown){
+			lggood.style.left = e.clientX - LEFT + "px";
+			lggood.style.top = e.clientY - TOP + "px";
+		}
+
+	}
+	document.onmouseup=function(){
+		IsMousedown=false;
+	}
+
+}
+$(function(){
+  $('#loginboxbtn').click(function(){
+        $('#bgDiv,#lggoodBox').show();
+   });
+   
+})
+</SCRIPT>
+
+
+            </div>
+            <div id="pagelet-nfeedback">
+				<ul>
+					<li>
+						<a ga_event="click_feed_newsrefresh" class="refresh" href="javascript:;" data-node="refresh"></a>
+						<!--<a ga_event="gotop" class="btn" href="javascript:;" data-node="back">
+							<i class="icon icon-back"></i>
+						</a>-->
+					</li>
+					<!--<li>
+						<a ga_event="feedback" class="btn" href="javascript:;" data-node="feedback">
+							<i class="icon icon-comment"></i>
+						</a>
+					</li>-->
+				</ul>
+			</div>
+        </div>
+    </div>
+    <script>
+        window.scrollTo(0, 0);
+
+        window.gaqpush = function (ga_action, ga_label){
+            ga('send', 'event','/' , ga_action, ga_label);
+        };
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-28423340-5', 'auto');
+        ga('send', 'pageview');
+
+
+        $("body").on('click', '[ga_event]', function(e){
+             var $this =  $(this);
+             var ga_category = $this.attr('ga_category') || '/';
+             var ga_action = $this.attr('ga_event');
+             var ga_label = $this.attr('ga_label');
+             var ga_value = $this.attr('ga_value')||1;
+
+             ga('send', 'event', ga_category, ga_action, ga_label, ga_value);
+        });
+
+    </script>
+
+    <script>
+        window.scrollTo(0, 0);
+		$(document).scroll(function() {
+			var scrolltop=$(document).scrollTop();
+			if(scrolltop>1200){
+				$('#pagelet-commbox').css({'position':'fixed','top':'100px'});
+			}else{
+				$('#pagelet-commbox').css({'position':'','top':''});
+			}
+			if(scrolltop>30){
+				$('.topbarWrapper').css({'height':'4px'});
+			}else{
+				$('.topbarWrapper').css({'height':'24px'});
+			}
+		});
+
+        
+    </script>
+<script src="/e/extend/DoTimeRepage/"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `shua_class_region`;

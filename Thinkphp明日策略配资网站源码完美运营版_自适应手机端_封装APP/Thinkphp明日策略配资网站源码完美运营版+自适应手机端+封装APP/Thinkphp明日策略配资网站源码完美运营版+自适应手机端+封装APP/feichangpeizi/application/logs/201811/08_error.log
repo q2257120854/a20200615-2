@@ -1,0 +1,40 @@
+---------------------------------------------------------------
+[ 2018-11-08T10:38:17+08:00 ] 27.151.29.104 117.136.79.96 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=20000&bankCard=6222023602068591031&realName=%E6%9E%97%E5%A4%A9%E5%BA%AD&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-08T10:38:32+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-11-08T10:41:33+08:00 ] 27.151.29.104 222.209.9.151 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=5000&bankCard=6217003810033289136&realName=%E5%BC%A0%E5%9D%87&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-08T10:41:55+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-11-08T12:16:25+08:00 ] 27.151.29.104 117.136.2.131 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1000&bankCard=6222020409026449333&realName=%E6%9D%8E%E5%BB%BA%E5%AE%BE&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-08T12:17:23+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-11-08T13:07:48+08:00 ] 27.151.29.104 117.136.2.131 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1000&bankCard=6222020409026449333&realName=%E6%9D%8E%E5%BB%BA%E5%AE%BE&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-08T13:07:59+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]

@@ -1,0 +1,402 @@
+---------------------------------------------------------------
+[ 2018-10-10T18:19:47+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianauthpay/authllpay_wap?bankCard=6228430329603683677&realName=%E5%8F%B6%E6%B0%B8%E9%B9%8F&IDCard=330182199212151917&b-pay-amount=
+[ info ] www.5chevip.com/index/lianlianauthpay/authllpay_wap?bankCard=6228430329603683677&realName=%E5%8F%B6%E6%B0%B8%E9%B9%8F&IDCard=330182199212151917&b-pay-amount= [运行时间：0.205188s][吞吐率：4.87req/s] [内存消耗：3,922.48kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; VKY-AL00 Build/HUAWEIVKY-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.5chevip.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=jqnlkaqfe7sg0dsrol53ub6537',
+  'x-requested-with' => 'www5chevip.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'bankCard' => '6228430329603683677',
+  'realName' => '叶永鹏',
+  'IDCard' => '330182199212151917',
+  'b-pay-amount' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001393s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.030378s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000586s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001807s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000555s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:21:21+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=10
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=10 [运行时间：0.260345s][吞吐率：3.84req/s] [内存消耗：4,003.17kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '10',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.003186s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.029367s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001898s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002195s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 10 , 0 , '13141539166881054527' , '2018-10-10 18:21:21') [ RunTime:0.000730s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:22:00+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=10
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=10 [运行时间：0.198441s][吞吐率：5.04req/s] [内存消耗：4,003.17kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '10',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001344s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.020442s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001544s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002158s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002133s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 10 , 0 , '13141539166920531105' , '2018-10-10 18:22:00') [ RunTime:0.000853s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:23:25+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=1000 [运行时间：0.192611s][吞吐率：5.19req/s] [内存消耗：4,003.12kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '1000',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000666s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.018081s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001822s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.001682s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 1000 , 0 , '13141539167005212769' , '2018-10-10 18:23:25') [ RunTime:0.000799s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:26:53+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=100 [运行时间：0.226604s][吞吐率：4.41req/s] [内存消耗：4,003.12kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '100',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000725s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.019959s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.009884s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002169s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 100 , 0 , '13141539167213435834' , '2018-10-10 18:26:53') [ RunTime:0.002109s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:27:07+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=100 [运行时间：0.188366s][吞吐率：5.31req/s] [内存消耗：4,003.12kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '100',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000771s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.019197s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001872s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002004s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 100 , 0 , '13141539167227918665' , '2018-10-10 18:27:07') [ RunTime:0.000901s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:27:32+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=88
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=88 [运行时间：0.192175s][吞吐率：5.20req/s] [内存消耗：4,003.17kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '88',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000774s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.015036s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.001982s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 88 , 0 , '13141539167252181222' , '2018-10-10 18:27:32') [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:27:47+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=120
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=120 [运行时间：0.178890s][吞吐率：5.59req/s] [内存消耗：4,003.12kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '120',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000613s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.015423s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001964s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.001487s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 120 , 0 , '13141539167267320834' , '2018-10-10 18:27:47') [ RunTime:0.000646s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:28:04+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=99
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=99 [运行时间：0.209790s][吞吐率：4.77req/s] [内存消耗：4,003.17kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '99',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000653s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.023692s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000698s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002744s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.005872s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 99 , 0 , '13141539167284362670' , '2018-10-10 18:28:04') [ RunTime:0.000927s ]
+---------------------------------------------------------------
+[ 2018-10-10T18:28:16+08:00 ] 202.53.138.176 223.104.246.133 GET /index/lianlianpay/doPay?b-pay-amount=101
+[ info ] vip.5chevip.com/index/lianlianpay/doPay?b-pay-amount=101 [运行时间：0.241203s][吞吐率：4.15req/s] [内存消耗：4,003.12kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'vip.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://vip.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=0pe4dotkku7g20nj7a9fc493f2',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '101',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001229s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.028609s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002008s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1314 ) LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002105s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1314 , 101 , 0 , '13141539167296350238' , '2018-10-10 18:28:16') [ RunTime:0.000681s ]

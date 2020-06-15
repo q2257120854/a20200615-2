@@ -1,0 +1,6 @@
+RewriteEngine On 
+RewriteBase / 
+
+RewriteRule (.*)/([0-9]+).html /e/chtml.php?classid=$1&id=$2&ssid=$2&check=checkcode
+
+

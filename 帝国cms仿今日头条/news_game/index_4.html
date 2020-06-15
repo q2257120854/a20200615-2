@@ -1,0 +1,766 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.test.dede168.com/news_game" >
+    <meta charset="gb2312" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script><script type="text/javascript">uaredirect("http://m.test.dede168.com/news_game");</script>
+<script src="/e/data/js/ajax.js">    
+<script type="text/javascript">
+        if(!('console' in window)) {window.console = {log: function(msg) {}};}
+    </script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="/style/nbase_cf47e58.css">
+
+
+    
+    
+    <title>仿今日头条游戏频道 - 你关心的，才是头条！</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="/style/core_b666bd6.css">
+<link rel="stylesheet" type="text/css" href="/style/newindex_b0deca1.css">
+<script type="text/javascript" charset="gb2312" src="/style/lib_538033e.js"></script>
+
+<script>
+var curpage = 2;
+var totalpage = 9;
+var geturl = '/e/extend/list/?classid=17&orderby=newstime&page='; 
+</script>
+<script>
+$(function(){
+	$('.listBox li').each(function(i,k){
+		if($(k).find('.lbox a img').attr('src')=='/e/data/images/notimg.gif'){
+			$(k).find('.lbox').remove();
+			$(k).find('.rbox').removeClass('rbox');
+		}
+	});
+})
+</script>
+<script type="text/javascript" charset="gb2312" src="/style/scrollpagination.js"></script>
+</head>
+<body class="v2016">
+    
+    <div id="wrapper" class="index-wrapper">
+    <div id="pagelet-nnav" >
+	<!--反馈 start-->
+<script>
+$(function(){
+	$('.feedbtn').click(function(){$('.feedback_dialog').toggleClass('on')});
+	$('.feedback_dialog .close').click(function(){$('.feedback_dialog').removeClass('on')})
+});
+function submitfeedback(obj){
+  var name='匿名';
+var email=$('[name=email]').val();
+var lytext=$('[name=lytext]').val();
+if(!email){alert('请填写联系方式');return false;}
+if(!lytext){alert('您的意见');return false;}
+
+}
+</script>
+<div class="dialog feedback_dialog">
+    <div class="dialog-header">
+        <h3>意见反馈</h3>
+    </div>
+    <div class="dialog-inner" data-node="inner">
+        <div class="feedback_panel">
+            <form action="/e/enews/index.php" method="post" name="form1" onsubmit="return submitfeedback(this)">
+                <ul>
+                    <li>
+                        <p class="label">联系方式（必填）</p>
+                        <div class="input-group">
+                            <input class="email" placeholder="您的邮箱" type="text" name="email">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="label">您的意见（必填）</p>
+                        <div class="input-group">
+                            <textarea style="height:100px;" name="lytext" class="content" maxlength="140" placeholder="请填写您的意见，不超过140字"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                               <input name="name" type="hidden" id="name" value="匿名">
+                            <input type="submit" name="Submit3" class="submit-btn" value="提交">
+                                <input name="enews" type="hidden" id="enews" value="AddGbook" />
+                                <input type="hidden" name="ecmsfrom" value="/">
+                            <span class="msg" data-node="msg"></span>
+                            <a data-node="close" class="close" href="javascript:;">[关闭]</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<!--反馈 end-->
+<div class="topbarWrapper" class="clearfix">
+		
+		<ul class="left">
+			<li class="tb-item"><a class="tb-link" href="/desktop.php?name=仿今日头条" >放到桌面</a></li>
+			<li class="tb-item"><a class="tb-link add-favorite" data-node="addToFavorites" ga_event="nav_pin" href="javascript:;"onclick="alert('请按Ctrl+D收藏');">添加到收藏夹</a></li>
+		</ul>
+		
+
+		<ul class="right">
+			<li class="tb-item"><span><script src="/e/member/login/loginjs2.php"></script></span></li>
+			<li class="tb-item" id="mth"><a class="tb-link" href="/e/member/login/">媒体号</a></li>
+			<li class="tb-item"><a class="tb-link feedbtn" href="javascript:;" js_ga_event="nav_feedback" data-node="navFeedback">反馈</a></li>
+			<li class="tb-item right-more" data-node="more">
+				<a class="tb-link" href="/about/" ga_event="nav_more">更多</a>
+				<div class="layer">
+					<ul>
+						
+	                    <li><a href="http://m.test.dede168.com" class="layer-item">手机版</a></li>
+                            
+						<li><a href="/about/about.html" class="layer-item">关于我们</a></li>
+						<li><a href="/about/join.html" class="layer-item">加入头条</a></li>
+						<li><a href="/about/report.html" class="layer-item">媒体报道</a></li>
+						<li><a href="/about/media_partners.html" class="layer-item">媒体合作</a></li>
+						<li><a href="/about/cooperation.html" class="layer-item">产品合作</a></li>
+						<li><a href="/about/media_cooperation.html" class="layer-item">合作说明</a></li>
+						<li><a href="/about/contact.html" class="layer-item">联系我们</a></li>
+						<li><a href="/about/user_agreement.html" class="layer-item">用户协议</a></li>
+						<li><a href="/about/complain.html" class="layer-item">投诉指引</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!--[if lt IE 9 ]><style>.midbarWrapper{border-bottom:1px solid #e8e8e8;}</style><![endif]-->
+	<div class="midbarWrapper">
+		<div class="midbar-inner">
+			<div class="logo-box">
+				<a class="logo-link" href="/" ga_event="nav_icon"><img class="logo" src="/style/logo.png"></a>
+			</div>
+			<div class="search-box">
+				<form action="/e/search/" method="post" data-node="searchForm" target="_blank">
+	                <div class="input-group clearfix">
+	                    <input autocomplete="off" ga_event="nav_search_input" data-node="searchInput" name="keyboard" type="text" placeholder="搜索我关心的..." value="">
+	                    <div class="btn-submit">
+                                <input type="hidden" name="show" value="title">
+                                <input type="hidden" name="tempid" value="1">
+                                <input type="hidden" name="tbname" value="news">
+	                        <button ga_event="nav_search" type="submit" href="javascript:;">
+	                            <i class="icon icon-search"></i>
+	                        </button>
+	                    </div>
+	                </div>
+	            </form>
+			</div>
+			<div class="user-box" data-node="userbox" >
+				
+				<div class="username-box clearfix" data-node="username">
+					<a ga_event="nav_login" class="nav-login user-item" href="javascript:;" data-node="login">
+						<span></span>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	</div>
+
+        <div id="container" class="clearfix">
+            <div class="index-left">
+                <div id="pagelet-channels" class="">
+	<ul class="channel-box" data-node="channelBox">
+		<li class="channel-item itemi">
+			<a ga_event="news_recommend" class="item item_index " href="/" data-node="category" data-category="__all__"><span class="channel-tag">推荐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_1 " href="/news_hot/" data-category="news_hot"><span class="channel-tag news_hot">热点</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_2 " href="/news_society/" data-category="news_society"><span class="channel-tag news_society">社会</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_3 " href="/news_entertainment/" data-category="news_entertainment"><span class="channel-tag news_entertainment">娱乐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_4 " href="/news_tech/" data-category="news_tech"><span class="channel-tag news_tech">科技</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_5 " href="/news_car/" data-category="news_car"><span class="channel-tag news_car">汽车</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_6 " href="/news_sports/" data-category="news_sports"><span class="channel-tag news_sports">体育</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_7 " href="/news_finance/" data-category="news_finance"><span class="channel-tag news_finance">财经</span></a>
+		</li>
+		
+		
+		
+		<!--<li class="channel-item more-item magic-btn" data-node="foldBox">
+			<a ga_event="click_hide_channel" class="item" href="javascript:;" data-node="fold"><span class="channel-tag fold">收起</span></a>
+		</li>-->
+		</ul>
+		<div class="moreBox" data-node="moreBox">
+			<a ga_event="click_show_channel" class="moreBtn" href="javascript:;"><span class="channel-tag more">更多</span></a>
+			<ul class="more-channels" data-node="moreChannels">
+				
+												<li class="channel-item item_news_military">
+					<a class="item item_8" href="/news_military/"><span class="channel-tag news_military">军事</span></a>
+				</li>
+												<li class="channel-item item_news_world">
+					<a class="item item_9" href="/news_world/"><span class="channel-tag news_world">国际</span></a>
+				</li>
+												<li class="channel-item item_news_fashion">
+					<a class="item item_10" href="/news_fashion/"><span class="channel-tag news_fashion">时尚</span></a>
+				</li>
+												<li class="channel-item item_news_travel">
+					<a class="item item_11" href="/news_travel/"><span class="channel-tag news_travel">旅游</span></a>
+				</li>
+												<li class="channel-item item_news_discovery">
+					<a class="item item_12" href="/news_discovery/"><span class="channel-tag news_discovery">探索</span></a>
+				</li>
+												<li class="channel-item item_news_baby">
+					<a class="item item_13" href="/news_baby/"><span class="channel-tag news_baby">育儿</span></a>
+				</li>
+												<li class="channel-item item_news_regimen">
+					<a class="item item_14" href="/news_regimen/"><span class="channel-tag news_regimen">养生</span></a>
+				</li>
+												<li class="channel-item item_news_story">
+					<a class="item item_15" href="/news_story/"><span class="channel-tag news_story">故事</span></a>
+				</li>
+												<li class="channel-item item_news_essay">
+					<a class="item item_16" href="/news_essay/"><span class="channel-tag news_essay">美文</span></a>
+				</li>
+												<li class="channel-item item_news_game">
+					<a class="item item_17" href="/news_game/"><span class="channel-tag news_game">游戏</span></a>
+				</li>
+												<li class="channel-item item_news_history">
+					<a class="item item_18" href="/news_history/"><span class="channel-tag news_history">历史</span></a>
+				</li>
+												<li class="channel-item item_news_food">
+					<a class="item item_19" href="/news_food/"><span class="channel-tag news_food">美食</span></a>
+				</li>
+							</ul>
+		</div>
+	
+</div>
+            </div>
+<script type="text/javascript">
+$(".item_17").addClass("selected");
+
+var cla=$(".more-channels .item_17.selected").parent().attr('class');
+var html=$(".more-channels .item_17.selected").parent().html();
+$(".more-channels .item_17.selected").parent().remove();
+if(cla && html){
+      $('#pagelet-channels .channel-box').append('<li class="'+cla+'">'+html+'</li>');
+}
+var clai=$(".itemi").eq(7).attr('class');
+var htmli=$(".itemi").eq(7).html();
+if(clai && htmli && html){
+      $(".itemi").eq(7).remove();
+      $('.more-channels').prepend('<li class="'+clai+'">'+htmli+'</li>');
+}
+</script>
+
+            <div class="index-main">
+                <div id="pagelet-nfeedlist">
+	<div class="feedcomm" data-node="commItem">
+		<span class="comm-close" data-node="commClose"></span>
+		<a ga_event="click_banner" target="_blank" data-node="commLink"></a>
+	</div>
+	<p class="alert-msg" data-node="alertMsg">
+        <img src="http://test.dede168.com//style/loading_50c5e3e.gif">
+        <span>推荐数据加载中...</span>
+    </p>
+	<div class="unread" data-node="unread" ga_event="click_feed_update"><span>您有未读新闻，点击查看</span></div>
+	<ul data-node="listBox" class="listBox">
+		<li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1799.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/5190004eb965cb8b547?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1799.html" target="_blank" data-node="title">
+								格斗猎人 时尚时尚最时尚！系列时装详解
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1799.html" target="_blank">我的服装，时尚时尚最时尚，格斗肯定棒！说到时装，每个玩家心中肯定都有那么一套“充满特效”的完美时装。今天，小编就带你们一起去探索堪称游戏界的“米兰时装秀”——《</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">97973手游网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1799&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1799&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1797.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/4fc000be6c18bd8039f?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1797.html" target="_blank" data-node="title">
+								动作RPG《乱斗英雄传》欢庆预约破四万上市四大活动情报释出
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1797.html" target="_blank">由日本CNCStream公司预定于2016年4月在iOS/Android等手机平台上推出营运，事前预约注册也正在官网火热展开中的这款新作动作RPG《乱斗英雄传》(ボコスカ英雄伝，中文名暂称)</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1797&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1797&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1796.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1796.html" target="_blank" data-node="title">
+								为了“情怀”炒冷饭
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1796.html" target="_blank">炒冷饭本义是将凉饭放在锅中炒热。饭还是那个饭，实质没有变，只是加热而已。因此，这个词也可以用来比喻重复说过的话或做过的事，没有新的内容。如今，受利益驱使，很多游</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1796&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1796&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1791.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51c000ec02c0c5a6ddc?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1791.html" target="_blank" data-node="title">
+								4.20韩服新本法器研究所 相关时装抢先看
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1791.html" target="_blank">剑灵韩服正式服已于4月20日更新了全新的“苍穹盆地版本”，本次更新中开放了天空盆地区域及，法器研究所副本，让我们随着小编来抢先看看更新内容吧。新区域：苍穹盆地该区域</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1791&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1791&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1790.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/4e700078223149d91f8?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1790.html" target="_blank" data-node="title">
+								进阶技巧：帮你致胜的火球
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1790.html" target="_blank">大家好，这次带来的是皇室战争最重要的单卡之一，火球。游戏中的某些单卡我认为至关重要，恰当运用的话会带来令人难以置信的价值。火球需要4圣水，但用得好能带来不止4圣水</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">口袋巴士&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1790&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1790&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1788.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51a000e5ba01f2d36be?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1788.html" target="_blank" data-node="title">
+								“S计划”全新发布 《最后一炮》新版本4.29正式上线
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1788.html" target="_blank">近日，《最后一炮》装甲对决新版本确定于4月29日正式上线，同时发布了“S计划”，总奖金高达100W元，内容涵盖全年赛事，包括月季赛，季度赛和周年总决赛。该计划将现代装甲</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">游迅网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1788&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1788&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1784.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/5010004592bede2d806?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1784.html" target="_blank" data-node="title">
+								LOL拆塔最快的英雄还会是小炮吗？他将会比小炮还能拆家！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1784.html" target="_blank">6.8版本将会有一大批AP英雄改动，届时又会有新的玩法诞生。那么问题来了，6.8版本拆塔最快的英雄还是小物理输出的小炮吗？答案是否定的，炸弹人吉格斯将会比小炮还能拆家，</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">瑞兹去巴黎&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1784&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1784&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1780.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51a000d6d9b843c5717?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1780.html" target="_blank" data-node="title">
+								倩女幽魂手游帮会生活技能快速上手攻略
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1780.html" target="_blank">倩女幽魂手游帮会生活技能都有哪些，这些生活技能要怎么提升，下面就给大家介绍下帮会生活技能的玩法心得，希望大家喜欢。帮会倩女幽魂手游帮会生活技能生活技能分7大类：采</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">笨手机&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1780&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1780&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1776.html" target="_blank">
+						<img class="feedimg" src="http://p10.pstatp.com/large/4860009c748c02080bb?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1776.html" target="_blank" data-node="title">
+								冠军赴美看首映！爱玩网魔兽电影主题赛跑开启
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1776.html" target="_blank">魔兽电影的到来，是否又勾起了你的游戏回忆？想第一时间观看魔兽电影？那你得够快才行！是时候看看你是不是艾泽拉斯最快的勇士了！参与活动，便有机会获得爱玩网会送出的电</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">爱玩网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1776&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1776&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<a href="javascript:;" class="loadmore" data-node="loadMore">正在为您加载更多...</a>
+        <div class="indexListLoading" id="nomoreresults" style="display:none">所有内容加载完毕</div>
+
+         <div class="pageBox pageNo">
+          <a title="Total record">&nbsp;<b>84</b> </a>&nbsp;&nbsp;<a href="/news_game/index.html">首页</a>&nbsp;<a href="/news_game/index_3.html">上一页</a>&nbsp;<a href="/news_game/index_2.html">2</a>&nbsp;<a href="/news_game/index_3.html">3</a>&nbsp;<b>4</b>
+         </div>
+</div>
+            </div>
+            <div class="index-right">
+                <div id="pagelet-weather">
+					<iframe allowtransparency="true" frameborder="0" width="250" height="98" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=1&bd=0&k=000000&f=&q=1&e=1&a=1&c=54511&w=250&h=98&align=center"></iframe>
+				</div>
+
+                
+                <div id="pagelet-commbox">
+					<!--<a ga_event="click_banner" class="img-box" target="_blank" data-node="link">
+						<img data-node="img" onload="this.style.opacity=1">
+					</a>
+					<span class="comm-label">推广</span>-->
+					<!--广告位 右侧250x250_1 start-->
+					<script src="/d/js/acmsd/thea1.js" type="text/javascript"></script>
+					<!--广告位 右侧250x250_1 end-->
+				</div>
+
+                <div id="pagelet-hotnews">
+					<div class="head">
+					  实时要闻
+					</div>
+					<div class="news">
+											</div>
+				</div>
+
+                <div id="pagelet-stock">
+				  <div class="stock_head">
+					
+				  </div>
+				</div>
+
+                <div id="pagelet-company">
+				  <div class="company" id="toutiaoCompanyWrapper">
+					<span class="J-company-name">&#169; 2016 仿今日头条 http://test.dede168.com/</span>
+					<a href="http://www.12377.cn/" target="_blank" ga_event="click_about">中国互联网举报中心</a>
+					<a href="http://www.miibeian.gov.cn/" target="_blank" ga_event="click_about">京公网安备 11010802020116号</a>
+					<a href="/license/" class="icp" target="_blank">网络文化经营许可证</a>
+					<a href="/chengnuoshu/" target="_blank">跟帖评论自律管理承诺书 </a>
+					<span>违法和不良信息举报：xxx@xxx.com</span>
+					<span style="display:none">统计代码填到这里 </span>
+					
+				  </div>
+
+				  
+				</div>
+<link type="text/css" rel="stylesheet" href="/style/loginbox.css">
+<div id="bgDiv" style="display:none;"></div> 
+
+<script type="text/javascript">
+var IsMousedown,LEFT,TOP,lggood;
+	document.getElementById("Mdown").onmousedown=function(e){
+
+	lggood = document.getElementById("lggoodBox");
+	IsMousedown = true;
+	e = e||event;
+	LEFT = e.clientX - parseInt(lggood.style.left);
+	TOP = e.clientY - parseInt(lggood.style.top);
+	document.onmousemove = function(e){
+		e = e||event;
+		if (IsMousedown){
+			lggood.style.left = e.clientX - LEFT + "px";
+			lggood.style.top = e.clientY - TOP + "px";
+		}
+
+	}
+	document.onmouseup=function(){
+		IsMousedown=false;
+	}
+
+}
+$(function(){
+  $('#loginboxbtn').click(function(){
+        $('#bgDiv,#lggoodBox').show();
+   });
+   
+})
+</SCRIPT>
+
+
+            </div>
+            <div id="pagelet-nfeedback">
+				<ul>
+					<li>
+						<a ga_event="click_feed_newsrefresh" class="refresh" href="javascript:;" data-node="refresh"></a>
+						<!--<a ga_event="gotop" class="btn" href="javascript:;" data-node="back">
+							<i class="icon icon-back"></i>
+						</a>-->
+					</li>
+					<!--<li>
+						<a ga_event="feedback" class="btn" href="javascript:;" data-node="feedback">
+							<i class="icon icon-comment"></i>
+						</a>
+					</li>-->
+				</ul>
+			</div>
+        </div>
+    </div>
+    <script>
+        window.scrollTo(0, 0);
+
+        window.gaqpush = function (ga_action, ga_label){
+            ga('send', 'event','/' , ga_action, ga_label);
+        };
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-28423340-5', 'auto');
+        ga('send', 'pageview');
+
+
+        $("body").on('click', '[ga_event]', function(e){
+             var $this =  $(this);
+             var ga_category = $this.attr('ga_category') || '/';
+             var ga_action = $this.attr('ga_event');
+             var ga_label = $this.attr('ga_label');
+             var ga_value = $this.attr('ga_value')||1;
+
+             ga('send', 'event', ga_category, ga_action, ga_label, ga_value);
+        });
+
+    </script>
+
+    <script>
+        window.scrollTo(0, 0);
+		$(document).scroll(function() {
+			var scrolltop=$(document).scrollTop();
+			if(scrolltop>1200){
+				$('#pagelet-commbox').css({'position':'fixed','top':'100px'});
+			}else{
+				$('#pagelet-commbox').css({'position':'','top':''});
+			}
+			if(scrolltop>30){
+				$('.topbarWrapper').css({'height':'4px'});
+			}else{
+				$('.topbarWrapper').css({'height':'24px'});
+			}
+		});
+
+        
+    </script>
+<script src="/e/extend/DoTimeRepage/"></script>
+</body>
+</html>

@@ -1,0 +1,491 @@
+---------------------------------------------------------------
+[ 2018-10-25T12:20:06+08:00 ] 43.243.75.72 223.104.34.94 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=10000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=10000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard= [运行时间：0.252259s][吞吐率：3.96req/s] [内存消耗：4,083.71kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; PACT00 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.dsqqapp.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=a6dav7hh926i2pnvm2jp318ig5',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '10000',
+  'bankCard' => '6217001730014864594',
+  'realName' => '李起威',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001020s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.018973s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000700s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.003020s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1335 ) LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1335 ) LIMIT 1 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002229s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1335 , 10000 , 0 , '13351540441206136917' , '2018-10-25 12:20:06') [ RunTime:0.000957s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:07:51+08:00 ] 43.243.75.72 117.136.90.142 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=1&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard= [运行时间：0.261045s][吞吐率：3.83req/s] [内存消耗：4,084.75kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO A57 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.dsqqapp.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=ehqfkpuvb0jm56aogvpvk9r3i0',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '1',
+  'bankCard' => '6217858100016249224',
+  'realName' => '张国旺',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001232s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.019261s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005430s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002797s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1352 ) LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1352 ) LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002721s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1352 , 1 , 0 , '13521540444071790759' , '2018-10-25 13:07:51') [ RunTime:0.002382s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:08:12+08:00 ] 43.243.75.72 117.136.90.142 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=1&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard= [运行时间：0.266955s][吞吐率：3.75req/s] [内存消耗：4,084.63kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO A57 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=ehqfkpuvb0jm56aogvpvk9r3i0',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '1',
+  'bankCard' => '6217858100016249224',
+  'realName' => '张国旺',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001286s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.019989s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.004145s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1352 ) LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1352 ) LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002861s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1352 , 1 , 0 , '13521540444092376826' , '2018-10-25 13:08:12') [ RunTime:0.000816s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:08:33+08:00 ] 43.243.75.72 115.236.102.36 POST /index/lianlianpay/notify_url
+[ info ] www.dsqqapp.com/index/lianlianpay/notify_url [运行时间：0.229924s][吞吐率：4.35req/s] [内存消耗：4,043.52kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'notify_url',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'text/json;charset=UTF-8',
+  'connection' => 'Close',
+  'user-agent' => 'httpcomponents',
+  'correlationid' => 'da77effe-45ea-4c02-8eb7-526a52765a96',
+  'content-length' => '437',
+  'host' => 'www.dsqqapp.com',
+  'cookie' => 'PHPSESSID=vgo88pjjeodvku80f8as6d6el6',
+  'cookie2' => '$Version=1',
+  'accept-encoding' => 'gzip,deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000984s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.017909s ]
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->notify_url[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ info ] [ DB ] INIT mysql
+[ 原串:bank_code=01040000&dt_order=20181025130812&money_order=1.0&no_order=13521540444092376826&oid_partner=201810190002237014&oid_paybill=2018102567650375&pay_type=P&result_pay=SUCCESS&settle_date=20181025&sign_type=RSA
+ ] log.txt
+[ sign:JBgptCsEfujpabeMW/9f1YOKl/LrJLBWq51f985edrqR36ss/f6arMeWVKZsoQRCO72+5G7kSIPengBu/Dyps/MUzYbVikcuO5J6sEAKPLjayePflX3JT6A2ftwxFnBq7ehW9H80Dpy2kZsVVnVkmQYeZFvJPBRLqomuKVr9hl8=
+ ] log.txt
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.001137s ]
+[ sql ] [ SQL ] UPDATE `xh_member_recharge`  SET `status`=1  WHERE  (  no_order='13521540444092376826' ) [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member_recharge` WHERE  (  no_order='13521540444092376826' ) LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001251s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1352 ) LIMIT 1 [ RunTime:0.002273s ]
+[ sql ] [ SQL ] UPDATE `xh_member`  SET `usableSum`=usableSum+1  WHERE  (  id=1352 ) [ RunTime:0.003770s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_fundrecord` [ RunTime:0.001163s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_fundrecord` (`memberId` , `flow` , `amount` , `usableSum` , `remarks` , `createTime`) VALUES (1352 , 1 , 1 , 1 , '连连支付充值成功' , '2018-10-25 13:08:33') [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:40:47+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1000&bankCard=&realName=&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=1000&bankCard=&realName=&IDCard= [运行时间：0.322775s][吞吐率：3.10req/s] [内存消耗：4,083.92kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; SM-G9350 Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.dsqqapp.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=2nudqn121g2ulsdqtq4btfqul0',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '1000',
+  'bankCard' => '',
+  'realName' => '',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001503s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.033377s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000698s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.004249s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1338 ) LIMIT 1 [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1338 ) LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002632s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1338 , 1000 , 0 , '13381540446047329174' , '2018-10-25 13:40:47') [ RunTime:0.001036s ]
+---------------------------------------------------------------
+[ 2018-10-25T14:50:04+08:00 ] 43.243.75.72 117.136.90.142 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=6000&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=6000&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard= [运行时间：0.299125s][吞吐率：3.34req/s] [内存消耗：4,084.55kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO A57 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.dsqqapp.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=ehqfkpuvb0jm56aogvpvk9r3i0',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '6000',
+  'bankCard' => '6217858100016249224',
+  'realName' => '张国旺',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001125s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.020109s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000795s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.006257s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1352 ) LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1352 ) LIMIT 1 [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002428s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1352 , 6000 , 0 , '13521540450204763498' , '2018-10-25 14:50:04') [ RunTime:0.001089s ]
+---------------------------------------------------------------
+[ 2018-10-25T14:50:17+08:00 ] 43.243.75.72 115.236.102.36 POST /index/lianlianpay/notify_url
+[ info ] www.dsqqapp.com/index/lianlianpay/notify_url [运行时间：0.226466s][吞吐率：4.42req/s] [内存消耗：4,044.27kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'notify_url',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'text/json;charset=UTF-8',
+  'connection' => 'Close',
+  'user-agent' => 'httpcomponents',
+  'correlationid' => '8878be02-9985-4598-be69-2c278b969a6d',
+  'content-length' => '440',
+  'host' => 'www.dsqqapp.com',
+  'cookie' => 'PHPSESSID=vgo88pjjeodvku80f8as6d6el6',
+  'cookie2' => '$Version=1',
+  'accept-encoding' => 'gzip,deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001286s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.019968s ]
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->notify_url[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ info ] [ DB ] INIT mysql
+[ 原串:bank_code=01040000&dt_order=20181025145004&money_order=6000.0&no_order=13521540450204763498&oid_partner=201810190002237014&oid_paybill=2018102568094717&pay_type=P&result_pay=SUCCESS&settle_date=20181025&sign_type=RSA
+ ] log.txt
+[ sign:LORMGDsWTfCWPRDO1NR3ERM3srexNIMVCmeUXldfN4aA7O6n+rwuVOcRRrAHMulci8fgDaSdkNsc7ZInnlFwSBRtV+0onahmO0HC20EMOUIVlEz9uZ2eee+a/8nGaTTmPuYN6QysqLWt0mhVmw//8T/g5cINd7bJhn4JL98Hejo=
+ ] log.txt
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000906s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002625s ]
+[ sql ] [ SQL ] UPDATE `xh_member_recharge`  SET `status`=1  WHERE  (  no_order='13521540450204763498' ) [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member_recharge` WHERE  (  no_order='13521540450204763498' ) LIMIT 1 [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002824s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1352 ) LIMIT 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] UPDATE `xh_member`  SET `usableSum`=usableSum+6000  WHERE  (  id=1352 ) [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_fundrecord` [ RunTime:0.002469s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_fundrecord` (`memberId` , `flow` , `amount` , `usableSum` , `remarks` , `createTime`) VALUES (1352 , 1 , 6000 , 6000 , '连连支付充值成功' , '2018-10-25 14:50:17') [ RunTime:0.001147s ]
+---------------------------------------------------------------
+[ 2018-10-25T19:41:24+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1000&bankCard=&realName=&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=1000&bankCard=&realName=&IDCard= [运行时间：0.272708s][吞吐率：3.67req/s] [内存消耗：4,084.09kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; PACT00 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.dsqqapp.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=a6dav7hh926i2pnvm2jp318ig5',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '1000',
+  'bankCard' => '',
+  'realName' => '',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000889s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.029883s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000947s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.003199s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1346 ) LIMIT 1 [ RunTime:0.002323s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1346 ) LIMIT 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002633s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1346 , 1000 , 0 , '13461540467684798681' , '2018-10-25 19:41:24') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-25T19:52:36+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard= [运行时间：0.163024s][吞吐率：6.13req/s] [内存消耗：3,924.81kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; PACT00 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.dsqqapp.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=a6dav7hh926i2pnvm2jp318ig5',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '',
+  'bankCard' => '6217001730014864594',
+  'realName' => '李起威',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000908s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.021693s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002348s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1335 ) LIMIT 1 [ RunTime:0.000393s ]
+---------------------------------------------------------------
+[ 2018-10-25T19:52:46+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=6000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=6000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard= [运行时间：0.180749s][吞吐率：5.53req/s] [内存消耗：4,084.51kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; PACT00 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.dsqqapp.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=a6dav7hh926i2pnvm2jp318ig5',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '6000',
+  'bankCard' => '6217001730014864594',
+  'realName' => '李起威',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000529s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.014594s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000787s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002503s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1335 ) LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1335 ) LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.001877s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1335 , 6000 , 0 , '13351540468366879895' , '2018-10-25 19:52:46') [ RunTime:0.000912s ]
+---------------------------------------------------------------
+[ 2018-10-25T20:00:08+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=100000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard=
+[ info ] www.dsqqapp.com/index/lianlianauthpay/authllpay_wap?b-pay-amount=100000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard= [运行时间：0.248721s][吞吐率：4.02req/s] [内存消耗：4,084.45kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; PACT00 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.dsqqapp.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'cookie' => 'PHPSESSID=a6dav7hh926i2pnvm2jp318ig5',
+  'x-requested-with' => 'www.dsqqapp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '100000',
+  'bankCard' => '6217001730014864594',
+  'realName' => '李起威',
+  'IDCard' => '',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000918s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.021474s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000619s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002181s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1335 ) LIMIT 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1335 ) LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.002492s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1335 , 100000 , 0 , '13351540468808714531' , '2018-10-25 20:00:08') [ RunTime:0.000946s ]

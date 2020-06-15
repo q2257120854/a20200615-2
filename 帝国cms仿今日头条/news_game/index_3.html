@@ -1,0 +1,1358 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.test.dede168.com/news_game" >
+    <meta charset="gb2312" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script><script type="text/javascript">uaredirect("http://m.test.dede168.com/news_game");</script>
+<script src="/e/data/js/ajax.js">    
+<script type="text/javascript">
+        if(!('console' in window)) {window.console = {log: function(msg) {}};}
+    </script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="/style/nbase_cf47e58.css">
+
+
+    
+    
+    <title>仿今日头条游戏频道 - 你关心的，才是头条！</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="/style/core_b666bd6.css">
+<link rel="stylesheet" type="text/css" href="/style/newindex_b0deca1.css">
+<script type="text/javascript" charset="gb2312" src="/style/lib_538033e.js"></script>
+
+<script>
+var curpage = 2;
+var totalpage = 9;
+var geturl = '/e/extend/list/?classid=17&orderby=newstime&page='; 
+</script>
+<script>
+$(function(){
+	$('.listBox li').each(function(i,k){
+		if($(k).find('.lbox a img').attr('src')=='/e/data/images/notimg.gif'){
+			$(k).find('.lbox').remove();
+			$(k).find('.rbox').removeClass('rbox');
+		}
+	});
+})
+</script>
+<script type="text/javascript" charset="gb2312" src="/style/scrollpagination.js"></script>
+</head>
+<body class="v2016">
+    
+    <div id="wrapper" class="index-wrapper">
+    <div id="pagelet-nnav" >
+	<!--反馈 start-->
+<script>
+$(function(){
+	$('.feedbtn').click(function(){$('.feedback_dialog').toggleClass('on')});
+	$('.feedback_dialog .close').click(function(){$('.feedback_dialog').removeClass('on')})
+});
+function submitfeedback(obj){
+  var name='匿名';
+var email=$('[name=email]').val();
+var lytext=$('[name=lytext]').val();
+if(!email){alert('请填写联系方式');return false;}
+if(!lytext){alert('您的意见');return false;}
+
+}
+</script>
+<div class="dialog feedback_dialog">
+    <div class="dialog-header">
+        <h3>意见反馈</h3>
+    </div>
+    <div class="dialog-inner" data-node="inner">
+        <div class="feedback_panel">
+            <form action="/e/enews/index.php" method="post" name="form1" onsubmit="return submitfeedback(this)">
+                <ul>
+                    <li>
+                        <p class="label">联系方式（必填）</p>
+                        <div class="input-group">
+                            <input class="email" placeholder="您的邮箱" type="text" name="email">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="label">您的意见（必填）</p>
+                        <div class="input-group">
+                            <textarea style="height:100px;" name="lytext" class="content" maxlength="140" placeholder="请填写您的意见，不超过140字"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                               <input name="name" type="hidden" id="name" value="匿名">
+                            <input type="submit" name="Submit3" class="submit-btn" value="提交">
+                                <input name="enews" type="hidden" id="enews" value="AddGbook" />
+                                <input type="hidden" name="ecmsfrom" value="/">
+                            <span class="msg" data-node="msg"></span>
+                            <a data-node="close" class="close" href="javascript:;">[关闭]</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<!--反馈 end-->
+<div class="topbarWrapper" class="clearfix">
+		
+		<ul class="left">
+			<li class="tb-item"><a class="tb-link" href="/desktop.php?name=仿今日头条" >放到桌面</a></li>
+			<li class="tb-item"><a class="tb-link add-favorite" data-node="addToFavorites" ga_event="nav_pin" href="javascript:;"onclick="alert('请按Ctrl+D收藏');">添加到收藏夹</a></li>
+		</ul>
+		
+
+		<ul class="right">
+			<li class="tb-item"><span><script src="/e/member/login/loginjs2.php"></script></span></li>
+			<li class="tb-item" id="mth"><a class="tb-link" href="/e/member/login/">媒体号</a></li>
+			<li class="tb-item"><a class="tb-link feedbtn" href="javascript:;" js_ga_event="nav_feedback" data-node="navFeedback">反馈</a></li>
+			<li class="tb-item right-more" data-node="more">
+				<a class="tb-link" href="/about/" ga_event="nav_more">更多</a>
+				<div class="layer">
+					<ul>
+						
+	                    <li><a href="http://m.test.dede168.com" class="layer-item">手机版</a></li>
+                            
+						<li><a href="/about/about.html" class="layer-item">关于我们</a></li>
+						<li><a href="/about/join.html" class="layer-item">加入头条</a></li>
+						<li><a href="/about/report.html" class="layer-item">媒体报道</a></li>
+						<li><a href="/about/media_partners.html" class="layer-item">媒体合作</a></li>
+						<li><a href="/about/cooperation.html" class="layer-item">产品合作</a></li>
+						<li><a href="/about/media_cooperation.html" class="layer-item">合作说明</a></li>
+						<li><a href="/about/contact.html" class="layer-item">联系我们</a></li>
+						<li><a href="/about/user_agreement.html" class="layer-item">用户协议</a></li>
+						<li><a href="/about/complain.html" class="layer-item">投诉指引</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!--[if lt IE 9 ]><style>.midbarWrapper{border-bottom:1px solid #e8e8e8;}</style><![endif]-->
+	<div class="midbarWrapper">
+		<div class="midbar-inner">
+			<div class="logo-box">
+				<a class="logo-link" href="/" ga_event="nav_icon"><img class="logo" src="/style/logo.png"></a>
+			</div>
+			<div class="search-box">
+				<form action="/e/search/" method="post" data-node="searchForm" target="_blank">
+	                <div class="input-group clearfix">
+	                    <input autocomplete="off" ga_event="nav_search_input" data-node="searchInput" name="keyboard" type="text" placeholder="搜索我关心的..." value="">
+	                    <div class="btn-submit">
+                                <input type="hidden" name="show" value="title">
+                                <input type="hidden" name="tempid" value="1">
+                                <input type="hidden" name="tbname" value="news">
+	                        <button ga_event="nav_search" type="submit" href="javascript:;">
+	                            <i class="icon icon-search"></i>
+	                        </button>
+	                    </div>
+	                </div>
+	            </form>
+			</div>
+			<div class="user-box" data-node="userbox" >
+				
+				<div class="username-box clearfix" data-node="username">
+					<a ga_event="nav_login" class="nav-login user-item" href="javascript:;" data-node="login">
+						<span></span>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	</div>
+
+        <div id="container" class="clearfix">
+            <div class="index-left">
+                <div id="pagelet-channels" class="">
+	<ul class="channel-box" data-node="channelBox">
+		<li class="channel-item itemi">
+			<a ga_event="news_recommend" class="item item_index " href="/" data-node="category" data-category="__all__"><span class="channel-tag">推荐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_1 " href="/news_hot/" data-category="news_hot"><span class="channel-tag news_hot">热点</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_2 " href="/news_society/" data-category="news_society"><span class="channel-tag news_society">社会</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_3 " href="/news_entertainment/" data-category="news_entertainment"><span class="channel-tag news_entertainment">娱乐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_4 " href="/news_tech/" data-category="news_tech"><span class="channel-tag news_tech">科技</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_5 " href="/news_car/" data-category="news_car"><span class="channel-tag news_car">汽车</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_6 " href="/news_sports/" data-category="news_sports"><span class="channel-tag news_sports">体育</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_7 " href="/news_finance/" data-category="news_finance"><span class="channel-tag news_finance">财经</span></a>
+		</li>
+		
+		
+		
+		<!--<li class="channel-item more-item magic-btn" data-node="foldBox">
+			<a ga_event="click_hide_channel" class="item" href="javascript:;" data-node="fold"><span class="channel-tag fold">收起</span></a>
+		</li>-->
+		</ul>
+		<div class="moreBox" data-node="moreBox">
+			<a ga_event="click_show_channel" class="moreBtn" href="javascript:;"><span class="channel-tag more">更多</span></a>
+			<ul class="more-channels" data-node="moreChannels">
+				
+												<li class="channel-item item_news_military">
+					<a class="item item_8" href="/news_military/"><span class="channel-tag news_military">军事</span></a>
+				</li>
+												<li class="channel-item item_news_world">
+					<a class="item item_9" href="/news_world/"><span class="channel-tag news_world">国际</span></a>
+				</li>
+												<li class="channel-item item_news_fashion">
+					<a class="item item_10" href="/news_fashion/"><span class="channel-tag news_fashion">时尚</span></a>
+				</li>
+												<li class="channel-item item_news_travel">
+					<a class="item item_11" href="/news_travel/"><span class="channel-tag news_travel">旅游</span></a>
+				</li>
+												<li class="channel-item item_news_discovery">
+					<a class="item item_12" href="/news_discovery/"><span class="channel-tag news_discovery">探索</span></a>
+				</li>
+												<li class="channel-item item_news_baby">
+					<a class="item item_13" href="/news_baby/"><span class="channel-tag news_baby">育儿</span></a>
+				</li>
+												<li class="channel-item item_news_regimen">
+					<a class="item item_14" href="/news_regimen/"><span class="channel-tag news_regimen">养生</span></a>
+				</li>
+												<li class="channel-item item_news_story">
+					<a class="item item_15" href="/news_story/"><span class="channel-tag news_story">故事</span></a>
+				</li>
+												<li class="channel-item item_news_essay">
+					<a class="item item_16" href="/news_essay/"><span class="channel-tag news_essay">美文</span></a>
+				</li>
+												<li class="channel-item item_news_game">
+					<a class="item item_17" href="/news_game/"><span class="channel-tag news_game">游戏</span></a>
+				</li>
+												<li class="channel-item item_news_history">
+					<a class="item item_18" href="/news_history/"><span class="channel-tag news_history">历史</span></a>
+				</li>
+												<li class="channel-item item_news_food">
+					<a class="item item_19" href="/news_food/"><span class="channel-tag news_food">美食</span></a>
+				</li>
+							</ul>
+		</div>
+	
+</div>
+            </div>
+<script type="text/javascript">
+$(".item_17").addClass("selected");
+
+var cla=$(".more-channels .item_17.selected").parent().attr('class');
+var html=$(".more-channels .item_17.selected").parent().html();
+$(".more-channels .item_17.selected").parent().remove();
+if(cla && html){
+      $('#pagelet-channels .channel-box').append('<li class="'+cla+'">'+html+'</li>');
+}
+var clai=$(".itemi").eq(7).attr('class');
+var htmli=$(".itemi").eq(7).html();
+if(clai && htmli && html){
+      $(".itemi").eq(7).remove();
+      $('.more-channels').prepend('<li class="'+clai+'">'+htmli+'</li>');
+}
+</script>
+
+            <div class="index-main">
+                <div id="pagelet-nfeedlist">
+	<div class="feedcomm" data-node="commItem">
+		<span class="comm-close" data-node="commClose"></span>
+		<a ga_event="click_banner" target="_blank" data-node="commLink"></a>
+	</div>
+	<p class="alert-msg" data-node="alertMsg">
+        <img src="http://test.dede168.com//style/loading_50c5e3e.gif">
+        <span>推荐数据加载中...</span>
+    </p>
+	<div class="unread" data-node="unread" ga_event="click_feed_update"><span>您有未读新闻，点击查看</span></div>
+	<ul data-node="listBox" class="listBox">
+		<li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1849.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/4fd000f51ab77edd84a?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1849.html" target="_blank" data-node="title">
+								本溪棋牌游戏高额奖金 地方棋牌游戏话那锐利得似乎
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1849.html" target="_blank">话那锐利得似乎本溪棋牌游戏本溪棋牌游戏 唐舞麟身体周围浓浓的黄色灵力被他缓慢的吸收着，这浓郁的黄色充分显现着，那百年人面魔蛛所产生的灵力实际上和普通魂兽是不一样的</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1849&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1849&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1848.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51c0000c67c32699dc9?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1848.html" target="_blank" data-node="title">
+								你的安卓机可以用来玩CS1.6了！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1848.html" target="_blank">你现在可以在安卓手机上体验到伴随你的青春岁月的CS1.6了。 如今不止“三根手指的枪战梦想”，就连最原汁原味的CS1.6也可以在手机上很好的运行了。而且这并非借助串流，一切</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">游戏时光VGtime&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1848&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1848&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1845.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51b000458e6eefa2055?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1845.html" target="_blank" data-node="title">
+								梦三国手游英雄搭配 马超貂蝉和徐晃组合实用性
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1845.html" target="_blank">文/Labrador、梦三国手游当中有着各种各样的英雄组合套路，这些套路都直接影响了每场战役当中的优势或者劣势的评判，同时也可以通过套路的组合打出非常高的伤害，那么现在9</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">97973手游网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1845&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1845&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1844.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51c000920086b0753e2?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1844.html" target="_blank" data-node="title">
+								口袋妖怪复刻双舞裂空座怎么克制 双舞裂空座克制方案
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1844.html" target="_blank">?????????????????????【本文系着迷网独家稿件，口袋妖怪复刻WIKI-梨落秋溪。】口袋妖怪复刻双舞裂空座怎么克制小伙伴们是不是还不清楚呐！本期lulu酱就为你带来双舞裂空座</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1844&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1844&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1843.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51d000d35d08b2ea35e?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1843.html" target="_blank" data-node="title">
+								格斗猎人 伺机而动 连环爆发：银月进阶攻略
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1843.html" target="_blank">《格斗猎人》之银月，一个来去如风的刺客。他用缥缈的身法诠释了什么叫做“杀人红尘中，脱身白刃里”。鉴于银月帅气冷酷的外表以及高机动性，我就知道这个角色必然会受到众</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">97973手游网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1843&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1843&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1841.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/51c0007a16b44f917f0?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1841.html" target="_blank" data-node="title">
+								VR游戏Loading Human新图欣赏进行体验
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1841.html" target="_blank">独立开发者Untold Games披露了更多即将面世的VR游戏《Loading Human》的全新图片。这些图片展示了以第一人称进行冒险的新区域。现在开发者提供了更多的媒体资源,更好地展现</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">安趣网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1841&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1841&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1839.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51d000d29856158a378?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1839.html" target="_blank" data-node="title">
+								Pikii推出日服eShop打折活动 《洞窟物语》等
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1839.html" target="_blank">日前Pikii确认将通过eShop推出针对旗下部分配信游戏的打折优惠活动，本次活动名为“最高五折!黄金周特别优惠!”。该优惠活动将从2016年4月20日开始，包含WiiU和3DS平台上的</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1839&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1839&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1837.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/486000984389703e52f?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1837.html" target="_blank" data-node="title">
+								跨越界限玩一把！小谈那些游戏的跨界合作
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1837.html" target="_blank">跨界营销，简单说就是异业联盟，也就是位于不同行业的企业相互之间进行合作，满足彼此的利益需求，这实际上是一种很好的共赢策略。近几年，跨界营销越来越受到企业的重视，</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">15W电竞门户&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1837&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1837&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1836.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/5210000401423558524?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1836.html" target="_blank" data-node="title">
+								星露谷物语stardew valley地晶在哪里挖 地晶哪里多
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1836.html" target="_blank">?????????????????????【本文系着迷网独家稿件，未经授权，禁止以任何形式转载，否则将追究法律责任。】星露谷物语stardew valley地晶在哪里挖还有地晶哪里多是最近小伙伴们</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1836&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1836&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1833.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/501000676107c6fd0a7?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1833.html" target="_blank" data-node="title">
+								LOL火男新技能有多变态？花式烧烤团灭满血
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1833.html" target="_blank">★游戏马蹄铁原创，禁止转载违者必究继玛尔扎哈和吸血鬼之后，我们再来看看同样是有比较大改动的火男和婕拉。这两个英雄也堪称是这次重做法师中受益比较大的，尤其是火男，</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">游戏马蹄铁&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1833&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1833&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1832.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/5190003f01b5c49623f?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1832.html" target="_blank" data-node="title">
+								剑侠情缘手游下载地址 删档测试预约激活流程
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1832.html" target="_blank">剑侠情缘手游由原版人马打造，完美还原了端游中的经典玩法，并为玩家展现了一个全新的世界。目前游戏已于今日4月20开启了删档测试，本次删档测试是需要资格才能进入的。具体</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">超好玩游戏网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1832&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1832&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1830.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51d000e38ddfee98388?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1830.html" target="_blank" data-node="title">
+								《倩女幽魂》与你相伴 五周年难忘经典时刻
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1830.html" target="_blank">2011年媒体品鉴会（丁老板说请吃猪肉---《倩女幽魂》如赢口碑，首批猪肉请玩家）内测发布会·西湖（印象·倩女）不删档测试开启/状况火爆（服务器爆满/排队巨长/人巨多）女</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">新浪游戏&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1830&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1830&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1829.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/52400000dcaf60e9167?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1829.html" target="_blank" data-node="title">
+								百变女神颜值爆表 斗鱼第一BB机欢欢女神
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1829.html" target="_blank">提起斗鱼TV的女主播，大家可能会对当红的女主播如数家珍，但是不知道这里还有这么一个特别的妹纸，本期就来认识一下这个新晋女主播，她曾获得过多项殊荣，2015China showgi</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">口袋巴士&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1829&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1829&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1825.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/5210006c60a2f99f290?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1825.html" target="_blank" data-node="title">
+								战神宠物培养技巧梦幻西游手游战神宠物攻略
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1825.html" target="_blank">本文导航 梦幻西游手游战神宠物怎么培养，今天小编为大家带来的是梦幻西游手游战神宠物培养攻略，喜欢的小伙伴不要错过哦，希望大家喜欢。梦幻西游手游战神宠物怎么样，今天</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">魔方网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1825&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1825&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1824.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51800032f6d8fe87e33?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1824.html" target="_blank" data-node="title">
+								三消解谜游戏《艾尔文水之球体》安卓版上架
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1824.html" target="_blank">《艾尔文水之球体》是一款益智类的三消解谜游戏，该作的开发商曾经还开发过名叫《宝石之路》的游戏，下面一起来看看详细介绍吧。故事讲述了主人公艾尔文生活的世界Goomswoo</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1824&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1824&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1823.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/519000364bd6a44973f?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1823.html" target="_blank" data-node="title">
+								贪婪洞窟幽暗护腿介绍 幽暗护腿出处详解
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1823.html" target="_blank">贪婪洞窟幽暗护腿属性是什么?贪婪洞窟幽暗护腿怎么才能获得?对于贪婪洞窟中的强力橙色装备幽暗护腿，是不是很多玩家小伙伴都不知道要怎么才能获得吧!今天安趣网小编就为各位</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">安趣网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1823&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1823&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1819.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51a000dd8c2303f0c32?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1819.html" target="_blank" data-node="title">
+								Wings战队专访:我们不惧怕与任何队伍交手
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1819.html" target="_blank">随着ESL One马尼拉2016的临近，外媒联系到了中国区预选赛的突围战队Wings Gaming，让他们来谈谈最近比赛中的发挥和自己的看法。由于在去年的WCA2015中战胜大魔王Secret战队</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1819&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1819&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1818.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51b0004118f14ca6d88?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1818.html" target="_blank" data-node="title">
+								靠脑洞征服世界的高分神作《瑞奇与叮当》
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1818.html" target="_blank">“脑洞”这个词是时下流行词汇之一，每当遇到一些天马行空、不着边际的想法或者是异常曲折的联想时，即可称为“脑洞大开”。在游戏领域这个虚拟世界中，其实也存在很多脑洞</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">安趣网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1818&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1818&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1817.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/518000622be7577b91e?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1817.html" target="_blank" data-node="title">
+								轩辕剑之天之痕等级怎么提升 提升方法技巧介绍
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1817.html" target="_blank">在轩辕剑之天之痕手游中，我们的等级应该怎么提升呢？提升的方法有哪些技巧呢？不知道的玩家赶紧来和97973手游网小编一起来看看吧。轩辕剑之天之痕等级提升方法：1、玩家消</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">97973手游网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1817&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1817&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1812.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/51c0002f0560091c202?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1812.html" target="_blank" data-node="title">
+								喜报！光荣动作新作《仁王》Alpha体验版港服同步推出
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1812.html" target="_blank">相信不少老玩家一定会去体验光荣打造的动作游戏《仁王》，毕竟这款游戏已经让我们等待了10年之久，在本月初官方正式表示将在4月26日发布Alpha体验版。现在好消息传来，本次</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">游迅网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1812&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1812&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1811.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/518000828265e86d588?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1811.html" target="_blank" data-node="title">
+								蓄力预热《我和僵尸有个约会》手游试玩初探
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1811.html" target="_blank">好久没有这种沉浸在游戏中畅快淋漓的感觉了！你肯定很想知道是什么游戏吧？小编这就来告诉你！小编刚刚试玩了这款游戏，叫做《我和僵尸有个约会》，听这个名字是不是感觉很</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">安趣网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1811&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1811&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1810.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51800034be4abe94796?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1810.html" target="_blank" data-node="title">
+								《超级弹丸论破2》碎片收集与宠物成长小技巧分享
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1810.html" target="_blank">《超级弹丸论破2》有速度快的玩家已经通关了，今天小编给大家带来相关玩家分享的小技巧，一起看一下吧。关于希望碎片收集：全员都是初始一片碎片，再拿5片集满6片时就可以得</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1810&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1810&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1804.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51c000d2f6af817b399?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1804.html" target="_blank" data-node="title">
+								这才是国战!征途手机版不删档测试
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1804.html" target="_blank">征途11年了，有你有我。还记得当初的誓言吗，要永远的守候在一起。还记得当初为了拿下皇帝的宝座，而杀戮四方吗？11年里我们有过欢笑、有过甜蜜。虽然岁月流逝，但是激情用</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">口袋巴士&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1804&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1804&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1805.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51c000d5a313664c935?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1805.html" target="_blank" data-node="title">
+								据说单身越久越容易通关《十字军失落圣物》
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1805.html" target="_blank">【17173玩家投稿 作者：Mia】Codename娱乐开发的一款网页游戏《十字军·失落圣物》自去年7月在K站(Kongregate.com)上线以来火了。游戏的核心就是点击怪物赚取金币（单身玩家</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">17173游戏网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1805&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1805&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_game/1803.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51b0004a1e7a825d035?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_game/1803.html" target="_blank" data-node="title">
+								超能复仇者小v玩家的心得 平民玩家如何玩
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_game/1803.html" target="_blank">97973手游网小编为广大玩家带来超能复仇者小v玩家的心得，希望大家喜欢。玩游戏的毕竟平民与小v玩家比较多，我们不能与土豪比，但也有一套自己的玩法，保证我们不会被土豪拉</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">97973手游网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=17&id=1803&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=17&id=1803&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<a href="javascript:;" class="loadmore" data-node="loadMore">正在为您加载更多...</a>
+        <div class="indexListLoading" id="nomoreresults" style="display:none">所有内容加载完毕</div>
+
+         <div class="pageBox pageNo">
+          <a title="Total record">&nbsp;<b>84</b> </a>&nbsp;&nbsp;<a href="/news_game/index.html">首页</a>&nbsp;<a href="/news_game/index_2.html">上一页</a>&nbsp;<a href="/news_game/index.html">1</a>&nbsp;<a href="/news_game/index_2.html">2</a>&nbsp;<b>3</b>&nbsp;<a href="/news_game/index_4.html">4</a>&nbsp;<a href="/news_game/index_4.html">下一页</a>&nbsp;<a href="/news_game/index_4.html">尾页</a>
+         </div>
+</div>
+            </div>
+            <div class="index-right">
+                <div id="pagelet-weather">
+					<iframe allowtransparency="true" frameborder="0" width="250" height="98" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=1&bd=0&k=000000&f=&q=1&e=1&a=1&c=54511&w=250&h=98&align=center"></iframe>
+				</div>
+
+                
+                <div id="pagelet-commbox">
+					<!--<a ga_event="click_banner" class="img-box" target="_blank" data-node="link">
+						<img data-node="img" onload="this.style.opacity=1">
+					</a>
+					<span class="comm-label">推广</span>-->
+					<!--广告位 右侧250x250_1 start-->
+					<script src="/d/js/acmsd/thea1.js" type="text/javascript"></script>
+					<!--广告位 右侧250x250_1 end-->
+				</div>
+
+                <div id="pagelet-hotnews">
+					<div class="head">
+					  实时要闻
+					</div>
+					<div class="news">
+											</div>
+				</div>
+
+                <div id="pagelet-stock">
+				  <div class="stock_head">
+					
+				  </div>
+				</div>
+
+                <div id="pagelet-company">
+				  <div class="company" id="toutiaoCompanyWrapper">
+					<span class="J-company-name">&#169; 2016 仿今日头条 http://test.dede168.com/</span>
+					<a href="http://www.12377.cn/" target="_blank" ga_event="click_about">中国互联网举报中心</a>
+					<a href="http://www.miibeian.gov.cn/" target="_blank" ga_event="click_about">京公网安备 11010802020116号</a>
+					<a href="/license/" class="icp" target="_blank">网络文化经营许可证</a>
+					<a href="/chengnuoshu/" target="_blank">跟帖评论自律管理承诺书 </a>
+					<span>违法和不良信息举报：xxx@xxx.com</span>
+					<span style="display:none">统计代码填到这里 </span>
+					
+				  </div>
+
+				  
+				</div>
+<link type="text/css" rel="stylesheet" href="/style/loginbox.css">
+<div id="bgDiv" style="display:none;"></div> 
+
+<script type="text/javascript">
+var IsMousedown,LEFT,TOP,lggood;
+	document.getElementById("Mdown").onmousedown=function(e){
+
+	lggood = document.getElementById("lggoodBox");
+	IsMousedown = true;
+	e = e||event;
+	LEFT = e.clientX - parseInt(lggood.style.left);
+	TOP = e.clientY - parseInt(lggood.style.top);
+	document.onmousemove = function(e){
+		e = e||event;
+		if (IsMousedown){
+			lggood.style.left = e.clientX - LEFT + "px";
+			lggood.style.top = e.clientY - TOP + "px";
+		}
+
+	}
+	document.onmouseup=function(){
+		IsMousedown=false;
+	}
+
+}
+$(function(){
+  $('#loginboxbtn').click(function(){
+        $('#bgDiv,#lggoodBox').show();
+   });
+   
+})
+</SCRIPT>
+
+
+            </div>
+            <div id="pagelet-nfeedback">
+				<ul>
+					<li>
+						<a ga_event="click_feed_newsrefresh" class="refresh" href="javascript:;" data-node="refresh"></a>
+						<!--<a ga_event="gotop" class="btn" href="javascript:;" data-node="back">
+							<i class="icon icon-back"></i>
+						</a>-->
+					</li>
+					<!--<li>
+						<a ga_event="feedback" class="btn" href="javascript:;" data-node="feedback">
+							<i class="icon icon-comment"></i>
+						</a>
+					</li>-->
+				</ul>
+			</div>
+        </div>
+    </div>
+    <script>
+        window.scrollTo(0, 0);
+
+        window.gaqpush = function (ga_action, ga_label){
+            ga('send', 'event','/' , ga_action, ga_label);
+        };
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-28423340-5', 'auto');
+        ga('send', 'pageview');
+
+
+        $("body").on('click', '[ga_event]', function(e){
+             var $this =  $(this);
+             var ga_category = $this.attr('ga_category') || '/';
+             var ga_action = $this.attr('ga_event');
+             var ga_label = $this.attr('ga_label');
+             var ga_value = $this.attr('ga_value')||1;
+
+             ga('send', 'event', ga_category, ga_action, ga_label, ga_value);
+        });
+
+    </script>
+
+    <script>
+        window.scrollTo(0, 0);
+		$(document).scroll(function() {
+			var scrolltop=$(document).scrollTop();
+			if(scrolltop>1200){
+				$('#pagelet-commbox').css({'position':'fixed','top':'100px'});
+			}else{
+				$('#pagelet-commbox').css({'position':'','top':''});
+			}
+			if(scrolltop>30){
+				$('.topbarWrapper').css({'height':'4px'});
+			}else{
+				$('.topbarWrapper').css({'height':'24px'});
+			}
+		});
+
+        
+    </script>
+<script src="/e/extend/DoTimeRepage/"></script>
+</body>
+</html>

@@ -1,0 +1,1358 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.test.dede168.com/news_world" >
+    <meta charset="gb2312" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script><script type="text/javascript">uaredirect("http://m.test.dede168.com/news_world");</script>
+<script src="/e/data/js/ajax.js">    
+<script type="text/javascript">
+        if(!('console' in window)) {window.console = {log: function(msg) {}};}
+    </script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="/style/nbase_cf47e58.css">
+
+
+    
+    
+    <title>仿今日头条国际频道 - 你关心的，才是头条！</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="/style/core_b666bd6.css">
+<link rel="stylesheet" type="text/css" href="/style/newindex_b0deca1.css">
+<script type="text/javascript" charset="gb2312" src="/style/lib_538033e.js"></script>
+
+<script>
+var curpage = 2;
+var totalpage = 7;
+var geturl = '/e/extend/list/?classid=9&orderby=newstime&page='; 
+</script>
+<script>
+$(function(){
+	$('.listBox li').each(function(i,k){
+		if($(k).find('.lbox a img').attr('src')=='/e/data/images/notimg.gif'){
+			$(k).find('.lbox').remove();
+			$(k).find('.rbox').removeClass('rbox');
+		}
+	});
+})
+</script>
+<script type="text/javascript" charset="gb2312" src="/style/scrollpagination.js"></script>
+</head>
+<body class="v2016">
+    
+    <div id="wrapper" class="index-wrapper">
+    <div id="pagelet-nnav" >
+	<!--反馈 start-->
+<script>
+$(function(){
+	$('.feedbtn').click(function(){$('.feedback_dialog').toggleClass('on')});
+	$('.feedback_dialog .close').click(function(){$('.feedback_dialog').removeClass('on')})
+});
+function submitfeedback(obj){
+  var name='匿名';
+var email=$('[name=email]').val();
+var lytext=$('[name=lytext]').val();
+if(!email){alert('请填写联系方式');return false;}
+if(!lytext){alert('您的意见');return false;}
+
+}
+</script>
+<div class="dialog feedback_dialog">
+    <div class="dialog-header">
+        <h3>意见反馈</h3>
+    </div>
+    <div class="dialog-inner" data-node="inner">
+        <div class="feedback_panel">
+            <form action="/e/enews/index.php" method="post" name="form1" onsubmit="return submitfeedback(this)">
+                <ul>
+                    <li>
+                        <p class="label">联系方式（必填）</p>
+                        <div class="input-group">
+                            <input class="email" placeholder="您的邮箱" type="text" name="email">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="label">您的意见（必填）</p>
+                        <div class="input-group">
+                            <textarea style="height:100px;" name="lytext" class="content" maxlength="140" placeholder="请填写您的意见，不超过140字"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                               <input name="name" type="hidden" id="name" value="匿名">
+                            <input type="submit" name="Submit3" class="submit-btn" value="提交">
+                                <input name="enews" type="hidden" id="enews" value="AddGbook" />
+                                <input type="hidden" name="ecmsfrom" value="/">
+                            <span class="msg" data-node="msg"></span>
+                            <a data-node="close" class="close" href="javascript:;">[关闭]</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<!--反馈 end-->
+<div class="topbarWrapper" class="clearfix">
+		
+		<ul class="left">
+			<li class="tb-item"><a class="tb-link" href="/desktop.php?name=仿今日头条" >放到桌面</a></li>
+			<li class="tb-item"><a class="tb-link add-favorite" data-node="addToFavorites" ga_event="nav_pin" href="javascript:;"onclick="alert('请按Ctrl+D收藏');">添加到收藏夹</a></li>
+		</ul>
+		
+
+		<ul class="right">
+			<li class="tb-item"><span><script src="/e/member/login/loginjs2.php"></script></span></li>
+			<li class="tb-item" id="mth"><a class="tb-link" href="/e/member/login/">媒体号</a></li>
+			<li class="tb-item"><a class="tb-link feedbtn" href="javascript:;" js_ga_event="nav_feedback" data-node="navFeedback">反馈</a></li>
+			<li class="tb-item right-more" data-node="more">
+				<a class="tb-link" href="/about/" ga_event="nav_more">更多</a>
+				<div class="layer">
+					<ul>
+						
+	                    <li><a href="http://m.test.dede168.com" class="layer-item">手机版</a></li>
+                            
+						<li><a href="/about/about.html" class="layer-item">关于我们</a></li>
+						<li><a href="/about/join.html" class="layer-item">加入头条</a></li>
+						<li><a href="/about/report.html" class="layer-item">媒体报道</a></li>
+						<li><a href="/about/media_partners.html" class="layer-item">媒体合作</a></li>
+						<li><a href="/about/cooperation.html" class="layer-item">产品合作</a></li>
+						<li><a href="/about/media_cooperation.html" class="layer-item">合作说明</a></li>
+						<li><a href="/about/contact.html" class="layer-item">联系我们</a></li>
+						<li><a href="/about/user_agreement.html" class="layer-item">用户协议</a></li>
+						<li><a href="/about/complain.html" class="layer-item">投诉指引</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!--[if lt IE 9 ]><style>.midbarWrapper{border-bottom:1px solid #e8e8e8;}</style><![endif]-->
+	<div class="midbarWrapper">
+		<div class="midbar-inner">
+			<div class="logo-box">
+				<a class="logo-link" href="/" ga_event="nav_icon"><img class="logo" src="/style/logo.png"></a>
+			</div>
+			<div class="search-box">
+				<form action="/e/search/" method="post" data-node="searchForm" target="_blank">
+	                <div class="input-group clearfix">
+	                    <input autocomplete="off" ga_event="nav_search_input" data-node="searchInput" name="keyboard" type="text" placeholder="搜索我关心的..." value="">
+	                    <div class="btn-submit">
+                                <input type="hidden" name="show" value="title">
+                                <input type="hidden" name="tempid" value="1">
+                                <input type="hidden" name="tbname" value="news">
+	                        <button ga_event="nav_search" type="submit" href="javascript:;">
+	                            <i class="icon icon-search"></i>
+	                        </button>
+	                    </div>
+	                </div>
+	            </form>
+			</div>
+			<div class="user-box" data-node="userbox" >
+				
+				<div class="username-box clearfix" data-node="username">
+					<a ga_event="nav_login" class="nav-login user-item" href="javascript:;" data-node="login">
+						<span></span>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	</div>
+
+        <div id="container" class="clearfix">
+            <div class="index-left">
+                <div id="pagelet-channels" class="">
+	<ul class="channel-box" data-node="channelBox">
+		<li class="channel-item itemi">
+			<a ga_event="news_recommend" class="item item_index " href="/" data-node="category" data-category="__all__"><span class="channel-tag">推荐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_1 " href="/news_hot/" data-category="news_hot"><span class="channel-tag news_hot">热点</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_2 " href="/news_society/" data-category="news_society"><span class="channel-tag news_society">社会</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_3 " href="/news_entertainment/" data-category="news_entertainment"><span class="channel-tag news_entertainment">娱乐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_4 " href="/news_tech/" data-category="news_tech"><span class="channel-tag news_tech">科技</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_5 " href="/news_car/" data-category="news_car"><span class="channel-tag news_car">汽车</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_6 " href="/news_sports/" data-category="news_sports"><span class="channel-tag news_sports">体育</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_7 " href="/news_finance/" data-category="news_finance"><span class="channel-tag news_finance">财经</span></a>
+		</li>
+		
+		
+		
+		<!--<li class="channel-item more-item magic-btn" data-node="foldBox">
+			<a ga_event="click_hide_channel" class="item" href="javascript:;" data-node="fold"><span class="channel-tag fold">收起</span></a>
+		</li>-->
+		</ul>
+		<div class="moreBox" data-node="moreBox">
+			<a ga_event="click_show_channel" class="moreBtn" href="javascript:;"><span class="channel-tag more">更多</span></a>
+			<ul class="more-channels" data-node="moreChannels">
+				
+												<li class="channel-item item_news_military">
+					<a class="item item_8" href="/news_military/"><span class="channel-tag news_military">军事</span></a>
+				</li>
+												<li class="channel-item item_news_world">
+					<a class="item item_9" href="/news_world/"><span class="channel-tag news_world">国际</span></a>
+				</li>
+												<li class="channel-item item_news_fashion">
+					<a class="item item_10" href="/news_fashion/"><span class="channel-tag news_fashion">时尚</span></a>
+				</li>
+												<li class="channel-item item_news_travel">
+					<a class="item item_11" href="/news_travel/"><span class="channel-tag news_travel">旅游</span></a>
+				</li>
+												<li class="channel-item item_news_discovery">
+					<a class="item item_12" href="/news_discovery/"><span class="channel-tag news_discovery">探索</span></a>
+				</li>
+												<li class="channel-item item_news_baby">
+					<a class="item item_13" href="/news_baby/"><span class="channel-tag news_baby">育儿</span></a>
+				</li>
+												<li class="channel-item item_news_regimen">
+					<a class="item item_14" href="/news_regimen/"><span class="channel-tag news_regimen">养生</span></a>
+				</li>
+												<li class="channel-item item_news_story">
+					<a class="item item_15" href="/news_story/"><span class="channel-tag news_story">故事</span></a>
+				</li>
+												<li class="channel-item item_news_essay">
+					<a class="item item_16" href="/news_essay/"><span class="channel-tag news_essay">美文</span></a>
+				</li>
+												<li class="channel-item item_news_game">
+					<a class="item item_17" href="/news_game/"><span class="channel-tag news_game">游戏</span></a>
+				</li>
+												<li class="channel-item item_news_history">
+					<a class="item item_18" href="/news_history/"><span class="channel-tag news_history">历史</span></a>
+				</li>
+												<li class="channel-item item_news_food">
+					<a class="item item_19" href="/news_food/"><span class="channel-tag news_food">美食</span></a>
+				</li>
+							</ul>
+		</div>
+	
+</div>
+            </div>
+<script type="text/javascript">
+$(".item_9").addClass("selected");
+
+var cla=$(".more-channels .item_9.selected").parent().attr('class');
+var html=$(".more-channels .item_9.selected").parent().html();
+$(".more-channels .item_9.selected").parent().remove();
+if(cla && html){
+      $('#pagelet-channels .channel-box').append('<li class="'+cla+'">'+html+'</li>');
+}
+var clai=$(".itemi").eq(7).attr('class');
+var htmli=$(".itemi").eq(7).html();
+if(clai && htmli && html){
+      $(".itemi").eq(7).remove();
+      $('.more-channels').prepend('<li class="'+clai+'">'+htmli+'</li>');
+}
+</script>
+
+            <div class="index-main">
+                <div id="pagelet-nfeedlist">
+	<div class="feedcomm" data-node="commItem">
+		<span class="comm-close" data-node="commClose"></span>
+		<a ga_event="click_banner" target="_blank" data-node="commLink"></a>
+	</div>
+	<p class="alert-msg" data-node="alertMsg">
+        <img src="http://test.dede168.com//style/loading_50c5e3e.gif">
+        <span>推荐数据加载中...</span>
+    </p>
+	<div class="unread" data-node="unread" ga_event="click_feed_update"><span>您有未读新闻，点击查看</span></div>
+	<ul data-node="listBox" class="listBox">
+		<li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2150.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/4dd000bb9e25c2b06b6?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2150.html" target="_blank" data-node="title">
+								特稿｜这个网瘾难除的英国人把自己扔到了与世隔绝的苏格兰森林里
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2150.html" target="_blank">Esquire实验室刚刚结束的黑镜实验（点击查看黑镜实验报告）提醒人们，生活在当今超级互联的世界，已经难以想象孤独曾是人类生活中不可或缺的一部分。Esquire英版的编辑，刚</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">时尚先生杂志&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2150&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2150&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2144.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/52100026bab4c7863c7?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2144.html" target="_blank" data-node="title">
+								美国华裔警察梁彼得免于入狱 全美华人曾大游行声援
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2144.html" target="_blank">据人民网报道，曾经引起全美华人大游行的梁彼得案4月19日在纽约宣判：梁警官被判免于坐牢，获五年缓刑以及800小时社区服务。其罪行由过失杀人罪降为刑事疏忽杀人罪。 而央视</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2144&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2144&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2141.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2141.html" target="_blank" data-node="title">
+								中国积极参与大湄公河次区域禁毒国际合作
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2141.html" target="_blank">法制网北京4月19日讯 记者李想 记者今天从国家禁毒办获悉，中国政府积极参与、努力推动国际和区域禁毒事业不断发展，特别是在大湄公河次区域，中方积极发挥地缘大国作用，引</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2141&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2141&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2136.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/5210004f13db00d3399?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2136.html" target="_blank" data-node="title">
+								德国博士真实工资单公开：看到手工资惊呆了
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2136.html" target="_blank">今天我在这里斗胆公布一下老公新鲜出炉的三月份工资条。作为德国东德城市德累斯顿某研究所的半职博士，他每个月的账面工资是1935欧，但七七八八扣掉后，最后实际上到手的只</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2136&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2136&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2134.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/5190001543a56f85071?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2134.html" target="_blank" data-node="title">
+								外媒：中国“创新思维”减少全球恐慌
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2134.html" target="_blank">正式和非正式的全球治理现有框架能否有足够的能力和办法来应对越发沉重的各种全球性“恐慌”？这个问题，似乎世界都越来越希望中国能够给予一个有力的“答案”。近期亚太地</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2134&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2134&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2126.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2126.html" target="_blank" data-node="title">
+								法媒：IS近9个月经济收入缩水近三成 开征新税款
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2126.html" target="_blank">中国网4月20日讯 据法国媒体4月18日报道，从去年开始，伊斯兰国经济收入总体下降了近30%，收入的下滑迫使这一恐怖组织不得不在其势力范围的领土上开始征收新的税款。9个月以</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2126&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2126&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2124.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2124.html" target="_blank" data-node="title">
+								土耳其军警遭爆炸袭击２死６伤
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2124.html" target="_blank">新华社安卡拉４月１９日电（记者郑金发　邹乐）土耳其武装部队总参谋部１９日发表声明说，土耳其武装部队和警方当天在土东南部舍尔纳克省遭爆炸袭击，２名士兵死亡、４名士</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">新华通讯社&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2124&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2124&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2118.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51d000be3c2c5fc9e7d?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2118.html" target="_blank" data-node="title">
+								美南加华人侨团代表认为梁彼得判决公正公平
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2118.html" target="_blank">（美国《侨报》） 中国侨网4月20日电 据美国《侨报》报道，纽约华人警官梁彼得开枪误杀黑人一案19日被纽约高等法院宣判刑事疏忽误杀罪，判处被告5年缓刑(Probation)，外加社</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">中国侨网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2118&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2118&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2117.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2117.html" target="_blank" data-node="title">
+								日本专家认为16日地震后阿苏山喷发由山体滑坡引起
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2117.html" target="_blank">【环球网报道 记者 王欢】据日本共同社4月19日报道,日本京都大学火山研究中心教授大仓敬宏日前接受采访,对阿苏山在熊本县发生里氏7.3级地震的16日出现的喷发现象进行了分析</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">环球网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2117&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2117&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2112.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51d000c9d89adee79c2?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2112.html" target="_blank" data-node="title">
+								西班牙华人屡遭歹徒暴力抢劫 华媒呼吁及时报案
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2112.html" target="_blank">中国侨网4月20日电 据西班牙《欧华报》报道，多年来，旅西华人遭遇歹徒暴力抢劫的事件频繁发生，然而积极报警的华人还是不多。记者在微信朋友圈里获悉，4月17日晚上19:15-1</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">中国侨网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2112&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2112&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2111.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2111.html" target="_blank" data-node="title">
+								中国持续对受旱湄公河补水
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2111.html" target="_blank">据新华社金边4月18日电柬埔寨水资源和气象部发言人占尤塔18日表示，中国持续对受旱湄公河下游补水，惠及包括缅甸、老挝、泰国、柬埔寨和越南等五国湄公河沿岸约6000万人。《</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2111&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2111&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2110.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2110.html" target="_blank" data-node="title">
+								驻澳外交官被催缴罚款
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2110.html" target="_blank">新华社电 澳大利亚《堪培拉时报》19日报道，沙特阿拉伯、俄罗斯等15个国家驻澳外交官有交通违章行为，且未缴清罚款，欠缴总金额高达50万澳元（约合39万美元），澳大利亚政府</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2110&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2110&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2107.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/50100048766b106aa3e?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2107.html" target="_blank" data-node="title">
+								这种嗜酒如命的民族 到处都是瓶瓶罐罐
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2107.html" target="_blank">【波兰华人资讯网】在波兰首都华沙维兹瓦河两畔，有很多居民在夏季夜间喜欢在河边喝酒。但是想要一边享受一边喝酒需要知道的是，河两侧是有区别的，因为左岸与公园相接壤</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">波兰华人资讯&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2107&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2107&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2105.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/5010004c2559467ec2c?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2105.html" target="_blank" data-node="title">
+								印度怪癖女生5年狂吃1公斤头发，大团毛发酷似烂地瓜
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2105.html" target="_blank">在印度，一名17岁的女生最近无法进食，甚至腹痛到无法走路。去了医院之后，她的父母才知道原来她的体内有超过1公斤的头发！医生发现她是患有一种叫做“食毛癖”的精神疾病，</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">奇葩集锦&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2105&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2105&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2104.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2104.html" target="_blank" data-node="title">
+								智利前总统艾尔文去世
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2104.html" target="_blank">新华社圣地亚哥４月１９日电（记者冷彤）智利前总统帕特里西奥·艾尔文·阿索卡尔１９日去世，享年９７岁。智利政府当天宣布将为艾尔文举行为期３天的追悼活动，并于２２日</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">新华通讯社&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2104&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2104&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2100.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/519000622434a972f13?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2100.html" target="_blank" data-node="title">
+								《权力的游戏》第六季预告奥巴马提前看 异鬼袭城小恶魔淡定指点江山
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2100.html" target="_blank">《权力的游戏》第六季再度发布预告 异鬼袭城小恶魔淡定指点江山，导演称奥巴马已经提前看完第六季。 《权力的游戏》第六季曝光全新预告!!囧雪诺死不瞑目，洋葱骑士愤怒对抗</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2100&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2100&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2101.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/51b000642a37228a209?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2101.html" target="_blank" data-node="title">
+								美华裔教授放弃终身教职开公司 推动中美旅游
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2101.html" target="_blank">Cal Poly Pomona柯林斯酒店管理学院教授张简，放弃教职创办旅游智力公司。（美国《世界日报》/启铬 摄） 中国侨网4月20日电 据美国《世界日报》报道，在美国大学院校担任教</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">中国侨网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2101&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2101&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2097.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2097.html" target="_blank" data-node="title">
+								在丹麦难民约九成尚未就业
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2097.html" target="_blank">文章来源： 文章类型： 丹麦《今日新闻》4月19日报道，据丹麦雇主协会（DEA）最新统计数据，2013年在丹麦获得难民资格的人员中，现有88%处于失业状态，靠领取社会救济金度日</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2097&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2097&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2096.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2096.html" target="_blank" data-node="title">
+								24小时国际要闻Top10：阿富汗国家安全机构遭袭致３００余死伤
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2096.html" target="_blank">【要闻一】巴西总统罗塞夫说将斗争到底在巴西众议院通过总统弹劾案后，总统罗塞夫１８日首次发表讲话说，她对此感到“不公与愤慨”，并将与这种事实上的“政变”斗争到底。</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2096&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2096&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2094.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2094.html" target="_blank" data-node="title">
+								地中海发生翻船事故 数百难民或已遇难
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2094.html" target="_blank">【环球网综合报道】据俄罗斯新闻频道4月18日消息,地中海再次发生难民船翻船事故,可能有400人已遇难。当地时间4月18日,一艘载着400多名难民的船只在地中海倾覆,多数人已遇难</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">环球网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2094&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2094&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2091.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2091.html" target="_blank" data-node="title">
+								光大金融租赁同一天向国内航企交付两架飞机
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2091.html" target="_blank">《中国民航报》、中国民航网 记者曾晓新 报道：近日，光大金融租赁协助客户顺利完成两架商用飞机的交付使用。其中，光大金融租赁向南航交付了一架空客A330-300飞机，向东海</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2091&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2091&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2088.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2088.html" target="_blank" data-node="title">
+								Numbers 数字
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2088.html" target="_blank">1576天截至18日,日本首相安倍晋三的累计在任天数。这一天数使他成为日本战后执政时间第五长的首相,不过这一统计并非指连续执政,而是包含了安倍第一次担任首相时的在任天数。</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">新快报&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2088&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2088&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2087.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/51a00095df1819c1b53?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2087.html" target="_blank" data-node="title">
+								45%的美国人不用再向联邦政府交个税了！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2087.html" target="_blank">金融界美股讯：许多美国人不用在担心用他们的血汗钱给美国政府交税了。据美国税收政策中心（Tax Policy Center）公布的数据预计，今年将有7750万名美国人，约占美国总人口的</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2087&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2087&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2084.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2084.html" target="_blank" data-node="title">
+								全球气温连续１１个月创同期新高
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2084.html" target="_blank">新华社华盛顿４月１９日电（记者林小春）美国国家海洋和大气管理局１９日说，今年３月是自１８８０年有气温记录以来最热的３月，全球气温也第一次连续１１个月创同期新高。</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">新华通讯社&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2084&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2084&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_world/2082.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/5210002a1ce1cc62e0d?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_world/2082.html" target="_blank" data-node="title">
+								人类朋友伸援手，俄罗斯民防人员帮助四头鲸解除浮冰围困
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_world/2082.html" target="_blank">当地时间2016年4月19日，俄罗斯库页岛，民防部工作人员帮助四头在鄂霍次克海被浮冰困住的鲸。 图片来源：视觉中国</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">视觉中国图播快报&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=9&id=2082&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=9&id=2082&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<a href="javascript:;" class="loadmore" data-node="loadMore">正在为您加载更多...</a>
+        <div class="indexListLoading" id="nomoreresults" style="display:none">所有内容加载完毕</div>
+
+         <div class="pageBox pageNo">
+          <a title="Total record">&nbsp;<b>67</b> </a>&nbsp;&nbsp;<a href="/news_world/index.html">首页</a>&nbsp;<a href="/news_world/index.html">上一页</a>&nbsp;<a href="/news_world/index.html">1</a>&nbsp;<b>2</b>&nbsp;<a href="/news_world/index_3.html">3</a>&nbsp;<a href="/news_world/index_3.html">下一页</a>&nbsp;<a href="/news_world/index_3.html">尾页</a>
+         </div>
+</div>
+            </div>
+            <div class="index-right">
+                <div id="pagelet-weather">
+					<iframe allowtransparency="true" frameborder="0" width="250" height="98" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=1&bd=0&k=000000&f=&q=1&e=1&a=1&c=54511&w=250&h=98&align=center"></iframe>
+				</div>
+
+                
+                <div id="pagelet-commbox">
+					<!--<a ga_event="click_banner" class="img-box" target="_blank" data-node="link">
+						<img data-node="img" onload="this.style.opacity=1">
+					</a>
+					<span class="comm-label">推广</span>-->
+					<!--广告位 右侧250x250_1 start-->
+					<script src="/d/js/acmsd/thea1.js" type="text/javascript"></script>
+					<!--广告位 右侧250x250_1 end-->
+				</div>
+
+                <div id="pagelet-hotnews">
+					<div class="head">
+					  实时要闻
+					</div>
+					<div class="news">
+											</div>
+				</div>
+
+                <div id="pagelet-stock">
+				  <div class="stock_head">
+					
+				  </div>
+				</div>
+
+                <div id="pagelet-company">
+				  <div class="company" id="toutiaoCompanyWrapper">
+					<span class="J-company-name">&#169; 2016 仿今日头条 http://test.dede168.com/</span>
+					<a href="http://www.12377.cn/" target="_blank" ga_event="click_about">中国互联网举报中心</a>
+					<a href="http://www.miibeian.gov.cn/" target="_blank" ga_event="click_about">京公网安备 11010802020116号</a>
+					<a href="/license/" class="icp" target="_blank">网络文化经营许可证</a>
+					<a href="/chengnuoshu/" target="_blank">跟帖评论自律管理承诺书 </a>
+					<span>违法和不良信息举报：xxx@xxx.com</span>
+					<span style="display:none">统计代码填到这里 </span>
+					
+				  </div>
+
+				  
+				</div>
+<link type="text/css" rel="stylesheet" href="/style/loginbox.css">
+<div id="bgDiv" style="display:none;"></div> 
+
+<script type="text/javascript">
+var IsMousedown,LEFT,TOP,lggood;
+	document.getElementById("Mdown").onmousedown=function(e){
+
+	lggood = document.getElementById("lggoodBox");
+	IsMousedown = true;
+	e = e||event;
+	LEFT = e.clientX - parseInt(lggood.style.left);
+	TOP = e.clientY - parseInt(lggood.style.top);
+	document.onmousemove = function(e){
+		e = e||event;
+		if (IsMousedown){
+			lggood.style.left = e.clientX - LEFT + "px";
+			lggood.style.top = e.clientY - TOP + "px";
+		}
+
+	}
+	document.onmouseup=function(){
+		IsMousedown=false;
+	}
+
+}
+$(function(){
+  $('#loginboxbtn').click(function(){
+        $('#bgDiv,#lggoodBox').show();
+   });
+   
+})
+</SCRIPT>
+
+
+            </div>
+            <div id="pagelet-nfeedback">
+				<ul>
+					<li>
+						<a ga_event="click_feed_newsrefresh" class="refresh" href="javascript:;" data-node="refresh"></a>
+						<!--<a ga_event="gotop" class="btn" href="javascript:;" data-node="back">
+							<i class="icon icon-back"></i>
+						</a>-->
+					</li>
+					<!--<li>
+						<a ga_event="feedback" class="btn" href="javascript:;" data-node="feedback">
+							<i class="icon icon-comment"></i>
+						</a>
+					</li>-->
+				</ul>
+			</div>
+        </div>
+    </div>
+    <script>
+        window.scrollTo(0, 0);
+
+        window.gaqpush = function (ga_action, ga_label){
+            ga('send', 'event','/' , ga_action, ga_label);
+        };
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-28423340-5', 'auto');
+        ga('send', 'pageview');
+
+
+        $("body").on('click', '[ga_event]', function(e){
+             var $this =  $(this);
+             var ga_category = $this.attr('ga_category') || '/';
+             var ga_action = $this.attr('ga_event');
+             var ga_label = $this.attr('ga_label');
+             var ga_value = $this.attr('ga_value')||1;
+
+             ga('send', 'event', ga_category, ga_action, ga_label, ga_value);
+        });
+
+    </script>
+
+    <script>
+        window.scrollTo(0, 0);
+		$(document).scroll(function() {
+			var scrolltop=$(document).scrollTop();
+			if(scrolltop>1200){
+				$('#pagelet-commbox').css({'position':'fixed','top':'100px'});
+			}else{
+				$('#pagelet-commbox').css({'position':'','top':''});
+			}
+			if(scrolltop>30){
+				$('.topbarWrapper').css({'height':'4px'});
+			}else{
+				$('.topbarWrapper').css({'height':'24px'});
+			}
+		});
+
+        
+    </script>
+<script src="/e/extend/DoTimeRepage/"></script>
+</body>
+</html>

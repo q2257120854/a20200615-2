@@ -1,0 +1,1 @@
+{"money":"0.2","name":"\u7f16\u53f7:80|49--\u4f59\u989d\u5145\u503c","out_trade_no":"20191124090229","pid":"487810","trade_no":"2019112409023073322","trade_status":"TRADE_SUCCESS","type":"alipay","sign":"04e9383e2173017bbacd5a66a790a264","sign_type":"MD5"}

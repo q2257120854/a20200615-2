@@ -1,0 +1,87 @@
+.title_box{
+	padding-top: 45px;
+	text-align: center;
+}
+.title_cp_h{
+	font-weight: normal;
+	position:relative;
+	font-size: 22px;
+}
+.title_cp_p{
+	font-size: 14px;
+}
+.title_cp_h:before{
+	content: '';
+    display: block;
+    position: absolute;
+    width: 195px;
+    height: 1px;
+    background-color: #DFDFDF;
+    bottom: 0;
+    left: 230px;
+}
+.title_cp_h:after{
+	content: '';
+    display: block;
+    position: absolute;
+    width: 195px;
+    height: 1px;
+    background-color: #DFDFDF;
+    bottom: 0;
+    right: 230px;
+}
+/*---*/
+.contact-info{
+	margin-top: 40px;
+}
+.contact-info ul{
+	    margin-bottom: 50px;
+}
+.contact_li{
+	width: 20%;
+    margin-right: 40px;
+    height: 120px;
+    border: 1px solid #E2E1E1;
+    font-size: 18px;
+    color: #5B5B5B;
+    padding: 40px 10px;
+}
+.contact_li a{
+	display: block;
+	color: #5B5B5B;
+}
+.contact_li p{
+	font-size: 16px;
+    white-space: nowrap;
+}
+
+.contact_li:last-of-type{
+	margin-right: 0;
+}
+.contact_li:before{
+	float: left;
+    content: '';
+    margin-right: 25px;
+    display: block;
+    width: 42px;
+    height: 42px;
+	background: url(/public/static/home/img/tel.png);
+}
+.contact_li:nth-of-type(2):before{
+	background: url(/public/static/home/img/workday.png);
+}
+.contact_li:nth-of-type(3):before{
+	background: url(/public/static/home/img/qq_cont.png);
+}
+.contact_li:nth-of-type(4):before{
+	background: url(/public/static/home/img/wc.png);
+}
+.contact_li h4{
+	font-size: 18px;
+}
+.bot_p{
+	text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}    

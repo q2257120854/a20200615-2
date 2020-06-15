@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+
+<link  href="http://m.test.dede168.com/style/common.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://m.test.dede168.com/style/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/common.js" ></script>
+<meta name="keywords" content="科技,浏览器,电信,软件," />
+<meta name="description" content="技术干货（3 of 5）：大型网站系统架构" />
+<title>技术干货（3 of 5）：大型网站系统架构 - 仿今日头条</title>
+</head>
+<body>
+<div class="header" style="margin-top: 0;">
+<div class="nav_header_bg_2">
+	<a href="javascript:history.go(-1);" class="nav_header_back"></a>
+		<a href="javascript:void(0)"  class="ico_nav_info" style="float:right;"><em>&equiv;</em></a>	
+	<center class="nav_header_center">仿今日头条.科技</center>
+	<div class="clear"></div>
+</div>
+</div>
+	<div class="content">
+ <h1>技术干货（3 of 5）：大型网站系统架构</h1>
+   <div class="headbar">
+                <span>文 / 咨询范</span>
+                <div>
+                <em class="time">2016-04-20 20:13</em>
+				</div>
+    </div>
+	<div id="contentText">
+        <div class="contentText">
+			<p>&gt;&gt;&gt;&gt;<strong>咨询君导读</strong></p><p><strong>从前面微信红包的场景设计</strong>（分析与实战：微信红包体系的整理）<strong>，到电商秒杀系统的设计</strong>（秒杀系统架构分析与实战）<strong>的过渡，我们管中窥豹来看一下大型网站系统架构的演化及其性能 。</strong></p><p><strong>一个成熟的大型网站（如淘宝、京东等）的系统架构并不是开始设计就具备完整的高性能、高可用、安全等特性，它总是随着用户量的增加，业务功能的扩展逐渐演变完善的。</strong>在这个过程中，开发模式、技术架构、设计思想也发生了很大的变化，就连技术人员也从几个人发展到一个部门甚至一条产品线。</p><p>所以成熟的系统架构是随业务扩展而完善出来的，并不是一蹴而就；不同业务特征的系统，会有各自的侧重点，例如淘宝，要解决海量的商品信息的搜索、下单、支付，例如腾讯，要解决数亿的用户实时消息传输，百度它要处理海量的搜索请求，他们都有各自的业务特性，系统架构也有所不同。</p><p>尽管如此我们也可以从这些不同的网站背景下，找出其中共用的技术，这些技术和手段可以广泛运行在大型网站系统的架构中，下面就通过介绍大型网站系统的演化过程，来认识这些技术和手段。</p><p>一、最开始的网站架构</p><p>最初的架构，应用程序、数据库、文件都部署在一台服务器上，如图：</p><p>二、应用、数据、文件分离</p><p>随着业务的扩展，一台服务器已经不能满足性能需求，故将应用程序、数据库、文件各自部署在独立的服务器上，并且根据服务器的用途配置不同的硬件，达到最佳的性能效果。</p><p>三、利用缓存改善网站性能</p><p>在硬件优化性能的同时，同时也通过软件进行性能优化，在大部分的网站系统中，都会利用缓存技术改善系统的性能，使用缓存主要源于热点数据的存在，大部分网站访问都遵循28原则（即80%的访问请求，最终落在20%的数据上），所以我们可以对热点数据进行缓存，减少这些数据的访问路径，提高用户体验。</p><p>缓存实现常见的方式是本地缓存、分布式缓存。当然还有CDN、反向代理等，这个后面再讲。本地缓存，顾名思义是将数据缓存在应用服务器本地，可以存在内存中，也可以存在文件，OSCache就是常用的本地缓存组件。本地缓存的特点是速度快，但因为本地空间有限所以缓存数据量也有限。分布式缓存的特点是，可以缓存海量的数据，并且扩展非常容易，在门户类网站中常常被使用，速度按理没有本地缓存快，常用的分布式缓存是Memcached、Redis。</p><p>四、使用集群改善应用服务器性能</p><p>应用服务器作为网站的入口，会承担大量的请求，我们往往通过应用服务器集群来分担请求数。应用服务器前面部署负载均衡服务器调度用户请求，根据分发策略将请求分发到多个应用服务器节点。</p><p>常用的负载均衡技术硬件的有F5，价格比较贵，软件的有LVS、Nginx、HAProxy。LVS是四层负载均衡，根据目标地址和端口选择内部服务器，Nginx是七层负载均衡和HAProxy支持四层、七层负载均衡，可以根据报文内容选择内部服务器，因此LVS分发路径优于Nginx和HAProxy，性能要高些，而Nginx和HAProxy则更具配置性，如可以用来做动静分离（根据请求报文特征，选择静态资源服务器还是应用服务器）。</p><p>五、数据库读写分离和分库分表</p><p>随着用户量的增加，数据库成为最大的瓶颈，改善数据库性能常用的手段是进行读写分离以及分表，读写分离顾名思义就是将数据库分为读库和写库，通过主备功能实现数据同步。分库分表则分为水平切分和垂直切分，水平切换则是对一个数据库特大的表进行拆分，例如用户表。垂直切分则是根据业务不同来切换，如用户业务、商品业务相关的表放在不同的数据库中。</p><p>六、使用CDN和反向代理提高网站性能</p><p>假如我们的服务器都部署在成都的机房，对于四川的用户来说访问是较快的，而对于北京的用户访问是较慢的，这是由于四川和北京分别属于电信和联通的不同发达地区，北京用户访问需要通过互联路由器经过较长的路径才能访问到成都的服务器，返回路径也一样，所以数据传输时间比较长。对于这种情况，常常使用CDN解决，CDN将数据内容缓存到运营商的机房，用户访问时先从最近的运营商获取数据，这样大大减少了网络访问的路径。比较专业的CDN运营商有蓝汛、网宿。</p><p>而反向代理，则是部署在网站的机房，当用户请求达到时首先访问反向代理服务器，反向代理服务器将缓存的数据返回给用户，如果没有没有缓存数据才会继续走应用服务器获取，也减少了获取数据的成本。反向代理有Squid，Nginx。</p><p>七、使用分布式文件系统</p><p>用户一天天增加，业务量越来越大，产生的文件越来越多，单台的文件服务器已经不能满足需求。需要分布式的文件系统支撑。常用的分布式文件系统有NFS。</p><p>八、使用NoSql和搜索引擎</p><p>对于海量数据的查询，我们使用nosql数据库加上搜索引擎可以达到更好的性能。并不是所有的数据都要放在关系型数据中。常用的NOSQL有mongodb和redis，搜索引擎有lucene。</p><p>九、将应用服务器进行业务拆分</p><p>随着业务进一步扩展，应用程序变得非常臃肿，这时我们需要将应用程序进行业务拆分，如百度分为新闻、网页、图片等业务。每个业务应用负责相对独立的业务运作。业务之间通过消息进行通信或者同享数据库来实现。</p><p>十、搭建分布式服务</p><p>这时我们发现各个业务应用都会使用到一些基本的业务服务，例如用户服务、订单服务、支付服务、安全服务，这些服务是支撑各业务应用的基本要素。我们将这些服务抽取出来利用分部式服务框架搭建分布式服务。淘宝的Dubbo是一个不错的选择。</p><p>&gt;&gt;&gt;&gt;</p><p><strong>小结</strong></p><p><strong>大型网站的架构是根据业务需求不断完善的，根据不同的业务特征会做特定的设计和考虑，本文只是讲述一个常规大型网站会涉及的一些技术和手段。</strong></p><p>咨询君有话说：</p><p>在<strong>大型网站系统架构的演化</strong>中，介绍了<strong>大型网站的演化过程</strong>，<strong>期间穿插了一些技术和手段，</strong>我们可以从中看出一个大型网站的轮廓，但想要掌握设计开发维护大型网站的技术，需要我们一步一步去研究实践。</p><p><strong>接着，我们将继续讲述大型网站中一个重要的要素：</strong><strong>性能，它是大型网站的灵魂。</strong></p><p>什么是性能</p><p>有人说性能就是访问速度快慢，这是最直观的说法，也是用户的真实体验。一个用户从输入网址到按下回车键，看到网页的快慢，这就是性能。对于我们来说，需要去挖掘这个过程，因为这决定我们怎么去做性能优化。</p><p><strong>这中间发生了什么？</strong></p><p>用户访问网站的整个流程：用户输入网站域名，通过DNS解析，找到目标服务器IP，请求数据经互联网达到目标服务器，目标服务器收到请求数据，进行处理（执行程序、访问数据库、文件服务器等）。处理完成，将响应数据又经互联网返回给用户浏览器，浏览器得到结果进行计算渲染显示给用户。</p><p><strong>我们把整个过程，分为三段路径：</strong></p><p>1、第一段在用户和浏览器端，主要负责发出用户请求，以及接受响应数据进行计算渲染显示给用户；</p><p>2、第二段在网络上，负责对请求数据、响应数据的传输；</p><p>3、第三段在网站服务器端，负责对请求数据进行处理（执行程序、访问数据库、文件等），并将结果返回；</p><p>&gt;&gt;&gt;&gt;</p><p>第一路径</p><p>第一路径花费的时间包括输入域名发起请求的时间和浏览器收到响应后计算渲染的时间。</p><p><strong>输入域名发起请求，实质过程是：</strong></p><p>1、用户在浏览器输入要访问的网站域名；</p><p>2、本地DNS请求网站授权的DNS服务器对域名进行解析，并得到解析结果即IP地址（并将IP地址缓存起来）。</p><p>3、向目标IP地址发出请求。</p><p>从这个过程我们可以看到，优化的地方主要是减少DNS解析次数，而如果用户浏览器设置了缓存，则再第二次访问相同域名的时候就不会去请求DNS服务器，直接用缓存中的IP地址发出请求。因此这个过程主要取决于浏览器的设置。现在主流的浏览器默认设置了DNS的预取功能（DNS Prefetch），当然你也可以主动告知浏览器我的网站需要做DNS预取：</p><p><strong>&lt;meta http-equiv="x-dns-prefetch-control" content="on" /&gt;</strong></p><p><strong>浏览器将数据进行计算渲染的过程：</strong></p><p>1、浏览器解析响应数据；</p><p>2、浏览器创建DOM树；</p><p>3、浏览器下载CSS样式，并应用到DOM树，进行渲染；</p><p>4、浏览器下载JS文件，开始解析执行；</p><p>5、显示给用户。</p><p>从这个过程，我们可以找出不少可以优化的地方。首先我们可以尽量控制页面大小，使得浏览器解析的时间更短；并且将多个CSS文件、JS文件文件合并压缩减少文件下载的次数和大小；另外注意将CSS放在页面前面，JS访问页面后面，这样便于页面首先能渲染出来，再执行js脚本，对于用户来说有更好的体验。最后我还可以设置浏览器缓存，下次访问时从缓存读取内容，减少http请求。</p><p><strong>&lt;meta http-equiv="Cache-Control" content="max-age=5" /&gt;</strong></p><p>该代码说明了浏览器启用了缓存并在5秒内不会再次访问服务器。注意缓存的设置需要结合你的业务特性来适当配置。</p><p><strong>以下是京东商城的HTML简图：</strong></p><p>css样式放在html前面，并且进行了合并。</p><p>大多数的JS文件放在页尾。</p><p>&gt;&gt;&gt;&gt;</p><p>第二路径</p><p>第二路径在网络上，花费的时间同样包括请求数据的传输时间和响应数据的传输时间，这个两个时间取决于数据传输的速度，这里我们要讲一个名词“带宽”。</p><p>什么是带宽，我们经常说带宽10M，20M是什么意思？我的带宽20M，这意味着什么？我们知道带宽速度分为上行、下行速度，也就是上传和下载的速度。带宽20M对于用户来说则是下载速度20M（20×1024×1024比特率），换算成字节20M/8=2.5M。也就是说20M的带宽下载速度理论可达2.5M/s，而对于家庭用户而言上传速度一般比下载速度小的多，大约是不到十分之一。</p><p>而对于网站服务器（企业用户）来说，则不然，一般上行速度等于下载速度。这也是运营商根据实际需求分配的，毕竟用户的主要需求是下载数据，而不是上传数据。</p><p>整个流程从传输方式看就是：用户发送请求数据（上传），网站服务器接受请求数据（下载），网站服务器返回响应数据（上传），用户接受响应数据（下载）。</p><p><strong>对于用户来说，上传数据是很小的（Url参数），而下载数据是较大的（响应数据）；</strong></p><p><strong>对于服务器来说，下载数据是很小的（url参数），上传数据是较大（响应数据）。</strong></p><p>理解了这个，我们可以解释为什么有时用户反映为什么自己的带宽足够，但打开某些网站仍然很慢，就是因为尽管用户的下载速度很快，但网站服务器的上传速度很慢，这就像一个抽水管和一个出水管，不管抽水管再大，但出水管很小，同样抽到的水量是有限的。</p><p>了解了这个原理我们来看怎么提高数据传输的速度，首先用户的上传、下载速度我们是无法决定的，我们能决定的是网站服务器的上传、下载速度，所以我们可以做的是适当的增加服务器带宽（带宽是很贵的，盲目的增加只会增加不必要成本）。</p><p>购买合适的带宽需要根据网站业务特性、规模以及结合运维人员的经验来选择。通常可以考虑的算法，即根据一次响应数据的大小，乘以PV数，除以对应的高峰时间段，从而大致估算出网站带宽的需求。</p><p><strong>下面我们继续进一步研究第二路径：</strong></p><p>上图表示用户访问网站服务器时网络的大致情况，从图上可以看出假设网站服务器从电信网络接入，而用户A作为电信的宽带用户，则可以通过电信骨干网快速的访问到网站服务器。用户B,用户C作为移动和联通用户需要通过运营商的互联互通经过较长路径才能访问到服务器。</p><p><strong>针对这种情况，我们可以采取以下方法来优化：</strong></p><p>1、在各运营商发达的地区的IDC（互联网数据中心，可以理解成机房）部署网站服务器，各运营商的用户即可通过各自的骨干网访问服务器。</p><p>2、购买代理服务，也就是原来联通用户需要通过联通骨干网——&gt;联通互联互通路由器——&gt;电信骨干网——&gt;网站服务器的过程。通过代理服务，代理服务器直连到电信骨干网，访问网站服务器。</p><p>2、在主要地区城市购买CDN服务，缓存对应的数据，用户可先从最近的CDN运营商获取请求数据。</p><p>&gt;&gt;&gt;&gt;</p><p>第三路径</p><p>第三路径主要是网站服务器内部处理的过程，当中包括执行程序、访问文件、数据库等资源。</p><p><strong>这是对于我们来说最可以发挥的地方：</strong></p><p>1、使用缓存，根据需要使用本地缓存或分布式缓存；</p><p>2、使用异步操作，这种方式不仅可以提高性能，也提高了系统的扩展性；</p><p>3、代码优化；</p><p>4、存储优化；</p><p>&gt;&gt;&gt;&gt;</p><p>缓存</p><p>如果缓存数据较少，可以利用OSCache实现本地缓存：</p><p>当缓存数据过多时，利用Memcached实现分布式缓存：</p><p>Memcached实现分布式缓存，缓存服务器之间是互不通信的，也就是我们可以方便的通过增加Memcached服务器对系统进行扩展。</p><p>&gt;&gt;&gt;&gt;</p><p>异步操作</p><p>使用同步请求的方式，在高并发的情况下，会对数据库造成很大的压力，也会让用户感觉响应时间过长。异步请求方式，则可以快速的对用户做出响应，而具体的数据库操作请求，则通过消息队列服务器发送给数据库服务器，做具体的插入操作。插入操作的结果则已其他方式通知客户端。例如一般在订票系统当中，出票行为就是异步完成，最终的出票结果会以邮件或其他方式告知用户。</p><p>&gt;&gt;&gt;&gt;</p><p>代码优化</p><p>这里就不在详细描述，另一篇随笔《怎样编写高质量的java代码》对代码质量和风格做过大致的介绍，有兴趣可以看一下。</p><p>&gt;&gt;&gt;&gt;</p><p>存储优化</p><p>大型网站中海量的数据读写对磁盘造成很大压力，系统最大的瓶颈还是在磁盘的读写。可以考虑使用磁盘阵列、分布式储存来改善存储的性能。</p><p><strong>性能的指标和测试</strong></p><p>上面通过解析用户访问网站的过程来思考怎么提高用户感知的性能，对于用户来言性能就是快和慢。但对于我们来说，不能这样简单描述，我们需要去量化他，用一些数据指标去衡量它。这里讲到几个名词：响应时间、并发量、吞吐量。</p><p><strong>响应时间：</strong>就是用户发出请求到收到响应数据的时间；</p><p><strong>并发量：</strong>就是系统同时能处理多少用户请求；</p><p><strong>吞吐量：</strong>就是单位时间内系统处理的请求数量；</p><p>为了通俗的了解这三个概念，我们以高速公路的收费站为例子：响应时间是指一辆车经过收费站的时间，也就是车辆从进入收费站、付钱、开闸、离开收费站的时间；并发量是指这个收费站同时能通行多少辆车，可以理解为收费站的出口数量。吞吐量是指：在一段时间内，这个收费站通往了多少了车。</p><p><strong>这个例子不晓得恰不恰当。</strong></p><p>对于性能测试来说，基本也是围绕这些方面来测试，下图说明了性能测试的过程：</p><p>左图表示响应时间和并发用户量的二维坐标图，从图上可以看出，并发用户量在一定量增加时，响应时间很短，并且没有太大的起伏，这表示系统目前处于日常运行期，可以很快处理用户请求（A点之前）；</p><p>随着并发量的增加，系统处于请求高峰期，但仍然可以有序的处理用户请求，响应时间较日常有所增加（A、B之间）；当并发量增加到一定数量时，超过了系统的负载能力，系统处于濒临崩溃的边缘（B、C之间），响应时间严重过长，直到系统崩溃。</p><p>右图表示吞吐量与并发用户量的二维坐标图，可以看出，随着并发用户量的增加，吞吐量逐渐增加；在并发量到达一定量时，由于系统处理能力达到最大，吞吐量增加放缓；当并发量超过系统负载时（E点），系统处理能力开始下降，不能再请求增加的用户请求，吞吐量反而降低。</p><p>&gt;&gt;&gt;&gt;</p><p><strong>小结</strong></p><p><span>本文通过用户访问网站的过程，分析了三个路径过程中提高性能的想法和手段，最后介绍了描述性能的指标，并对性能测试做了简要说明。</span></p><p>来源：咨询范订阅号 zixunfan</p>		</div>
+		
+	</div>
+</div>
+<div class="share">
+<div class="sharelist">
+<script type="text/javascript">
+if(navigator.userAgent.indexOf('UCBrowser') > -1) {
+    var CONFIG = {};
+        CONFIG['wx_share_link'] = 'http://test.dede168.com//news_tech/2598.html',
+        CONFIG['wx_share_title'] = '技术干货（3 of 5）：大型网站系统架构',
+        CONFIG['wx_share_desc'] = '技术干货（3 of 5）：大型网站系统架构',
+        CONFIG['img_url'] = '/e/data/images/notimg.gif';
+document.writeln("<span class='ucshare'><a href='javascript:;' class='share-wxtimeline'></a><a href='javascript:;' class='share-wxfriend'></a></span>");
+document.writeln('<script type="text/javascript" src="/style/Zepto.js"><'+'/script><script type="text/javascript" src="/style/wx_share.js"><'+'/script>')
+}
+</script>
+<span class="bdsharebuttonbox">				
+					<a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+					<a href="javascript:;" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+					<a href="javascript:;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+</span>
+</div>
+</div>
+<div class="cmt">
+<div id="SOHUCS" sid="2598"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cys3T11v7&conf=prod_8d01521f822b32f1a30f058371f6eeef">
+</script>
+</div>
+<div class="article">
+<div class="listsbox boxmt10">
+<h2>推荐阅读：</h2>
+  <ul class="list_pic" id="content_list">
+				<li class="clear">
+			<a href="/news_tech/2657.html" title="微软小娜与美团外卖达成合作，智能自动订外卖？">
+				<dl>
+					<dd>
+						<h3>微软小娜与美团外卖达成合作，智能自动订外卖？</h3>
+						<i></i><em>文 / IT之家</em>
+					</dd>
+					<dt><img src="http://p3.pstatp.com/large/4ca000008cb2293d2fe?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_tech/2655.html" title="网站要给用户好的体验必须遵循视线金三角分布法">
+				<dl>
+					<dd>
+						<h3>网站要给用户好的体验必须遵循视线金三角分布法</h3>
+						<i></i><em>文 / 双成际</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/48400056470d39cf05e?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_entertainment/1842.html" title="一个帅到秒杀男人们的女人">
+				<dl>
+					<dd>
+						<h3>一个帅到秒杀男人们的女人</h3>
+						<i></i><em>文 / 美空秘密基地</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/48400069373634b7361?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_tech/2656.html" title="京盾华鼎：将整合线下资源打造O2O跨境电商">
+				<dl>
+					<dd>
+						<h3>京盾华鼎：将整合线下资源打造O2O跨境电商</h3>
+						<i></i><em>文 / </em>
+					</dd>
+					<dt><img src=""></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_society/2581.html" title="不管出于什么原因，上班工作这些事可不要干">
+				<dl>
+					<dd>
+						<h3>不管出于什么原因，上班工作这些事可不要干</h3>
+						<i></i><em>文 / 庄里职场</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/484000a7b0316e4ffa9?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+		       </ul>
+
+</div>
+</div>
+<div class="block15"></div>
+<div id="back-to-top">
+<a class="stop" href="javascript:"><span></span></a>
+<a class="scmt" href="javascript:"><span></span></a>
+</div>
+<div class="full"></div>
+<div class="side">
+<ul>
+<a href="/">首页</a>
+ <a id="sn1" href="">热点</a>
+<a id="sn1" href="">社会</a>
+<a id="sn1" href="">娱乐</a>
+<a id="sn1" href="">科技</a>
+<a id="sn1" href="">汽车</a>
+<a id="sn1" href="">体育</a>
+<a id="sn1" href="">财经</a>
+<a id="sn1" href="">军事</a>
+<a id="sn1" href="">国际</a>
+<a id="sn1" href="">时尚</a>
+<a id="sn1" href="">旅游</a>
+<a id="sn1" href="">探索</a>
+<a id="sn1" href="">育儿</a>
+<a id="sn1" href="">养生</a>
+<a id="sn1" href="">故事</a>
+<a id="sn1" href="">美文</a>
+<a id="sn1" href="">游戏</a>
+<a id="sn1" href="">历史</a>
+<a id="sn1" href="">美食</a>
+</ul>
+</div>
+
+<div style="clear: both;"></div>
+<div class="footer_main">Copyright &copy;  2015-2016 仿今日头条 版权所有
+<center>统计代码填到这里</center>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+window._bd_share_config = {
+		common : {
+			bdText : '技术干货（3 of 5）：大型网站系统架构',	
+			bdDesc : '技术干货（3 of 5）：大型网站系统架构',	
+			bdUrl : 'http://test.dede168.com//news_tech/2598.html', 	
+			bdPic : '/e/data/images/notimg.gif'
+		},
+		share : [{
+			"bdSize" : 32
+		}],
+}
+</script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/show.js"></script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/form.js"></script>
+<form action="" method="post" id="AjaxShowAll"></form>
+<div style="display:none;">
+<script src="http://m.test.dede168.com/e/extend/DoTimeRepage/"></script>
+<script src="http://test.dede168.com//e/public/ViewClick/?classid=4&id=2598&addclick=1"></script></div>

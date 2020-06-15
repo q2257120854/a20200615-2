@@ -1,0 +1,40 @@
+---------------------------------------------------------------
+[ 2018-09-17T13:48:03+08:00 ] 103.219.31.15 112.17.89.12 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ info ] www.5chevip.com/index/lianlianpay/doPay?b-pay-amount=100 [运行时间：0.074481s][吞吐率：13.43req/s] [内存消耗：4,014.22kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianpay',
+    2 => 'doPay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.5chevip.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.5chevip.com/ucenter/payment.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sf9m2u9jlhscd8af8db01ak351',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'b-pay-amount' => '100',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000505s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.006069s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianpay->doPay[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000313s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1313 ) LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1313 , 100 , 0 , '13131537163283722458' , '2018-09-17 13:48:03') [ RunTime:0.000331s ]

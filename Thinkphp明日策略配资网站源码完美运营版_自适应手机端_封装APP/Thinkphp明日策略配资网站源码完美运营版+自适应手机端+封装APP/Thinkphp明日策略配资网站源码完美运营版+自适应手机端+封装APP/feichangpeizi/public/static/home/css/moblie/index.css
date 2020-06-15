@@ -1,0 +1,205 @@
+[class^="icon_"]{
+	display: inline-block;
+	background-size: 100% 100%;
+}
+img{
+	width: 100%;
+	vertical-align: middle;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+}
+em,
+i,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+:root{
+	--color_red:#e60012;
+	--color_green:#19B777;
+	
+}
+.color_red{
+	color: #e60012;
+}
+.color_green{
+	color:#19B777;
+}
+/*底部*/
+nav.ml_tab{
+	background-color: rgba(0,0,0,.8);
+}
+nav.ml_tab .mui-icon:before{
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+    background-size: 100% 100%;
+}
+nav.ml_tab .mui-icon-home:before{
+	background-image: url(/public/static/home/img/moblie/home1.png);
+}
+nav.ml_tab .mui-icon-phone:before{
+	background-image: url(/public/static/home/img/moblie/share1.png);
+}
+nav.ml_tab .mui-icon-email:before{
+	background-image: url(/public/static/home/img/moblie/mine1.png);
+}
+nav.ml_tab .mui-tab-item.mui-active {
+	color: #e60012 !important;
+}
+nav.ml_tab .mui-active .mui-icon-home:before{
+	background-image: url(/public/static/home/img/moblie/home2.png);
+}
+nav.ml_tab .mui-active .mui-icon-phone:before{
+	background-image: url(/public/static/home/img/moblie/share2.png);
+}
+nav.ml_tab .mui-active .mui-icon-email:before{
+	background-image: url(/public/static/home/img/moblie/mine2.png);
+}
+/*标题*/
+#header{
+	background-color: #fff;
+}
+#header .mui-icon-bars:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(/public/static/home/img/moblie/kf.png);
+    background-size: 100% 100%;
+}
+#header .free{
+	z-index: 998;
+    line-height: 44px;
+    color: #e60012;
+    font-size: 14px;
+    display: inline-block;
+}
+#header .mui-title{
+	color: #2F2F2F;
+}
+/*banner*/
+.banner_img img{
+	width: 100%;
+}
+/*section_title*/
+.section_title{
+	height: 25px;
+    line-height: 30px;
+    color: #353535;
+    font-size: 12px;
+    padding-left: 8px;
+    border-left: 2px solid #e60012;
+    background-color: #efeff4;
+}
+/*Ashare*/
+.Ashare{
+	background-color: #fff;
+}
+ul.Ashare_top{
+	padding: 0 15px;
+}
+.Ashare_top li{
+	width: 33%;
+	padding: 0 10px;
+}
+.Ashare_top li:nth-of-type(2){
+	border-left: 1px solid #DADADA;
+	border-right: 1px solid #DADADA;
+}
+.Ashare_t{
+	margin-bottom: 5px;
+}
+.Ashare_num{
+	font-size: 20px;
+    margin-bottom: 0px;
+}
+.per span{
+	font-size: 12px;
+}
+.Ashare_bot{
+	border-top: 1px solid #DADADA;
+    line-height: 55px;
+    padding: 0 10px;
+}
+.Ashare_balanceBox{
+	font-size: 12px;
+}
+#balance{
+	font-size: 18px;
+}
+.buy_a{
+	    display: inline-block;
+    width: inherit;
+    font-size: 14px;
+    padding: 5px 10px;
+    background: red;
+    color: #fff;
+    border: none;
+    margin-top: 12px;
+    padding: 3px 0;
+}
+ul.gift_box{
+	margin: 0;
+	text-align: center;
+}
+ul.gift_box li img{
+	width: 35px;
+    margin-bottom: 2px;
+}
+ul.gift_box li p{
+	color: #444445;
+}
+.dr_p{
+	height: 40px !important;
+    line-height: 40px !important;
+    font-size: 12px;
+	background: #fff;
+	padding-left: 10px;
+	border-bottom: 1px solid #DADADA !important;
+    font-size: 14px;
+    padding-top: 0px !important;
+}
+#buy_a{
+	display: inline-block;
+    background: #e60012;
+    width: 70px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+}
+.icon-dr{
+	display: inline-block;
+	background-image: url(/public/static/home/img/moblie/dr.png);
+	background-size: 100%;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+    margin-right: 8px;
+}
+/*activity*/
+.activity ul{
+	background-color: #fff;
+	margin: 0;
+	padding: 0 10px 20px;
+}
+	.activity li{
+		height: 60px;
+    line-height: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid #DADADA
+	}
+	.activity li:last-of-type{
+		border-bottom:none
+	}
+		.user_ProfitOrLossNum{
+			color: #FD9A26;
+		}
+

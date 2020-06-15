@@ -1,0 +1,1363 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.test.dede168.com/news_baby" >
+    <meta charset="gb2312" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script><script type="text/javascript">uaredirect("http://m.test.dede168.com/news_baby");</script>
+<script src="/e/data/js/ajax.js">    
+<script type="text/javascript">
+        if(!('console' in window)) {window.console = {log: function(msg) {}};}
+    </script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="/style/nbase_cf47e58.css">
+
+
+    
+    
+    <title>仿今日头条育儿频道 - 你关心的，才是头条！</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="/style/core_b666bd6.css">
+<link rel="stylesheet" type="text/css" href="/style/newindex_b0deca1.css">
+<script type="text/javascript" charset="gb2312" src="/style/lib_538033e.js"></script>
+
+<script>
+var curpage = 2;
+var totalpage = 9;
+var geturl = '/e/extend/list/?classid=13&orderby=newstime&page='; 
+</script>
+<script>
+$(function(){
+	$('.listBox li').each(function(i,k){
+		if($(k).find('.lbox a img').attr('src')=='/e/data/images/notimg.gif'){
+			$(k).find('.lbox').remove();
+			$(k).find('.rbox').removeClass('rbox');
+		}
+	});
+})
+</script>
+<script type="text/javascript" charset="gb2312" src="/style/scrollpagination.js"></script>
+</head>
+<body class="v2016">
+    
+    <div id="wrapper" class="index-wrapper">
+    <div id="pagelet-nnav" >
+	<!--反馈 start-->
+<script>
+$(function(){
+	$('.feedbtn').click(function(){$('.feedback_dialog').toggleClass('on')});
+	$('.feedback_dialog .close').click(function(){$('.feedback_dialog').removeClass('on')})
+});
+function submitfeedback(obj){
+  var name='匿名';
+var email=$('[name=email]').val();
+var lytext=$('[name=lytext]').val();
+if(!email){alert('请填写联系方式');return false;}
+if(!lytext){alert('您的意见');return false;}
+
+}
+</script>
+<div class="dialog feedback_dialog">
+    <div class="dialog-header">
+        <h3>意见反馈</h3>
+    </div>
+    <div class="dialog-inner" data-node="inner">
+        <div class="feedback_panel">
+            <form action="/e/enews/index.php" method="post" name="form1" onsubmit="return submitfeedback(this)">
+                <ul>
+                    <li>
+                        <p class="label">联系方式（必填）</p>
+                        <div class="input-group">
+                            <input class="email" placeholder="您的邮箱" type="text" name="email">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="label">您的意见（必填）</p>
+                        <div class="input-group">
+                            <textarea style="height:100px;" name="lytext" class="content" maxlength="140" placeholder="请填写您的意见，不超过140字"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                               <input name="name" type="hidden" id="name" value="匿名">
+                            <input type="submit" name="Submit3" class="submit-btn" value="提交">
+                                <input name="enews" type="hidden" id="enews" value="AddGbook" />
+                                <input type="hidden" name="ecmsfrom" value="/">
+                            <span class="msg" data-node="msg"></span>
+                            <a data-node="close" class="close" href="javascript:;">[关闭]</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<!--反馈 end-->
+<div class="topbarWrapper" class="clearfix">
+		
+		<ul class="left">
+			<li class="tb-item"><a class="tb-link" href="/desktop.php?name=仿今日头条" >放到桌面</a></li>
+			<li class="tb-item"><a class="tb-link add-favorite" data-node="addToFavorites" ga_event="nav_pin" href="javascript:;"onclick="alert('请按Ctrl+D收藏');">添加到收藏夹</a></li>
+		</ul>
+		
+
+		<ul class="right">
+			<li class="tb-item"><span><script src="/e/member/login/loginjs2.php"></script></span></li>
+			<li class="tb-item" id="mth"><a class="tb-link" href="/e/member/login/">媒体号</a></li>
+			<li class="tb-item"><a class="tb-link feedbtn" href="javascript:;" js_ga_event="nav_feedback" data-node="navFeedback">反馈</a></li>
+			<li class="tb-item right-more" data-node="more">
+				<a class="tb-link" href="/about/" ga_event="nav_more">更多</a>
+				<div class="layer">
+					<ul>
+						
+	                    <li><a href="http://m.test.dede168.com" class="layer-item">手机版</a></li>
+                            
+						<li><a href="/about/about.html" class="layer-item">关于我们</a></li>
+						<li><a href="/about/join.html" class="layer-item">加入头条</a></li>
+						<li><a href="/about/report.html" class="layer-item">媒体报道</a></li>
+						<li><a href="/about/media_partners.html" class="layer-item">媒体合作</a></li>
+						<li><a href="/about/cooperation.html" class="layer-item">产品合作</a></li>
+						<li><a href="/about/media_cooperation.html" class="layer-item">合作说明</a></li>
+						<li><a href="/about/contact.html" class="layer-item">联系我们</a></li>
+						<li><a href="/about/user_agreement.html" class="layer-item">用户协议</a></li>
+						<li><a href="/about/complain.html" class="layer-item">投诉指引</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!--[if lt IE 9 ]><style>.midbarWrapper{border-bottom:1px solid #e8e8e8;}</style><![endif]-->
+	<div class="midbarWrapper">
+		<div class="midbar-inner">
+			<div class="logo-box">
+				<a class="logo-link" href="/" ga_event="nav_icon"><img class="logo" src="/style/logo.png"></a>
+			</div>
+			<div class="search-box">
+				<form action="/e/search/" method="post" data-node="searchForm" target="_blank">
+	                <div class="input-group clearfix">
+	                    <input autocomplete="off" ga_event="nav_search_input" data-node="searchInput" name="keyboard" type="text" placeholder="搜索我关心的..." value="">
+	                    <div class="btn-submit">
+                                <input type="hidden" name="show" value="title">
+                                <input type="hidden" name="tempid" value="1">
+                                <input type="hidden" name="tbname" value="news">
+	                        <button ga_event="nav_search" type="submit" href="javascript:;">
+	                            <i class="icon icon-search"></i>
+	                        </button>
+	                    </div>
+	                </div>
+	            </form>
+			</div>
+			<div class="user-box" data-node="userbox" >
+				
+				<div class="username-box clearfix" data-node="username">
+					<a ga_event="nav_login" class="nav-login user-item" href="javascript:;" data-node="login">
+						<span></span>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	</div>
+
+        <div id="container" class="clearfix">
+            <div class="index-left">
+                <div id="pagelet-channels" class="">
+	<ul class="channel-box" data-node="channelBox">
+		<li class="channel-item itemi">
+			<a ga_event="news_recommend" class="item item_index " href="/" data-node="category" data-category="__all__"><span class="channel-tag">推荐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_1 " href="/news_hot/" data-category="news_hot"><span class="channel-tag news_hot">热点</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_2 " href="/news_society/" data-category="news_society"><span class="channel-tag news_society">社会</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_3 " href="/news_entertainment/" data-category="news_entertainment"><span class="channel-tag news_entertainment">娱乐</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_4 " href="/news_tech/" data-category="news_tech"><span class="channel-tag news_tech">科技</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_5 " href="/news_car/" data-category="news_car"><span class="channel-tag news_car">汽车</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_6 " href="/news_sports/" data-category="news_sports"><span class="channel-tag news_sports">体育</span></a>
+		</li>
+						<li class="channel-item itemi">
+			<a class="item item_7 " href="/news_finance/" data-category="news_finance"><span class="channel-tag news_finance">财经</span></a>
+		</li>
+		
+		
+		
+		<!--<li class="channel-item more-item magic-btn" data-node="foldBox">
+			<a ga_event="click_hide_channel" class="item" href="javascript:;" data-node="fold"><span class="channel-tag fold">收起</span></a>
+		</li>-->
+		</ul>
+		<div class="moreBox" data-node="moreBox">
+			<a ga_event="click_show_channel" class="moreBtn" href="javascript:;"><span class="channel-tag more">更多</span></a>
+			<ul class="more-channels" data-node="moreChannels">
+				
+												<li class="channel-item item_news_military">
+					<a class="item item_8" href="/news_military/"><span class="channel-tag news_military">军事</span></a>
+				</li>
+												<li class="channel-item item_news_world">
+					<a class="item item_9" href="/news_world/"><span class="channel-tag news_world">国际</span></a>
+				</li>
+												<li class="channel-item item_news_fashion">
+					<a class="item item_10" href="/news_fashion/"><span class="channel-tag news_fashion">时尚</span></a>
+				</li>
+												<li class="channel-item item_news_travel">
+					<a class="item item_11" href="/news_travel/"><span class="channel-tag news_travel">旅游</span></a>
+				</li>
+												<li class="channel-item item_news_discovery">
+					<a class="item item_12" href="/news_discovery/"><span class="channel-tag news_discovery">探索</span></a>
+				</li>
+												<li class="channel-item item_news_baby">
+					<a class="item item_13" href="/news_baby/"><span class="channel-tag news_baby">育儿</span></a>
+				</li>
+												<li class="channel-item item_news_regimen">
+					<a class="item item_14" href="/news_regimen/"><span class="channel-tag news_regimen">养生</span></a>
+				</li>
+												<li class="channel-item item_news_story">
+					<a class="item item_15" href="/news_story/"><span class="channel-tag news_story">故事</span></a>
+				</li>
+												<li class="channel-item item_news_essay">
+					<a class="item item_16" href="/news_essay/"><span class="channel-tag news_essay">美文</span></a>
+				</li>
+												<li class="channel-item item_news_game">
+					<a class="item item_17" href="/news_game/"><span class="channel-tag news_game">游戏</span></a>
+				</li>
+												<li class="channel-item item_news_history">
+					<a class="item item_18" href="/news_history/"><span class="channel-tag news_history">历史</span></a>
+				</li>
+												<li class="channel-item item_news_food">
+					<a class="item item_19" href="/news_food/"><span class="channel-tag news_food">美食</span></a>
+				</li>
+							</ul>
+		</div>
+	
+</div>
+            </div>
+<script type="text/javascript">
+$(".item_13").addClass("selected");
+
+var cla=$(".more-channels .item_13.selected").parent().attr('class');
+var html=$(".more-channels .item_13.selected").parent().html();
+$(".more-channels .item_13.selected").parent().remove();
+if(cla && html){
+      $('#pagelet-channels .channel-box').append('<li class="'+cla+'">'+html+'</li>');
+}
+var clai=$(".itemi").eq(7).attr('class');
+var htmli=$(".itemi").eq(7).html();
+if(clai && htmli && html){
+      $(".itemi").eq(7).remove();
+      $('.more-channels').prepend('<li class="'+clai+'">'+htmli+'</li>');
+}
+</script>
+
+            <div class="index-main">
+                <div id="pagelet-nfeedlist">
+	<div class="feedcomm" data-node="commItem">
+		<span class="comm-close" data-node="commClose"></span>
+		<a ga_event="click_banner" target="_blank" data-node="commLink"></a>
+	</div>
+	<p class="alert-msg" data-node="alertMsg">
+        <img src="http://test.dede168.com//style/loading_50c5e3e.gif">
+        <span>推荐数据加载中...</span>
+    </p>
+	<div class="unread" data-node="unread" ga_event="click_feed_update"><span>您有未读新闻，点击查看</span></div>
+	<ul data-node="listBox" class="listBox">
+		<li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2056.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/50100019ab64ecd0528?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2056.html" target="_blank" data-node="title">
+								急产 难产 流产一系列情况 你应该怎样正确面对
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2056.html" target="_blank">当出现突发的难产，流产的时候，要怎样做呢？要遵循以下要点： 破水或出现一阵一阵的腹痛时，要马上送医院。来不及的话，要帮助产妇生产，及给予产后帮助。妊娠初、中期出现</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">微晓世界&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2056&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2056&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2055.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/50100049b6185bb4487?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2055.html" target="_blank" data-node="title">
+								收藏这6个科学小实验，周末和孩子一起试试吧！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2055.html" target="_blank">每个周末都带孩子外出旅行并不现实，很多父母会为“周末要带孩子玩什么”而苦恼。小编专门整理了这些科学实验游戏，让大家在家也能玩出新花样。今天推荐的这几个科学实验游</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">古立古豆父母学院&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2055&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2055&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2054.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/4870006c5970b45b8cd?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2054.html" target="_blank" data-node="title">
+								小熊仔不慎犯了错，熊妈妈的反应让人觉得不可思议！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2054.html" target="_blank">对人类来说孩子犯错的话，大人或许耐心教导，或许打骂责罚，而这个熊妈妈教育熊宝宝的方式让人意想不到！熊宝宝一天犯错了，它的妈妈很生气，用大嘴巴叼着小熊甩来甩去小熊</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">文化史纪&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2054&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2054&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2053.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/4850006bf8b34b2dfaf?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2053.html" target="_blank" data-node="title">
+								10岁男孩生日当天没有一个同学来，之后却突然有一群警察找上门
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2053.html" target="_blank">妈妈安吉拉精心为儿子托克西安排了十岁生日party，之前托克西在学校给班上二十一个同学每个人都发了邀请卡。可是当天下午托克西一家人左等右盼，万万没有想到的是，竟然没有</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">宠妈妈&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2053&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2053&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2052.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2052.html" target="_blank" data-node="title">
+								医院上演生死时速保母女平安
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2052.html" target="_blank">■记者吴佳琴通讯员王敏芝本报讯近日，临近预产期的魏女士因腹部隐痛，来到海盐县人民医院产科就诊。没想到，等待她们母女的却是一场生与死的博弈，胎盘早剥像一个隐形杀手</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2052&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2052&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2051.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/485000729ea476d3825?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2051.html" target="_blank" data-node="title">
+								过了唐筛，排畸，三次b超是男孩，分享症状，接棒咯
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2051.html" target="_blank">今天为止23周。21周找熟人特地做了bc看男女 说腿有点打折 但八成是个儿子。当时心里不太相信看了好多都说翻盘 尤其是我父母跟我说生我的时候医生也说肯定是儿子 结果是女儿</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">亲子育儿宝典&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2051&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2051&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2050.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/4870009bd012814ca20?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2050.html" target="_blank" data-node="title">
+								夏天多吃这些水果，让孩子身高至少增长五公分！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2050.html" target="_blank">父母都希望自己孩子长得高又聪明，其实除了日常饮食外，多吃水果也可以帮助孩子长高的。这是因为水果中富含大量的维生素群，都是孩子生长发育必不可少的。这些维生素可以帮</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">芸芸育儿经&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2050&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2050&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2049.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/50100011400fa885def?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2049.html" target="_blank" data-node="title">
+								这6招太有效，宝宝公共场所哭闹瞬间安静！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2049.html" target="_blank">宝宝在公共场合哭闹的画面，是许多家庭都曾上演的情景剧，宝宝又哭又叫，妈妈又气又恼。紧急叫停“哭闹版”情景剧，妈妈有方法！街头大片实录朵朵：妈妈我要买个冰糕。妈妈</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">壮娃娃健康管理&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2049&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2049&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2048.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/4860001e82dd24078f8?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2048.html" target="_blank" data-node="title">
+								如何给宝宝开始加入辅食（权威指南）
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2048.html" target="_blank">版权声明：阳妈文章欢迎朋友们分享、转发，但暂不支持任何其他媒体平台转载。宝宝满六个月后，单吃母乳已不能满足宝宝的营养需要;宝宝需要进食各种营养丰富的食物，来摄取生</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">阳阳妈妈育儿经&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2048&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2048&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2047.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/4840009e2f369ebb9ec?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2047.html" target="_blank" data-node="title">
+								二胎的娃儿都这样闹吗？
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2047.html" target="_blank">喜欢一吃饭就把手伸嘴里然后就各种抓，受不鸟啊！！你这么有才，咋不当画家呢？干什么不陪我玩？<br />
+怎么喂我吃的饭？<br />
+你知道你塞得是什么吗？<br />
+你找找你的嘴到哪里了<br />
+你累</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">时尚辣妈圈&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2047&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2047&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2046.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/5010003bcc7914f13c7?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2046.html" target="_blank" data-node="title">
+								害喜吃不下会不会影响胎儿健康？
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2046.html" target="_blank">生一个健康的宝宝是现代孕妇最大的愿望，所以每位孕妇都很关心孕期中的营养，因为“一人吃，两人补”的观念根深蒂固。然而随着怀孕而来的害喜现象却让准妈妈的食欲大受影响</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">好孕妈咪帮&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2046&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2046&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2045.html" target="_blank">
+						<img class="feedimg" src="/e/data/images/notimg.gif" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2045.html" target="_blank" data-node="title">
+								往往是这些小事 深深影响着孩子
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2045.html" target="_blank">【康Q母婴网原创稿件，欢迎转载但需注明出处】孩子的好奇心最旺盛，他们不断的接触新事物，不断的探索，想要了解更多。当他们在探索过程中有疑问的时候便会向家长求助，尤其</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">康Q母婴网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2045&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2045&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2044.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/3e800084460f736bbe5?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2044.html" target="_blank" data-node="title">
+								傻了23年的傻姑娘结婚生宝宝了，宝宝的命运令众人担忧！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2044.html" target="_blank">珊珊，多好听的一名字。珊珊是我们村的一个姑娘，从我记事起她就是傻傻的，见人就咧着嘴笑，眼睛呆呆的，给人一种傻傻的感觉，大家都说她是因为在妈妈肚子里的时候妈妈吃了</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">亲子小乐园&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2044&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2044&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2043.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/50100046920f4039978?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2043.html" target="_blank" data-node="title">
+								新生宝宝的良好睡眠习惯如何养成
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2043.html" target="_blank">来源：月子帮<br />
+有一种黑，叫白天不懂夜的黑；有一种抓狂，叫天黑了娃还不睡觉；有一种崩溃，叫夜深了娃仍在哭闹！如果没有当过妈妈，恐怕你永远也不会知道这是一种怎样的人</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">月子帮&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2043&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2043&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2042.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/50100018210ca5f9829?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2042.html" target="_blank" data-node="title">
+								怀孕第8周：牙和腭开始发育，耳朵也在继续成形
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2042.html" target="_blank">怀孕第8周胚胎的器官特征开始明显，各个不同的器官开始忙碌地发育。从现在开始到20周，你的宝宝将迅速成长，并且在几个星期内就会有明显的轮廓，这个时期的成长速度就像孕早</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">男宝女宝手册&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2042&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2042&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2041.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/485000a1a4f5c455719?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2041.html" target="_blank" data-node="title">
+								为了宝宝，离异妈妈不再嫁人，是对是错
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2041.html" target="_blank">我刚坐完月子，就和我那贱老公，离了婚！现在，想起这个贱人，我气得浑身打哆嗦。嫁给这种人，真的是倒了大霉了。自从我怀孕之后，我就把老公的房事给掐了。没想到，这人没</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">家有亲宝&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2041&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2041&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2040.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/501000138b1746e0fd0?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2040.html" target="_blank" data-node="title">
+								19周B超归来，男宝一枚，赶快说症状给你们
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2040.html" target="_blank">虽说男女都一样，但是接了那么多女宝棒，结果还是男宝，还好是头胎没压力。看症状其实不是那么准，个人体质不一样反应也不一样。准妈妈们，相信你们的直觉，即使不想承认，</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">育儿全知道&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2040&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2040&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2039.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/4860006f75503839db1?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2039.html" target="_blank" data-node="title">
+								男人怀孕了，孕妈你怎么看？
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2039.html" target="_blank">首例男性生子成功，男人们生孩子时代到来！澳大利亚一男子因妻子摘除了子宫无法生育，于是决定通过人工受精由自己来孕育孩子。而通过仿生子宫技术成功孕育，成为了世界上第</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">佳人育儿&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2039&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2039&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2038.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/5010001b2ea877665e4?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2038.html" target="_blank" data-node="title">
+								我家宝贝得湿疹到痊愈的过程！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2038.html" target="_blank">宝妈们得知宝宝得了湿疹不要着急！这是一个过程，选择对的的药，也是对宝宝的一种解脱。起初有一两个逐渐越来越多越来越多医生给开的药对我宝宝不管用逐渐恶化！头顶都是最</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">网富时代&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2038&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2038&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2037.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/4860005d79915791b48?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2037.html" target="_blank" data-node="title">
+								孕妇注意 这些调味品饭菜里一定不能有
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2037.html" target="_blank">孕妇不能吃那些水果、不能吃那些蔬菜，之前文章当中都有说过，而且说的非常清楚，以及不能吃的原因是什么，都描述的非常详细了。但，注意细节的孕妇还会问到，是不是我们在</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">胎教库&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2037&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2037&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2036.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/50100012e25c45437be?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2036.html" target="_blank" data-node="title">
+								震惊！看完后才知道为什么别人家的孩子为什么越长越好！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2036.html" target="_blank">佝偻病是婴幼儿常见的营养缺乏性疾病，与维生素D缺乏有直接的关系。近年来，随着生活条件的改善，重度的佝偻病发病率逐年降低，但是轻、中度佝偻病发病率仍然较高，尤其在冬</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">吃对药&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2036&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2036&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2035.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/5010001a4e37815ecc9?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2035.html" target="_blank" data-node="title">
+								我的双胞胎千金
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2035.html" target="_blank"> 我的宝宝今天已经37天了，我是剖腹产，唉，我好想顺产啊，因为头胎是顺产，很顺利恢复的也很快，是个男宝，可是二胎胎位不是很正，一个是头在下面，一个是横的，医生说我要</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">孕妇课堂&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2035&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2035&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2034.html" target="_blank">
+						<img class="feedimg" src="http://p1.pstatp.com/large/4870008296b7e49205c?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2034.html" target="_blank" data-node="title">
+								给宝宝选择幼儿园需要注意的问题
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2034.html" target="_blank">到了该上幼儿园的年纪了，这个时候，很多年轻的父母开始头疼了，面对着众多的幼儿园，公立的、私立的、贵族的、平民的，到底该怎么选呢？如果选择不当的话，影响的可能是宝</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">爹妈说&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2034&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2034&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2033.html" target="_blank">
+						<img class="feedimg" src="http://p2.pstatp.com/large/5010000573b89f92089?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2033.html" target="_blank" data-node="title">
+								男孩被这种虫子咬了一口就生命垂危！妈妈们注意了！
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2033.html" target="_blank">4月13日，某医院的皮肤科迎来了两位泪眼汪汪的夫妻。“4天前，我发现大腿后面有一颗芝麻大小的黑点，今天变黑豆大小了，觉得是不是得了人们常说的皮肤癌啊！黑色素瘤啊！”</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">宝宝成长的秘籍&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2033&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2033&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li><li class="item clearfix" data-node="item">
+	
+			<div class="item-inner" >
+				<div class="lbox left">
+					<a href="/news_baby/2032.html" target="_blank">
+						<img class="feedimg" src="http://p3.pstatp.com/large/4fc000dd49f65e62367?123.jpg" onload="this.style.opacity=1;" style="opacity: 1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+					
+						<div class="title-box">
+							<a ga_event="click_feed_newstitle" class="link title" href="/news_baby/2032.html" target="_blank" data-node="title">
+								二胎清宫表 清宫表对于二胎准不准
+							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_feed_newsabstract" class="link" href="/news_baby/2032.html" target="_blank">一、清宫表对于二胎准不准清宫表并不是绝对的，只是作为一个参考。清宫生男生女表是由中国古人发明的，由于时代久远，清宫表来历的真实性无从考究，古人是根据阴阳五行和八</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								<a class="lbtn source" href="javascript:;">99健康网&nbsp;</a>
+								<span class="lbtn comment"></span>
+								<span class="lbtn time">2016-04-20</span>
+							</div>
+							<div class="right rfooter">
+								
+								<span data-node="likeGroup" class="">
+								
+									<a class="rbtn bury" href="javascript:;" title="踩" onclick="makeRequest('/e/public/digg?classid=13&id=2032&dotop=1&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+									<a class="rbtn digg" href="javascript:;" title="顶" onclick="makeRequest('/e/public/digg?classid=13&id=2032&dotop=0&doajax=1&ajaxarea=diggnum','EchoReturnedText','GET','');"></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<a href="javascript:;" class="loadmore" data-node="loadMore">正在为您加载更多...</a>
+        <div class="indexListLoading" id="nomoreresults" style="display:none">所有内容加载完毕</div>
+
+         <div class="pageBox pageNo">
+          <a title="Total record">&nbsp;<b>85</b> </a>&nbsp;&nbsp;&nbsp;<b>1</b>&nbsp;<a href="/news_baby/index_2.html">2</a>&nbsp;<a href="/news_baby/index_3.html">3</a>&nbsp;<a href="/news_baby/index_4.html">4</a>&nbsp;<a href="/news_baby/index_2.html">下一页</a>&nbsp;<a href="/news_baby/index_4.html">尾页</a>
+         </div>
+</div>
+            </div>
+            <div class="index-right">
+                <div id="pagelet-weather">
+					<iframe allowtransparency="true" frameborder="0" width="250" height="98" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=1&bd=0&k=000000&f=&q=1&e=1&a=1&c=54511&w=250&h=98&align=center"></iframe>
+				</div>
+
+                
+                <div id="pagelet-commbox">
+					<!--<a ga_event="click_banner" class="img-box" target="_blank" data-node="link">
+						<img data-node="img" onload="this.style.opacity=1">
+					</a>
+					<span class="comm-label">推广</span>-->
+					<!--广告位 右侧250x250_1 start-->
+					<script src="/d/js/acmsd/thea1.js" type="text/javascript"></script>
+					<!--广告位 右侧250x250_1 end-->
+				</div>
+
+                <div id="pagelet-hotnews">
+					<div class="head">
+					  实时要闻
+					</div>
+					<div class="news">
+											</div>
+				</div>
+
+                <div id="pagelet-stock">
+				  <div class="stock_head">
+					
+				  </div>
+				</div>
+
+                <div id="pagelet-company">
+				  <div class="company" id="toutiaoCompanyWrapper">
+					<span class="J-company-name">&#169; 2016 仿今日头条 http://test.dede168.com/</span>
+					<a href="http://www.12377.cn/" target="_blank" ga_event="click_about">中国互联网举报中心</a>
+					<a href="http://www.miibeian.gov.cn/" target="_blank" ga_event="click_about">京公网安备 11010802020116号</a>
+					<a href="/license/" class="icp" target="_blank">网络文化经营许可证</a>
+					<a href="/chengnuoshu/" target="_blank">跟帖评论自律管理承诺书 </a>
+					<span>违法和不良信息举报：xxx@xxx.com</span>
+					<span style="display:none">统计代码填到这里 </span>
+					
+				  </div>
+
+				  
+				</div>
+<link type="text/css" rel="stylesheet" href="/style/loginbox.css">
+<div id="bgDiv" style="display:none;"></div> 
+
+<script type="text/javascript">
+var IsMousedown,LEFT,TOP,lggood;
+	document.getElementById("Mdown").onmousedown=function(e){
+
+	lggood = document.getElementById("lggoodBox");
+	IsMousedown = true;
+	e = e||event;
+	LEFT = e.clientX - parseInt(lggood.style.left);
+	TOP = e.clientY - parseInt(lggood.style.top);
+	document.onmousemove = function(e){
+		e = e||event;
+		if (IsMousedown){
+			lggood.style.left = e.clientX - LEFT + "px";
+			lggood.style.top = e.clientY - TOP + "px";
+		}
+
+	}
+	document.onmouseup=function(){
+		IsMousedown=false;
+	}
+
+}
+$(function(){
+  $('#loginboxbtn').click(function(){
+        $('#bgDiv,#lggoodBox').show();
+   });
+   
+})
+</SCRIPT>
+
+
+            </div>
+            <div id="pagelet-nfeedback">
+				<ul>
+					<li>
+						<a ga_event="click_feed_newsrefresh" class="refresh" href="javascript:;" data-node="refresh"></a>
+						<!--<a ga_event="gotop" class="btn" href="javascript:;" data-node="back">
+							<i class="icon icon-back"></i>
+						</a>-->
+					</li>
+					<!--<li>
+						<a ga_event="feedback" class="btn" href="javascript:;" data-node="feedback">
+							<i class="icon icon-comment"></i>
+						</a>
+					</li>-->
+				</ul>
+			</div>
+        </div>
+    </div>
+    <script>
+        window.scrollTo(0, 0);
+
+        window.gaqpush = function (ga_action, ga_label){
+            ga('send', 'event','/' , ga_action, ga_label);
+        };
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-28423340-5', 'auto');
+        ga('send', 'pageview');
+
+
+        $("body").on('click', '[ga_event]', function(e){
+             var $this =  $(this);
+             var ga_category = $this.attr('ga_category') || '/';
+             var ga_action = $this.attr('ga_event');
+             var ga_label = $this.attr('ga_label');
+             var ga_value = $this.attr('ga_value')||1;
+
+             ga('send', 'event', ga_category, ga_action, ga_label, ga_value);
+        });
+
+    </script>
+
+    <script>
+        window.scrollTo(0, 0);
+		$(document).scroll(function() {
+			var scrolltop=$(document).scrollTop();
+			if(scrolltop>1200){
+				$('#pagelet-commbox').css({'position':'fixed','top':'100px'});
+			}else{
+				$('#pagelet-commbox').css({'position':'','top':''});
+			}
+			if(scrolltop>30){
+				$('.topbarWrapper').css({'height':'4px'});
+			}else{
+				$('.topbarWrapper').css({'height':'24px'});
+			}
+		});
+
+        
+    </script>
+<script src="/e/extend/DoTimeRepage/"></script>
+</body>
+</html>

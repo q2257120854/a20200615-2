@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2018-10-12T11:55:27+08:00 ] 202.53.138.176 112.17.247.113 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-12T11:55:59+08:00 ] 202.53.138.176 112.17.247.113 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]

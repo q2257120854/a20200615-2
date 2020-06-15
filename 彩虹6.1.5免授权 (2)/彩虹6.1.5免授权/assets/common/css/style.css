@@ -1,0 +1,154 @@
+/*!
+主题制作：王小大
+作者QQ：918247855
+请尊重他人的劳动成果，谢谢！
+*/
+body .layui-layer-wxd .layui-layer-btn a{
+    background: #009f95;
+    border-color: #009f95;
+}
+body .layui-layer-wxd .layui-layer-btn .layui-layer-btn0{
+    color: white;
+}
+body .layui-layer-wxd .layui-layer-btn .layui-layer-btn1{
+    background: #92B8B1;
+}
+body .layui-layer-wxd .layui-layer-btn .layui-layer-btn2{
+    background: #92B8B1;
+}
+.btn-icon-clipboard span {
+    text-align: right;
+}
+@media (min-width: 768px){
+	.navbar-vertical .navbar-expand-md {
+		display: none;
+	}
+}   
+.wxd-b-menu {
+    right: .8rem;
+    bottom: 2rem;
+    z-index: 99;
+}
+.wxd-b-menu .wxd-b-but {
+    border-radius: 50%;
+    padding: 1rem 1.1rem;
+}
+@media (max-width: 767px){
+    .wxd-b-but[style] {
+        padding: .2rem .65rem !important;
+    }
+}
+@media (max-width: 767px){
+    .wxd-b-menu {
+        right: .3rem;
+        bottom: .2rem;
+        z-index: 999;
+    }
+}
+@media (max-width: 767px){
+    .wxd-fz-r98 {
+        font-size: .81rem;
+    }
+}
+@media (min-width: 576px) {
+    body{
+        background-color: #eeedf5 !important;
+    }
+    .footer{
+        background: #eeedf5 !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 1024px){
+    .wxd-bg-head {
+        background-image: url(http://wangxds.oss-cn-shanghai.aliyuncs.com/head-background/bg-1024.jpg) !important;
+        background-size: cover !important;
+    }
+}
+@media (min-width: 1024.1px){
+    .wxd-bg-head {
+        background-image: url(http://wangxds.oss-cn-shanghai.aliyuncs.com/head-background/bg-1920.jpg) !important;
+        background-size: 100% 100% !important;
+    }
+}
+.footer .wxd-convex a{
+    color: #c8c8c8;
+    text-shadow: 1px 1px 2px white, -1px -1px 2px #f7fafc;
+}
+.wxd-bor-radr0{
+    -webkit-border-top-right-radius: 0 !important;
+    -webkit-border-bottom-right-radius: 0 !important;
+    -moz-border-top-right-radius: 0 !important;
+    -moz-border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.wxd-index-bor-rad0{
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+.wxd-table-now tr td{
+    white-space: normal;
+}
+@media (max-width: 359px) {
+    .wxd-w320-d-none {
+        display: none;
+    }
+}
+.wxd-alert-primary {
+    border-left: 5px solid #5e72e4;
+    background: #eeedf5;
+    padding: 1rem 0 .8rem .8rem;
+}
+
+/*遮罩*/
+.shuaibi-zhezhao { 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#000; 
+    filter:alpha(opacity=70); 
+    -moz-opacity:0.7; 
+    opacity:0.7; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    display:none; 
+    z-index:998;
+}
+.shuaibi-zzimg {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    margin-left: -150px;
+    z-index:999;
+    display:none;
+}
+.shuaibi-zzimg img {
+    max-width: 300px;
+}
+.shuaibi-zzimg span {
+    position: fixed;
+    right: 1.5rem;
+    top: 1rem;
+    z-index: 1000;
+}
+.shuaibi-zzimg span i {
+    color: #d6d6d6;
+}
+.shuaibi-zzimg span i:hover{
+    color: white;
+}
+
+
+.loading{display:none}
+.loading{height:100%;width:100%;position:fixed;top:0;left:0;z-index:999999;background-color:rgba(250,250,250,.9)}
+.loading img{width: 280px;height:210px;position: relative;top: 45%;left: 50%;margin-left:-140px;margin-top: -105px;}
+#loader{display: block; position: relative; left: 50%; top: 50%; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 50%; border: 3px solid transparent; border-top-color: #ff5a5a; -webkit-animation: spin 1s linear infinite; animation: spin 1s linear infinite;}
+#loader:before{content: ""; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; border-radius: 50%; border: 3px solid transparent; border-top-color: #5af33f; -webkit-animation: spin 3s linear infinite; animation: spin 3s linear infinite;}
+#loader:after{content: ""; position: absolute; top: 15px; left: 15px; right: 15px; bottom: 15px; border-radius: 50%; border: 3px solid transparent; border-top-color: #6dc9ff; -webkit-animation: spin 2s linear infinite; animation: spin 2s linear infinite;}
+@-webkit-keyframes spin{0%{-webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);} 100%{-webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg);}}
+@keyframes spin{0%{-webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);} 100%{-webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg);}}
+

@@ -1,0 +1,3 @@
+---------------------------------------------------------------
+[ 2018-10-20T16:26:30+08:00 ] 43.243.75.72 58.243.250.86 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=50
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]

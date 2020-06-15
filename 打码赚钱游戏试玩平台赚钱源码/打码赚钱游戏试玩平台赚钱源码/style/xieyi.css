@@ -1,0 +1,7 @@
+/*协议内容开始*/
+.agreement {width:1004px; margin:0 auto; background:#fff; box-shadow: 0px 2px 3px #e1e1e1; -moz-box-shadow: 0px 2px 3px #e1e1e1; -ms-box-shadow: 0px 2px 3px #e1e1e1; -o-box-shadow: 0px 2px 3px #e1e1e1; -webkit-box-shadow: 0px 2px 3px #e1e1e1; margin-bottom:20px; margin-top:20px; border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; padding-bottom:30px;}
+.agreement p { display:block;margin:0 30px; color:#4d4d4d;}
+.agreement .tit { font-size:18px;  color:#307ad5; height:60px; line-height:50px;  border-bottom:1px solid #f2f2f2; font-weight:bold;}
+.agreement .xz { font-size:16px; height:36px; line-height:36px; color:#1e569b;}
+.agreement .nr { font-size:13px; line-height:30px; padding-left:20px;}
+.agreement .nr .nr_1 { padding-left:30px;}

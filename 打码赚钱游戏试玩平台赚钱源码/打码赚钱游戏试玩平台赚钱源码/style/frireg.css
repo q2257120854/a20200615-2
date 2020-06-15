@@ -1,0 +1,82 @@
+/* 修正IE6振动bug */  
+* html,* html body{background-image:url(about:blank);background-attachment:fixed;}
+/*公用*/  
+* { margin: 0; padding: 0; }
+body { font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; color:#4d4d4d; background:url(/images/friregimg/body_bk.png) no-repeat top center #ec7a36;}
+ol, ul, li, dd, dl, dt { list-style: none; }
+*:focus { outline: 0; }
+em, i { font-style: normal; }
+img, fieldset { border: 0; }
+input, textarea { appearance: none;  border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -webkit-border-radius: 0; -o-border-radius: 0; }
+a {cursor: pointer; text-decoration: none; color: #01a8ff; }
+a:visited { color: #000 }
+a:hover, a:active { text-decoration: none; color:#f05454; }
+.clearfix:after { content: "."; display: block; clear: both; height: 0; overflow: hidden; visibility: hidden; }
+table { border-collapse:collapse;}
+.sframe { display:block; width:340px; height:32px; line-height:32px; border:1px solid #e6e6e6; background:url(/images/friregimg/sframe_bk.gif) repeat-x #fff; padding-left:10px; color:#808080;}
+.sframe_1 { width:130px !important; float:left;}
+/*主体开始*/
+.z_mian { display:block; width:1004px; margin:0 auto;}
+.z_mian .z_logo { display:block; height:62px; width:145px; background:url(/images/friregimg/z_logo.png) no-repeat left top; margin-top:20px;}
+/*注册*/
+.z_mian .z_big { display:block; width:900px; border:14px solid #eff2f5; background:#fff; margin:0 auto; margin-top:160px; box-shadow:0px 2px 20px rgba(0, 0, 0, 0.2); padding-bottom:25px; margin-bottom:50px;}
+.z_mian .z_big .z_cont { display:block; width:780px; margin:0 auto;}
+.z_mian .z_big .z_cont .tit { height:64px; line-height:64px; border-bottom:1px solid #eff2f5; font-size:24px; font-weight:bold; color:#333; text-align:center;}
+.z_mian .z_big .z_cont .regis { display:block; float:left; width:380px; border-right:1px solid #eff2f5;}
+.z_mian .z_big .z_cont .regis .ul_1 { display:block;}
+.z_mian .z_big .z_cont .regis .ul_1 li { display:block; width:350px; height:34px; line-height:34px; position:relative; margin-top:20px; *margin-top:12px;}
+.z_mian .z_big .z_cont .regis .ul_1 .text { margin-top:0; font-size:12px; font-weight:bold; color:#333;}
+.z_mian .z_big .z_cont .regis .ul_1 .li_1 .mailbox { display:block;  position:absolute; right:7px; top:9px; width:20px; height:16px; background:url(/images/friregimg/sframe_ico.png) 0 0 no-repeat;}
+.z_mian .z_big .z_cont .regis .ul_1 .li_1 .password { display:block;  position:absolute; right:9px; top:7px; width:20px; height:20px; background:url(/images/friregimg/sframe_ico.png) 0 -21px no-repeat;}
+.z_mian .z_big .z_cont .regis .ul_1 .li_1 .name { display:block;  position:absolute; right:9px; top:7px; width:20px; height:20px; background:url(/images/friregimg/sframe_ico.png) 0 -46px no-repeat;}
+.z_mian .z_big .z_cont .regis .ul_1 .li_1 .prompt { display:block; position:absolute; left:-183px; top:-3px; width:186px; height:40px; line-height:40px; background:url(/images/friregimg/sframe_tisbk.png) no-repeat; color:#fff; font-weight:bold; z-index:100; padding-left:10px;}
+.z_mian .z_big .z_cont .regis .ul_1 .grade { margin-top:7px; width:350px; height:24px;}
+.z_mian .z_big .z_cont .regis .ul_1 .grade_1 { background:url(/images/friregimg/grade_dj.png) 0 0;}
+.z_mian .z_big .z_cont .regis .ul_1 .grade_2 { background:url(/images/friregimg/grade_dj.png) 0 -29px;}
+.z_mian .z_big .z_cont .regis .ul_1 .grade_3 { background:url(/images/friregimg/grade_dj.png) 0 -58px;}
+.z_mian .z_big .z_cont .regis .ul_1 .li_1 .code { display:block; float:left; width:64px; height:34px; margin-left:10px; cursor:pointer;}
+.z_mian .z_big .z_cont .regis .ul_1 .li_1 .code img { width:64px; height:34px;}
+.z_mian .z_big .z_cont .regis .ul_1 .agreement { margin-top:10px;}
+.z_mian .z_big .z_cont .regis .ul_1 .agreement a { color: #01a8ff;}
+.z_mian .z_big .z_cont .regis .ul_1 .agreement a:hover { color: #f05454;}
+.z_mian .z_big .z_cont .regis .ul_1 .button { margin-top:10px; height:44px; line-height:44px;}
+.z_mian .z_big .z_cont .regis .ul_1 .button .ann { display:block; width:150px; height:40px; line-height:40px; border-bottom:4px solid #ec3d3d; background:#fc5f5f; text-align:center; color:#fff; font-size:20px; float:left;}
+.z_mian .z_big .z_cont .regis .ul_1 .button .ann:hover{ background:#ff6f6f; border-bottom:4px solid #ef4e4e;}
+
+.z_mian .z_big .z_cont .regis .ul_1 .button .yes { display:block; float:left; margin-left:20px;}
+.z_mian .z_big .z_cont .regis .ul_1 .button .yes a { color:#01a8ff;}
+.z_mian .z_big .z_cont .regis .ul_1 .button .yes a:hover { color:#f05454;}
+.z_mian .z_big .z_cont .regis .ul_1 .button .yes a i { font-family:"宋体";}
+/*直接登录*/
+.z_mian .z_big .z_cont .tuij { display:block; float:left;padding-left:10px; width:389px;} 
+.z_mian .z_big .z_cont .tuij .direct { display:block; padding-bottom:20px; border-bottom:1px dashed #ccc; width:100%;}
+.z_mian .z_big .z_cont .tuij .direct .tit_1 { display:block; font-size:14px; color:#333; font-weight:bold; height:40px; line-height:40px; width:100%;}
+.z_mian .z_big .z_cont .tuij .direct .weib { display:block; width:38px; height:37px; background:url(/images/img/registration_ico.png) 0 0; float:left; margin-left:10px; margin-top:20px;}
+.z_mian .z_big .z_cont .tuij .direct .weib:hover { background:url(/images/img/registration_ico.png) 0 76px;opacity: 0.6; filter:alpha(opacity=60);}
+
+.z_mian .z_big .z_cont .tuij .direct .qq { display:block; width:38px; height:37px; background:url(/images/img/registration_ico.png) 0 -39px; float:left; margin-left:30px; margin-top:20px;}
+.z_mian .z_big .z_cont .tuij .direct .qq:hover { background:url(/images/img/registration_ico.png) 0 -117px;opacity: 0.6; filter:alpha(opacity=60);}
+
+/*大家都在玩*/
+.play .tit_1 { display:block; font-size:14px; color:#333; font-weight:bold; height:40px; line-height:40px; width:100%;}
+/*滚动*/
+.bcon{ width:100%;}
+.bcon h1{ border-bottom:1px solid #eee; padding:0 10px;}
+.list_lh{ height:258px; overflow:hidden; margin-top:10px; font-size:12px;}
+.list_lh .di_1 { display:block; float:left; width:194px;}
+.list_lh_1 { height:172px !important;}
+.list_lh li { display:block; padding:10px 0 10px 0; width:100%;}
+.list_lh .tou { display:block; float:left; width:64px; height:64px; border:1px solid #d9d9d9; border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; -webkit-border-radius:50%; text-align:center; }
+.list_lh .tou img { border:1px solid #d9d9d9; border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; -webkit-border-radius:50%; width:60px; height:60px; margin-top:1px;}
+.list_lh p { height:22px; line-height:22px; padding-left:5px; color:#8c8c8c; width:115px; white-space:nowrap; overflow:hidden;text-overflow:ellipsis;}
+.list_lh .name { display:block; float:left; color:#4d4d4d;}
+.list_lh .wan { display:block; float:left;  }
+.list_lh .wan a { color:#01a8ff;}
+.list_lh .wan a:hover {  color:#f05454;}
+.list_lh .lin { display:block; float:left; }
+.list_lh .lin em { display:block; float:left; color:#ec6c49; background:url(/images/friregimg/hl_bb.png) no-repeat right center; padding-right:16px;}
+.list_lh .lin span {display:block; float:left; }
+
+.on_changes { position: absolute; left: 0; top: 35px; z-index: 1000; background: #fff; border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; padding: 0 10px 10px 10px; width: 328px; display: none;}
+.on_changes li { cursor: pointer; display: block; margin:0 !important; width: 318px !important; padding: 0 0 0 10px; height: 30px; line-height: 30px;}
+.on_changes li:hover { background: #f79a37; color: #fff;}

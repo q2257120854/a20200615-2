@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>文档</title>
+		<link rel="stylesheet" type="text/css" href="../css/api.css" />
+		<link rel="stylesheet" type="text/css" href="//g.alicdn.com/mtb/lib-notification/0.2.1/notification.css">
+		<link rel="stylesheet" href="../css/gb.min_4383aaa5.css"/>
+        <link rel="stylesheet" href="../css/index.min_e1e71516.css"/>
+	</head>
+	<body>
+
+		<div class="wx_wrap" >
+			<div class="m_header_v2" style="display: block;">
+				<div class="m_header_bar">
+					<div class="m_header_bar_back"></div>
+					<div class="m_header_bar_title">购物车</div>
+					<div class="m_header_bar_menu"></div>
+				</div>
+				<div class="m_header_nav" style="display:none;">
+					<div class="m_header_nav_item type_index" >首页</div>
+					<div class="m_header_nav_item type_search" >分类搜索</div>
+					<div class="m_header_nav_item type_shopcart cur" >购物车</div>
+					<div class="m_header_nav_item type_my" >我的京东</div>
+					<div class="m_header_nav_item type_recently" >浏览记录</div>
+				</div>
+			</div>
+			
+			<!-- 购物车主页面容器 -->
+			<div class="c_showJs">
+				<div>
+					<div attr-tag="cmdtylist">
+						<div class="section" >
+							<div class="head_wrap">
+								<div class="head shopheadJs selected">
+									<span class="title oneline" >京东自营</span>
+									<div class="notice" attr-fbpvender="">
+										<span class="notice_txt"><i class="icon_notice"></i>已免运费</span> 
+									</div> 
+								</div>
+							</div>
+							<div class="item" >
+								<div class="goods selected"> 
+								    
+									<img class="image" src="http://img10.360buyimg.com/mobilecms/s150x150_jfs/t30040/100/1290632710/208879/1f7e2225/5cdd0d92Nb78895a6.jpg!q70.dpg.webp">
+									<div class="content">
+										<div class="name">
+											<span class="proNameJs">一加 OnePlus</span> 
+										</div>
+										<div class="goods_line">
+											<p class="price " >
+												<span class="priceJs">¥ <em class="int">4499</em></span>
+											</p>
+											<div class="num_and_more">
+												<div class="num_wrap">
+													<span class="minus"></span>
+													<div class="input_wrap">
+														<input class="num" type="tel" value="1" max="200" prevalue="1" lowestbuy="0">
+													</div>
+													<span class="plus"></span>
+												</div>
+											</div>
+										</div>
+										<div class="goods_sub_line">
+											<div class="m_action">
+												
+												<span class="m_action_item" >删除</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="fixBar selected" style="z-index: 99;">
+						
+						<div class="total">
+							<div class="total_detail">
+								<p>总计：<span class="strong">¥4499.00</span></p>
+							</div>
+							<a class="buy buyJs" >去结算</a>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+		</div>
+
+	</body>
+	<script type="text/x-dot-template" id="navcattpl">
+		{{~ it.data : value : index }}
+	    <div onclick="toshop('{{= value. id }}')" class="search_prolist cols_1" >
+	    	<div class="search_prolist_item" >
+	    		<div class="search_prolist_item_inner J_ping" >
+	    			<div class="search_prolist_cover" >
+	    				<img  src="http://ys.6love.site{{= value. picurl }}">
+	    			</div>
+	    			<div class="search_prolist_info" >
+	    				<div class="search_prolist_title" >{{= value. title }}</div>
+	    				<div class="search_prolist_attr">
+	    					<!-- <span class="word">8GB</span> -->
+	    					
+	    				</div>
+	    				<div class="search_prolist_price" >
+	    					<strong>
+	    						<em >¥ <span class="int">{{= value. money }}</span></em>
+	    					</strong>
+	    				</div>
+	    				<div class="search_prolist_line" >
+	    				</div>
+	    				<div class="search_prolist_other text_small">
+	    				</div>
+	    				<div class="search_prolist_shop" >
+	    					<i class="mod_tag">
+	    						<img src="../image/c5ab4d78f8bf4d90.png">
+	    					</i>
+	    					<i class="mod_tag">
+	    						<img src="../image/5bfb58faNfdbaaf9e.png">
+	    					</i>
+	    					<span class="search_prolist_comment" ><span>{{= value. payrs }}</span>人购买</span>
+	    				</div>
+	    				<div class="search_prolist_other text_small hide"></div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    {{~}}
+	</script>
+	<script type="text/javascript" src="../script/api.js"></script>
+	<script type="text/javascript" src="../script/doT.js"></script>
+	<script type="text/javascript">
+		var api_url = localStorage.getItem('api_url');
+		apiready = function() {
+			getshop();
+		}
+
+		function getshop() {
+			var navid = $api.byId('div_list_f');
+			var navtpl = $api.byId('navcattpl');
+
+			// 添加广告
+			api.ajax({
+				url: api_url + 'login/login/shopsy',
+				method: 'get',
+			}, function(ret, err) {
+				if (ret) {
+					//渲染模板
+					var pagefn = doT.template(navtpl.text);
+					navid.innerHTML = pagefn(ret.shop);
+
+					// alert( JSON.stringify( ret.shop ) );
+				}
+
+
+			});
+		}
+
+		function toshop(id) {
+
+		}
+	</script>
+</html>

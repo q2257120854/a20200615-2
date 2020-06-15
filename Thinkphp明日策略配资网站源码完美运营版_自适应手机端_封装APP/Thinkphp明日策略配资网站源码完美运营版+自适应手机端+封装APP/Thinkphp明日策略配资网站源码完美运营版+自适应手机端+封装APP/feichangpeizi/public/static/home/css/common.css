@@ -1,0 +1,500 @@
+/*字体*/
+.bg1 {
+  background-color: aquamarine;
+}
+.bg2 {
+  background-color: lightpink;
+}
+/*----reset*/
+/*解决窗口缩小留白*/
+body{
+	width: 100%;
+	min-width: 1200px;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+form,
+div,
+fieldset,
+legend,
+img,
+input,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+button,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  /*特殊的属性定义  清除浏览器给input自带的样式*/
+  -webkit-appearance: none;
+  /*组件默认的样式空*/
+}
+input {
+  outline: none;
+  resize: none;
+}
+em,
+i,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+/*a标签和hover*/
+a {
+  text-decoration: none;
+  color: #CACACA;
+  outline: none;
+}
+a:hover,
+a:link,
+a:visited,
+a:active {
+  color: #CACACA;
+  text-decoration: none !important;
+}
+a:hover{
+	color: #d42b2e;
+}
+/*图片*/
+img {
+  vertical-align: middle;
+}
+/*浮动*/
+.br-fl {
+  float: left !important;
+}
+.br-fr {
+  float: right !important;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.br-clearfix {
+  zoom: 1;
+}
+.br-clearfix::after {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.br-clearfix::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.br-text-center {
+  text-align: center;
+}
+/*通栏100%*/
+.br-w100 {
+  width: 100%;
+  min-width: 1024px;
+}
+/*----common*/
+/*版心*/
+.w1024 {
+  min-width: 1024px;
+  max-width: 1024px;
+  height: 100%;
+  width: 1024px;
+  margin: 0 auto;
+}
+/*内容盒子pt18*/
+.cont_pt18 {
+  padding-top: 18px;
+}
+/*header*/
+header.ml_header {
+  color: #CACACA;
+  font-size: 12px;
+  line-height: 30px;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+}
+.h_top {
+  height: 30px;
+  background-color: #000000;
+}
+.h_top .h_topL {
+  position: relative;
+  padding-right: 20px;
+}
+.h_top .h_topL:before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #CACACA;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+/*.h_top .h_topL:after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('/public/static/home/img/qq.png');
+  background-size: 100% 100%;
+  position: absolute;
+  right: -30px;
+  top: 8px;
+}*/
+.h_top .h_topR a {
+  padding: 0 10px;
+  height: 100%;
+  color: #CACACA;
+  display: inline-block;
+  position: relative;
+}
+.h_top .h_topR .login:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+.h_bot {
+  height: 90px;
+  line-height: 90px;
+  background-color: #f6f6f6;
+}
+.h_bot .h_botR li:nth-of-type(5) a {
+  padding-right: 0;
+}
+.h_bot .h_botR li a {
+  display: block;
+  height: 100%;
+  color: #000000;
+  padding: 0 30px;
+  font-size: 18px;
+}
+.h_bot .h_botR li a:hover, .h_bot .h_botR li a.active {
+  color: #E01923;
+}
+.h_botR .help_box{
+	position: relative;
+}
+.h_botR .help_box:hover ul{
+		display: block !important;
+    background: #f6f6f6;
+    position: absolute;
+    bottom: -80px;
+    right: -10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.h_botR .help_box:hover ul:before{
+		    content: '';
+    display: inline-block;
+    border-bottom: 8px solid #ccc;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 40px;
+}
+
+.help_box:hover ul a{
+		padding: 10px !important;
+		line-height: 30px;  
+}
+.top-links {
+    position: relative;
+}
+.f-right {
+    float: right;
+}
+.top-links > li {
+    display: block;
+    float: left;
+    line-height: 32px;
+    position: relative;
+}
+body .show-logout {
+    display: none;
+}
+.top-links a {
+    color: #cacaca !important;
+    font-size: 14px;
+}
+.top-links .sep {
+    width: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 12px;
+}
+.top-links .top-user-wrapper {
+    position: relative;
+    margin-right: 5px;
+}
+.top-links .top-user-hovered i {
+     transform: rotate(180deg);
+         top: 10px;
+}
+.top-links .top-user-hovered {
+	background: #fff;
+}
+.top-links .top-user-hovered a{
+		color: #000 !important;
+}
+.top-links .top-username {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 24px;
+    padding: 5px 10px 0 17px;
+    position: relative;
+    z-index: 3;
+}
+.overlay-account {
+    position: absolute;
+    z-index: 4;
+    display: none;
+    width: 210px;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    background-color: #ffffff;
+    top: 28px;
+    right: -2px;
+}
+.account-group {
+    padding: 10px 20px;
+}
+em, i, b {
+    font-style: normal;
+    font-weight: normal;
+}
+.overlay-account .account-val {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 5px;
+    color: #f85407;
+}
+.overlay-account a {
+    color: #328aed;
+}
+.overlay-account > .group > a.f-right {
+    display: inline-block;
+}
+.overlay-account .account-links {
+    padding: 10px 20px;
+    border-top: 1px solid #eee;
+}
+.overlay-account .account-links a {
+    display: inline-block;
+    line-height: 30px;
+    color: #666;
+}
+.overlay-account .account-links .sep {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: #eee;
+}
+#page_shared_layout_login_name{
+	padding-right: 15px;
+}
+.icon-arrow-drop-down{
+	    border-bottom: 6px solid transparent;
+    border-top: 6px solid #ccc;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    top: 15px;
+    right: 6px;
+}
+#qqicon{
+		    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/public/static/home/img/qq.png);
+    background-size: 100% 100%;
+    position: absolute;
+    right: -30px;
+    bottom: 6px;
+    border-radius: 20px;
+}
+#qqicon:hover{
+	background-image: url(/public/static/home/img/qq2.png);
+}
+
+/*内容*/
+.br-content {
+  background-color: #efeff4;
+}
+header ~ .br-content {
+  padding-top: 120px;
+  width: 100%;
+  min-width: 1200px;
+}
+/*底部*/
+footer {
+  height: 261px;
+}
+footer .footer_top {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: #323232 ;
+  color: #CACACA;
+}
+footer .footer_top a {
+  color: #CACACA;
+  padding: 0 30px;
+  font-size: 18px;
+}
+footer .footer_top a:nth-of-type(1) {
+  border-right: 1px solid #cacaca;
+}
+footer .footer_bot {
+  height: 180px;
+  background-color: #000000;
+  color: #CACACA;
+}
+footer .footer_bot .bot_l p {
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 35px;
+}
+footer .footer_bot .bot_r {
+  width: 340px;
+  font-size: 12px;
+}
+footer .footer_bot .bot_r span {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.hide{
+	display: none;
+}
+/*分页*/
+ul.pagination{
+	    height: 30px;
+}
+ul.pagination li{
+	float: left;
+    height: 30px !important;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    border: none !important;
+    background-color: transparent !important;
+    
+}
+ul.pagination li.active{
+		background-color: #FF3337 !important;
+		border-radius: 50%;
+		color: #fff !important;
+}
+ul.pagination li a{
+	color: #000 !important;
+}
+/*浮窗*/
+ul.side-pannel {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 9999;
+}
+ul.side-pannel li {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #e3e3e3;
+    background: #FFF;
+    margin-top: -1px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+    transition: ease-in .2s;
+    position: relative;
+}
+/*ul.side-pannel li i.icon-kf {
+    background-position: -27px -17px;
+}*/
+ul.side-pannel li i {
+    display: block;
+    width: 25px;
+    height: 27px;
+    background: red;
+    margin: 2px 12px;
+    background: url(/public/static/home/img/tel.png);
+    background-size: 100% 100%;
+}
+ul.side-pannel li:nth-of-type(2) i {
+    background-image: url(/public/static/home/img/qq_cont.png);
+}
+ul.side-pannel li:nth-of-type(3) i {
+    background-image: url(/public/static/home/img/wc.png);
+}
+
+i {
+    font-style: normal;
+}
+ul.side-pannel li div.wechat {
+    position: absolute;
+    top: -62px;
+    right: 70px;
+    width: 198px;
+    height: 190px;
+    background: #FFF;
+    border: 1px solid #e3e3e3;
+    display: none;
+}
+.side-pannel li a {
+    color: #999;
+}
+
+ul.side-pannel li div i.tb2 {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #e3e3e3;
+    border-bottom: 8px solid transparent;
+    background: none;
+}

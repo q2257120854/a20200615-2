@@ -1,0 +1,15 @@
+{extend name="layout" /}
+
+{block name="page-header"}{/block}
+
+{block name="content"}
+    {php} echo "金龙策略VIP后台管理中心"; {/php}
+<br/><br/><br/><br/>
+<h2>今日新增用户：<font color="#FF6C60">{$member_todaycount}</font>     总用户：<font color="#FF6C60">{$member_count}</font>     用户总余额：<font color="#FF6C60">{$member_sum}</font></h2>
+{/block}
+
+{block name="script"}
+<script>
+
+</script>
+{/block}

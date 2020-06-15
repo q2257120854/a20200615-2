@@ -1,0 +1,21 @@
+ 345试玩游戏接口填写：
+
+
+注册地址：http://offer.345sw.com/api/offer/leadingIn?cusName=合作名&offerId=游戏编号&
+
+
+等级刷新地址 http://offer.345sw.com/api/offer/offerData?cusName=合作名&offerId=游戏编号&coopUserId=
+
+
+
+返回游戏服区参数 servername
+
+返回游戏角色参数 role
+
+返回游戏等级参数 level
+
+返回游戏充值	payment
+
+收米吧玩家会员ID参数名 userId
+
+等级查询传递游戏账号参数名 game_uid

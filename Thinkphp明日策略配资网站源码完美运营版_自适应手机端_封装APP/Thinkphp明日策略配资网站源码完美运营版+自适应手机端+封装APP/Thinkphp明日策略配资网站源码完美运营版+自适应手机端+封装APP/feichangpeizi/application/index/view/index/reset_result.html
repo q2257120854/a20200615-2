@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金龙策略</title>
+</head>
+<body class="grey buy-body">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/forgot.css"/>
+
+<!--忘记密码-01账户名-->
+<div class="br-content">
+<section class="section section-forgot-pwd" id="forgot-pwd-step1">
+   	<div class="container">
+        <nav class="step-bar-thin">
+            <ul class="group">
+            	<li class="col-3 active step-done"><a href="javascript:;"><i>1</i>密码重置</a></li>
+                <li class="col-3 active step-done"><a href="javascript:;"><i>2</i>密码找回</a></li>
+                <li class="col-3 active last"><a href="javascript:;"><i>3</i>完成</a></li>
+            </ul>
+        </nav>
+        <div class="step-body group">
+            
+            <div class="field-wrapper">
+                <p class="status-msg status-msg-success"><i class="icon icon-checkmark2"></i>登录密码找回成功！</p>
+            </div>
+            <div class="btn-wrapper">
+                <a href="/login.html" class="btn btn-pri">登录</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</div>
+{include file="public:footer" /}
+<script src="/public/static/home/js/forgot.js"></script>
+<script type="text/javascript">
+	$(function(){forgot.init();})
+</script>
+</body>
+</html>
+
+
+

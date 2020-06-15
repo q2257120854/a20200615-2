@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金龙策略</title>
+</head>
+<body class="mobile_body logged-in">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+<style type="text/css">
+	.weixin-section2{
+		width: 100%;
+	    background: url(/public/static/home/img/mobile.png) no-repeat center center;
+	    background-size: cover;
+	    /*font-size: 0;*/
+	    height: 520px;
+	}
+	.weixin-section2 .w1024{
+		position: relative;
+	}
+	.text_r{
+		width: 515px;
+		float: right;
+		text-align: left;
+		position: relative;
+		margin-top: 160px;
+	}
+	.text_r h1{
+		font-size:34px;
+		font-weight: normal;
+		margin-bottom: 5px;
+	}
+	.text_r h1 span{
+		color: #FE3333;
+	}
+	.titleP{
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+	.img_box{
+		float: left;
+		width:128px ;
+		height: 180px;
+		text-align: center;
+		margin-right: 105px;
+	}
+</style>
+<!--点卖区-->
+<div class="br-content">
+<section class="weixin-section2">
+            <div class="w1024 br-clearfix">
+            	<div class="text_r ">
+            		<h1><span>微信端</span>&nbsp;<span>手机端</span>APP全面上线</h1>
+            		<p class="titleP">A股点买交易更加轻松、便捷</p>
+
+            		<div class="img_box">
+            			<img src="/public/static/home/img/android.png" style="width: 122px;"height="122px">
+            			<p>扫描二维码即可<br>下载安卓APP</p>
+            		</div>
+            		
+            		<div class="img_box">
+            			<img src="/public/static/home/img/apple.png" style="width: 122px;"height="122px">
+            			<p>扫描二维码即可<br>下载苹果APP</p>
+            		</div>
+                	
+      			</div>
+               </div>
+</section>
+</div>
+<!--认证银行卡-->
+<div class="popup" id="popup-id-verify">
+    <div class="popup-header group">
+        <h2>认证银行卡</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">提现和免费体验前必须先绑定一张银行卡</li>
+                <li style="text-align:left;">请务必认真填写真实资料</li>
+                <li style="text-align:left;">银行卡采用实名认证，一个身份证只能绑定一个账号</li>
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先绑定银行卡</p>
+        </div>
+        <div class="btn-row group">
+            <a class="btn btn-pri" href="/ucenter/bankCards.html">去绑定</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">暂不绑定</a>
+        </div>
+    </div>
+</div>
+<!--实名认证-->
+<div class="popup" id="popup-realname-auth">
+    <div class="popup-header group">
+        <h2>实名认证</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">一个身份证对应一个账号</li>
+                
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先进行实名认证</p>
+        </div>
+        <div class="field-row group">
+            <label>真实姓名：</label>
+            <div class="field-val"><input id="姓名i" type="text" class="text" onchange="user_updateid_zsxm_valid()"></div>
+        </div>
+        <div id="zsxm_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>未填写姓名</div></div>
+        <div class="field-row group">
+            <label>身份证号：</label>
+            <div class="field-val">
+                <div class="field-val">
+                    <input id="身份证i" type="text" class="text" onchange="user_updateid_sfzh_valid()">
+                </div>
+            </div>
+        </div>
+        <div id="sfzh_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>请填写准确的身份证</div></div>
+        <div class="btn-row group">
+            <a id="user_UpdateSelfIdA" class="btn btn-pri" href="javascript:void(0)">确认</a>
+            <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+
+
+{include file="public:footer" /}
+<!--<script src="/public/static/home/js/buy.js"></script>-->
+</body>
+</html>

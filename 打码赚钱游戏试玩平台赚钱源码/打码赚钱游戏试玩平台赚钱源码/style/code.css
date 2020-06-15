@@ -1,0 +1,181 @@
+﻿					/*51有赚—打码平台、详情*/
+.main { width:1004px; margin:0 auto; padding-top:20px !important;}
+.main .main_left { float:left; width:714px;}
+.main .main_right { float:right; width:280px;}
+/*幻灯片*/
+.mainSlider { background: #fafafa; width: 714px; height: 208px; position: relative; }
+.mainSlider .spotlight { width: 520px; height: 208px; top: 0px; left: 194px; overflow: hidden; position: absolute; z-index: 50; }
+.mainSlider .spotlight img { width: 520px; height: 208px; }
+.mainSlider .spotlightBanner { position: absolute; width: 200px; height: 208px;  display: block; border-left:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; }
+.mainSlider .spotlightBanner li { height: 51px; line-height: 51px; background: #fafafa; position: relative; width: 200px;  z-index: 100; border-top: 1px solid #e0e0e0; display: block; }
+.mainSlider .spotlightBanner li a {  font-size:14px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; cursor:pointer; color: #4d4d4d;  height: 51px; line-height: 51px;  display:block; padding-left:10px; margin-left:10px; display:block; float:left; width:100px;}
+.mainSlider .spotlightBanner li .sp_1 { height: 51px; line-height: 51px; display:block; float:right; *float:none; margin-right:10px; color:#ccc;}
+.mainSlider .spotlightBanner .selected { height:52px; background:url(http://009.90xqb.com/images/img/shi_huand.png) no-repeat; border-top:none !important; }
+.mainSlider .spotlightBanner .selected a { background:url(http://009.90xqb.com/images/img/shiwan_j.png) no-repeat left center; color: #fff;}
+/*任务分类、打码辅助工具、打码视频教程...*/
+.game { background:#fff; border:1px solid #e6e6e6; display:block; margin-bottom:20px; padding-bottom:20px;}
+.game .tit { display:block; width:100%; border-bottom:1px solid #e6e6e6;}
+.game .tit .ul_1 { display:block;float:left;}
+.game .tit .record  { display:block; float:right; height:24px; line-height:24px; margin-right:10px; margin-top:8px; background:#4e5f7c; color:#fff; padding:0 10px;}
+.game .tit .record:hover { background:#677da2;}
+.game .tit .ul_1 li { display:block; float:left; height:40px; line-height:40px; padding:0 20px; background:url(http://009.90xqb.com/images/img/sw_ge.gif) no-repeat right center; font-size:16px; position:relative; color:#666; cursor:pointer;}
+.game .tit .ul_1 li a {color:#666;}
+.game .tit .ul_1 li a:hover {color:#f05454;}
+.game .tit .ul_1 .hover a {color:#27303f; }
+.game .tit .ul_1 .hover { border-top:4px solid #27303f; height:36px; line-height:36px; font-weight:bold; color:#27303f;}
+.game .tit .ul_1 li .jt { width:9px; height:4px; display:block; position:absolute; top:0px; left:44%; background:url(http://009.90xqb.com/images/img/sw_jt_2.gif) no-repeat;}
+.game .cont .tit_2 { margin:10px 10px 0  10px; height:32px; line-height:32px; border-bottom:1px dashed #e6e6e6;}
+.game .cont .tit_2 .sp_1 { color:#2abc17; font-size:16px; font-weight:bold;}
+.game .cont .tit_2 .sp_2 { color:#b3b3b3;}
+.game .cont .tit_2 .sp_3 { float: right; color:#ff3737;}
+.game .cont .tit_2 .sp_1_1 { color:#bb6e1b; font-size:16px; font-weight:bold;}
+.game .cont .tit_2 .sp_1_2 { color:#808080; font-size:16px; font-weight:bold;}
+.game .cont .tit_2 .sp_1_3 { color:#4d4d4d; font-size:16px; font-weight:bold;}
+.game .cont .table { margin:0 10px; color:#4d4d4d; margin-top:20px; padding-bottom:20px;}
+.game .cont .table .ul_1 { display:block; border:1px solid #ebebeb; border-bottom:none !important;  width:100%; }
+.game .cont .table .ul_1 li { display:block; height:34px; line-height:34px; border-bottom:1px solid #ebebeb; width:100%;}
+.game .cont .table .ul_1 .tit { font-weight:bold; background:#fafafa; }
+.game .cont .table .ul_1 .li_1 p { display:block; float:left; text-align:center; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+.game .cont .table .ul_1 .li_1 p span { display:block; border-right:1px solid #ebebeb;}
+.game .cont .table .ul_1 .li_1 .p_1 { width:28%;}
+.game .cont .table .ul_1 .li_1 .p_2 { width:10%; }
+.game .cont .table .ul_1 .li_1 .p_3 { width:10%;}
+.game .cont .table .ul_1 .li_1 .p_4 { width:10%;}
+.game .cont .table .ul_1 .li_1 .p_5 { width:13%;}
+.game .cont .table .ul_1 .li_1 .p_6 { width:16%;}
+.game .cont .table .ul_1 .li_1 .p_7 { width:13%;}
+.game .cont .table .ul_1 .li_1 .p_7 span {border-right:none !important; }
+.game .cont .table .ul_1 .list .p_2 {color:#ec6c49; font-weight:bold; }
+.game .cont .table .ul_1 .list .p_2 i { background:url(http://009.90xqb.com/images/img/hl_bb.png) no-repeat right center; padding-right:16px;}
+.game .cont .table .ul_1 .list .p_1 span { color:#4d4d4d;}
+.game .cont .table .ul_1 .list .p_6 { color:#ec6c49;}
+.game .cont .table .ul_1 .list .p_6 .no { color:#b3b3b3;}
+.game .cont .table .ul_1 .list .p_7 a { color:#449ede;}
+.game .cont .table .ul_1 .list .p_7 a:hover { color:#f05454;}
+.game .cont .table .ul_1 .list .p_7 i { font-family:"宋体";}
+.game .cont .table .ul_1 .list .p_1 .blue { color:#4671ed; font-weight:bold;}
+.game .cont .table .ul_1 .list .p_1 .red { color:#ef3030; font-weight:bold;}
+.game .cont .table .ul_1 .list .p_1 .tj { font-size:11px; font-weight:normal; color:#b931f9;}
+/*今日打码排名、昨日打码排名*/
+.ranking { background:#fff; border:1px solid #e6e6e6;}
+.ranking .tit {height:40px; line-height:40px; border-bottom:1px solid #e6e6e6;}
+.ranking .tit span { display:block; float:left; width:50%; text-align:center; font-size:14px; color:#666; cursor:pointer; }
+.ranking .tit span:hover { color:#f05454;}
+.ranking .tit .hover { color:#27303f; height:34px; line-height:34px; border-top:4px solid #27303f; font-weight:bold;}
+.ranking .cont .ul_1 { display:block;}
+.ranking .cont .ul_1 li { display:block; height:30px; line-height:30px; border-bottom:1px solid #ebebeb;}
+.ranking .cont .ul_1 .li_1 { background:#f3f3f3;}
+.ranking .cont .ul_1 li p { display:block; float:left; text-align:center; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.ranking .cont .ul_1 li span { display:block; border-right:1px solid #ebebeb; white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.ranking .cont .ul_1 li .p_1 { width:15%; color:#666;}
+.ranking .cont .ul_1 li .p_2 { width:30%; color:#666;}
+.ranking .cont .ul_1 .li_2 .p_3 i  { background:url(http://009.90xqb.com/images/img/hl_bb.png) no-repeat right center; padding-right:16px; margin-right:5px;}
+.ranking .cont .ul_1 li .p_3 { width:35%; color:#666;}
+.ranking .cont .ul_1 .li_2 .p_3 {text-align:center;}
+.ranking .cont .ul_1 li .p_3 { width:35%; color:#666;}
+.ranking .cont .ul_1 li .p_4 { width:20%; color:#666;}
+.ranking .cont .ul_1 .li_2 { background:#fff;}
+.ranking .cont .ul_1 .li_2 .p_1 { color:#333;}
+.ranking .cont .ul_1 .li_2 .p_2 { color:#333;}
+.ranking .cont .ul_1 .li_2 .p_3 { color:#ec6c49;}
+.ranking .cont .ul_1 .li_2 .p_4 { color:#f92e2e; font-weight:bold;}
+.ranking .cont .ul_1 li .no { border-right:none !important;}
+.ranking .sx { display:block; border-bottom:1px solid #ebebeb; height:32px; line-height:32px;}
+.ranking .sx i { font-family:"宋体";}
+.ranking .sx span { color: #b3b3b3;}
+.ranking .sx .sy { float:left; margin-left:10px; *margin-left:5px;}
+.ranking .sx .xy { float:right; margin-right:10px; *margin-right:5px;}
+.ranking .cont .see { height:30px; line-height:30px; display:block; text-align:right; padding-right:10px; color:#0967b0;}
+.ranking .cont .see:hover { color:#009cff;}
+.ranking .cont .see i { font-family:"宋体";}
+/*广告图*/
+.advertisement_1 { display:block; width:280px; height:105px; margin-top:10px;}
+.advertisement_1 img { width:280px; height:105px;}
+/*打码资讯*/
+.recommend { display:block; background:#fff; border:1px solid #e6e6e6; margin-top:10px;}
+.recommend .public_tit .recommend_ico {  background:url(http://009.90xqb.com/images/img/public_tit_ico.png) 0 -240px no-repeat;}
+.recommend .cont .ul_1 { display:block;}
+.recommend .cont .ul_1 li { display:block; height:30px; line-height:30px; width:228px; margin:0 auto; background:url(http://009.90xqb.com/images/img/sw_customer_jt.gif) no-repeat left center; padding-left:20px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; margin-left:20px;}
+.recommend .cont .ul_1 li a { color:#4d4d4d;}
+.recommend .cont .ul_1 li a:hover {color:#f05454;}
+/*新手打码相关问题*/
+.customer { display:block;background:#fff; border:1px solid #e6e6e6; margin-top:10px; margin-bottom:20px;}
+.customer .public_tit .customer_ico {background:url(http://009.90xqb.com/images/img/public_tit_ico.png) 0 -200px no-repeat; }
+.customer .cont .ul_1 { display:block;}
+.customer .cont .ul_1 li { display:block; height:30px; line-height:30px; width:228px; margin:0 auto; background:url(http://009.90xqb.com/images/img/sw_customer_jt.gif) no-repeat left center; padding-left:20px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; margin-left:20px;}
+.customer .cont .ul_1 li a { color:#4d4d4d;}
+.customer .cont .ul_1 li a:hover {color:#f05454;}
+/*广告位*/
+.advertisement_2 { display:block; height:80px; text-align:center; width:100%;}																					/*打码详情*/
+.code_details {  background:#fff; border:1px solid #e6e6e6; display:block; margin-bottom:20px; padding-bottom:20px;}
+.code_details .tit { height:40px; line-height:40px; color:#27303f; font-size:16px; font-weight:bold; border-bottom:1px solid #e6e6e6; }
+.code_details .tit .sp_1 { display:inline-block; padding-left:10px; border-bottom:4px solid #27303f; height:36px;}
+.code_details .cont .di_1 { width:100%; margin-top:20px;}
+.code_details .cont .di_1 .left_1 { display:block; float:left; margin-left:30px; *width:480px; *margin-left:15px; color:#666;}
+.code_details .cont .di_1 .right_1 { display:block; float:right; width:190px;}
+.code_details .cont .di_1 .left_1 p { width:100%;}
+.code_details .cont .di_1 .left_1 .p_1 { height:30px; line-height:30px;}
+.code_details .cont .di_1 .left_1 .p_1 span { width:160px; *width:150px;display:block; float:left;} 
+.code_details .cont .di_1 .left_1 .p_1 span em { color:#ec6c49; background:url(http://009.90xqb.com/images/img/hl_bb.png) no-repeat right center; padding-right:18px;}
+.code_details .cont .di_1 .left_1 .p_1 span i { color:#ec6c49;}
+.code_details .cont .di_1 .left_1 .p_2 { margin-top:10px;}
+.code_details .cont .di_1 .left_1 .p_2 a { display:block; float:left; height:26px; line-height:26px; background:#4b6289; color:#fff; padding:0 16px 0 30px; border-bottom:4px solid #2c3f5f;}
+.code_details .cont .di_1 .left_1 .p_2 .ann_1 { background:url(http://009.90xqb.com/images/img/code_details_ico1.png) #4b6289 no-repeat 10px center;}
+.code_details .cont .di_1 .left_1 .p_2 .ann_1:hover { background:url(http://009.90xqb.com/images/img/code_details_ico1.png) #516b97 no-repeat 10px center;}
+.code_details .cont .di_1 .left_1 .p_2 .ann_2 { margin-left:30px; background:url(http://009.90xqb.com/images/img/code_details_ico2.png) #4b6289 no-repeat 10px center; } 
+.code_details .cont .di_1 .left_1 .p_2 .ann_2:hover { background:url(http://009.90xqb.com/images/img/code_details_ico2.png) #516b97 no-repeat 10px center;}
+.code_details .cont .di_2 { display:block; margin:0 10px; height:28px; line-height:28px; color:#4d4d4d; border:1px solid #f9d184; background:#ffffe3; margin-top:20px; padding-left:20px;}
+.code_details .cont .di_2 a { color:#01a8ff;}
+.code_details .cont .di_2 a:hover { color:#f05454;}
+.code_details .cont .di_3 { border-top:1px solid #e6e6e6; margin-top:20px; width:100%;}
+.code_details .cont .di_3 .tit_1{ height:36px; line-height:36px; color:#4b6289; font-size:16px; font-weight:bold; border-bottom:1px dashed #e6e6e6; margin:25px 10px 0 10px;}
+.code_details .cont .di_3 .tit_1 span { display:block; float:left;}
+.code_details .cont .di_3 .tit_1 .jc { display:block; float:right; font-size:12px; height:24px; line-height:24px; color:#fff; text-align:center; background:#4e5f7c; padding:0 10px;}
+.code_details .cont .di_3 .tit_1 .jc:hover {background:#516b97; }
+.code_details .cont .di_3 .table { margin:0 10px; color:#4d4d4d; margin-top:20px;}
+.code_details .cont .di_3 .table .ul_1 { display:block; border:1px solid #ebebeb; border-bottom:none !important;  width:100%; }
+.code_details .cont .di_3 .table .ul_1 li { display:block; height:34px; line-height:34px; border-bottom:1px solid #ebebeb; width:100%;}
+.code_details .cont .di_3 .table .ul_1 .tit_3 { font-weight:bold; background:#fafafa; }
+.code_details .cont .di_3 .table .ul_1 .li_1 p { display:block; float:left; text-align:center; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+.code_details .cont .di_3 .table .ul_1 .li_1 p span { display:block; border-right:1px solid #ebebeb;}
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_1 { width:20%;}
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_2 { width:10%; }
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_3 { width:10%;}
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_4 { width:10%;}
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_5 { width:10%;}
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_6 { width:12%;}
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_7 { width:15%;}
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_8 { width:13%;} 
+.code_details .cont .di_3 .table .ul_1 .li_1 .p_8 span { border-right:none !important;}
+.code_details .cont .di_3 .table .ul_1 .list .p_6 { width:12%; text-align:right;}
+.code_details .cont .di_3 .table .ul_1 .list .p_7 { width:15%; text-align:right;}
+.code_details .cont .di_3 .table .ul_1 .list .p_6 span i { color:#ec6c49; background:url(http://009.90xqb.com/images/img/hl_bb.png) no-repeat right center; padding-right:16px; margin-right:10px;}
+.code_details .cont .di_3 .table .ul_1 .list .p_7 span i { color:#ec6c49; background:url(http://009.90xqb.com/images/img/hl_bb.png) no-repeat right center; padding-right:16px; margin-right:10px;}
+.code_details .cont .di_3 .table_2 { margin:0 10px; color:#4d4d4d; margin-top:20px;}
+.code_details .cont .di_3 .table_2 .ul_1 { display:block; border:1px solid #ebebeb; border-bottom:none !important;  width:100%; }
+.code_details .cont .di_3 .table_2 .ul_1 li { display:block; height:34px; line-height:34px; border-bottom:1px solid #ebebeb; width:100%;}
+.code_details .cont .di_3 .table_2 .ul_1 .tit_3 { font-weight:bold; background:#fafafa; }
+.code_details .cont .di_3 .table_2 .ul_1 .li_1 p { display:block; float:left; text-align:center; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+.code_details .cont .di_3 .table_2 .ul_1 .li_1 p span { display:block; border-right:1px solid #ebebeb;}
+.code_details .cont .di_3 .table_2 .ul_1 .li_1 .p_1 { width:25%;}
+.code_details .cont .di_3 .table_2 .ul_1 .li_1 .p_2 { width:25%; }
+.code_details .cont .di_3 .table_2 .ul_1 .li_1 .p_3 { width:25%;}
+.code_details .cont .di_3 .table_2 .ul_1 .li_1 .p_4 { width:25%;}
+.code_details .cont .di_3 .table_2 .ul_1 .li_1 .p_4 span { border-right:none;}
+.code_details .cont .di_3 .table_2 .ul_1 .list .p_3 span i { color:#ec6c49;}
+.code_details .cont .di_3 .table_2 .ul_1 .list .p_4 span .w { color:#b3b3b3;}
+.code_details .cont .di_3 .table_2 .ul_1 .list .p_4 span .y { color:#2abc17;}
+.code_details .cont .di_3 .zhu { margin:0 10px; color:#b3b3b3; margin-top:5px;}
+.code_details .cont .di_3 .jies { color:#333; margin:0 20px; font-size:14px; line-height:30px;}
+.code_details .cont .di_3 .changs { color:#333; margin:0 20px;  line-height:30px;}
+.code_details .cont .di_3 .changs .p_2 { font-weight:bold; line-height:none;}
+/*打码视频教程*/
+.video { display: block; margin: 0 auto; text-align: center; margin-top: 30px;margin-bottom: 30px;}
+/*打码辅助工具*/
+.code_fz { display: block; padding: 20px 0;}
+.code_fz .code_fz_left { display: block; float: left; width: 50%; text-align: center;}
+.code_fz .code_fz_right { display: block; float: left;width: 49%;text-align: center;}
+.code_fz .code_fz_left .code_fz_img {display: block; width: 346px; height: 108px; background: url(http://009.90xqb.com/images/img/code_fz_d.jpg) no-repeat; margin: 0 auto;}
+.code_fz .code_fz_right .code_fz_img {display: block; width: 346px; height: 108px; background: url(http://009.90xqb.com/images/img/code_fz_dk.jpg) no-repeat; margin: 0 auto;}
+.code_fz .code_fz_text { display: block; text-align: left; font-size:14px; width: 346px; margin: 0 auto; line-height: 26px;}
+.code_fz .code_fz_ann { display: block; width: 170px; height: 44px;  background: url(http://009.90xqb.com/images/img/code_fz_xz.gif) no-repeat; margin: 10px 0 0 10px;}

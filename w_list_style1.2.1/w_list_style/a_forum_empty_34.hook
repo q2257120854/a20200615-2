@@ -1,0 +1,22 @@
+//<?
+$tmp_fid = $fid;
+$tmp_fid1 = $fid;
+if(isset($this->_forum[$tmp_fid1]['z'])){
+    if($this->_forum[$tmp_fid1]['z']){
+        $tmp_fid1 = array($tmp_fid);
+        $this->search_sub_formg($tmp_fid,$tmp_fid1);
+    }
+}    
+
+$Thread = M('Thread');
+$touch_imagex = $this->CacheObj->get('touch_imagex');
+if(empty($touch_imagex) || DEBUG){
+	$touch_imagex = $Thread->select('*',array('fid'=>$tmp_fid1,'img_count[!]'=>0,"ORDER" => ['views'=>'DESC'],"LIMIT" => array(0, 4)));
+	foreach ($touch_imagex as & $v) {
+		$tmp = explode(",",$v['img']);
+		$v['img'] = $tmp[0];
+		unset($tmp);
+	}
+	$this->CacheObj->set('touch_imagex',$touch_imagex);
+}
+$this->v('touch_imagex',$touch_imagex);

@@ -1,0 +1,64 @@
+ 快速安装：
+
+一： 环境搭建 
+
+  工具：phpStudy ， YII框架
+
+   解压本程序包内文件到D盘 ， 此教程默认在D盘进行操作，若安装在其他盘请修改相应盘符
+
+   1、本机或服务器安装phpstudy到D盘， 默认设置即可
+  
+   2、phpstudy面板其它选项菜单 -- 打开文件位置 -- PHP ---- 复制php.exe 文件所在硬盘位置
+
+        示例 D:\phpStudy\php53\php.exe
+   
+   3、打开 framework 文件夹下 yiic.bat 右键-编辑  修改" set PHP_COMMAND=C:\phpStudy\php53\php.exe
+
+" 
+
+       为上面文件安装的实际地址，保存
+
+   4、win+R  运行 cmd 
+ 
+      命令行：   D：回车
+                 cd D：\test\framework 回车
+                 yiic webapp D:\test\www 回车
+                 yes 回车
+      示例即写入完毕
+
+   5、回到test文件，打开刚才写入的www文件示例，删除里面的所以文件
+
+   6、复制程序安装包内1文件夹内所有文件到www文件
+
+   yii框架搭建完成
+
+二、数据库恢复
+
+    phpstudy面板 启动服务
+
+    启动完毕后，phpstudy面板--其它选项菜单--phpmyadmin
+ 
+    输入原始数据库账号密码。 默认账号密码相同，都为  root
+   
+    新建一个kaixin 的数据库
+
+    导入程序安装包内数据库文件夹内文件 kaixin.sql 执行
+
+    数据库恢复完毕
+
+三、本地测试及服务器域名绑定
+
+    phpstudy面板  -- 其它选项菜单 -- 站点域名管理 
+
+    本地新增一个 域名为 127.0.0.2 网站目录指向 D：\test\www
+
+    新增并保存设置并生成文件 
+
+四、修改数据库配置
+
+五、浏览器访问 
+ 
+    输入 127.0.0.2  显示界面即成功
+
+
+    

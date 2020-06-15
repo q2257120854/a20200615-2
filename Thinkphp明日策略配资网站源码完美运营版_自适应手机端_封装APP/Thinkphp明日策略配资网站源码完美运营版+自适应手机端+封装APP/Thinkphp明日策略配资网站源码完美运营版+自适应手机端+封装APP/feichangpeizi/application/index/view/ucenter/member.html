@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金龙策略</title>
+</head>
+<body class="membercenter logged-in">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/member.css"/>
+
+<!--个人中心-充值-->
+<div class="br-content">
+<div class="w1200">
+	<!--主体-->
+<section class="page-main page-personal">
+    <div class="container clearfix">
+    	<!--public左边-->
+    	{include file="public:member_left" /}
+        <!--右边-->
+<div id="page_member_index" class="col-main">
+    <section class="personal-section">
+    	<h1 class="per_h1">我的首页</h1>
+        <div class="new-section-sub-title">
+            <p class="inner-sub-title"><span style="display: block;">账户余额</span><strong class="p-unit" id="账户余额">{$member.usableSum}</strong>元</p>
+        </div>
+        <div class="p-money clearfix">
+            <p class="diyongquan br-fl"><span class="ticket">我的抵用券</span><span id="diyongquan">0.00</span>元</p>
+            
+        </div>
+        <div class="money_box p-money br-fr">
+            	<a id="recharge2" class="btn-1" href="/ucenter/payment.html">充值</a>
+            	<a id="withdraw2" class="btn-2" href="/ucenter/withdraw.html">提现</a>
+        </div>
+    </section>
+    <div class="mid-gap">
+        <h4>资金明细</h4>
+    </div>
+    <section class="moneydetails">
+        <div class="table-control-bar clearfix">
+            <label class="f-left">资金流向：</label>
+            <ul class="f-left filter" id="money-flow">
+                <li><a href="/ucenter/index.html?recent={$_GET['recent']}" {if condition="$_GET['flow'] eq ''"} class="active" {/if} >全部</a></li>
+                <li><a href="/ucenter/index.html?flow=1&recent={$_GET['recent']}" {if condition="$_GET['flow'] eq '1'"} class="active" {/if}  >收入</a></li>
+                <li><a href="/ucenter/index.html?flow=2&recent={$_GET['recent']}" {if condition="$_GET['flow'] eq '2'"} class="active" {/if} >支出</a></li>
+            </ul>
+            <div class="f-right">
+                <select id="search-times">
+                    <option value="" selected="selected">全部</option>
+                    <option value="-7" >最近一周</option>
+                    <option value="-30">最近一月</option>
+                    <option value="-90">最近三月</option>
+                    <option value="-180">最近半年</option>
+                    <option value="-360">最近一年</option>
+                </select>
+            </div>
+        </div>
+        <table id="asset-details-tbl" class="std-tbl">
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+                <col class="col3">
+                <col class="col4">
+                <col class="col5">
+                <col class="col6">
+                <col class="col7">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>时间</th>
+                <th>流向</th>
+                <th>收入/支出(元)</th>
+                <th>余额(元)</th>
+                <th>说明</th>
+            </tr>
+            {volist name="fundrecord" id="vo"}
+            <tr><td class="a-center">{$i}</td><td class="a-center">{$vo.createTime}</td>
+                <td class="a-center">{if condition="$vo.flow eq 1"}收入{elseif condition="$vo.flow eq 2 "}支出{else}未知{/if}</td>
+                <td class="a-center">
+                    {if condition="$vo.flow eq 2"}<span class="green">-{$vo.amount}</span>
+                    {else}<span class="red">{:round($vo.amount,2)}</span>
+                    {/if}
+                </td>
+                <td class="a-center">{:round($vo.usableSum, 2)}</td>
+                <td class="a-center">{$vo.remarks}</td>
+            </tr>
+            {/volist}
+
+            </thead>
+            <tbody id="member_bh_list" class="std-tbl-tbody"></tbody>
+        </table>
+
+        {$fundrecord->render()}
+
+   
+    </section>
+    <section id="noPlanSection" class="group personal-section personal-empty hide">
+        <p><a href="javascript:void(0);" class="btn btn-pri">我要交易</a>
+        </p>
+        <p><a href="/freetrial.html">免费体验</a>
+        </p>
+        <p><a href="/help.html">了解交易</a>
+        </p>
+    </section>
+    <!--/ 交易列表start-->
+    <div id="member_index_plan_list">
+    </div>
+    <!--/交易列表end-->
+</div>
+
+
+    </div>
+</section>
+	
+	
+	
+	
+	
+</div>
+</div>
+<!--Start Pop-ups-->
+<div class="mask"></div>
+<div class="popup" id="popup-p-confirm">
+    <div class="popup-header group">
+        <h2>提示</h2>
+    </div>
+    <div class="popup-body group">
+        <div class="btn-row group">
+            <a class="btn btn-pri js-close-popup" href="javascript:popup_confirm_go()">确定</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup-yeepay">
+    <div id="yeepayPopupContent" class="popup-header group">
+        <h2>提示</h2>
+    </div>
+    <div class="popup-body group">
+        <div class="btn-row group">
+            <a id="yeepayNextLink" target="_blank" class="btn btn-pri" href="javascript:；">开设账户</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">暂不充值</a>
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup-yeepay-confirm">
+    <div id="yeepayConfirmContent" class="popup-header group">
+        <h2>提示</h2>
+    </div>
+    <div class="popup-body group">
+        <div class="btn-row group">
+            <a class="btn btn-pri js-close-popup" href="javascript:；">是</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">否</a>
+        </div>
+    </div>
+</div>
+<div id="popup-p-error" class="popup">
+    <div class="popup-header group">
+        <h2>提示</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <p id="popup-p-error-msg">提示信息</p>
+    </div>
+</div>
+<div class="popup" id="popup-feedback">
+    <div class="popup-header group">
+        <h2>意见反馈</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <form action="#">
+            <div class="field-row group">
+                <label>留言类型：</label>
+                <div class="field-val">
+                    <select id="留言类型s">
+                        <option value="">请选择留言类型</option>
+                        <option value="1">交易问题</option>
+                        <option value="2">充值/提款问题</option>
+                        <option value="3">交易问题</option>
+                        <option value="4">我要投诉</option>
+                        <option value="5">意见反馈</option>
+                        <option value="6">其它</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field-row group show-logout">
+                <label>手机/邮箱：</label>
+                <div class="field-val"><input type="text" class="text" placeholder="请输入手机号或邮箱"></div>
+            </div>
+            <div class="field-row group">
+                <label>&nbsp;</label>
+                <div class="field-val">
+                    <textarea id="留言内容i" placeholder="请填写留言内容" class="textarea"></textarea>
+                </div>
+            </div>
+            <div class="btn-row group">
+                <a class="btn btn-pri" href="javascript:feedback_Insert()">提交</a>
+            </div>
+        </form>
+    </div>
+</div>
+<!--/#popup-feedback-->
+<div class="popup" id="popup-id-verify">
+    <div class="popup-header group">
+        <h2>认证银行卡</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">提现和免费体验前必须先绑定一张银行卡</li>
+                <li style="text-align:left;">请务必认真填写真实资料</li>
+                <li style="text-align:left;">银行卡采用实名认证，一个身份证只能绑定一个账号</li>
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先绑定银行卡</p>
+        </div>
+        <div class="btn-row group">
+            <a class="btn btn-pri" href="/ucenter/BankCards.html">去绑定</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">暂不绑定</a>
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup-realname-auth">
+    <div class="popup-header group">
+        <h2>实名认证</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">一个身份证对应一个账号</li>
+                
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先进行实名认证</p>
+        </div>
+        <div class="field-row group">
+            <label>真实姓名：</label>
+            <div class="field-val"><input id="姓名i" type="text" class="text" onchange="user_updateid_zsxm_valid()"></div>
+        </div>
+        <div id="zsxm_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>未填写姓名</div></div>
+        <div class="field-row group">
+            <label>身份证号：</label>
+            <div class="field-val">
+                <div class="field-val">
+                    <input id="身份证i" type="text" class="text" onchange="user_updateid_sfzh_valid()">
+                </div>
+            </div>
+        </div>
+        <div id="sfzh_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>请填写准确的身份证</div></div>
+        <div class="btn-row group">
+            <a id="user_UpdateSelfIdA" class="btn btn-pri" href="javascript:void(0)">确认</a>
+            <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+<div class="popup popup-small" id="popup-user-login">
+    <div class="popup-header group">
+        <h2>账户登录</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="group section-form" style=" margin-bottom: 0px; margin-top: 10px;" id="popup-login-section">
+            <div class="form">
+                <div class="field-wrapper">
+                    <input type="text" class="text" placeholder="用户名/手机号" name="phone" id="popup_user_login_name">
+                </div>
+                <div class="error-wrapper" style="display:none; margin-top:5px;"><div><i class="icon icon-x-altx-alt" style="font-size:13px;"></i>用户名不能为空！</div></div>
+                <div class="field-wrapper">
+                    <input type="password" class="text" placeholder="请输入密码" name="pwd" id="popup_user_login_pwd" onkeydown="if (event.keyCode == 13) { user_Login() }">
+                </div>
+                <div class="error-wrapper" style="display:none; margin-top:5px;"><div><i class="icon icon-x-altx-alt" style="font-size:13px;"></i>密码不能为空！</div></div>
+                <div class="field-wrapper" id="popup-user-login-valid-img" style="display:none;">
+                    <input type="text" class="text" style="width:100px; margin-right:5px; float: left;" placeholder="4位验证码" name="txt_valid_code">
+                    <img name="img-block" class="captcha-img" alt="">
+                    <a name="btn-change-img" style="font-size:13px; line-height:45px;" href="javascript:void(0)">看不清楚？</a>
+                </div>
+                <div class="error-wrapper" style="display:none; margin-top:5px;"><div><i class="icon icon-x-altx-alt" style="font-size:13px;"></i>验证码错误！</div></div>
+                <div class="link-wrapper group">
+                    <a href="/forgot_pass.html">忘记密码</a>
+                </div>
+                <div class="error-wrapper" style="display:none;  margin-top:5px;"><div><i class="icon icon-x-altx-alt" style="font-size:13px;" id="popup_user_login_msg"></i></div></div>
+                <div class="btn-wrapper">
+                    <a href="javascript:void(0);" id="popup_user_login_submit" class="btn btn-pri">登录</a>
+                </div>
+            </div>
+            <div class="quick-link-wrapper group" style=" padding-bottom:0px;text-align: center;margin-top: 10px;">
+                <p>还没账号? <a href="/reg.html" style="color:#d42b2e;">马上注册</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/#popup-add-deposit（终止操盘）-->
+<div class="popup" id="popup-early" style="display: none; top: 0px;">
+        <div class="popup-header group">
+            <h2>终止操盘</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <form action="#">
+                <div class="btn-row group">
+                    <a id="plan_earlyA" class="btn btn-pri js-close-popup" href="javascript:plan_early_Insert()">确定</a>
+                    <a class="btn btn-pri js-close-popup" href="javascript:;">取消</a>
+                </div>
+            </form>
+        </div>
+    </div>
+<!--/#popup-add-deposit（追加保证金）-->
+<div class="popup" id="popup-add-deposit" style="">
+        <div class="popup-header group">
+            <h2>追加保证金</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <p class="note-msg">每次追加保证金不能小于当前方案中操盘资金的1%，最低100元，每天可追加或取消保证金的次数为5次。</p>
+            <form action="#">
+                <div class="field-row group">
+                    <label>追加金额：</label>
+                    <div class="field-val"><input id="追加金额i" type="text" class="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><span class="field-note" id="最低添加保证金">最低-元</span></div>
+                </div>
+                <div class="btn-row group">
+                    <a id="plan_addmarginA" class="btn btn-pri" href="javascript:plan_madd_Insert()">立即追加</a>
+                </div>
+                <p class="chance-count">今日次数: <span>5</span></p>
+            </form>
+        </div>
+    </div>
+<!--/#popup-renew（申请续约）-->
+<div class="popup" id="popup-renew" style="display: none; top: 0px;">
+        <div class="popup-header group">
+            <h2>申请续约</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <p class="note-msg">申请续约后，我们会进行审核，不保证续约一定成功。</p>
+            <form action="#">
+                <div class="field-row group">
+                    <label>续约时间：</label>
+                    <div class="field-val">
+                        <select id="续约时间s">
+                            <option selected="selected" value="1">一个月</option>
+                            <option value="2">二个月</option>
+                            <option value="3">三个月</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn-row group">
+                    <a id="plan_deferA" class="btn btn-pri js-close-popup" href="javascript:plan_defer_Insert()">确定</a>
+                    <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+                </div>
+            </form>
+        </div>
+    </div>
+<!--/#popup-get-profit（利润提取）-->    
+<div class="popup" id="popup-get-profit" style="display: none; top: 0px;">
+        <div class="popup-header group">
+            <h2>利润提取</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <p class="note-msg">
+                1，当日卖出股票的资金到第二日，资金可用<br>
+                2，总利润需保留总操盘资金的10%<br>
+                3，单笔最少提3%，最少100元<br>
+                4，每周可提取利润两次
+            </p>
+            <form action="#">
+                <div class="field-row group">
+                    <label>可提金额：</label>
+                    <div class="field-val" id="可提金额">- 元</div>
+                </div>
+                <div class="field-row group">
+                    <label>最少可提：</label>
+                    <div class="field-val" id="最少可提">- 元</div>
+                </div>
+                <div class="field-row group">
+                    <label>提取金额：</label>
+                    <div class="field-val"><input id="提取金额i" type="text" class="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><span class="unit">元</span></div>
+                </div>
+                <div class="btn-row group">
+                    <a id="plan_wdA" class="btn btn-pri js-close-popup" href="javascript:plan_withdraw_Insert()">确定</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+{include file="public:footer" /}
+<script src="/public/static/home/js/index.js"></script>
+</body>
+</html>
+
+<script>
+    $(function(){
+        var recent = "{$_GET['recent']}";
+        $("#search-times").val(recent);
+    });
+    $("#search-times").change(function(e){
+        var recent = $(this).val();
+        location.href = "/ucenter/index.html?recent=" + recent + "&flow={$_GET['flow']}";
+    });
+	
+	
+
+</script>
+
+
+

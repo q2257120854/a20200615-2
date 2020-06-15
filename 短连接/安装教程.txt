@@ -1,0 +1,28 @@
+Web环境，可以使用宝塔面板，或者lnmp一键包，只需要安装Nginx、PHP即可。
+
+然后解析好域名，上传程序源码到网站根目录wwwroot
+
+接下来设置Nginx伪静态，在网站配置文件中添加以下代码：
+
+#root后面为网站根目录地址
+location / {
+  try_files $uri $uri/ =404;
+  rewrite (\d+|\w+)$ /index.php?id=$1;
+ 
+  location ^~ /asset/ {
+    root /var/www/xx.com;
+  }
+ 
+  location ^~ /api/ {
+    root /var/www/xx.com;
+  }
+ 
+  location ^~ /inc/ {
+    return 403;
+   }
+  }
+最后只需要修改config.php的相关配置并把inc目录权限设置为可读写即可。
+
+
+5G云源码分享网  bbs.5g-yun.com
+

@@ -1,0 +1,104 @@
+<title>{:config('web_site_title')}</title>
+
+<meta name="keywords" content="{:config('web_site_keywords')}">
+<meta name="description" content="{:config('web_site_description')}">
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/common.css"/>
+<!--头部-->
+<header class="ml_header br-w100">
+    <div class="h_top br-w100">
+        <div class="w1024 br-clearfix">
+            <!--<div class="h_topL br-fl">
+                服务热线：{$phone}
+                <a id="qqicon" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={$QQ}&amp;site=qq&amp;menu=yes"></a>
+            </div>-->
+
+
+            <div id="page_shared_layout_login" class="h_topR br-fr" {if condition="$_SESSION['member'] neq '' "} style="display: none;" {/if} >
+                <a class="login" href="javascript:;">登录</a>
+                <a class="register" href="/reg.html">注册</a>
+            </div>
+
+            <ul id="page_shared_layout_unlogin" class="top-links f-right" {if condition="$_SESSION['member'] eq '' "} style="display: none;" {/if}>
+                <!--<li class="show-logout" style="display: list-item;"><a href="javascript:_hmt.push(['_trackEvent', 'login', 'click', 'head-login',1]);" name="popup-user-login-click">登录</a></li>-->
+                <!--<li class="show-logout sep" style="display: list-item;">|</li>-->
+                <!--<li class="show-logout" style="display: list-item;"><a href="/user/reg">注册</a></li>-->
+                <li class="show-login" style="display: block;">您好，&nbsp;</li>
+                <li class="show-login top-user-wrapper" style="display: block;">
+                    <span class="top-username">
+                    	<a id="page_shared_layout_login_name" href="/ucenter/index">{$_SESSION['member']['username']}</a>
+                    	<i class="icon icon-arrow-drop-down"></i>
+                    </span>
+                    <div class="overlay-account">
+                        <div class="group account-group">
+                            <span class="f-left">可用<b class="account-val" id="shared_header_mb">{$usableSum}</b></span>
+                            <a name="realnameAuth" class="f-right" href="/ucenter/payment.html">充值</a>
+                        </div>
+                        <div class="account-links group">
+                            <a class="f-left" href="/ucenter/index.html">个人中心</a>
+                            <span class="f-left sep">|</span>
+
+
+                            <a class="f-right js-logout" href="/index/index/logout.html">安全退出</a>
+                        </div>
+                    </div>
+                    <!--/.overlay-account-->
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="h_bot br-w100">
+        <div class="w1024 br-clearfix">
+            <div class="h_botL br-fl">
+                <a href="/"><img src="/public/static/home/img/logo.png" style="height:60px; " /></a>
+            </div>
+            <div class="h_botR br-fr">
+                <ul class="br-clearfix" id="menu-ul">
+                    <li class="br-fl"><a href="/index.html" class="active">首页</a></li>
+                    <li class="br-fl"><a href="/buy.html">A股点买</a></li>
+                    <li class="br-fl"><a href="/freetrial.html">免费体验</a></li>
+                    <li class="br-fl"><a href="/mobile.html">手机版</a></li>
+                    <li class="br-fl help_box">
+                    	<a href="/guild.html">帮助中心</a>
+                    	<ul class="new-sub-nav hide">
+                            <li class=""><a href="/guild.html">新手教学</a></li>
+                            <li class=""><a href="/help.html">常见问题</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script src="/public/static/libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+<script src="/public/static/home/js/general.js"></script>
+
+<script>
+    //自动选中active
+    $(function(){
+        var menuArr = [];
+        menuArr[0] = ["index.html"  ];
+        menuArr[1] = ["buy.html", "sell.html", "history.html" ];
+        menuArr[2] = ["freetrial.html", "freetrialSell.html", "freetrialHistory.html"  ];
+        menuArr[3] = ["mobile.html",  ];
+        menuArr[4] = [ "guild.html" ,"help.html" ];
+        for(var i = 0 ; i < menuArr.length; i++ ){
+            for(var j = 0 ; j < menuArr[i].length; j++){
+                if(location.href.indexOf(menuArr[i][j]) > 0){
+                    $("#menu-ul > li a").removeClass("active");
+                    $("#menu-ul > li").eq(i).find("a").eq(0).addClass("active");
+                    $("#menu-ul > li").eq(i).find("a").eq(j+1).addClass("active");
+					//console.log(i+'------'+j);
+                    return;
+                }
+            }
+        }
+       
+
+    });
+
+
+</script>

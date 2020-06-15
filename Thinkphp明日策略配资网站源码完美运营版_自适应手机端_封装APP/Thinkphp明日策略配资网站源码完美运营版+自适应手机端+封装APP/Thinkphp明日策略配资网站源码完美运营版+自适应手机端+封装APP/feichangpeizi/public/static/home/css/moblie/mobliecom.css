@@ -1,0 +1,605 @@
+[class^="icon_"]{
+	display: inline-block;
+	background-size: 100% 100%;
+}
+img{
+	width: 100%;
+	vertical-align: middle;
+}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+form,
+div,
+fieldset,
+legend,
+img,
+input,
+a,
+::before,
+::after {
+  /*padding: 0;
+  margin: 0;*/
+  -webkit-tap-highlight-color: transparent;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+}
+em,
+i,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+:root{
+	--color_red:#e60012;
+	--color_green:#19B777;
+	
+}
+/*字体颜色*/
+.color_red{
+	color: #e60012;
+}
+.color_green{
+	color:#19B777;
+}
+.color_gray{
+	color: #8f8f94;
+}
+.color_black{
+	color: #000;
+}
+/*字体大小*/
+.font12{
+	font-size: 12px;
+}
+.font14{
+	font-size: 14px;
+}
+.pad10{
+	padding: 0 10px;
+}
+/*背景色*/
+.bg_fff{
+	background-color: #fff;
+}
+/*自定义输入框右侧*/
+.input_r{
+	display: inline-block;
+    width: 65%;
+    line-height: 45px;
+    height: 45px;
+    margin-bottom: 0;
+    position: relative;
+    padding-right: 10px;
+}
+/*自定义li标签选择器右侧文字（无箭头）*/
+.picker_r{
+	position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    -webkit-transform: translateY(-50%) !important;
+    right: 15px;
+    /*font-size: 14px;*/
+    line-height: 1;
+}
+/*自定义li标签选择器右侧文字（有箭头）*/
+.picker_r_arr{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 35px;
+    /*font-size: 14px;*/
+    line-height: 1;
+}
+/*95%按钮*/
+.ml_btn{
+	background-color: #e60012;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px auto;
+    color: #fff;
+    width: 95%;
+    border: none;
+}
+/*100%按钮*/
+.ml_btn_bot{
+	background-color: #e60012;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    width: 100%;
+    border: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+/*tip行文字*/
+.ml-tip{
+	font-size: 12px;
+	line-height: 30px;
+    height: 30px;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+/*-表单-*/
+.mui-input-group .mui-input-row{
+	height: 45px;
+}
+.mui-input-row label{
+	line-height: 45px;
+	padding: 0 10px;
+    font-size: 14px;
+}
+input[type=number],input[type=text]{
+	height: 45px;
+    font-size: 14px;
+}
+/*分页*/
+.pagination_box{
+	text-align: center;
+    padding-top: 5px;
+}
+.pagination_box ul.pagination>li{
+	float: left;
+	padding: 5px 10px;
+    margin-right: 5px;
+}
+.pagination_box ul.pagination>li.active{
+	background: #e60012;
+    border-radius: 50%;
+    color: #fff;
+}
+.pagination_box ul.pagination>li.disabled{
+    color: #ccc;
+}
+.pagination_box ul.pagination>li>a{
+	color: #000;
+}
+ul.pagination {
+  zoom: 1;
+  display: inline-block;
+}
+ul.pagination::after {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+ul.pagination::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+/*底部*/
+nav.ml_tab{
+	background-color: rgba(0,0,0,.8);
+}
+nav.ml_tab .mui-icon:before{
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+    background-size: 100% 100%;
+}
+nav.ml_tab .mui-icon-home:before{
+	background-image: url(/public/static/home/img/moblie/home1.png);
+}
+nav.ml_tab .mui-icon-phone:before{
+	background-image: url(/public/static/home/img/moblie/share1.png);
+}
+nav.ml_tab .mui-icon-email:before{
+	background-image: url(/public/static/home/img/moblie/mine1.png);
+}
+nav.ml_tab .mui-tab-item.mui-active {
+	color: #e60012;
+}
+nav.ml_tab .mui-active .mui-icon-home:before{
+	background-image: url(/public/static/home/img/moblie/home2.png);
+}
+nav.ml_tab .mui-active .mui-icon-phone:before{
+	background-image: url(/public/static/home/img/moblie/share2.png);
+}
+nav.ml_tab .mui-active .mui-icon-email:before{
+	background-image: url(/public/static/home/img/moblie/mine2.png);
+}
+/*-------*/
+ p.data_empty {
+    line-height: 20px;
+    text-align: center;
+    padding-top: 25px;
+    position: relative;
+}
+/*新手引导*/
+.guide-section-1{
+	padding: 20px 0;
+}
+.guide-section-1 .container{
+	width: 90%;
+}
+.container{
+	width: 85%;
+	margin: 0 auto;
+}
+.guide-section-2 {
+    height: 225px;
+    background: url(/public/static/home/img/moblie/bgxie.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.section2_img {
+    float: right;
+    width: 120px;
+    height: 115px;
+    background: url(/public/static/home/img/moblie/computer.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 45px;
+}
+.info {
+    float: left;
+    width: 45%;
+    text-align: left;
+    margin-top: 60px;
+}
+.guide-title{
+	font-size: 14px;
+}
+.info-detail{
+	font-size: 12px;
+	margin-bottom: 0px;
+    line-height: 14px;
+}
+.guide-section-3 {
+    height: 150px;
+    box-sizing: border-box;
+}
+.guide-section-3 .section2_img{
+	 margin-top: 10px;
+	 float: left;
+}
+.guide-section-3 .info{
+	 margin-top: 25px;
+	 float: right;
+}
+.section4_img {
+    float: right;
+    width: 148px;
+    height: 145px;
+    background: url(/public/static/home/img/moblie/4.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 40px;
+}
+.section5_img {
+    float: left;
+    width: 115px;
+    height: 109px;
+    background: url(/public/static/home/img/moblie/5.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 25px;
+}
+.guide-section-5 .section5_img{
+	margin-top: 10px;
+}
+.guide-section-5 .info{
+	margin-top: 15px;
+}
+.guide-section-6 {
+    height: 200px;
+    background: url(/public/static/home/img/jx.png) no-repeat;
+    background-size: 100% 100%;
+}
+.guide-section-6 .info{
+	margin-top: 95px;
+}
+
+.section6_img {
+    float: right;
+    width: 140px;
+    height: 124px;
+    background: url(/public/static/home/img/moblie/6.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 50px;
+}
+/*支付宝充值*/
+.pay_title{
+	padding: 0 10px;
+	font-size: 12px;
+	line-height: 30px;
+	color: #AFADAD;
+}
+/*sec1*/
+.sec1{
+	padding: 30px 10px;
+}
+.text p{
+	color: #000;
+	margin-bottom: 0;
+}
+	.copy{
+		color: #47A1CB;
+	}
+	a.copy{
+		font-size: 12px;
+	}
+.zhuyi{
+	color: #FF4C4C !important;
+	font-size: 12px;
+	    line-height: 1.2;
+    margin-top: 5px;
+}
+/*sec2*/
+.sec2{
+	padding: 40px 10px;
+}
+
+/*over_p*/
+.over_p{
+	padding: 0 10px;
+    line-height: 45px;
+    margin-top: 5px;
+    color: #000;
+    margin-bottom: 35px;
+}
+.re_p1{
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+.re_p2{
+	margin-bottom: 0;
+}
+/*银联支付*/
+.quick_body .money{
+	padding: 0 10px;
+    line-height: 50px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 14px;
+}
+.quick_body .tip img{
+	width: 20%;
+}
+.tip1{
+	padding: 10px 10px;
+}
+/*提现*/
+.add{
+	position: relative;
+	line-height: 30px;
+}
+.add:before{
+	content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/public/static/home/img/moblie/add.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+.bankcard{
+	float: right;
+    width: 65%;
+    line-height: 1;
+    padding-top: 5px;
+    font-size: 14px;
+}
+.bankcard p{
+    color: #000;
+    font-size: 12px;
+}  
+.withdraw_body button{
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+/*realName*/
+.realName_body form{
+	margin-bottom: 25px;
+}
+/*bankcard*/
+.addbank{
+	padding: 30px 10px;
+	margin-bottom: 10px;
+	    
+}
+.addbank a{
+	display: block;
+	color: var(--color_gray);
+}
+ul.cardList li img{
+	    width: 37px;
+    height: 23px !important;
+    margin-top: 10px;
+    margin-right: 20px !important;
+}
+.bankcard_body .mui-table-view-cell{
+	padding: 15px 15px;
+}
+/*addbank*/
+.addbank_body form{
+	margin-bottom: 20px;
+}
+.addbank_body .mui-table-view-cell{
+	padding: 12px 15px;
+}
+.addbank_body .door{
+	padding: 0;
+    padding-left: 5px;
+}
+.addbank_body .door label,input[type=text]{
+	font-size: 17px;
+}
+/*资金明细*/
+a.mui-control-item{
+	font-size: 16px;
+	color: #000;
+	
+}
+.moneydetail_body .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #e60012;
+	border-bottom: 2px solid #e60012;
+}
+.moneydetail_body .mui-table-view-cell{
+	padding: 15px 15px;
+}
+/*推广赚钱*/
+.share_body .mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+	color: #fff;
+}
+.share_body .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+.share_body .topbg{
+	    background: url(/public/static/home/img/moblie/sharebg.png) top no-repeat;
+    background-size: 100% 100%;
+    height: 190px;
+}
+.share_body .mui-segmented-control{
+	position: absolute;
+    z-index: 998;
+}
+.share_body .topBox{
+	margin: 0 auto;
+    width: 85%;
+    padding-top: 80px;
+        
+}
+.share_body .top_item h5{
+	font-size: 24px;
+}
+img.ewm{
+	width: 30%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.copyBox {
+	 width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-top: 1px dashed #ccc;
+}
+.www{
+	color: #007aff;
+}
+#copy_a{
+	    padding: 0px 12px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+.share_body h5.step_title{
+	font-size: 16px;
+}
+.share_body h5.step_title:before,h5.step_title:after{
+	content: '';
+	display: inline-block;
+	width: 50px;
+	height: 1px;
+	background: #DFDDC9;
+	vertical-align: middle;
+}
+.step_img{
+	width: 20px;
+	margin-right: 15px;
+}
+.step_box{
+	width: 80%;
+	margin: 0 auto;
+}
+.step_box p{
+	margin-top: 5px;
+	    width: 80%;
+}
+/*推广赚钱-我的用户*/
+.share_body .share_people_top {
+	    padding-top: 20px;
+	padding-bottom:10px;
+    border-bottom: 1px dashed;
+}
+.share_body .data_empty{
+	margin-top: 15px;
+}
+/*资金合作*/
+.zijin{
+	text-align: center;
+	color: #000;
+}
+.zijin_body p,.zijin_body span{
+	font-size: 12px;
+}
+
+.ident_2{
+	/*text-indent: 2em;*/
+}
+.ident_4{
+	/*text-indent: 4em;*/
+}
+/*微信充值*/
+.wx_top{
+    background: #fff;
+    border-radius: 10px;
+    height: 500px;
+    background-size: 100% 100%;
+    width: 90%;
+    margin: 30px auto;
+    padding: 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+.wx_p1{
+padding-top: 20px;
+    margin-bottom: 25px;
+}
+.wx_img{
+    width: 150px;
+    margin: 0 auto;
+    display: block;	
+}
+.wx_p2{
+    margin-bottom: 110px;
+    font-size: 12px;
+    text-align: center;	
+}
+.wx_p3{
+	color: #666;
+}
+.ball{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #efeff4;
+    top: 55%;
+}
+.ball_l{
+    left: -20px;	
+}
+.ball_r{
+    right: -20px;	
+}

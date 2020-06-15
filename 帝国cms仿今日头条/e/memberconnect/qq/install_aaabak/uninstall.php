@@ -1,0 +1,14 @@
+<?php
+if(!defined('InEmpireCMS'))
+{
+        exit();
+}
+
+//------ QQµÇÂ¼²å¼þÐ¶ÔØ ------
+
+//É¾³ýQQµÇÂ¼Ó¦ÓÃ¼ÇÂ¼
+$empire->query("delete from {$dbtbpre}enewsmember_connect_app where apptype='qq';");
+
+GetConfig();
+
+?>

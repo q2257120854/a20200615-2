@@ -1,0 +1,35 @@
+<script>
+    // 监听下单商品选择
+
+    $(document).ready(function () {
+        $('#tid').change();
+    });
+
+    $('#tid').change(function () {
+        setTimeout(function () {
+            const price = $('#need').val(); // 获取商品的单价
+            $.post('/ajax.php?act=call_plugin_ajax&p_name=sendRedPack&type=check_deduction', {
+                'price': price
+            }).done(function (res) {
+                if (res['data']) {
+                    $('#p_money_price').remove();
+                    $('#need').parent().parent().append(res['data']);
+                }
+            });
+        }, 200);
+    });
+
+    $('#num_min, #num_add').click(function () {
+        setTimeout(function () {
+            const price = $('#need').val(); // 获取商品的单价
+            $.post('/ajax.php?act=call_plugin_ajax&p_name=sendRedPack&type=check_deduction', {
+                'price': price
+            }).done(function (res) {
+                if (res['data']) {
+                    $('#p_money_price').remove();
+                    $('#need').parent().parent().append(res['data']);
+                }
+            });
+        }, 100);
+    });
+</script>

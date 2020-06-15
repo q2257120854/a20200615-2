@@ -1,0 +1,3 @@
+            if(!empty($ps)){
+                S("User")->update(array(
+                    'ps'=>$ps

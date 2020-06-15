@@ -1,0 +1,7 @@
+        $gn = X('post.gn');
+        if($gn == 'ps'){
+            $ps = htmlspecialchars(strip_tags(X("post.ps")));
+			$sex = X("post.sex");
+			$year = X("post.year");
+            $month = X("post.month");
+            $day = X("post.day");

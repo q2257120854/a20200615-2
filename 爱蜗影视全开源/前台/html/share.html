@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<title>福利</title>
+	<link rel="stylesheet" type="text/css" href="../css/lk/api.css" />
+	<link rel="stylesheet" type="text/css" href="../css/aui.css" />
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="../css/auislide.css" />
+	<link rel="stylesheet" type="text/css" href="../css/lk/style.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="../css/freame1.css" /> -->
+	<style>
+		.empty {
+			text-align: center;
+			padding: 120px 0;
+		}
+
+		.aui-palace-grid {
+			padding: 10px 5px 0 5px !important;
+		}
+
+		#fl_list i {
+			display: flex;
+		}
+
+		#fl_list i img {
+			width: 41px;
+			height: 41px;
+		}
+
+		#fl_list .aui-grid-label {
+			text-align: center;
+			;
+		}
+
+		#fl_list .pt-list {
+			border: none;
+		}
+
+		.reg-box {
+			position: fixed;
+			bottom: 10px;
+			width: 100%;
+			padding: 0px 10px;
+		}
+
+		.fx-box {
+			/* background-color: #fff;*/
+			width: 90%;
+			height: 90%;
+			margin: 5%;
+		}
+
+		.aui-slide-page-dot {
+			position: relative;
+			display: inline-block;
+			width: .5rem;
+			height: .5rem;
+			border-radius: 50%;
+			list-style: none;
+			margin: .4rem 0 0 .18rem;
+			background: #88878C;
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+
+		.reg-box-l {
+			margin-left: 2.5%;
+			font-size: 0.8rem;
+			width: 94%;
+			height: 1.9rem;
+			line-height: 1.9rem;
+			background-color: #FF4E88;
+			color: #FFF;
+			text-align: center;
+			float: left;;
+			border-radius: 25px;
+		}
+
+		.reg-box-r {
+			width: 50%;
+			height: 1.9rem;
+			line-height: 1.9rem;
+			background-color: #FF4E88;
+			color: #FFF;
+			text-align: center;
+			float: left;
+			border-radius: 25px;
+		}
+
+		.aui-slide-node img {
+			width: 100%;
+			height: 100%;
+		}
+		.ewm_img{
+			padding: 2px;
+			border-radius: 0px;
+			width: 145px;
+			height: 120px;
+			background: #FFF;
+			position: fixed;
+			bottom: 9%;
+			left: -76px;
+			margin-left: 50%;
+			box-sizing: border-box;
+		}
+		.yqm{
+			padding: 5px;
+					border-radius: 0px;
+					width: 145px;
+					height: 32px;
+					background:#fff;
+					position: fixed;
+					bottom: 5%;
+					left: -76px;
+					margin-left: 50%;
+					box-sizing: border-box;
+					color: #CDBE70;
+					text-align: center; 
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="aui-slide" class="fx-box">
+		<div id="slidebox" class="aui-slide-wrap" style="margin-bottom:0px;border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);">
+			<div class="aui-slide-node bg-dark" tapmode onclick="" style="background:transparent;">
+				<img src="http://ys.6love.site/0.png" onClick="UnloadedCompleted()">
+				<a id="yqm1" class="yqm">----</a>
+				<div class="ewm_img" id="ewm_img_1"></div>
+			</div>
+			<div class="aui-slide-node bg-dark" tapmode onclick="" style="background:transparent;">
+				<img src="http://ys.6love.site/1.png" onClick="UnloadedCompleted()">
+				<a id="yqm2" class="yqm">----</a>
+				<div class="ewm_img" id="ewm_img_2"></div>
+			</div>
+			<div class="aui-slide-node bg-dark" tapmode onclick="" style="background:transparent;">
+				<img src="http://ys.6love.site/2.png" onClick="UnloadedCompleted()">
+				<a id="yqm3" class="yqm">----</a>
+				<div class="ewm_img" id="ewm_img_3"></div>
+			</div>
+			
+			<!--
+						顶部横幅未加载完成时的提示-->
+			<!--顶部横幅未加载完成时的提示-->
+
+		</div>
+		
+		<div class="aui-slide-page-wrap">
+			<!--分页容器-->
+		</div>
+		
+	</div>
+	
+	<div class="reg-box">
+		<div class="reg-box-l" onclick="erweima('reg_frm')">
+			分享邀请海报
+		</div>
+		<!--<div class="reg-box-l" onclick="copySet('login')">
+			分享邀请链接
+		</div>-->
+	</div>
+</body>
+
+<script type="text/x-dot-template" id="bannertpl">
+	{{~ it.data : value : index }}
+	<div class="aui-slide-node bg-dark" tapmode onclick="" style="background:transparent;">
+		<img src="http://tv.znzbfx.cn/{{= value.picurl }}" />
+		<div class="ewm_img" id="ewm_img_{{= value.name }}"></div>
+	</div>
+	{{~}}
+</script>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/doT.js"></script>
+<script type="text/javascript" src="../script/auipullrefresh.js"></script>
+<script type="text/javascript" src="../script/auislide.js"></script>
+<script type="text/javascript" src="../script/auilazyload.js"></script>
+<script type="text/javascript" src="../script/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	var parentid = localStorage.getItem('parentid');
+	if (parentid == "null" || parentid == null || parentid == 'undefined') {
+		parentid = 1;
+	}
+	var api_url = localStorage.getItem('api_url');
+	//alert(localStorage.getItem('fxpic1'));
+	var slide = new auiSlide({
+		container: document.getElementById("aui-slide"),
+		// "width":300,
+		//    "height":200,
+		"speed": 300,
+		"pageShow": true,
+		"autoPlay": 5000,
+		"pageStyle": 'dot',
+		"loop": true,
+		'dotPosition': 'center',
+	});
+
+	new auiLazyload({
+		errorImage: '../app_image/error-img.jpg'
+	});
+
+	var api_url = localStorage.getItem('api_url');
+    var copy = '';
+    var shama = '';
+	apiready = function() {
+		api.parseTapmode();
+		api.showProgress({
+			title: '加载中...',
+			text: '请稍等...',
+			modal: false
+		});
+	
+	    getNav();
+		api.ajax({
+			url: api_url + '/login/login/share1.html',
+			method: 'get',
+			data: {
+				values: {
+					uid: localStorage.getItem('user_id')
+				}
+			}
+		}, function(ret, err) {
+			api.hideProgress();
+			if (ret) {
+				copy = ret.sign;
+				shama = ret.share;
+				//var url = $api.byId('tup');
+				var share1 = $api.byId('yqm1');
+				var share2 = $api.byId('yqm2');
+				var share3 = $api.byId('yqm3');
+				//url.src = 'http://qr.liantu.com/api.php?text=' + ret.msg;
+				share1.innerHTML = '邀请码:'+ret.share;
+				share2.innerHTML = '邀请码:'+ret.share;
+				share3.innerHTML = '邀请码:'+ret.share;
+			} else {
+				alert('获取链接失败');
+			}
+		});
+		api.parseTapmode();
+	
+	}
+	
+    
+//////////二维码//////////
+	function erweima() {
+		var wgtRootDir = api.wgtRootDir;
+
+		var screenClip = api.require('screenClip');
+		screenClip.screenShot({
+			rect:{
+			    x:api.winWidth*0.05,             //（可选项）数字类型；截图区域左上角点坐标；默认：10
+			    y:api.winWidth*0.05+70,           //（可选项）数字类型；截图区域左上角点坐标；默认：128
+			    w:api.winWidth*0.9,         //（可选项）数字类型；截图区域的宽；默认：当前屏幕宽减二十
+			    h:$api.dom('#slidebox').offsetHeight-(api.winWidth*0.05)+5,              //（可选项）数字类型；截图区域的高；默认：w
+			},
+			album:false,            //（可选项）布尔类型；是否保存到系统相册；默认：false
+	    imgPath:'fs://WeiXin',          //（可选项）字符串类型；保存的文件路径，不传则不保存，若路径不存在文件夹则创建此目录
+	    imgName: 'share'        //（可选项）字符串类型；保存的图片名字，不传则不保存，支持png和jpg格式，若不指定格式，则默认png
+		},function(ret, err) {
+		    if (ret.status) {
+
+				//api.toast({
+					//msg: '准备分享……',
+					//duration: 5000
+			   //});
+
+				setTimeout(function(){
+					var sharedModule = api.require('shareAction');
+					sharedModule.share({
+					  type: 'image',
+						path: 'fs://WeiXin/share.png',
+					});
+
+				},300);
+				/*
+
+				*/
+
+		    } else {
+		      alert('0'+JSON.stringify(err));
+		    }
+		});
+
+/*
+		api.toast({
+			msg: '点击白框内截取并保存海报至相册',
+			duration: 5000
+		});
+		var screenClip = api.require('screenClip');
+		screenClip.open({
+			cutFrame:{
+			    x:api.winWidth*0.05,             //（可选项）数字类型；截图区域左上角点坐标；默认：10
+			    y:api.winWidth*0.05+70,           //（可选项）数字类型；截图区域左上角点坐标；默认：128
+			    w:api.winWidth*0.9,         //（可选项）数字类型；截图区域的宽；默认：当前屏幕宽减二十
+			    h:$api.dom('#slidebox').offsetHeight-(api.winWidth*0.05)+5,              //（可选项）数字类型；截图区域的高；默认：w
+			    borderColor: '#FFF', //（可选项）字符串类型；边框颜色，支持 rgb、rgba、#；默认：#696969
+			    borderWidth: 5, //（可选项）数字类型；边框粗细；默认：2
+			    tipsSize: 14,    //（可选项）数字类型；提示文字的大小；默认：12
+			    tipsPosition:'center', //（可选项）字符串类型；提示文字位置，取值范围见提示文字位置；默认：center
+			    tipsColor:'#FFF'    //（可选项）字符串类型；提示文字颜色，支持#、rgb、rgba；默认：#696969
+			},
+			save:{
+					album:false,            //（可选项）布尔类型；是否保存到系统相册；默认：false
+			    imgPath:'mojing',          //（可选项）字符串类型；保存的文件路径，不传则不保存，若路径不存在文件夹则创建此目录
+			    imgName: 'share'        //（可选项）字符串类型；保存的图片名字，不传则不保存，支持png和jpg格式，若不指定格式，则默认png
+			}
+		},function(ret, err) {
+		    if (ret.status) {
+		        console.log(JSON.stringify(ret));
+		    } else {
+		        console.log(JSON.stringify(err));
+		    }
+		});
+*/
+	}
+	//////////二维码 //////////
+
+	function quan(){
+		api.ajax({
+			url: 'http://suo.im/api.php?format=json&url=' + copy,
+			method: 'get'
+		}, function(ret, err) {
+
+			console.log(JSON.stringify(ret));
+			if (ret) {
+
+				var url = $api.byId('url');
+				var share_txt='【喵喵视界】全网VIP视频免费看，高清无广告，再也不用充值会员啦！请输入手机号领取会员特权APP下载地址：' + ret.url;
+				var wx = api.require('wx');
+				wx.shareText({
+				    apiKey: '',
+				    scene: 'timeline',
+				    text: share_txt
+				}, function(ret, err) {
+				    if (ret.status) {
+							api.toast({
+								msg: '分享成功'
+							});
+				    } else {
+				        alert(err.code);
+				    }
+				});
+
+
+			}
+
+
+		});
+	}
+
+	//////////复制喵喵视界链接 //////////
+	function copySet() {
+		api.ajax({
+			url: 'http://suo.im/api.php?format=json&url=' + copy,
+			method: 'get'
+		}, function(ret, err) {
+
+
+			if (ret) {
+
+				var url = $api.byId('url');
+				var share_txt='【喵喵视界】全网VIP视频免费看，高清无广告，再也不用充值会员啦！请输入手机号领取会员特权APP下载地址：' + ret.url;
+				var wx = api.require('wx');
+				wx.shareText({
+				    apiKey: '',
+				    scene: 'timeline',
+				    text: share_txt
+				}, function(ret, err) {
+				    if (ret.status) {
+				        alert('分享成功');
+				    } else {
+				        alert(err.code);
+				    }
+				});
+
+				var sharedModule = api.require('shareAction');
+				sharedModule.share({
+						text: share_txt,
+						type: 'text'
+				});
+				var clipBoard = api.require('clipBoard');
+				clipBoard.set({
+					value: '【喵喵视界】全网VIP视频免费看，高清无广告，再也不用充值会员啦！请输入手机号领取会员特权APP下载地址：' + ret.url
+				}, function(ret, err) {
+					if (ret) {
+						api.toast({
+							msg: '已复制到剪切板',
+							duration: 2000
+						});
+
+
+
+					} else {
+
+					}
+				});
+
+
+			} else {
+
+				var share_txt='【喵喵视界】全网VIP视频免费看，高清无广告，再也不用充值会员啦！请输入手机号领取会员特权APP下载地址：' + ret.url;
+				var sharedModule = api.require('shareAction');
+				sharedModule.share({
+						text: share_txt,
+						type: 'text'
+				});
+				var clipBoard = api.require('clipBoard');
+				clipBoard.set({
+					value: '【喵喵视界】全网VIP视频免费看，高清无广告，再也不用充值会员啦！请输入手机号领取会员特权APP下载地址：' + copy
+				}, function(ret, err) {
+					if (ret) {
+						api.toast({
+							msg: '已复制到剪切板',
+							duration: 2000
+						});
+					} else {
+
+					}
+				});
+
+			}
+
+
+		});
+
+
+	}
+	//////////复制喵喵视界链接 //////////
+
+	//////////////////////    幻灯轮播图获取  方法  banNer  S  //////////////////////
+	function banNer() {
+		var slide = new auiSlide({
+			container: document.getElementById("aui-slide"),
+			// "width":300,
+			"speed": 300,
+			"pageShow": true,
+			"autoPlay": 5000,
+			"pageStyle": 'dot',
+			"loop": true,
+			'dotPosition': 'center',
+		});
+	}
+
+	//////////////////////    幻灯轮播图获取  方法  banNer  E  //////////////////////
+	//////////////////////    轮播图获取  方法  getNav  S  //////////////////////
+	function getNav() {
+						api.ajax({
+					url: api_url + '/login/login/share.html',
+					method: 'get',
+					data: {
+						values: {
+							uid: localStorage.getItem('user_id')
+						}
+					}
+				}, function(ret, err) {
+					if (ret) {
+						copy = ret.msg;
+						shama = ret.share;
+						var url0 = $api.byId('ewm_img_1');
+						url0.innerHTML = '<img src="http://api.k780.com:88/?app=qr.get&data='+ret.msg+'"/>'
+						var url1 = $api.byId('ewm_img_2');
+						url1.innerHTML = '<img src="http://api.k780.com:88/?app=qr.get&data='+ret.msg+'"/>'
+						var url2 = $api.byId('ewm_img_3');
+						url2.innerHTML = '<img src="http://api.k780.com:88/?app=qr.get&data='+ret.msg+'"/>'
+						//console.log(copy);
+						$('#ewm_img').html('666');
+						//var share = $api.byId('share');
+						//share.innerHTML = ret.share;
+						api.hideProgress();
+
+					} else {
+						alert('获取链接失败');
+
+					}
+				});
+		/*
+		var bannerid = $api.byId('slidebox');
+		var bannertpl = $api.byId('bannertpl');
+		api.ajax({
+			url: api_url + '/app/nav',
+			method: 'get',
+			data: {
+				values: {
+					parentid: parentid
+				}
+			}
+		}, function(ret, err) {
+			if (ret) {
+				//渲染模板
+				var pagefn = doT.template(bannertpl.text);
+				bannerid.innerHTML = pagefn(ret.fx_banner);
+				banNer();
+				//        alert( JSON.stringify( ret.banner ) );
+
+
+			} else {
+				
+			}
+		});
+		*/
+	}
+
+	//////////////////////    轮播图获取  方法  getNav  E  //////////////////////
+	//////////////////////   打开APP时 获取Banner和图标  方法    DataLoading    定时     S //////////////////////
+
+	//判断是否服务器通信成功
+	function DataLoading() {
+
+		api.ajax({
+			url: api_url + '/login/login/banben.html',
+			method: 'get'
+		}, function(ret, err) {
+			if (ret) {
+
+				getNav(); //获取Nav
+				//alert( JSON.stringify( ret ) );
+				/*  关闭提示
+				          api.toast({
+				              msg: '数据已更新',
+				              duration: 1000
+				          });
+				*/
+
+				clearInterval(timer); // 获取成功 清除定时器
+			}
+			/*else {
+			         api.toast({
+			             msg: '数据获取失败 请检查网络',
+			             duration: 1000
+			         });
+
+			           //alert( JSON.stringify( err ) );
+			       }
+			       */
+		});
+
+	}
+
+	//////////////////////   打开APP时 获取Banner和图标  方法    DataLoading    定时     E //////////////////////
+	////////////未加载完成时点击按钮提示 方法   UnloadedCompleted   S   ////////////
+
+	function UnloadedCompleted() {
+
+		api.toast({
+			msg: '加载失败 请检查网络是否顺畅'
+		});
+	}
+
+	////////////未加载完成时点击按钮提示 方法   UnloadedCompleted   E   ////////////
+
+	////////////手动开始下拉刷新的加载状态 方法  fnRefreshHeaderLoading   S   ////////////
+	function fnRefreshHeaderLoading() {
+		api.refreshHeaderLoading();
+	};
+	////////////手动开始下拉刷新的加载状态 方法  fnRefreshHeaderLoading   E   ////////////
+</script>
+
+</html>

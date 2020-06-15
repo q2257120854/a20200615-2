@@ -1,0 +1,78 @@
+---------------------------------------------------------------
+[ 2018-11-02T15:01:16+08:00 ] 43.243.75.72 43.243.75.72 GET /admin.php/admin/jobs/noDelay
+[ info ] www.dsqqapp.com/admin.php/admin/jobs/noDelay [运行时间：12.903245s][吞吐率：0.08req/s] [内存消耗：4,378.74kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'jobs',
+    2 => 'noDelay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'curl/7.29.0',
+  'host' => 'www.dsqqapp.com',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.315596s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.007246s ]
+[ info ] [ RUN ] app\admin\controller\Jobs->noDelay[ /www/wwwroot/feichangpeizi/application/admin/controller/Jobs.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'xinhuo_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:5.822120s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.421994s ]
+[ sql ] [ SQL ] SELECT distinct(stockCode) FROM `xh_stock_order` WHERE  (  status=1 and isFreetrial=0 ) [ RunTime:0.018727s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_stock_order` WHERE  (  status=1 and isFreetrial=0 ) [ RunTime:0.001272s ]
+---------------------------------------------------------------
+[ 2018-11-02T15:01:16+08:00 ] 43.243.75.72 43.243.75.72 GET /admin.php/admin/jobs/noDelay
+[ info ] www.dsqqapp.com/admin.php/admin/jobs/noDelay [运行时间：12.776627s][吞吐率：0.08req/s] [内存消耗：4,378.41kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'jobs',
+    2 => 'noDelay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'curl/7.29.0',
+  'host' => 'www.dsqqapp.com',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000510s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:1.457527s ]
+[ info ] [ RUN ] app\admin\controller\Jobs->noDelay[ /www/wwwroot/feichangpeizi/application/admin/controller/Jobs.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'xinhuo_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:6.766554s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.713438s ]
+[ sql ] [ SQL ] SELECT distinct(stockCode) FROM `xh_stock_order` WHERE  (  status=1 and isFreetrial=0 ) [ RunTime:0.009604s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_stock_order` WHERE  (  status=1 and isFreetrial=0 ) [ RunTime:0.002949s ]

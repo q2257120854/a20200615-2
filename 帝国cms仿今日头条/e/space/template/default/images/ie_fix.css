@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* ie fix */
+
+
+.icon_v {
+display: inline;
+}
+.modal .modal-body .pull-left{
+	width:220px; 
+	overflow:hidden
+}
+
+.clearfix { clear:both; height:0!important; line-height:0px!important; font-size:0px!important; overflow:hidden!important;  margin:0; padding:0; background:none; display:block;}
+
+.clear { clear:both; height:0; line-height:0px; font-size:0px; overflow:hidden;  margin:0; padding:0; background:none; display:block;}
+
+.pin-content .clearfix { float:left}
+
+
+
+

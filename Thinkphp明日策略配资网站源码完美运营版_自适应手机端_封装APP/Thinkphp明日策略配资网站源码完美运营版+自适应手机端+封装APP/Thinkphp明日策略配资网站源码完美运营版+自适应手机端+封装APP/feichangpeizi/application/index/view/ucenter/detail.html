@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金龙策略</title>
+</head>
+<body class="history_body grey buy-body logged-in">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+
+<!--结算区-->
+<div class="br-content">
+<div class="w1024">
+	<div class="stock-buy container">
+    <section class="play-area detail-main">
+        <div class="detail-title">
+            <div class="f-left">
+                <h1>交易单</h1>
+                <span>交易单号:{$d.id}</span>
+            </div>
+            <a href="javascript:history.go(-1)" class="f-right">返回</a>
+        </div>
+        <div class="detail-info">
+            <div class="item">
+                <span>交易合作</span>
+                <a href="javascript:void(0);" id="popup-account-sanfang" class="f-right">三方协议</a>
+            </div>
+            <dl>
+                <!--<dt>投资人：</dt>
+                <dd></dd>-->
+                <dt>点买人：</dt>
+                <dd>{$_SESSION['member']['username']}</dd>
+            </dl>
+            <div class="item">
+                <span>交易明细</span>
+                <a href="javascript:void(0);" id="popup-account-a" class="f-right">交易流水</a>
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0" class="detail-tb">
+                <tbody>
+                    <tr>
+                        <td width="10%">交易本金：</td>
+                        <td width="10%">{$d.dealAmount * 10000|round=2}元</td>
+                        <td width="10%">交易品种：</td>
+                        <td width="20%">{$d.stockName}({$d.stockCode})</td>
+                        <td width="10%">交易数量：</td>
+                        <td width="15%">{$d.dealQuantity * 100}股</td>
+                    </tr>
+                    <tr>
+                        <td>买入价格：</td>
+                        <td>{:round($d.dealPrice,4)}</td>
+                        <td>成交时间：</td>
+                        <td>{$d.createTime}</td>
+                        <td>点买类型：</td>
+                        <td>即时买入</td>
+                    </tr>
+                    <tr>
+                        <td>卖出价格：</td>
+                        <td>{:round($d.sellPrice,4)}</td>
+                        <td>成交时间：</td>
+                        <td>{$d.sellTime}</td>
+                        <td>备注：</td>
+                        <td>{$d.remarks}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="item">
+                <span>交易盈亏分配</span>
+                <a href="javascript:void(0);" class="f-right">方案状态：<span id="jszt" class="c-red">已结算</span></a>
+            </div>
+            <dl>
+                <dt>交易盈亏：</dt>
+                <dd class="ft26 c-color ">{:round($d.profit,2)}</dd>
+                <dt>盈利分配：</dt>
+                <dd class="ft26 c-color ">{:round($d.profitSelf,2)}</dd>
+                <dt> </dt>
+                <dd class="ft26 "> </dd>
+            </dl>
+            <div class="item">
+                <span>管理费</span>
+            </div>
+            <dl>
+                <dt>交易综合费：</dt>
+                <dd class="ft26 ">{$d.publicFee}</dd>
+                <dt>递延次数：</dt>
+                <dd class="ft26 "> {if condition="$d.delayDays gt 2"}{$d.delayDays - 2}{else}0{/if} </dd>
+                <dt>递延费用：</dt>
+                <dd class="ft26 ">{:round($d.delayFeeSum)}</dd>
+            </dl>
+            
+        </div>
+    </section>
+</div>
+</div>
+</div>
+
+
+<!--申请递延-->
+<div class="popup popup-middle" id="popup-delay">
+    <div class="popup-header group">
+        <h2>申请递延</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="delay-box">
+            <div class="delay-info">当前非递延申请时间,请稍后再来！</div>
+            <div class="delay-foot">
+                <button class="btn btn-pri">确定</button>
+                <a href="javascript:;" class="delay-btn f-right">递延规则<i class="icon icon-caret-up"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="delay-rule hide popup-footer">
+        <p>递延申请：点买人付费申请</p>
+        <p>申请时间：00:00:00-12:00:00</p>
+        <p>递延申请：点买人付费申请</p>
+        <p>递延申请：点买人付费申请</p>
+    </div>
+</div>
+<!--点卖确认-->
+<div class="popup popup-big" id="popup-sell">
+    <div class="popup-header group">
+        <h2>点卖确认</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <table border="0" cellspacing="0" cellpadding="0" class="popup-sell-tb table-sell">
+            <tbody><tr>
+                <td width="15%">交易品种：</td>
+                <td width="35%">-</td>
+                <td width="15%">卖出数量：</td>
+                <td width="35%">-</td>
+            </tr>
+            <tr>
+                <td>买入时间：</td>
+                <td>-</td>
+                <td>递延天数：</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>浮动盈亏</td>
+                <td class="c-red" id="sell_profit">-</td>
+                <td>(仅供参考)</td>
+                <td></td>
+            </tr>
+        </tbody></table>
+        <div class="btn-div">
+            <button class="btn btn-pri" id="popup-confirm-btn">确定</button>
+            <a href="javascript:;" class="js-close-popup btn btn-grey">取消</a>
+        </div>
+    </div>
+    
+</div>
+<!--即时卖出-->
+<div class="popup popup-middle" id="popup-buy-apply">
+    <div class="popup-header group">
+        <h2>即时卖出</h2>
+    </div>
+    <div class="popup-body group">
+    </div>
+</div>
+<!--限价卖出-->
+<div class="popup popup-middle" id="popup-sell-price-success">
+    <div class="popup-header group">
+        <h2>限价卖出</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <center><i class="icon icon-circle-check"></i>限价委托提交成功！</center>
+        <div class="f-right"><b class="red">5秒</b>后自动跳转至卖出区，<a href="/policy/history" class="js-close-popup">立即跳转</a></div>
+    </div>
+</div>
+<!--卖出委托价格修改-->
+<div class="popup popup-big" id="popup-change-price">
+    <div class="popup-header group">
+        <h2>卖出委托价格修改</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <table border="0" cellspacing="0" cellpadding="0" class="popup-sell-tb table-change-price">
+            <tbody><tr>
+                <td width="15%">最&nbsp;&nbsp;新&nbsp;&nbsp;价：</td>
+                <td width="35%">-</td>
+                <td width="15%">委托价格：</td>
+                <td width="35%"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="change-price-1" class="active">
+                        <input type="radio" name="change-sell-price" id="change-price-1" class="radio" checked="">即时卖出
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label for="change-price-2">
+                        <input type="radio" name="change-sell-price" id="change-price-2" class="radio">最新价触发<input type="text" id="change-sell-price" size="8" placeholder="输入价格" class="text" style="position:relative">时，即时卖出
+                    </label>
+                </td>
+            </tr>
+        </tbody></table>
+        <div class="btn-div">
+            <button class="btn btn-pri" id="popup-confirm-change-price-btn">确定</button>
+            <a href="javascript:;" class="js-close-popup btn btn-grey">取消</a>
+        </div>
+    </div>
+</div>
+<!--即时卖出-->
+<div class="popup popup-middle" id="popup-sell-success">
+    <div class="popup-header group">
+        <h2>即时卖出</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <center><i class="icon icon-circle-check"></i>卖出成功！</center>
+        <div class="f-right"><b class="red">5秒</b>后自动跳转至结算区，<a href="/policy/history" class="js-close-popup">立即跳转</a></div>
+    </div>
+</div>
+
+<!--认证银行卡-->
+<div class="popup" id="popup-id-verify">
+    <div class="popup-header group">
+        <h2>认证银行卡</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">提现和免费体验前必须先绑定一张银行卡</li>
+                <li style="text-align:left;">请务必认真填写真实资料</li>
+                <li style="text-align:left;">银行卡采用实名认证，一个身份证只能绑定一个账号</li>
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先绑定银行卡</p>
+        </div>
+        <div class="btn-row group">
+            <a class="btn btn-pri" href="/Member/BankCards">去绑定</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">暂不绑定</a>
+        </div>
+    </div>
+</div>
+<!--实名认证-->
+<div class="popup" id="popup-realname-auth">
+    <div class="popup-header group">
+        <h2>实名认证</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">一个身份证对应一个账号</li>
+                
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先进行实名认证</p>
+        </div>
+        <div class="field-row group">
+            <label>真实姓名：</label>
+            <div class="field-val"><input id="姓名i" type="text" class="text" onchange="user_updateid_zsxm_valid()"></div>
+        </div>
+        <div id="zsxm_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>未填写姓名</div></div>
+        <div class="field-row group">
+            <label>身份证号：</label>
+            <div class="field-val">
+                <div class="field-val">
+                    <input id="身份证i" type="text" class="text" onchange="user_updateid_sfzh_valid()">
+                </div>
+            </div>
+        </div>
+        <div id="sfzh_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>请填写准确的身份证</div></div>
+        <div class="btn-row group">
+            <a id="user_UpdateSelfIdA" class="btn btn-pri" href="javascript:void(0)">确认</a>
+            <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+<!--三方协议-->
+<div class="popup popup-mbig popup-agree" id="popup-agree-sanfangxieyi" style="display: none; top: 0px;margin-left: -450px;width: 900px;">
+    <div class="popup-body group">
+        <div class="agree-main">
+            <h1 style="font-size: 22px;"><label>金龙策略</label>投资人与点买人参与沪深A股交易合作协议</h1>
+            <div class="article">
+                <p>投资人昵称：<span id="Investor_name"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点买人昵称：<span id="Spotbuyer_name">spark007</span></p>
+                <p>投资人UID:<span id="InverstorUID">-1</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点买人UID:<span id="SpotbuyerUID">5662</span></p
+                <p>本次交易合作由<label id="m_basic_netName"><label>金龙策略</label></label>交易平台（以下简称“<label id="m_basic_netName"><label>金龙策略</label></label>”）子平台<label>金龙策略</label>（以下简称“<label>金龙策略</label>”）提供撮合服务。在<label>金龙策略</label>的撮合下，投资人与点买人协商一致，就双方秉承共享收益共担风险之原则，由点买人提供交易谋略，由投资人利用自有资金和账户进行交易合作事宜订立如下协议，以兹共守：</p>
+                <p><strong>一、定义</strong></p>
+                <p>本协议中，除非上下文另有解释，下列词语具有如下含义：</p>
+                <p>1、<label>金龙策略</label>：指<label>金龙策略</label>平台，由<label>沈阳飞鸟网络科技有限公司</label>运营。该平台网址为：<label>www.feichangcl.com</label>，及本公司根据业务需要不时修改的网址。平台面向<label>金龙策略</label>用户提供包括但不限于沪深所A股、中金所期指、上期所贵金属期货交易合作信息发布、交易合作撮合、交易指令通讯、交易风控管理、交易清结算、资金支付（由支付机构提供）等服务的线上中介服务平台。</p>
+                <p>2、支付机构：指<label>金龙策略</label>委托的为<label>金龙策略</label>用户提供资金划转、查询、结算等支付服务的非金融支付机构。本协议项下提供上述服务的机构为汇潮支付有限公司（以下简称“汇潮支付”）。</p>
+                <p>3、点买人：指通过<label>金龙策略</label>注册成为点买人的用户，作为投资人的交易合作方，负责向投资人提供交易谋略的自然人。</p>
+                <p>4、投资人：指通过<label>金龙策略</label>注册成为投资人的用户，作为点买人的交易合作方，负责按点买人交易谋略并利用自有资金和账户进行交易的自然人或法人。</p>
+                <p>5、点买：指点买人向投资人发出买入指令。点买指令为即时买入。即时买入指点买人要求投资人在收到交易指令所在时点起，即时以涨停价委托买入指定数量的交易品种。</p>
+                <p>6、点卖：指点买人向投资人发出卖出指令。点卖指令为即时卖出。即时卖出为点买人要求投资人在收到交易指令所在时点起，即时以跌停价委托卖出全部数量的交易品种。</p>
+                <p>7、持仓时间：分为T＋1持仓与T＋1｜D持仓。T＋1持仓，交易品种持仓时间固定截至T＋1日；T＋1｜D持仓，从T＋1日开始，至T＋20日止，点买人在当日符合递延条件情况下，可于当日规定时间内，向投资人申请将交易品种持仓时间递延至下一交易日。递延按日申请逐日递延，单笔交易连续递延最大次数为20次（含系统自动递延）。</p>
+                <p>8、最后持仓日：T＋1持仓的最后持仓日即为T＋1日，T＋1｜D持仓的最后持仓日为不符合递延条件所在交易日，或符合递延条件但点买人放弃递延所在交易日，或已达到最大递延申请次数无法再递延的所在交易日即T＋20日。</p>
+                <p>9、浮动盈亏与浮动盈亏率：浮动盈亏＝（最新价－买入均价）＊成交数量。计算结果为正值（含零）时即为浮盈金额，计算结果为负值时即为浮亏金额。浮动盈亏率＝浮动盈亏／交易本金 ×100％。</p>
+                <p>10、触发止盈率：当合作交易品种的浮动盈亏率达到特定数值时，由投资人即时卖出交易品种全部持有数量进行止盈，此时该浮动盈亏率即为触发止盈率。无论交易品种的持仓时间为T+1还是T＋1｜D，触发止盈率为＋20％，+30%，+50%，点买人可根据实际需求在发起点买指令时自行选择。</p>
+                <p>11、触发止损：当合作交易品种的浮动盈亏率达到特定数值时，由投资人即时卖出交易品种全部持有数量进行止损，此时该浮动盈亏即为触发止损。触发止损率具体数值通过<label>金龙策略</label>点买页面公布，以点买人实际选择为准。</p>
+
+                <p><strong>二、本次交易合作基本信息</strong></p>
+                <p>1、交易本金： <u><span id="Trading_money">2000元</span></u></p>
+                <p>2、交易数量： <u><span id="Tranding-amount">300手</span></u></p>
+                <p>3、交易品种： <u><span id="Trading_product">建设银行[601939]</span></u></p>
+                <p>4、持仓时间： <u><span id="Keeping_time">2017-06-19</span></u></p>
+                <p>5、触发止盈额:<u><span id="Most_earnmoney">400</span></u></p>
+                <p>6、触发止损额：<u><span id="Most_losemoney">200</span></u></p>
+                <p>7、委托方式： <u><span id="Entrustment">五档最优成交</span></u></p>
+
+                <p><strong>三、投资人权利与义务</strong></p>
+                <p>1、投资人负责提供用于本次交易合作的账户和资金。</p>
+                <p>2、投资人承担本次交易产生的佣金、印花税和过户费。</p>
+                <p>3、投资人按照点买人的点买指令/点卖指令执行交易品种的买入/卖出。</p>
+                <p>4、投资人买入的时间为T日上午9:30:00－11:30:00，下午13:00 – 14:55:00</p>
+                <p>5、投资人卖出的时间为最后持仓日上午9:30:00－11:30:00，下午13:00 – 14:55:00</p>
+                <p>6、最后持仓日盘中，当交易品种“浮盈金额≥触发止盈时”或”浮亏金额≤触发止损时”，视同点买人已向投资人发出即时卖出指令，投资人执行即时卖出指令的，点买人对此不持有异议。</p>
+                <p>7、点买人必须在最后持仓日14:55:00前向投资人发出卖出指令，否则视同点买人违约，投资人有权在此后任意交易时间卖出并以实际卖出成交价结算，点买人对此不持有异议。</p>
+                <p>8、交易品种T日盘中涨幅≥8％或盘中跌幅≤-8％时，投资人均有权不接受并不执行点买人的点买指令，直至交易品种涨跌幅回落到（-8％,+8%）区间，投资人方接受并执行点买人的点买指令，但当交易品种被<label>金龙策略</label>列入《点买风险警示股名单》中，投资人有权不接受点买人的点买指令。</p>
+                <p>9、T＋1｜D持仓，从T＋1日开始，至T＋20日止，凡当日14:30:00－14:49:59内的任一时点满足（交易品种的浮动盈亏＋点买人冻结的履约保证金）/交易本金&gt;6％，投资人应接受点买人的递延申请,但当交易品种被微操盘列入《递延风险警示股名单》中，投资人有权不接受点买人的递延申请。如T＋1日至T＋20日点买人股票全天停牌，则符合上述递延条件下，投资人自动为点买人递延，且该次递延收取递延费。如点买人不愿意支付递延费，视为点买人放弃该股票复盘后的收益，全归投资人所有。</p>
+                <p>10、投资人应通过<label>金龙策略</label>账户委托汇潮支付系统冻结履约保证金，并授权汇潮支付系统在交易盈利时按本协议相关约定，从冻结的履约保证金中支付点买人盈利分配款。投资人冻结履约保证金金额应不低于 “止盈值”之数额。</p>
+                <p>11、交易亏损大于点买人冻结履约保证金，则超过的亏损部分由投资人自行承担。</p>
+                <p>12、投资人有义务履行交易合作约定，如发生投资人单方面违约行为，双方约定按理论上持有交易品种到最后持仓日期间的最优价格作为点买人卖出结算价，如交易盈利从投资人汇潮支付账户划拨盈利分配，如交易亏损则由投资人自行全部承担，点买人不予赔付。</p>
+                <p><strong>四、点买人权利与义务</strong></p>
+                <p>1、点买人负责提供本次交易合作的交易谋略，即点买指令／点卖指令。</p>
+                <p>2、点买人应在T日9:30:00－14:54:59交易时段内向投资人发出点买指令，但当交易品种T日盘中涨幅≥8％或盘中跌幅≤-8％时，或交易品种被<label>金龙策略</label>列入《点买风险警示股名单》中，点买人不可向投资人申请点买 。</p>
+                <p>3、点买人应在最后持仓日9:30:00－14:54:59向投资人发出点卖指令，否则视同点买人违约。</p>
+                <p>4、T＋1｜D 持仓，从T＋1日开始，至T＋20日止，凡当日14:30:00－14:49:59内的任一时点满足（交易品种的浮动盈亏＋点买人冻结的履约保证金）/交易本金&gt;6％，点买人可通过<label>金龙策略</label>向投资人 申请将交易品种持仓时间递延至下一交易日14:54:59。但当交易品种被<label>金龙策略</label>平台列入《递延风险警示股名单》中，点买人不可向投资人申请递延。</p>
+                <p>5、点买人应按照《附件1：<label>金龙策略</label>点买人参与沪深A股交易涉及费用及资费标准》，通过向<label>金龙策略</label>支付交易综合费，补偿投资人交易过程中发生的佣金、印花税和过户费等。</p>
+                <p>6、点买人应按照《附件1：<label>金龙策略</label>点买人参与沪深A股交易涉及费用及资费标准》，委托汇潮支付冻结履约保证金，作为履行交易亏损赔付义务的保证。</p>
+                <p>7、点买人承诺授权汇潮支付系统在交易亏损时按本协议相关约定，从冻结的履约保证金中向投资人支付应承担的亏损赔付款。</p>
+                <p><strong>五、交易清结算和盈亏分配约定</strong></p>
+                <p>投资人和点买人共同委托<label>金龙策略</label>按照以下规则对本次交易合作进行清结算，双方同意以<label>金龙策略</label>的清结算数据作为双方盈亏分配的共同依据：</p>
+                <p>1、买入成交金额与买入成交均价：买入成交金额来自交易所回报数据，不含佣金、印花税和过户费。买入成交均价＝买入成交金额／交易数量。</p>
+                <p>2、卖出成交金额与卖出成交均价：卖出成交金额来自交易所回报数据，不含佣金、印花税和过户费。卖出成交均价＝卖出成交金额／交易数量。</p>
+                <p>3、交易盈亏：交易盈亏＝卖出成交金额－买入成交金额。计算结果为正值（含零）时即为交易盈利，计算结果为负值时即为交易亏损&nbsp;。</p>
+                <p>4、盈利分配：点买人与投资人共同享有本次交易盈利。点买人获得交易盈利90％的盈利分配。交易盈利扣减点买人盈利分配即为投资人的盈利分配</p>
+                <p>5、亏损赔付：点买人与投资人共同承担本次交易亏损。交易亏损首先由点买人承担，点买人以所冻结的履约保证金为最高上限承担交易亏损赔付，交易亏损超过点买人所冻结的履约保证金部分由投资人承担。即，当：交易亏损≤点买人冻结履约保证金时，交易亏损由点买人全部承担，投资人无需承担；当：交易亏损＞点买人冻结履约保证金时，点买人以冻结履约保证金额为限承担交易亏损，超过部分由投资人承担。</p>
+                <p><strong>六、特别约定</strong></p>
+
+                <p>1、双方约定为从投资人收到点买人交易指令时点起,至投资人委托下单成交时点止，两时点间隔不超过60秒即为即时买入／即时卖出的时间范畴。根据《<label>金龙策略</label>服务协议》，从点买人发出交易指令被<label>金龙策略</label>确认时点起，至交易指令成交时点止，两时点时间间隔不超过90秒。但：1）深市收盘集合竞成交价为买卖申报一次性集中撮合产生，投资人收到点买人交易指令时点在 14:56:00之后的，不属于以上时间范畴。2）如因网络等原因造成交易成交结果回报时间延迟的，以实际交易成交时间为准。</p>
+                <p>2、交易品种在最后持仓日因停牌、跌停或其他原因导致无法卖出的，双方约定由投资人于下一交易日连续竞价前5分钟内即时卖出，并保持卖出委托直至卖出全部数量的交易品种，如整个交易日皆因停牌或跌停无法卖出，则继续顺延至下一交易日，直至全部卖出并按照实际卖出成交价进行清结算。</p>
+                <p>3、T＋1｜D持仓且非最后持仓日，为最大程度避免交易品种因停牌导致无法正常卖出，双方约定如交易品种当日进入<label>金龙策略</label>实时发布的《递延风险警示股名单》，点买人将不得申请递延， 投资人有权拒绝接受递延申请。</p>
+                <p>4、点买人在分红转增股权登记日收盘后仍持有交易品种的，双方约定于送转股票及派发红利实际到达投资人账户后方进行结算；点买人在增发、配股股权登记日收盘后仍持有交易品种的，交易品种的增发、配股等权利均归属投资人，点买人不享有参与增发、配股权利。</p>
+                <p>5、双方授权汇潮支付系统依据<label>金龙策略</label>的清结算数据，通过双方在汇潮支付系统冻结的履约保证金进行盈利分配款或亏损赔付款的划拨。即：交易盈利时，从投资人履约保证金中划款至点买人账户，划拨金额等于点买人享有的盈利分配额；交易亏损时，从点买人履约保证金中划款至投资人账户，划拨金额等于点买人承担的亏损赔付额。</p>
+                <p>6、因<label>金龙策略</label>清结算数据错误造成双方盈利分配或亏损赔付出现数额差错的，双方约定在<label>金龙策略</label>规定时限内将异议提交至<label>金龙策略</label>，通过<label>金龙策略</label>向对方索取差额补差。如异议一方未在规定时限内将提交异议，视同放弃通过<label>金龙策略</label>向对方索取差额补差之权利。</p>
+                <p>7、因不可抗力导致<label>金龙策略</label>系统故障，引发交易指令通讯失败或交易指令执行失败，双方约定以<label>金龙策略</label>系统恢复就近时间重新执行并以执行的最终结果进行交易清结算。</p>
+                <p><strong>七、协议的签订、成立和生效</strong></p>
+                <p>1、签订：本协议由投资人和点买人通过<label>金龙策略</label>以网络页面点击确认的方式签署。</p>
+                <p>2、成立：本协议自点买人或投资人签订本协议之日（以两者孰后签订时间为准）成立。</p>
+                <p>3、生效：本协议一经双方签订即生效。</p>
+                <p><strong>八、其他事项</strong></p>
+                <p>1、点买人和投资人必须通过本协议约定的方式或其他<label>金龙策略</label>认可的方式进行交易合作,否则由此引起的法律后果及违约责任由投资人或点买人自行承担。</p>
+                <p>2、本协议项下的双方非个人隐私信息，如昵称等，均为公开信息。</p>
+                <p>3、本协议项下双方交易信息归属<label>金龙策略</label>所有，<label>金龙策略</label>可根据自身经营需求商业化无偿使用。</p>
+                <p>4、本协议受中华人民共和国法律管辖并按中华人民共和国法律解释。协议履行中发生争议，可由各方协商解决，协商不成可向仲裁委员会提请仲裁。</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+    <div class="btn-div">
+        <a href="javascript:;" class="js-close-popup btn btn-grey">关闭</a>
+    </div>
+    <br>
+</div>
+
+
+{include file="public:footer" /}
+<!--<script src="/public/static/home/js/buy.js"></script>-->
+<script type="text/javascript">
+	$("#selectByDate,#recent7,#recent30,#status-0,#status-7,#status-6,#status-5,#status-4,#status-3,#status-1,#status-r").click(function () {
+                $(this).siblings("a").removeClass("active").end().addClass("active");
+    });
+    
+    $("#selectByDate").click(function () {
+                var x = $(this).position();
+                $("#JchooseDate").css({ left: x.left, top: x.top + 35 }).show();
+                timer = setTimeout(function () { $("#JchooseDate").hide(); }, 2000);
+            });
+    $("#JchooseDate").mouseenter(function () { window.clearTimeout(timer) }).mouseleave(function () { timer = setTimeout(function () { $("#JchooseDate").hide(); }, 300); });
+	$("#JchooseDate").find(".left_gray,.right_gray").click(function () {
+                var year = parseInt($("#yearSpan").html()) + ($(this).hasClass("left_gray") ? -1 : 1);
+                choiseYear(year);
+    });
+      $("#JchooseDate").find(".left_gray,.right_gray").click(function () {
+                var year = parseInt($("#yearSpan").html()) + ($(this).hasClass("left_gray") ? -1 : 1);
+                choiseYear(year);
+    });
+
+    $(".c-color").each(function(i, o){
+        var h = parseFloat($(o).html());
+        if( h > 0){
+            $(o).addClass("c-red");
+        }else{
+            $(o).addClass("c-green");
+        }
+    });
+
+    //选中菜单
+    setMunuSelected();
+    function setMunuSelected(){
+        var selIndex = 1;
+        if("{$d.isFreetrial}" == "1"){
+            selIndex = 2;
+        }
+        $("#menu-ul > li a").removeClass("active");
+        $("#menu-ul > li").eq(selIndex).find("a").addClass("active");
+    }
+	
+	//三方协议
+	$("#popup-account-sanfang").click(function () {
+                tool.popup.showPopup($("#popup-agree-sanfangxieyi"));
+    });
+</script>
+</body>
+</html>

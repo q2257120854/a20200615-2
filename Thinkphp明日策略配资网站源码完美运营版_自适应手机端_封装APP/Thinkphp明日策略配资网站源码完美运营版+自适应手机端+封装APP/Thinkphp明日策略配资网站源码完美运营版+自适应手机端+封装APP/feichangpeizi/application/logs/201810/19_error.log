@@ -1,0 +1,630 @@
+---------------------------------------------------------------
+[ 2018-10-19T10:52:38+08:00 ] 43.243.75.72 58.243.254.148 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T15:23:16+08:00 ] 43.243.75.72 27.154.73.153 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:03:54+08:00 ] 43.243.75.72 27.154.73.153 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:06:19+08:00 ] 43.243.75.72 27.154.73.153 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:15:17+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:16:11+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:17:09+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:25:46+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianpay/doPay?b-pay-amount=10000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:31:05+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:32:37+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:35:26+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:35:36+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianpay/doPay?b-pay-amount=10000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:38:51+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=20000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 315 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: risk_item[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:104]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+---------------------------------------------------------------
+[ 2018-10-19T16:56:28+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T16:56:57+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T16:57:57+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T17:00:06+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T17:00:10+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T17:00:13+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T17:00:18+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T17:03:42+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T17:04:34+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T17:06:37+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianpay/doPay?b-pay-amount=10000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]
+---------------------------------------------------------------
+[ 2018-10-19T17:08:32+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:116]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:121]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:126]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:130]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:133]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:135]
+---------------------------------------------------------------
+[ 2018-10-19T17:08:59+08:00 ] 43.243.75.72 58.251.121.186 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:08:59+08:00 ] 43.243.75.72 163.177.90.152 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item={"user_info_bind_phone":"18655417112","user_info_dt_register":"20181009154310","risk_state":"1","frms_ware_category":"1009"}&sign_type=RSA&timestamp=20181019170832&url_return=http://www.dsqqapp.com/ucenter/index.html&user_id=1322&valid_order=10080&version=1.0
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:09:00+08:00 ] 43.243.75.72 61.129.6.251 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:09:23+08:00 ] 43.243.75.72 183.61.51.52 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:09:59+08:00 ] 43.243.75.72 61.129.6.251 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:10:00+08:00 ] 43.243.75.72 61.129.6.147 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item={"user_info_bind_phone":"18655417112","user_info_dt_register":"20181009154310","risk_state":"1","frms_ware_category":"1009"}&sign_type=RSA&timestamp=20181019170832&url_return=http://www.dsqqapp.com/ucenter/index.html&user_id=1322&valid_order=10080&version=1.0
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:10:23+08:00 ] 43.243.75.72 101.89.29.94 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:10:44+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:10:48+08:00 ] 43.243.75.72 183.61.51.52 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:10:52+08:00 ] 43.243.75.72 14.17.3.64 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item={"us{"user_info_bind_phone":"18655417112","user_info_dt_register":"20181009154310","risk_state":"1","frms_ware_category":"1009"}&sign_type=RSA&timestamp=20181019170832&url_return=rn=http://www.dsqqapp.com/ucenter/index.html&user_id=1322&valid_order=10080&version=1.0
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:11:15+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:11:51+08:00 ] 43.243.75.72 223.167.152.70 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item={"us{"user_info_bind_phone":"18655417112","user_info_dt_register":"20181009154310","risk_state":"1","frms_ware_category":"1009"}&sign_type=RSA&timestamp=20181019170832&url_return=rn=http://www.dsqqapp.com/ucenter/index.html&user_id=1322&valid_order=10080&version=1.0
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:42]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:44]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:46]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:48]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:50]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:52]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:54]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:56]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:58]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:62]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:64]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Trying to get property of non-object[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T17:14:47+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:116]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:121]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:126]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:130]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:133]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:135]
+---------------------------------------------------------------
+[ 2018-10-19T17:15:41+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:116]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:121]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:126]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:130]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:133]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:135]
+---------------------------------------------------------------
+[ 2018-10-19T17:22:25+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:116]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:121]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:126]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:130]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:133]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:135]
+---------------------------------------------------------------
+[ 2018-10-19T17:22:50+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianpay/doPay?b-pay-amount=10000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:116]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:121]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:126]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:130]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:133]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:135]
+---------------------------------------------------------------
+[ 2018-10-19T17:25:00+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=62422610012456855&realName=%E6%9D%A8%E8%BE%89&IDCard=342422198702158852&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+[ error ] [8]未定义数组索引: app_request[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:287]
+---------------------------------------------------------------
+[ 2018-10-19T17:26:44+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=454&realName=454&IDCard=4554&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+[ error ] [8]未定义数组索引: app_request[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:287]
+---------------------------------------------------------------
+[ 2018-10-19T17:29:20+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=454&realName=454&IDCard=4554&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+[ error ] [8]未定义数组索引: app_request[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:287]
+---------------------------------------------------------------
+[ 2018-10-19T17:30:04+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=454&realName=454&IDCard=4554&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+[ error ] [8]未定义数组索引: app_request[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:287]
+---------------------------------------------------------------
+[ 2018-10-19T17:30:07+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=454&realName=454&IDCard=4554&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+[ error ] [8]未定义数组索引: app_request[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:287]
+---------------------------------------------------------------
+[ 2018-10-19T17:32:18+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=454&realName=454&IDCard=4554&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:32:44+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=62422610012456855&realName=%E6%9D%A8%E8%BE%89&IDCard=342422198702158852&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:33:02+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=62422610012456855&realName=%E6%9D%A8%E8%BE%89&IDCard=342422198702158852&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:33:15+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=62422610012456855&realName=%E7%8E%8B%E4%BC%9F&IDCard=3424221991061885535&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:33:49+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=10000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:40:45+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=10000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:43:33+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212262201023557228&realName=%E6%B5%8B%E8%AF%95&IDCard=350525199012213511&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:44:20+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212262201023557228&realName=%E6%B5%8B%E8%AF%95&IDCard=500103198609196533&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:44:24+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212262201023557228&realName=%E6%B5%8B%E8%AF%95&IDCard=500103198609196533&b-pay-amount=100
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:44:28+08:00 ] 43.243.75.72 27.154.74.90 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212262201023557228&realName=%E6%B5%8B%E8%AF%95&IDCard=500103198609196533&b-pay-amount=10
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:45:26+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=10000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:45:31+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=1000
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:46:29+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=100
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:46:44+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=40
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:50:04+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=40
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T17:57:23+08:00 ] 43.243.75.72 114.97.59.4 GET /index/lianlianauthpay/authllpay_wap?bankCard=6226662300111913&realName=%E7%A8%8B%E4%BF%AE%E8%BF%9C&IDCard=341023198909136013&b-pay-amount=10
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T18:02:26+08:00 ] 43.243.75.72 124.160.215.36 GET /index/lianlianauthpay/authllpay_wap?bankCard=6217001540016939769&realName=%E7%A8%8B%E4%BF%AE%E8%BF%9C&IDCard=341023198909136031&b-pay-amount=10
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]
+---------------------------------------------------------------
+[ 2018-10-19T18:02:49+08:00 ] 43.243.75.72 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-19T18:03:55+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=40
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:266]

@@ -1,0 +1,30 @@
+/*公用*/
+/* 修正IE6振动bug */  
+* html,* html body{background-image:url(about:blank);background-attachment:fixed;}
+
+* { margin: 0; padding: 0; }
+body { font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; color:#4d4d4d;  background:#e6e6e6;}
+ol, ul, li, dd, dl, dt { list-style: none; }
+*:focus { outline: 0; }
+em, i { font-style: normal; }
+img, fieldset { border: 0; }
+input, textarea { appearance: none;  border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -webkit-border-radius: 0; -o-border-radius: 0; }
+a {cursor: pointer; text-decoration: none; color: #4d4d4d; }
+a:visited { color: #000 }
+a:hover, a:active { text-decoration: none; color:#f05454; }
+.clearfix:after { content: "."; display: block; clear: both; height: 0; overflow: hidden; visibility: hidden; }
+table { border-collapse:collapse;}
+/*跳转页面*/
+.jump{ display:block; border:6px solid #91d9ff; background:#fff; width:612px; margin:0 auto; border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; margin-top:150px; padding:30px 0 10px 0;  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);}
+.jump .ju_top { display:block;}
+.jump .ju_top .ju_logo {display:block; float:left; width:161px; height:77px; background:url(/images/img/hlz_logo_t.png) no-repeat center;height:114px; margin-left:30px;}
+.jump .ju_top .ju_d {display:block; float:left; background:url(/images/img/jump_d.gif) no-repeat bottom center; text-align:center; width:200px; height:80px;}
+.jump .ju_top .ju_d p{ display:block; padding-top:30px;}
+.jump .ju_top .ju_tu {display:block; float:left;}
+.jump .ju_top .ju_tu img { width:170px; height:114px;}
+.jump .ju_text { display:block; text-align:center; height:80px; line-height:80px; border-bottom:1px dashed #ccc;}
+.jump .ju_text a { color:#0fa7ff;}
+.jump .ju_text a:hover { color:#ff5656;}
+.jump .ju_text a i { font-family:"宋体";} 
+.jump .ju_text_1 { color:#808080; line-height:34px; display:block; padding-left:30px;}
+.jump .ju_text_1 i { color:#ff7b1a;}

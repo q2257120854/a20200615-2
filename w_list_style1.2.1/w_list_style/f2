@@ -1,0 +1,12 @@
+$this->insert(array(
+            'user'=>$user,
+            'pass'=>L("User")->md5_md5($pass,$salt),
+            'email'=>$email,
+            'salt'=>$salt,
+            'atime'=>NOW_TIME,
+            'gid'=>$gid,
+            'ctime'=>NOW_TIME,
+            'sex'=>$sex,
+            'year'=>$year,
+            'month'=>$month,
+            'day'=>$day,

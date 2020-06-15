@@ -1,0 +1,78 @@
+---------------------------------------------------------------
+[ 2018-10-19T17:08:59+08:00 ] 43.243.75.72 58.251.121.186 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:08:59+08:00 ] 43.243.75.72 163.177.90.152 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item={"user_info_bind_phone":"18655417112","user_info_dt_register":"20181009154310","risk_state":"1","frms_ware_category":"1009"}&sign_type=RSA&timestamp=20181019170832&url_return=http://www.dsqqapp.com/ucenter/index.html&user_id=1322&valid_order=10080&version=1.0
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:09:00+08:00 ] 43.243.75.72 61.129.6.251 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:09:23+08:00 ] 43.243.75.72 183.61.51.52 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:09:59+08:00 ] 43.243.75.72 61.129.6.251 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:10:00+08:00 ] 43.243.75.72 61.129.6.147 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item={"user_info_bind_phone":"18655417112","user_info_dt_register":"20181009154310","risk_state":"1","frms_ware_category":"1009"}&sign_type=RSA&timestamp=20181019170832&url_return=http://www.dsqqapp.com/ucenter/index.html&user_id=1322&valid_order=10080&version=1.0
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:10:23+08:00 ] 43.243.75.72 101.89.29.94 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:10:44+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:10:48+08:00 ] 43.243.75.72 183.61.51.52 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:10:52+08:00 ] 43.243.75.72 14.17.3.64 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item={"us{"user_info_bind_phone":"18655417112","user_info_dt_register":"20181009154310","risk_state":"1","frms_ware_category":"1009"}&sign_type=RSA&timestamp=20181019170832&url_return=rn=http://www.dsqqapp.com/ucenter/index.html&user_id=1322&valid_order=10080&version=1.0
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:11:15+08:00 ] 43.243.75.72 58.243.250.170 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item=
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T17:11:51+08:00 ] 43.243.75.72 223.167.152.70 GET /index/lianlianpay/notify_url&oid_partner=201810190002237014&risk_item={"us{"user_info_bind_phone":"18655417112","user_info_dt_register":"20181009154310","risk_state":"1","frms_ware_category":"1009"}&sign_type=RSA&timestamp=20181019170832&url_return=rn=http://www.dsqqapp.com/ucenter/index.html&user_id=1322&valid_order=10080&version=1.0
+[ log ] notify_url, start....
+[ log ] 商户号错误
+[ log ] verify_result = 
+[ log ] 验证失败
+---------------------------------------------------------------
+[ 2018-10-19T18:02:49+08:00 ] 43.243.75.72 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01050000","dt_order":"20181019180226","money_order":"10.0","no_order":"13221539943346854313","oid_partner":"201810190002237014","oid_paybill":"2018101951371703","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181019","sign":"D8XvrZpetVt4g8uxZrRoaMYwBsMWLbvFuZfnedpZhpdDQ4xVi90ZF5foARzJXXY9mVVHUG1NFqptKnD/yFpPq5hqYT7PGyuFnlFREraYOqwTk3nLtUYKO8B/z8ZACtHOFwQR7SU04zvZgBbgwcaPG6myoUqne7UUNb4ixHYYYyk=","sign_type":"RSA"} 

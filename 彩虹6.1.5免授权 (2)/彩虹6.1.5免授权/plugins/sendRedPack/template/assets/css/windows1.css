@@ -1,0 +1,1299 @@
+/*弹窗*/
+.win1 {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  overflow-x: hidden
+}
+
+.winBody1 {
+  width: 400px;
+  padding: 90px 0 20px 0;
+  margin: 60px auto 0 auto;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  animation: bounceInDown 0.3s linear;
+  -webkit-animation: bounceInDown 0.3s linear;
+  position: relative
+}
+
+.winBody1 h1, .winBody1 h2, .winBody1 h3 {
+  background: url(../images/new_year_icon1.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: -60px;
+}
+
+.winBody1 h2 {
+  background: url(../images/new_year_icon18.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+
+.winBody1 h3 {
+  background: url(../images/new_year_icon20.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+
+.winBody1 .rules-p {
+  width: 88%;
+  padding: 0 2% 0 2%;
+  margin: 0 auto;
+  height: 240px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+.winBody1 p {
+  font-size: 13px;
+  color: #ff3636;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.winBody1 .tishi {
+  width: 80%;
+  margin: 10px auto 30px auto;
+  color: #ff3636;
+  font-size: 20px;
+}
+
+.winBody1 .rules-but1, .rules-but2, .rules-but3 {
+  display: block;
+  width: 76%;
+  font-size: 26px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 10px auto 0 auto;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: none;
+  background-color: #ff3636;
+  color: #fff;
+  cursor: pointer;
+}
+
+.winBody1 .rules-but2, .rules-but3 {
+  float: left;
+  width: 48%;
+}
+
+.winBody1 .rules-but3 {
+  margin-left: 4%;
+  background-color: #8c8b8b;
+}
+
+.winBody1-main {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+@-webkit-keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes title1 {
+  from {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@-webkt-keyframes title1 {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1, 1)
+  }
+}
+
+.winBody2 {
+  height: auto;
+  margin: 0px auto 0px auto;
+  padding-top: 30px;
+  background: url(../images/new_year_icon2.png) no-repeat;
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  animation: title1 0.3s linear;
+  -webkit-animation: title1 0.3s linear;
+  position: relative
+}
+
+.winBody2 .receive1-bg1 {
+  width: 170px;
+  height: 290px;
+  margin: 0px auto 0px auto;
+  background: url(../images/new_year_icon3.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  position: relative;
+  z-index: 3
+}
+
+.winBody2 .receive1-bg1 .receive1-head {
+  padding: 25% 0;
+}
+
+.winBody2 .receive1-bg1 .receive1-head h1 {
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  color: #ff3636
+}
+
+.winBody2 .receive1-bg1 .receive1-body p {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.winBody2 .receive1-bg1 .receive1-but1 {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  width: 80px;
+  height: 40px;
+  background: url(../images/new_year_but2.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  font-size: 20px;
+  color: #986300;
+  font-weight: bold
+}
+
+.winBody2 .receive1-bg1 a.receive1-footer {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: underline;
+  position: relative;
+  z-index: 100;
+}
+
+.winBody2 .receive1-bg2 {
+  width: 200px;
+  height: 83px;
+  margin: 0 auto;
+  background: url(../images/new_year_icon4.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  position: absolute;
+  bottom: -28px;
+  left: -28px;
+  cursor: pointer;
+  z-index: 4
+}
+
+.erweima {
+  width: 160px;
+  margin: 5px auto
+}
+
+.erweima img {
+  width: 100%
+}
+
+a.close2 {
+  display: block;
+  position: absolute;
+  right: -45px;
+  top: 0px;
+  background: url(../images/hdrk-close.png) no-repeat;
+  width: 45px;
+  height: 45px;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+
+
+/*发红包*/
+.chicken {
+  background: url(../images/new_year_icon10.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  width: 330px;
+  height: 311px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  margin-left: -120px;
+}
+
+.winBody3 {
+  width: 300px;
+  height: 270px;
+  padding-top: 140px;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  margin-left: -150px;
+  background: url(../images/new_year_icon8.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  position: relative
+}
+
+.immediately-form1 {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.immediately-form1 .immediately1 label {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #fcee56;
+  margin-bottom: 5px;
+}
+
+.immediately-form1 .immediately1 input {
+  display: block;
+  width: 85%;
+  border: none;
+  background-color: #FFF;
+  color: #000;
+  padding: 8px 2%;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.immediately-form1 .immediately1 input.immediately1-text1 {
+  width: 85%;
+  float: left
+}
+
+.immediately-form1 .immediately1 .immediately1-span1 {
+  display: block;
+  width: 10%;
+  background-color: inherit;
+  text-align: center;
+  color: #fcac35;
+  float: right;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.immediately-form1 p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.immediately-form1 a.immediately-a {
+  color: #FFF;
+  text-decoration: underline;
+  font-size: 16px;
+  text-align: center;
+  display: block
+}
+
+.validation1 {
+  text-align: center;
+  font-size: 14px;
+  color: #fcee56;
+  margin-bottom: 5px;
+}
+
+.immediately1-but1 {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  color: #ff2929;
+  font-weight: bold;
+  border: none;
+  background: url(../images/new_year_icon9.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.p1 {
+  width: 90%;
+  color: #ffffff;
+  font-size: 13px;
+  margin: 5px auto 0px auto;
+}
+
+.p2 {
+  width: 86%;
+  color: #ffffff;
+  font-size: 13px;
+  margin: 5% auto 0px auto
+}
+
+.p2 span {
+  margin-left: 15%
+}
+
+.animation1 {
+  animation: bounceInDown 0.3s linear;
+  -webkit-animation: bounceInDown 0.3s linear;
+}
+
+a.close1 {
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: 10px;
+  background: url(../images/hdrk-close.png) no-repeat;
+  width: 45px;
+  height: 45px;
+  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+
+.winBody4 {
+  width: 260px;
+  height: 220px;
+  padding-top: 140px;
+  top: 130px;
+  left: 50%;
+  margin-left: -130px;
+}
+
+.margin-top1 {
+  width: 100%;
+  height: 55px;
+  margin-top: 10px;
+}
+
+
+.winBody5, .winBody6 {
+  width: 300px;
+  padding: 20px 0px 20px 0px;
+  margin: 60px auto 0px auto;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  animation: bounceInDown 0.3s linear;
+  -webkit-animation: bounceInDown 0.3s linear;
+  position: relative
+}
+
+.winBody5 p {
+  width: 90%;
+  margin: 30px auto;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.winBody5 p.inp1-prompt2 {
+  width: 80%;
+  margin: 0px auto 20px auto;
+  text-align: left;
+  font-size: 14px;
+  color: #333
+}
+
+.winBody5 .rules-but1 {
+  display: block;
+  width: 76%;
+  font-size: 26px;
+  padding: 15px 0px;
+  text-align: center;
+  margin: 10px auto 0px auto;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: none;
+  background-color: #ff3636;
+  color: #fff;
+  cursor: pointer;
+}
+
+.inp1-prompt1 {
+  text-align: center
+}
+
+
+.d-h1 {
+  text-align: center;
+  margin: 0px auto 10px auto;
+}
+
+.d-h1 h1 {
+  font-size: 24px;
+  color: #fcee56
+}
+
+.d-h1 span {
+  font-size: 16px;
+  color: #fcee56;
+}
+
+.d-stock {
+  width: 144px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0px auto 5% auto
+}
+
+.d-stock .decrease {
+  font-size: 16px;
+  color: #797878;
+  font-weight: bold;
+  float: left;
+  background: #e3e3e3;
+  border: 1px solid #dadada;
+  width: 40px;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer
+}
+
+.d-stock .text_box {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  border: 0;
+  width: 60px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.d-stock .increase {
+  font-size: 16px;
+  font-weight: bold;
+  background: #e3e3e3;
+  border: 1px solid #dadada;
+  color: #ff2929;
+  float: right;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer
+}
+
+
+/* 加载中 */
+.winBody6 {
+  padding: 15px 0px;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+.loading p {
+  padding-top: 5px;
+}
+
+.loading-container {
+  height: 88px;
+  background: transparent url(../images/ico_load.png) no-repeat center 0;
+}
+
+img.loading-gif {
+  position: relative;
+  top: 71px
+}
+
+.winBody6 .loading-p {
+  margin-top: 5px;
+  text-align: center
+}
+
+@media screen and (max-width: 599px) {
+
+  .winBody6 {
+    width: 80%
+  }
+
+  /*弹窗*/
+  .winBody1 {
+    width: 90%;
+    padding: 90px 0px 20px 0px;
+    margin: 60px auto 0px auto;
+  }
+
+  .winBody1 h1, .winBody1 h2, .winBody1 h3 {
+    top: -40px;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+  }
+
+  .winBody1 .rules-p {
+    width: 88%;
+    padding: 0px 2% 0px 2%;
+    height: 240px;
+  }
+
+  .winBody1 .rules-but1, .rules-but2, .rules-but3 {
+    width: 76%;
+    font-size: 26px;
+    padding: 15px 0px;
+    margin: 10px auto 0px auto;
+  }
+
+  .winBody1 .tishi {
+    width: 80%;
+    margin: 10px auto 30px auto;
+    font-size: 20px;
+  }
+
+  .winBody1 .rules-but2, .rules-but3 {
+    width: 48%;
+  }
+
+  .winBody1 .rules-but3 {
+    margin-left: 4%;
+  }
+
+  .winBody1-main {
+    width: 80%;
+  }
+
+  .winBody2 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+  }
+
+  .winBody2 .receive1-bg1 {
+    width: 200px;
+    height: 390px;
+    margin: 0 auto 0 auto;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-head {
+    padding: 28% 0%;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-head h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-body p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-but1 {
+    margin: 20px auto;
+    width: 100px;
+    height: 45px;
+  }
+
+  .winBody2 .receive1-bg1 a.receive1-footer {
+    font-size: 12px;
+  }
+
+  .winBody2 .receive1-bg2 {
+    width: 250px;
+    height: 85px;
+    margin: 0 auto 0 auto;
+    bottom: -30px;
+    left: -30px;
+  }
+
+  .erweima {
+    width: 140px;
+    margin: 5px auto
+  }
+
+  a.close2 {
+    right: -40px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .chicken {
+    width: 320px;
+    height: 301px;
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    margin-left: -120px;
+  }
+
+  .winBody4 {
+    width: 260px;
+    height: 220px;
+    padding-top: 140px;
+    top: 130px;
+    left: 50%;
+    margin-left: -130px;
+  }
+
+  .margin-top1 {
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+  }
+
+  a.close1 {
+    right: -14px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .winBody5 {
+    width: 80%;
+  }
+
+  .p1 {
+    width: 90%;
+    margin: 5px auto 0px auto;
+  }
+}
+
+@media screen and (max-width: 384px) {
+
+  .winBody1 .rules-p {
+    width: 88%;
+    padding: 0px 2% 0px 2%;
+    height: 200px;
+  }
+
+  .winBody2 {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px auto;
+    padding-top: 20px;
+  }
+
+  .winBody2 .receive1-bg1 {
+    width: 220px;
+    height: 370px;
+    margin: 0px auto 0px auto;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-head {
+    padding: 26% 0%;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-head h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-body p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-but1 {
+    margin: 20px auto;
+    width: 100px;
+    height: 40px;
+    font-size: 22px;
+  }
+
+  .winBody2 .receive1-bg1 a.receive1-footer {
+    font-size: 12px;
+  }
+
+  .winBody2 .receive1-bg2 {
+    width: 280px;
+    height: 116px;
+    margin: 0px auto 0px auto;
+    bottom: -45px;
+    left: -30px;
+  }
+
+  .erweima {
+    width: 120px;
+    margin: 5px auto
+  }
+
+  /*发红包*/
+  .chicken {
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 10px;
+    margin-left: -120px;
+  }
+
+  .winBody3 {
+    width: 290px;
+    height: 271px;
+    padding-top: 130px;
+    top: 120px;
+    left: 50%;
+    margin-left: -145px;
+  }
+
+  .immediately-form1 {
+    width: 80%;
+  }
+
+  .immediately-form1 .immediately1 label {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .immediately-form1 .immediately1 input {
+    width: 85%;
+    padding: 8px 2%;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .immediately-form1 .immediately1 input.immediately1-text1 {
+    width: 85%;
+    float: left
+  }
+
+  .immediately-form1 .immediately1 .immediately1-span1 {
+    width: 10%;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .validation1 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .immediately1-but1 {
+    width: 100%;
+    height: 60px;
+  }
+
+  .p1 {
+    width: 90%;
+    font-size: 12px;
+    margin: 5px auto 0px auto;
+  }
+
+  .d-h1 {
+    margin: 10px auto 10px auto;
+  }
+
+  .winBody4 {
+    width: 260px;
+    height: 220px;
+    padding-top: 140px;
+    top: 130px;
+    left: 50%;
+    margin-left: -130px;
+  }
+
+  .margin-top1 {
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  /*弹窗*/
+  .winBody1 {
+    width: 90%;
+    padding: 65px 0px 20px 0px;
+    margin: 60px auto 0px auto;
+  }
+
+  .winBody1 h1, .winBody1 h2, .winBody1 h3 {
+    top: -40px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+
+  .winBody1 .rules-p {
+    width: 88%;
+    padding: 0px 2% 0px 2%;
+    height: 200px;
+  }
+
+  .winBody1 .rules-but1, .rules-but2, .rules-but3 {
+    width: 76%;
+    font-size: 20px;
+    padding: 13px 0px;
+    margin: 10px auto 0px auto;
+  }
+
+  .winBody1 .rules-but2, .rules-but3 {
+    width: 48%;
+  }
+
+  .winBody1 .rules-but3 {
+    margin-left: 4%;
+  }
+
+  .winBody1-main {
+    width: 80%;
+  }
+
+  .winBody2 {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px auto;
+    padding-top: 20px;
+  }
+
+  .winBody2 .receive1-bg1 {
+    width: 220px;
+    height: 380px;
+    margin: 0px auto 0px auto;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-head {
+    padding: 26% 0%;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-head h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-body p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-but1 {
+    margin: 20px auto;
+    width: 160px;
+    height: 51px;
+  }
+
+  .winBody2 .receive1-bg1 a.receive1-footer {
+    font-size: 12px;
+  }
+
+  .winBody2 .receive1-bg2 {
+    width: 260px;
+    height: 108px;
+    margin: 0px auto 0px auto;
+    bottom: -40px;
+    left: -40px;
+  }
+
+  .chicken {
+    width: 260px;
+    height: 270px;
+    left: 50%;
+    top: 10px;
+    margin-left: -100px;
+  }
+
+  .winBody3 {
+    width: 270px;
+    height: 261px;
+    padding-top: 130px;
+    top: 110px;
+    left: 50%;
+    margin-left: -135px;
+  }
+
+  .immediately-form1 {
+    width: 80%;
+  }
+
+  .immediately-form1 .immediately1 label {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .immediately-form1 .immediately1 input {
+    width: 85%;
+    padding: 8px 2%;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .immediately-form1 .immediately1 input.immediately1-text1 {
+    width: 85%;
+    float: left
+  }
+
+  .immediately-form1 .immediately1 .immediately1-span1 {
+    width: 10%;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .immediately-form1 p {
+    font-size: 14px;
+  }
+
+  .validation1 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .immediately1-but1 {
+    width: 100%;
+    height: 55px;
+  }
+
+  .p1 {
+    width: 90%;
+    font-size: 12px;
+    margin: 5px auto 0px auto;
+  }
+
+  .winBody4 {
+    width: 240px;
+    height: 200px;
+    padding-top: 120px;
+    top: 110px;
+    left: 50%;
+    margin-left: -120px;
+  }
+
+  .margin-top1 {
+    width: 100%;
+    height: 53px;
+    margin-top: 10px;
+  }
+
+  .winBody5 .rules-but1 {
+    width: 76%;
+    font-size: 20px;
+    padding: 13px 0px;
+    margin: 10px auto 0px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  /*弹窗*/
+  .winBody1 {
+    width: 90%;
+    padding: 65px 0px 20px 0px;
+    margin: 60px auto 0px auto;
+  }
+
+  .winBody1 h1, .winBody1 h2, .winBody1 h3 {
+    top: -40px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+
+  .winBody1 .rules-p {
+    width: 88%;
+    padding: 0px 2% 0px 2%;
+    height: 160px;
+  }
+
+  .winBody1 .rules-but1, .rules-but2, .rules-but3 {
+    width: 76%;
+    font-size: 20px;
+    padding: 13px 0px;
+    margin: 10px auto 0px auto;
+  }
+
+  .winBody1 .tishi {
+    width: 80%;
+    margin: 10px auto 20px auto;
+    font-size: 15px;
+  }
+
+  .winBody1 .rules-but2, .rules-but3 {
+    width: 48%;
+  }
+
+  .winBody1 .rules-but3 {
+    margin-left: 4%;
+  }
+
+  .winBody1-main {
+    width: 80%;
+  }
+
+
+  .winBody2 {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px auto;
+    padding-top: 20px;
+  }
+
+  .winBody2 .receive1-bg1 {
+    width: 200px;
+    height: 340px;
+    margin: 0px auto 0px auto;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-head {
+    padding: 25% 0%;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-head h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-body p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .winBody2 .receive1-bg1 .receive1-but1 {
+    margin: 15px auto;
+    width: 140px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .winBody2 .receive1-bg1 a.receive1-footer {
+    width: 80%;
+    margin: 0px auto;
+    font-size: 12px;
+  }
+
+  .winBody2 .receive1-bg2 {
+    width: 250px;
+    height: 102px;
+    margin: 0px auto 0px auto;
+    bottom: -38px;
+    left: -38px;
+  }
+
+  .erweima {
+    width: 100px;
+    margin: 5px auto
+  }
+
+  a.close2 {
+    right: -35px;
+    top: 0px;
+    width: 35px;
+    height: 35px;
+  }
+
+  /*发红包*/
+  .chicken {
+    width: 220px;
+    height: 229px;
+    left: 50%;
+    top: 8px;
+    margin-left: -80px;
+  }
+
+  .winBody3 {
+    width: 240px;
+    height: 240px;
+    padding-top: 100px;
+    top: 90px;
+    left: 50%;
+    margin-left: -120px;
+  }
+
+  .immediately-form1 {
+    width: 80%;
+  }
+
+  .immediately-form1 .immediately1 label {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .immediately-form1 .immediately1 input {
+    width: 85%;
+    padding: 7px 2%;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .immediately-form1 .immediately1 input.immediately1-text1 {
+    width: 85%;
+    float: left
+  }
+
+  .immediately-form1 .immediately1 .immediately1-span1 {
+    width: 10%;
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+  .validation1 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .immediately1-but1 {
+    width: 100%;
+    height: 45px;
+  }
+
+  .p1 {
+    width: 90%;
+    font-size: 12px;
+    margin: 5px auto 0px auto;
+  }
+
+  .d-h1 {
+    margin: 10px auto 10px auto;
+  }
+
+  .p2 {
+    font-size: 12px;
+    margin-top: 4%;
+  }
+
+  a.close1 {
+    right: -10px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .winBody4 {
+    width: 220px;
+    height: 180px;
+    padding-top: 110px;
+    top: 90px;
+    left: 50%;
+    margin-left: -110px;
+  }
+
+  .margin-top1 {
+    width: 100%;
+    height: 48px;
+    margin-top: 10px;
+  }
+
+  .winBody5 p {
+    font-size: 16px;
+  }
+
+  .winBody5 .rules-but1 {
+    width: 76%;
+    font-size: 20px;
+    padding: 13px 0px;
+    margin: 10px auto 0px auto;
+  }
+
+  .winBody5 p.inp1-prompt2 {
+    width: 80%;
+    margin: 0px auto 15px auto;
+  }
+}
+
+.immediately-form2 {
+  width: 84%;
+}
+
+.immediately-form2 p {
+  margin-bottom: 10px;
+}
+
+
+

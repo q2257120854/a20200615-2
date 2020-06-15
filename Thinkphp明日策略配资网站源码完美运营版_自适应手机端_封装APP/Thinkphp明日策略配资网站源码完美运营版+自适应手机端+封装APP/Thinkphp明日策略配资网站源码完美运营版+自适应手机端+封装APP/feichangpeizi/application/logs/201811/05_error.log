@@ -1,0 +1,71 @@
+---------------------------------------------------------------
+[ 2018-11-05T13:23:42+08:00 ] 103.223.132.230 124.160.218.117 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=2&bankCard=6226662300111913&realName=%E7%A8%8B%E4%BF%AE%E8%BF%9C&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-05T13:24:42+08:00 ] 103.223.132.230 124.160.218.117 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=100&bankCard=6226662300111913&realName=%E7%A8%8B%E4%BF%AE%E8%BF%9C&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-05T13:24:58+08:00 ] 103.223.132.230 124.160.218.117 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=100&bankCard=6226662300111913&realName=%E7%A8%8B%E4%BF%AE%E8%BF%9C&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-05T13:32:15+08:00 ] 103.223.132.230 58.243.250.233 GET /index/lianlianpay/doPay?b-pay-amount=1000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:310]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 337 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:116]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:121]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:126]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:133]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:135]
+---------------------------------------------------------------
+[ 2018-11-05T20:27:25+08:00 ] 103.223.132.230 124.160.214.9 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=2&bankCard=6226662300111913&realName=%E7%A8%8B%E4%BF%AE%E8%BF%9C&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-05T20:33:00+08:00 ] 103.223.132.230 124.160.214.9 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=2&bankCard=6226662300111913&realName=%E7%A8%8B%E4%BF%AE%E8%BF%9C&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-05T20:54:29+08:00 ] 103.223.132.230 58.243.250.63 GET /index/lianlianpay/doPay?b-pay-amount=1
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:310]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 337 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:116]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:121]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:126]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:133]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:135]
+---------------------------------------------------------------
+[ 2018-11-05T20:55:01+08:00 ] 103.223.132.230 58.243.250.63 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1&bankCard=6228480031567952515&realName=%E6%B5%8B%E8%AF%95&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-05T21:00:45+08:00 ] 103.223.132.230 124.160.214.9 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=100&bankCard=6226662300111913&realName=%E7%A8%8B%E4%BF%AE%E8%BF%9C&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-05T21:00:55+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-11-05T21:08:59+08:00 ] 27.151.29.104 114.97.58.160 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=100&bankCard=6217001710000292448&realName=%E5%BC%A0%E4%BA%91%E9%BE%99&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-05T21:09:31+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-11-05T23:30:45+08:00 ] 27.151.29.104 117.136.100.147 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=10000&bankCard=&realName=&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]

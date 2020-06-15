@@ -1,0 +1,656 @@
+---------------------------------------------------------------
+[ 2018-11-02T23:29:03+08:00 ] 43.243.75.72 202.102.194.5 GET /admin.php/admin/order/buylist.html
+[ info ] www.dsqqapp.com/admin.php/admin/order/buylist.html [运行时间：0.157547s][吞吐率：6.35req/s] [内存消耗：3,987.65kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'buylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.dsqqapp.com',
+  'user-agent' => 'Apache-HttpAsyncClient/4.1.3 (Java/1.8.0_161)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000738s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.014612s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'xinhuo_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T23:29:03+08:00 ] 43.243.75.72 202.102.194.5 GET /admin.php/user/publics/signin.html
+[ info ] www.dsqqapp.com/admin.php/user/publics/signin.html [运行时间：0.176279s][吞吐率：5.67req/s] [内存消耗：3,773.52kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'publics',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.dsqqapp.com',
+  'user-agent' => 'Apache-HttpAsyncClient/4.1.3 (Java/1.8.0_161)',
+  'cookie' => 'PHPSESSID=eviemuqrc64mfmti3pjbj8nd07',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001140s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.019597s ]
+[ info ] [ RUN ] app\user\admin\Publics->signin[ /www/wwwroot/feichangpeizi/application/user/admin/Publics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'xinhuo_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/user/view/admin/publics/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T23:37:14+08:00 ] 43.243.75.72 202.102.194.5 GET /admin.php/admin/order/finished.html?search_field=username%7Cmobile%7CstockCode%7CrecommendCode%7CrecommendUserName%7CrecommendMobile&keyword=1044&_filter_time_from=2018-10-23&_filter_time_to=2018-10-31&_filter_time=a.createTime
+[ info ] www.dsqqapp.com/admin.php/admin/order/finished.html?search_field=username%7Cmobile%7CstockCode%7CrecommendCode%7CrecommendUserName%7CrecommendMobile&keyword=1044&_filter_time_from=2018-10-23&_filter_time_to=2018-10-31&_filter_time=a.createTime [运行时间：0.125672s][吞吐率：7.96req/s] [内存消耗：3,988.84kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'finished',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.dsqqapp.com',
+  'user-agent' => 'Apache-HttpAsyncClient/4.1.3 (Java/1.8.0_161)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'search_field' => 'username|mobile|stockCode|recommendCode|recommendUserName|recommendMobile',
+  'keyword' => '1044',
+  '_filter_time_from' => '2018-10-23',
+  '_filter_time_to' => '2018-10-31',
+  '_filter_time' => 'a.createTime',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000543s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.014643s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'xinhuo_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T23:37:15+08:00 ] 43.243.75.72 202.102.194.5 GET /admin.php/user/publics/signin.html
+[ info ] www.dsqqapp.com/admin.php/user/publics/signin.html [运行时间：0.149562s][吞吐率：6.69req/s] [内存消耗：3,773.52kb] [文件加载：59]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'publics',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.dsqqapp.com',
+  'user-agent' => 'Apache-HttpAsyncClient/4.1.3 (Java/1.8.0_161)',
+  'cookie' => 'PHPSESSID=tenndkbojq9pfb44f1ls0af8r5',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000824s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.017734s ]
+[ info ] [ RUN ] app\user\admin\Publics->signin[ /www/wwwroot/feichangpeizi/application/user/admin/Publics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'xinhuo_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/user/view/admin/publics/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T23:41:53+08:00 ] 43.243.75.72 114.97.63.224 GET /
+[ info ] www.dsqqapp.com/ [运行时间：0.409842s][吞吐率：2.44req/s] [内存消耗：4,088.57kb] [文件加载：61]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=5fvevbjg6pvo9486u8snsd0sn6',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001233s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.024254s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/feichangpeizi/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/index/mobile/index.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'usableSum',
+  3 => 'count',
+  4 => 'earnSum',
+  5 => 'buyList',
+  6 => 'dp',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002485s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] select a.stockCode, c.`name` as stockName,  a.createTime, b.username,b.mobile
+			from xh_stock_order as a, xh_member as b, xh_shares as c
+			 WHERE isFreetrial=0 and a.memberId = b.id and a.stockCode=c.`code`
+			order by a.id desc limit 7 [ RunTime:0.001320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.003485s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order` WHERE  (  isFreetrial=0 ) LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT SUM((sellPrice - dealPrice) * dealQuantity * 100) AS tp_sum FROM `xh_stock_order` WHERE  (  isFreetrial=0 and status=2 and sellPrice - dealPrice > 0 ) LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000941s ]
+---------------------------------------------------------------
+[ 2018-11-02T23:41:55+08:00 ] 43.243.75.72 114.97.63.224 GET /buy.html
+[ info ] www.dsqqapp.com/buy.html [运行时间：0.206664s][吞吐率：4.84req/s] [内存消耗：3,947.15kb] [文件加载：60]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'buy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'cookie' => 'PHPSESSID=5fvevbjg6pvo9486u8snsd0sn6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89',
+  'referer' => 'http://www.dsqqapp.com/',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001128s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.020286s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->buy[ /www/wwwroot/feichangpeizi/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/index/mobile/buy.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'usableSum',
+  3 => 'left',
+  4 => 'dealPoundage',
+  5 => 'delayFee',
+  6 => 'dealFee',
+  7 => 'delayLineRate',
+  8 => 'stopLossRate',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002752s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.002609s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order` WHERE  (  memberId=1334 and isFreetrial=0 and left(createTime,10)='2018-11-02' ) LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_sys_params` [ RunTime:0.001821s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'dealPoundage' ) LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'delayFee' ) LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'dealFee' ) LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'delayLineRate' ) LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'stopLossRate' ) LIMIT 1 [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2018-11-02T23:41:55+08:00 ] 43.243.75.72 114.97.63.224 POST /index/Alistock/getStockInfo
+[ info ] www.dsqqapp.com/index/Alistock/getStockInfo [运行时间：0.308474s][吞吐率：3.24req/s] [内存消耗：3,859.92kb] [文件加载：56]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Alistock',
+    2 => 'getStockInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.dsqqapp.com',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89',
+  'referer' => 'http://www.dsqqapp.com/buy.html',
+  'cookie' => 'PHPSESSID=5fvevbjg6pvo9486u8snsd0sn6',
+)
+[ info ] [ PARAM ] array (
+  'code' => '600036',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.006119s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.008580s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Alistock->getStockInfo[ /www/wwwroot/feichangpeizi/application/index/controller/Alistock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000786s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002030s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_visit_record` [ RunTime:0.001543s ]
+[ sql ] [ SQL ] INSERT INTO `xh_stock_visit_record` (`code` , `createTime` , `createTimeStamp`) VALUES ('600036' , '2018-11-02 23:41:55' , 1541173315) [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_online_stock_detail` [ RunTime:0.005846s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_online_stock_detail` WHERE  (  code='600036' and createTimeStamp >= 1541173300  ) ORDER BY id desc LIMIT 1 [ RunTime:0.000618s ]
+---------------------------------------------------------------
+[ 2018-11-02T23:41:56+08:00 ] 43.243.75.72 114.97.63.224 POST /index/Alistock/getKLine
+[ info ] www.dsqqapp.com/index/Alistock/getKLine [运行时间：0.534043s][吞吐率：1.87req/s] [内存消耗：3,911.52kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Alistock',
+    2 => 'getKLine',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.dsqqapp.com',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89',
+  'referer' => 'http://www.dsqqapp.com/buy.html',
+  'cookie' => 'PHPSESSID=5fvevbjg6pvo9486u8snsd0sn6',
+)
+[ info ] [ PARAM ] array (
+  'code' => '600036',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000596s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.019255s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Alistock->getKLine[ /www/wwwroot/feichangpeizi/application/index/controller/Alistock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001481s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001721s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2018-11-02T23:41:56+08:00 ] 43.243.75.72 114.97.63.224 POST /index/Alistock/getTimeLine
+[ info ] www.dsqqapp.com/index/Alistock/getTimeLine [运行时间：0.798093s][吞吐率：1.25req/s] [内存消耗：3,911.43kb] [文件加载：58]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Alistock',
+    2 => 'getTimeLine',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.dsqqapp.com',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89',
+  'referer' => 'http://www.dsqqapp.com/buy.html',
+  'cookie' => 'PHPSESSID=5fvevbjg6pvo9486u8snsd0sn6',
+)
+[ info ] [ PARAM ] array (
+  'code' => '600036',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000585s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.012956s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Alistock->getTimeLine[ /www/wwwroot/feichangpeizi/application/index/controller/Alistock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000508s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002482s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2018-11-02T23:41:57+08:00 ] 43.243.75.72 114.97.63.224 GET /sell.html
+[ info ] www.dsqqapp.com/sell.html [运行时间：0.403382s][吞吐率：2.48req/s] [内存消耗：4,461.32kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ucenter',
+    2 => 'sell',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'cookie' => 'PHPSESSID=5fvevbjg6pvo9486u8snsd0sn6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89',
+  'referer' => 'http://www.dsqqapp.com/buy.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001123s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.016046s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Ucenter->sell[ /www/wwwroot/feichangpeizi/application/index/controller/Ucenter.php ]
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/ucenter/mobile/sell.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'usableSum',
+  3 => 'member',
+  4 => 'count',
+  5 => 'delayFeeSum',
+  6 => 'profitSum',
+  7 => 'list',
+  8 => 'listJson',
+  9 => 'list2',
+  10 => 'listJson2',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003913s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002691s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.003511s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order` WHERE  (  memberId=1334 and isFreetrial=0 and status = 1 ) LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_sys_params` [ RunTime:0.005102s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'delayFee' ) LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT SUM(delayFeeSum) AS tp_sum FROM `xh_stock_order` WHERE  (  memberId=1334 and isFreetrial=0 and status = 1 and delayDays >= 2 ) LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order`,`xh_shares` WHERE  (   xh_stock_order.stockCode = xh_shares.`code` and xh_stock_order.memberId=1334 and isFreetrial=0 and status = 1 ) LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT `xh_stock_order`.*,xh_shares.name as stockName,`xh_shares`.`market` FROM `xh_stock_order`,`xh_shares` WHERE  (   xh_stock_order.stockCode = xh_shares.`code` and xh_stock_order.memberId=1334 and isFreetrial=0 and status = 1 ) ORDER BY createTime desc LIMIT 0,5 [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.007260s ]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/feichangpeizi/thinkphp/library/think/db/Query.php:1365]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/feichangpeizi/thinkphp/library/think/db/Query.php:1365]
+[ error ] [8]Use of undefined constant count - assumed 'count'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:46]
+[ error ] [8]Object of class think\paginator\driver\Bootstrap could not be converted to int[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:46]
+[ error ] [8]Use of undefined constant nowPrice - assumed 'nowPrice'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:72]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:75]
+[ error ] [8]Use of undefined constant rate - assumed 'rate'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:115]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:119]
+[ error ] [8]Use of undefined constant nowPrice - assumed 'nowPrice'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:72]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:75]
+[ error ] [8]Use of undefined constant rate - assumed 'rate'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:115]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:119]
+[ error ] [8]Use of undefined constant nowPrice - assumed 'nowPrice'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:72]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:75]
+[ error ] [8]Use of undefined constant rate - assumed 'rate'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:115]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:119]
+---------------------------------------------------------------
+[ 2018-11-02T23:41:58+08:00 ] 43.243.75.72 114.97.63.224 GET /history.html
+[ info ] www.dsqqapp.com/history.html [运行时间：0.310312s][吞吐率：3.22req/s] [内存消耗：4,308.75kb] [文件加载：66]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ucenter',
+    2 => 'history',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'cookie' => 'PHPSESSID=5fvevbjg6pvo9486u8snsd0sn6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89',
+  'referer' => 'http://www.dsqqapp.com/sell.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001211s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.023578s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Ucenter->history[ /www/wwwroot/feichangpeizi/application/index/controller/Ucenter.php ]
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/ucenter/mobile/history.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'usableSum',
+  3 => 'member',
+  4 => 'list',
+  5 => 'profitFee',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004701s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002991s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.003195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order`,`xh_shares` WHERE  (   xh_stock_order.stockCode = xh_shares.`code` and xh_stock_order.memberId=1334 and isFreetrial=0 and status = 2 and  1=1   ) LIMIT 1 [ RunTime:0.001539s ]
+[ sql ] [ SQL ] SELECT `xh_stock_order`.*,xh_shares.name as stockName,`xh_shares`.`market` FROM `xh_stock_order`,`xh_shares` WHERE  (   xh_stock_order.stockCode = xh_shares.`code` and xh_stock_order.memberId=1334 and isFreetrial=0 and status = 2 and  1=1   ) ORDER BY sellTime desc LIMIT 0,5 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_sys_params` [ RunTime:0.002776s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'profitFee' ) LIMIT 1 [ RunTime:0.000429s ]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/feichangpeizi/thinkphp/library/think/db/Query.php:1365]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/feichangpeizi/thinkphp/library/think/db/Query.php:1365]
+---------------------------------------------------------------
+[ 2018-11-02T23:41:59+08:00 ] 43.243.75.72 114.97.63.224 GET /sell.html
+[ info ] www.dsqqapp.com/sell.html [运行时间：0.432025s][吞吐率：2.31req/s] [内存消耗：4,461.35kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ucenter',
+    2 => 'sell',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'cookie' => 'PHPSESSID=5fvevbjg6pvo9486u8snsd0sn6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89',
+  'referer' => 'http://www.dsqqapp.com/history.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000861s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.017434s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Ucenter->sell[ /www/wwwroot/feichangpeizi/application/index/controller/Ucenter.php ]
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/ucenter/mobile/sell.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'usableSum',
+  3 => 'member',
+  4 => 'count',
+  5 => 'delayFeeSum',
+  6 => 'profitSum',
+  7 => 'list',
+  8 => 'listJson',
+  9 => 'list2',
+  10 => 'listJson2',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001661s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002021s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.002995s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order` WHERE  (  memberId=1334 and isFreetrial=0 and status = 1 ) LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_sys_params` [ RunTime:0.001968s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'delayFee' ) LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT SUM(delayFeeSum) AS tp_sum FROM `xh_stock_order` WHERE  (  memberId=1334 and isFreetrial=0 and status = 1 and delayDays >= 2 ) LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order`,`xh_shares` WHERE  (   xh_stock_order.stockCode = xh_shares.`code` and xh_stock_order.memberId=1334 and isFreetrial=0 and status = 1 ) LIMIT 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT `xh_stock_order`.*,xh_shares.name as stockName,`xh_shares`.`market` FROM `xh_stock_order`,`xh_shares` WHERE  (   xh_stock_order.stockCode = xh_shares.`code` and xh_stock_order.memberId=1334 and isFreetrial=0 and status = 1 ) ORDER BY createTime desc LIMIT 0,5 [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1334 ) LIMIT 1 [ RunTime:0.000602s ]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/feichangpeizi/thinkphp/library/think/db/Query.php:1365]
+[ error ] [8]未定义数组下标: 1[/www/wwwroot/feichangpeizi/thinkphp/library/think/db/Query.php:1365]
+[ error ] [8]Use of undefined constant count - assumed 'count'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:46]
+[ error ] [8]Object of class think\paginator\driver\Bootstrap could not be converted to int[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:46]
+[ error ] [8]Use of undefined constant nowPrice - assumed 'nowPrice'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:72]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:75]
+[ error ] [8]Use of undefined constant rate - assumed 'rate'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:115]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:119]
+[ error ] [8]Use of undefined constant nowPrice - assumed 'nowPrice'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:72]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:75]
+[ error ] [8]Use of undefined constant rate - assumed 'rate'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:115]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:119]
+[ error ] [8]Use of undefined constant nowPrice - assumed 'nowPrice'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:72]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:75]
+[ error ] [8]Use of undefined constant rate - assumed 'rate'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:115]
+[ error ] [8]Use of undefined constant profitAmount - assumed 'profitAmount'[/www/wwwroot/feichangpeizi/runtime/temp/b0766531743ab519d3ebc6687c4d1503.php:119]
+---------------------------------------------------------------
+[ 2018-11-02T23:49:25+08:00 ] 43.243.75.72 66.249.75.157 GET /ucenter/BankCards.html
+[ info ] www.dsqqapp.com/ucenter/BankCards.html [运行时间：0.149048s][吞吐率：6.71req/s] [内存消耗：3,071.43kb] [文件加载：53]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ucenter',
+    2 => 'bankcards',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'from' => 'googlebot(at)googlebot.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'accept-encoding' => 'gzip,deflate,br',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000821s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.015449s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-02T23:49:26+08:00 ] 43.243.75.72 66.249.75.159 GET /login.html
+[ info ] www.dsqqapp.com/login.html [运行时间：0.146645s][吞吐率：6.82req/s] [内存消耗：3,051.88kb] [文件加载：57]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'cookie' => 'PHPSESSID=lrvm7kkctedtug6155p7bargh2',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'from' => 'googlebot(at)googlebot.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'accept-encoding' => 'gzip,deflate,br',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000896s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.021384s ]
+[ info ] [ RUN ] app\index\controller\Index->login[ /www/wwwroot/feichangpeizi/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/index/login.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/6d8c74d1ecd49f61f7210d75cc70c77a.php:24]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/6d8c74d1ecd49f61f7210d75cc70c77a.php:29]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/6d8c74d1ecd49f61f7210d75cc70c77a.php:36]
+[ error ] [8]未定义变量: usableSum[/www/wwwroot/feichangpeizi/runtime/temp/6d8c74d1ecd49f61f7210d75cc70c77a.php:41]

@@ -1,0 +1,548 @@
+body {
+    font-family: "微软雅黑";
+
+}
+*{
+    touch-action: pan-y;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header	{
+    height: 93px;
+}
+.headtt {
+    width: 100%;
+    height: 93px;
+    background: #6abe83;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+}
+.pic_h {
+    width: 31%;
+    height: 50px;
+    float: left;
+    margin-left: 11px;
+    line-height: 45px;
+}
+#ig  {
+    width: 100%;
+    height: 36px;
+}
+.sousuo {
+    float: left;
+    width: 41%;
+    margin-left: 14px;
+    margin-top: 10px;
+    position: relative;
+}
+#inp   {
+    width: 100%;
+    height: 25px;
+    padding-left: 8px;
+    text-align: center;
+    border-radius: 22px;
+    font-size: 15px;
+}
+.sea  {
+    position: absolute;
+    font-size: 20px;
+    top: -8px;
+    margin-top: 6px;
+    color: #333;
+    right: 5px;
+}
+.list{
+    float: right;
+    position: relative;
+    width:9%;
+}
+.aniu{
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+}
+.one{
+    width: 100%;
+    height: 50px;
+}
+.two{
+    float: left;
+    width: 100%;
+    height: 44px;
+    line-height: 42px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    color: #e7e7e7;
+    border-bottom: 1px solid #e5e5e5;
+    display: -webkit-box;
+}
+.two a	{
+    width: auto;
+    height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #333;
+    display: block;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    text-align: center;
+    text-decoration:none;
+}
+.g-down-game{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.g-game-top	{
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    overflow: hidden;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+}
+.g-game-top dt	{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+}
+.g-game-top dt img {
+    width: 100%;
+    height: 70px;
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+}
+img    {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+
+}
+.g-game-top dd		{
+    width: auto;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    padding: 0 0 0 14px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.g-game-top dd	h1	{
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    float: left;
+    margin: 2px 0 4px;
+    display: inline;
+    overflow: hidden;
+}
+.g-game-top dd	b	{
+    width: 100%;
+    height: 16px;
+    float: left;
+    box-sizing: border-box;
+    margin: 3px 0 0 0;
+    display: inline;
+    overflow: hidden;
+}
+em {
+    font-style: normal
+}
+.g-game-top dd b em {
+    width: 50%;
+    height: 18px;
+    line-height: 18px;
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+    display: inline;
+    overflow: hidden;
+}
+.g-game-btn {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px 10px 0 0;
+}
+.g-game-btn li a{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #19b5fe;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    text-decoration: none;
+}
+.m-down-last{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    display: inline;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+.g-down-nav {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    color: #e7e7e7;
+    display: -webkit-box;
+    margin: 12px 0 0 0;
+}
+
+.g-down-nav	b	{
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    -webkit-box-flex: 1;
+}
+.mui-slider-indicator{
+    bottom: 3px;
+}
+.text	{
+    position: relative;
+    padding-bottom: 0.5rem;
+    color: #666;
+    text-align: justify;
+}
+
+.soft-remark .text-inner {
+    height: 2.7rem;
+    line-height: 0.54rem;
+    overflow: hidden;
+}
+.g-cms-relatedcms   {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 12px 0 0 0;
+}
+.g-title	{
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #e5e5e5;
+    display: -webkit-box;
+    overflow: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.g-title dt {
+    width: auto;
+    height: 26px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border-left: 8px solid #19b5fe;
+    margin: 9px 0 0;
+    padding: 0 10px;
+    display: block;
+    overflow: hidden;
+}
+.g-title dd {
+    -webkit-box-flex: 1;
+    margin: 0;
+    text-align: right;
+    display: block;
+    overflow: hidden;
+}
+.g-cmslist	 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+.g-cms-relatedcms .g-cmslist li {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-weight: normal;
+    color: #333;
+    padding: 10px 10px;
+    border-bottom: 1px solid #eaeaea;
+    text-indent: 14px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    zoom: 1;
+}
+.g-cms-relatedcms .g-cmslist li b {
+    width: 4px;
+    height: 4px;
+    background: #d2d2d2;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 12px;
+    top: 17px;
+}
+.g-cms-relatedcms .g-cmslist li a {
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+a, a:visited {
+    text-decoration: none;
+
+    font-size: 15px;
+}
+a	{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+
+}
+.soft-recommend {
+    padding: 0.3rem 1%;
+    font-size: 0;
+    position: relative;
+    background: #FFF;
+    margin-bottom: 0.3rem;
+    overflow: hidden;
+}
+.lit{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    text-align: center;
+}
+.pic {
+    display: inline-block;
+    width: 3.55rem;
+    height: 3.55rem;
+    border-radius: 0.15rem;
+    margin-bottom: 0.06rem;
+}
+.tit {
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+.soft-list .tag {
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    font-size: 0.2rem;
+    line-height: 0.95rem;
+    background: #f04343;
+    color: #FFF;
+    width: 3rem;
+    text-align: center;
+    margin: 0.08rem 0 0 -0.74rem;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.section	{
+    background: #FFF;
+    height: auto;
+    margin-top: 15px;
+    padding: 7px;
+}
+.modle-ios {
+    display: block;
+}
+.section-top .section-hd {
+    border: none;
+    position: relative;
+    top: 0.1rem;
+    margin-bottom: -0.1rem;
+    vertical-align: top;
+}
+.page-detail .section-hd {
+    border: 0;
+    top: -0.1rem;
+}
+.section-hd {
+    height: 2.8rem;
+    line-height: 0.8rem;
+    padding: 0 0.3rem;
+    position: relative;
+    z-index: 100;
+    background: #FFF;
+    border-bottom: 1px solid #e5e5e5;
+}
+h2{
+    padding: 0px 13px;
+    font-weight: normal;
+    font-size: 19px;
+    color: #333;
+}
+
+
+.section-top .section-hd .title {
+    text-align: left;
+}
+.section-hd .title {
+    line-height: 2.78rem;
+}
+.paihang{
+    width: 100%;
+    margin-left: 17px;
+    overflow: hidden;
+}
+.liebiao {
+    width: 25%;
+    float: left;
+}
+
+.blue {
+
+    color: #fff;
+    background: #45a5ff;
+    padding: 7px 17px;
+    border-radius: 5%;
+    margin-left: -1px;
+    font-weight: normal;
+}
+.con {
+    color: #333;
+}
+.ddt{
+    margin-top: 6px;
+    padding: 3px 2px;
+    font-weight: normal;
+
+}
+.g-game-comment {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin: 10px 0 0 0;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 0 10px 10px;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+}
+.g-game-comment .g-comment-showbtn {
+    display: block;
+    font-size: 16px;
+    -webkit-border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    line-height: 28px;
+    padding: 10px 5px 10px 50px;
+    position: relative;
+    margin: 18px 0 0;
+    background: url(../img/pl.png) 6px 3px no-repeat;
+    box-shadow: 0px 2px 1px #fff, inset 0px 1px 1px rgba(138, 138, 138, 0.2);
+}
+.page-footer {
+    font-size: 0.22rem;
+    background: #e6e6e6;
+    color: #999;
+    padding: 2rem 7.3rem 2rem;
+}
+.YDNrK{
+    width: 70px;
+    height: 70px;
+    margin: 10px auto;
+}
+.fsMu	{
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.QGloY	{
+    margin-top: 4px;
+    text-align: center;
+    font-size: 15px;
+    color: #999;
+    line-height: 17px;
+    font-weight: 300;
+}
+.FiQpS{
+    margin-top: 10px;
+    width: 120px;
+    padding: 8px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #fff;
+    background: #3897f0;
+    border-radius: 3px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.zhankai{
+    background: rgba(255, 102, 0, 0.772549);
+    width: 100px;
+    height: 32px;
+    border-radius: 18px;
+    font-size: 15px;
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+.theme_fcolor{
+    background: rgba(255, 102, 0, 0.772549);
+    width: 100px;
+    height: 32px;
+    border-radius: 18px;
+    font-size: 15px;
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+.mhover｛border-bottom:1px solid #41a39f;｝

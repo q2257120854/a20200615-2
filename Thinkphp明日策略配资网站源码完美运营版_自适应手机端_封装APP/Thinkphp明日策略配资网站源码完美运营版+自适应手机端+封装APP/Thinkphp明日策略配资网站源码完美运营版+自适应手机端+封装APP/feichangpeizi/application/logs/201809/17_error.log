@@ -1,0 +1,17 @@
+---------------------------------------------------------------
+[ 2018-09-17T13:48:03+08:00 ] 103.219.31.15 112.17.89.12 GET /index/lianlianpay/doPay?b-pay-amount=100
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:300]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 327 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:99]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:115]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:119]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:122]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:128]
+[ error ] [8]未定义数组索引: acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:129]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:131]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:134]

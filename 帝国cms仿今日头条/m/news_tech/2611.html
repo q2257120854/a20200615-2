@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+
+<link  href="http://m.test.dede168.com/style/common.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://m.test.dede168.com/style/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/common.js" ></script>
+<meta name="keywords" content="科技,DevOps,虚拟机,Linux," />
+<meta name="description" content="“Linux+容器”--一把开启新世界的钥匙" />
+<title>“Linux+容器”--一把开启新世界的钥匙 - 仿今日头条</title>
+</head>
+<body>
+<div class="header" style="margin-top: 0;">
+<div class="nav_header_bg_2">
+	<a href="javascript:history.go(-1);" class="nav_header_back"></a>
+		<a href="javascript:void(0)"  class="ico_nav_info" style="float:right;"><em>&equiv;</em></a>	
+	<center class="nav_header_center">仿今日头条.科技</center>
+	<div class="clear"></div>
+</div>
+</div>
+	<div class="content">
+ <h1>“Linux+容器”--一把开启新世界的钥匙</h1>
+   <div class="headbar">
+                <span>文 / ZD至顶网</span>
+                <div>
+                <em class="time">2016-04-20 20:13</em>
+				</div>
+    </div>
+	<div id="contentText">
+        <div class="contentText">
+			<p>ZD至顶网软件频道消息： Linux已经完全长大了。这已经是没有什么需要证明的事实了。虽然从来没有哪一年是Linux桌面电脑之年，而且可能永远也不会有这么一年，但是它运行在这个世界的大部分服务器上。它从来没有掌管桌面电脑领域，而是采取了迂回的方法：有越来越多基于Linux的客户端设备访问这些服务器，而且数量比Windows设备多得多。</p><p>Linux Foundation的老板Jim Zemlin曾说过：“它出现在数十亿的设备之中。Linux是每一个SOC的天然开发平台。Freescale、Qualcomm、Intel、MIPS：Linux是当然之选。它是事实上的平台。它是互联网的客户端。”</p><p>Linux是一门大生意，现在几乎每个人都同意这一点，甚至是微软。开发源代码胜利了，但是它是通过找到一个小领域，然后将其做到极致的方式胜利的。Linux最大的服务器系统，它运行在数百万台服务器上，为网络提供动力。Linux又是运行在云计算中的系统，而云计算现在也是一门大生意了。</p><p>这就是去年LinuxCon Europe大会上到处都是穿着漂亮衣服的专业人士，而不是胡子拉碴或者挺着啤酒肚的邋遢鬼的原因所在，这也是似乎每一场其他的演讲都是关于容器的原因所在。</p><p>让云计算变得可行的核心技术之一就是虚拟化，虚拟化通过将任务分散在多个单独的服务器上实现“网络规模”，并将在工作负载需要的时候，通过启动和关闭虚拟机将这些服务器连接到网络上。</p><p>但是虚拟机代价高昂。这倒不是说钱的问题——尽管它们也可能是价格不菲——而是考虑到资源和复杂性。整个系统的虚拟化是一种特殊的仿真器：在一个托管的操作系统中，你启用另一个访客系统。整个操作系统以及副本都是在虚拟机上完成工作，换句话说虚拟化就是假装并模拟硬件。一切都是复制的，这意味着性能上的耗费。而且访客操作系统必须像正常的系统一样启动，而启动虚拟机需要时间。</p><p>这让某个爱说笑的人评论道，“虚拟机监控程序是操作系统无能的一个活生生的证明。”</p><p>这简直是搬弄是非！让我们看看下面的例子。</p><p>操作系统的内核在规模上无法很好地匹配数以万计的内核或者TB级别的NUMA RAM？可以解决：对机器进行分区，在规模优化后的虚拟机上运行多个副本。</p><p>你的操作系统不是非常可靠？或者你需要多个版本，或者该操作系统需要特定的应用程序版本？可以解决：虚拟机赋予用户完整的远程控制权力，因为硬件是虚拟的。用户可以在故障备援的集群中运行大量副本——这也适用于托管的硬件。在故障的托管主机上运行的虚拟机可以自动迁移到另一台主机之上。</p><p>即使是在规模坐标轴上最小的一端，在SOHO办公中只使用一台服务器的情况下，它仍然有用。操作系统需要特定的驱动程序和配置才能启动特定型号的机器？如果机器死机了，备份无法恢复到更新的替代，它就无法启动。可以解决：专门安排一台机器来运行一个虚拟机。这就提供了标准的硬件模板，消除了驱动程序的问题。你可以将安装好的操作系统从一台机器迁移到另一台机器而不用担心受罚，这一点和裸机安装是不同的。它方便了备份和恢复、容量规划以及其他的工作。</p><p>虚拟化是一个奇妙的工具，给IT界带来了一场革命，这种说法一点也没错。有非常多很棒的理由要使用它，它特别适合运行精心配置的操作系统的、长期存在的虚拟机，这些机器需要有人维护。它带来了伟大的功能，例如将运行着的虚拟机从一台托管服务器迁移到另外一台。它推动了软件定义网络的发展，简化了网络设计。如果你有固定的服务器，充满了数据和各种配置，虚拟机就正是你所需要的。</p><p>而且在这个世界里，有专有的代码规则：Windows服务器和VMware，以及越来越多的Hyper-V。</p><p>但是如果你一家以互联网企业，而且你最关心的是由小型、绝大部分是不固定的服务器构建快速、可扩展的环境支撑用FOSS工具和技术开发的微服务。在这里不用担心许可证的问题——一切都是免费的。根据需要创建新的实例，在你用不着它们的时候你可以“干掉”它们。</p><p>每个实例都是自动配置了Puppet或者Ansible，它们都运行在同一个Linux版本之上，不管你的技术人员喜欢的是哪个版本，这也许意味着Ubuntu适用于绝大部分人，Debian适用于铁杆，而CentOS适用于那些致力于RPM的人。</p><p>在这个世界里，KVM和Xen是大玩家，在专门服务于他们的LinuxCon之类的活动中有自己的舞台。针对免费操作系统的免费的虚拟机监控系统也具备同样的缺点：运行在Linux下的Linux中意味着很多重复的堆栈，一大堆不必要的虚拟化硬件，虚拟机之间低效的资源共享，以及漫长的虚拟机启动时间等。</p><p>每个人都在谈论容器的原因是它们能够解决这些问题中的绝大部分。如果你的内核扩展良好，你所有的工作负载无论如何都在同一个内核上，那么容器提供了虚拟机的隔离和可伸缩的功能，而且不用承担过多费用。我们曾在2011年谈到了它们是如何工作的，但是在那个时候，Linux容器仍然是新生事物，而且非常简陋。</p><p>不过，从那个时候起，一个产品推动了Linux容器的开发：Docker。最初的产品为LXC添加了一些方便的附加功能，Docker现在已经拓展出了对多个后端的支持。一个全新的软件行业板块正在围绕着Docker成长起来。新类型的Linux版本被打造成能够容纳Docker容器，例如CoreOS和红帽子的Project Atomic。CoreOS在Docker方面也有自己的竞争格式——Rocket。</p><p>另外，Docker并不局限于Linux。现有的Docker容器也可以运行在Joyent的SmartOS之上，它是基于OpenSolaris的一个分支。而Docker的一个版本将能够管理Windows Server 2016中的Windows容器，这个版本即将推出。甚至是Oracle也发出了感兴趣的声音。</p><p>同时，Canonical在容器模式上采取了另一种独特的方式，LXD。</p><p>这并不意味着“传统”虚拟化的终结。容器对于微服务来说非常棒，但是至少按照目前的状态，它们对于现有的复杂服务器工作负载并没有那么理想。目前的管理工具也远不够强大，因此，绝大部分人都将他们容器化的工作负载运行在虚拟机中的托管操作系统之中，这样做的缺点是会带来一些性能上的损失。</p><p>而且，随着容器对现有的虚拟机管理程序供应商造成的威胁变得越来越明显，企业都在争分夺秒地想方设法让虚拟机的行为更像容器。</p><p>现在，默认Unix的操作系统级别的虚拟化网络时代终于到来了，它有望彻底改变这个市场——还有Linux。而这也意味着很多新的代码和大量新的流行词汇要出现了。</p>		</div>
+		
+	</div>
+</div>
+<div class="share">
+<div class="sharelist">
+<script type="text/javascript">
+if(navigator.userAgent.indexOf('UCBrowser') > -1) {
+    var CONFIG = {};
+        CONFIG['wx_share_link'] = 'http://test.dede168.com//news_tech/2611.html',
+        CONFIG['wx_share_title'] = '“Linux+容器”--一把开启新世界的钥匙',
+        CONFIG['wx_share_desc'] = '“Linux+容器”--一把开启新世界的钥匙',
+        CONFIG['img_url'] = '/e/data/images/notimg.gif';
+document.writeln("<span class='ucshare'><a href='javascript:;' class='share-wxtimeline'></a><a href='javascript:;' class='share-wxfriend'></a></span>");
+document.writeln('<script type="text/javascript" src="/style/Zepto.js"><'+'/script><script type="text/javascript" src="/style/wx_share.js"><'+'/script>')
+}
+</script>
+<span class="bdsharebuttonbox">				
+					<a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+					<a href="javascript:;" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+					<a href="javascript:;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+</span>
+</div>
+</div>
+<div class="cmt">
+<div id="SOHUCS" sid="2611"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cys3T11v7&conf=prod_8d01521f822b32f1a30f058371f6eeef">
+</script>
+</div>
+<div class="article">
+<div class="listsbox boxmt10">
+<h2>推荐阅读：</h2>
+  <ul class="list_pic" id="content_list">
+				<li class="clear">
+			<a href="/news_tech/2657.html" title="微软小娜与美团外卖达成合作，智能自动订外卖？">
+				<dl>
+					<dd>
+						<h3>微软小娜与美团外卖达成合作，智能自动订外卖？</h3>
+						<i></i><em>文 / IT之家</em>
+					</dd>
+					<dt><img src="http://p3.pstatp.com/large/4ca000008cb2293d2fe?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_tech/2655.html" title="网站要给用户好的体验必须遵循视线金三角分布法">
+				<dl>
+					<dd>
+						<h3>网站要给用户好的体验必须遵循视线金三角分布法</h3>
+						<i></i><em>文 / 双成际</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/48400056470d39cf05e?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_entertainment/1842.html" title="一个帅到秒杀男人们的女人">
+				<dl>
+					<dd>
+						<h3>一个帅到秒杀男人们的女人</h3>
+						<i></i><em>文 / 美空秘密基地</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/48400069373634b7361?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_tech/2656.html" title="京盾华鼎：将整合线下资源打造O2O跨境电商">
+				<dl>
+					<dd>
+						<h3>京盾华鼎：将整合线下资源打造O2O跨境电商</h3>
+						<i></i><em>文 / </em>
+					</dd>
+					<dt><img src=""></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_society/2581.html" title="不管出于什么原因，上班工作这些事可不要干">
+				<dl>
+					<dd>
+						<h3>不管出于什么原因，上班工作这些事可不要干</h3>
+						<i></i><em>文 / 庄里职场</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/484000a7b0316e4ffa9?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+		       </ul>
+
+</div>
+</div>
+<div class="block15"></div>
+<div id="back-to-top">
+<a class="stop" href="javascript:"><span></span></a>
+<a class="scmt" href="javascript:"><span></span></a>
+</div>
+<div class="full"></div>
+<div class="side">
+<ul>
+<a href="/">首页</a>
+ <a id="sn1" href="">热点</a>
+<a id="sn1" href="">社会</a>
+<a id="sn1" href="">娱乐</a>
+<a id="sn1" href="">科技</a>
+<a id="sn1" href="">汽车</a>
+<a id="sn1" href="">体育</a>
+<a id="sn1" href="">财经</a>
+<a id="sn1" href="">军事</a>
+<a id="sn1" href="">国际</a>
+<a id="sn1" href="">时尚</a>
+<a id="sn1" href="">旅游</a>
+<a id="sn1" href="">探索</a>
+<a id="sn1" href="">育儿</a>
+<a id="sn1" href="">养生</a>
+<a id="sn1" href="">故事</a>
+<a id="sn1" href="">美文</a>
+<a id="sn1" href="">游戏</a>
+<a id="sn1" href="">历史</a>
+<a id="sn1" href="">美食</a>
+</ul>
+</div>
+
+<div style="clear: both;"></div>
+<div class="footer_main">Copyright &copy;  2015-2016 仿今日头条 版权所有
+<center>统计代码填到这里</center>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+window._bd_share_config = {
+		common : {
+			bdText : '“Linux+容器”--一把开启新世界的钥匙',	
+			bdDesc : '“Linux+容器”--一把开启新世界的钥匙',	
+			bdUrl : 'http://test.dede168.com//news_tech/2611.html', 	
+			bdPic : '/e/data/images/notimg.gif'
+		},
+		share : [{
+			"bdSize" : 32
+		}],
+}
+</script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/show.js"></script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/form.js"></script>
+<form action="" method="post" id="AjaxShowAll"></form>
+<div style="display:none;">
+<script src="http://m.test.dede168.com/e/extend/DoTimeRepage/"></script>
+<script src="http://test.dede168.com//e/public/ViewClick/?classid=4&id=2611&addclick=1"></script></div>

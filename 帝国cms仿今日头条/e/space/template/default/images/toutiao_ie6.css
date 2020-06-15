@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*ie6*/
+
+
+#header { margin-bottom:0; height:38px; position:relative; }
+#header .header-bar { background:#FFFF00}
+
+
+#content{margin-top:0!important; position:relative;  }
+
+
+#menu_parent{position:absolute; width:960px; left:50%; margin-left:-480px}
+#menu{ position:absolute; top:0px!important}
+#menu ul li { height:40px;}
+#menu ul li a{ display:block; font-size:14px; padding:10px 0px 10px 30px; background:url(http://s2.pstatp.com/r2/image/toutiao/tab_icon.gif?ver=201301241652) no-repeat 10px 9px;}
+#__all__.cur{background-position:10px -37px!important }
+#news_society.cur{ background-position:10px -132px!important}
+#news_finance.cur{ background-position:10px -227px!important}
+#news_sports.cur{ background-position:10px -324px!important}
+#news_entertainment.cur{ background-position:10px -420px!important}
+#news_tech.cur{ background-position:10px -516px!important}
+#news_military.cur{ background-position:10px -613px!important}
+#news_fashion.cur{ background-position:10px -708px!important}
+#news_world.cur{ background-position:10px -805px!important}
+#news_car.cur{ background-position:10px -900px!important}
+
+
+
+
+
+
+.expand-comment .comment-list .comment-item { padding:0; margin:0; height:58px!important; margin-left:20px!important; }
+.expand-comment .comment-list .comment-item .avatar { margin-left:0px!important;  }
+.comment-pane .comment-list .comment-item ul.comment-content .content {font-size: 12px;!important}
+.comments_fix{ margin-top:-10px;}
+.comments_fix a { font-size:12px;}
+.expand-comment .W_arrline { margin-left:15px!important}
+
+/*side pane*/
+.side-pane {  _overflow:hidden}
+#hot_list .hot_list_item { margin-bottom:0px; }
+
+
+
+
+
+#p-infos .trigger a{ padding-top:3px; background:#996633}
+
+
+.control-line span.comment{ position:relative; padding-right:15px}
+.control-line span.comment i { display:inline-block; position:absolute; right:5px; top:5px; height:5px  }

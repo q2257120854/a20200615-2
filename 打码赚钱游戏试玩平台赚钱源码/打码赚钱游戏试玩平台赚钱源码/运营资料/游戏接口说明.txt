@@ -1,0 +1,31 @@
+
+请将游戏接口文件 GameController.php    放在 \protected\controllers 文件夹下
+
+游戏接口说明
+
+
+1. 55e5 
+
+接口绑定地址：你的域名/game/zc55e5
+
+
+2. 345试玩
+
+接口绑定地址：你的域名/game/zc345
+
+3. ppwan
+
+接口绑定地址：你的域名/game/Ppwanreginfo
+
+4.通用接口
+
+接口绑定地址：你的域名/game/Zcinfo
+
+
+联系资料
+
+55e5  ： http://wan.07073.com/union/joinus   QQ联系 备注询单接cpl  
+
+345   ： http://test.345sw.com/              QQ联系 备注询单接cpl  
+
+ppwan ： QQ:2961433533   备注询cpl合作   

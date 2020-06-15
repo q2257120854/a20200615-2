@@ -1,0 +1,65 @@
+
+<div style="margin: 5px;">
+    <blockquote style="margin-top: 20px;" class="layui-elem-quote">每重新设置规则策略，将会以新的策略记录红包的使用</blockquote>
+    <table id="p_red_pack_info_table"></table>
+</div>
+
+<script>
+    layui.use('table', function () {
+        const table = layui.table;
+        //第一个实例
+        {literal}
+        table.render({
+            elem: '#p_red_pack_info_table'
+            , height: 500
+            , url: 'ajax.php?act=call_plugin_ajax&p_name=sendRedPack&type=info_data' //数据接口
+            , page: true //开启分页
+            , cols: [[ //表头
+                {field: 'tourPlayerId', title: '序号', width: 80, sort: true, fixed: 'left', templet: function (d) {
+                        return d['LAY_TABLE_INDEX'] + 1;
+                    }}
+                , {field: 'rule_id', title: '策略序号', sort: true, templet: function (d) {
+                    return '策略-' + d['rule_id'];
+                }}
+                , {field: 'ip', title: '用户IP'}
+                , {field: 'type', title: '红包类型', sort: true, templet: function (d) {
+                    if (d.type === 1) {
+                        return '<span class="layui-badge">拼手气</span>';
+                    }
+                        return '<span class="layui-badge layui-bg-green">普&nbsp;&nbsp;&nbsp;&nbsp;通</span>';
+                }}
+                , {field: 'money', title: '红包金额', sort: true, templet: function (d) {
+                    return `<span style="color: #FF5722;">￥${d.money}</span>`;
+                }}
+                , {field: 'is_use', title: '使用状态', sort: true, templet: function (d) {
+                    if (d.is_use === 1) {
+                        return '<span class="layui-badge layui-bg-blue">已使用</span>';
+                    }
+                    return '<span class="layui-badge layui-bg-orange">未使用</span>';
+                }}
+                , {field: 'trade_no', title: '对应订单号', sort: true, templet: function (d) {
+                    if (d.trade_no) {
+                        return `<a href="orderList.php?kw=${d.trade_no}" title="点击查看订单">${d.trade_no}</a>`;
+                    }
+                    return '<span style="color: #c2c2c2;">未下单</span>';
+                }}
+                , {field: 'update_time', title: '最后使用时间', width: 160, sort: true, templet: function (d) {
+                    if (d.update_time) {
+                        return d.update_time;
+                    }
+                    return '<span style="color: #c2c2c2;">未下单</span>';
+                }}
+                , {field: 'create_time', title: '抢购时间', width: 160, sort: true}
+            ]]
+            , parseData: function (res) {
+                return {
+                    'code': res['status'],
+                    'msg': res['msg'],
+                    'count': res['data']['total'],
+                    'data': res['data']['item'],
+                };
+            }
+        });
+        {/literal}
+    });
+</script>

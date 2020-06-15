@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+
+<link  href="http://m.test.dede168.com/style/common.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://m.test.dede168.com/style/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/common.js" ></script>
+<meta name="keywords" content="科技,大数据,电脑,Hadoop," />
+<meta name="description" content="用最通俗的语言告诉你，hadoop能做什么？" />
+<title>用最通俗的语言告诉你，hadoop能做什么？ - 仿今日头条</title>
+</head>
+<body>
+<div class="header" style="margin-top: 0;">
+<div class="nav_header_bg_2">
+	<a href="javascript:history.go(-1);" class="nav_header_back"></a>
+		<a href="javascript:void(0)"  class="ico_nav_info" style="float:right;"><em>&equiv;</em></a>	
+	<center class="nav_header_center">仿今日头条.科技</center>
+	<div class="clear"></div>
+</div>
+</div>
+	<div class="content">
+ <h1>用最通俗的语言告诉你，hadoop能做什么？</h1>
+   <div class="headbar">
+                <span>文 / 大讲台科技</span>
+                <div>
+                <em class="time">2016-04-20 20:13</em>
+				</div>
+    </div>
+	<div id="contentText">
+        <div class="contentText">
+			<p><span>hadoop擅长日志分析，facebook就用Hive来进行日志分析，2009年时facebook就有非编程人员的30%的人使用HiveQL进行数据分析；淘宝搜索中的自定义筛选也使用的Hive；利用Pig还可以做高级的数据处理，包括Twitter、LinkedIn上用于发现您可能认识的人，可以实现类似Amazon。com的协同过滤的推荐效果。淘宝的商品推荐也是！在Yahoo！的40%的Hadoop作业是用pig运行的，包括垃圾邮件的识别和过滤，还有用户特征建模。天猫的推荐系统是hive，少量尝试mahout！</span><br></p><p><img src="http://p3.pstatp.com/large/2cc00077edf4994bcb5?123.jpg"/></p><p>下面举例说明：</p><p>设想一下这样的应用场景。我有一个100M的数据库备份的sql文件。我现在想在不导入到数据库的情况下直接用grep操作通过正则过滤出我想要的内容。例如：某个表中含有相同关键字的记录那么有几种方式,一种是直接用linux的命令grep还有一种就是通过编程来读取文件,然后对每行数据进行正则匹配得到结果好了现在是100M的数据库备份。上述两种方法都可以轻松应对。</p><p>那么如果是1G,1T甚至1PB的数据呢,上面2种方法还能行得通吗？答案是不能。毕竟单台服务器的性能总有其上限。那么对于这种超大数据文件怎么得到我们想要的结果呢？</p><p>有种方法就是分布式计算,分布式计算的核心就在于利用分布式算法把运行在单台机器上的程序扩展到多台机器上并行运行。从而使数据处理能力成倍增加。但是这种分布式计算一般对编程人员要求很高,而且对服务器也有要求。导致了成本变得非常高。</p><p>Haddop就是为了解决这个问题诞生的。Haddop可以很轻易的把很多linux的廉价pc组成分布式结点,然后编程人员也不需要知道分布式算法之类,只需要根据mapreduce的规则定义好接口方法,剩下的就交给Haddop。它会自动把相关的计算分布到各个结点上去,然后得出结果。</p><p>例如上述的例子：Hadoop要做的事首先把1PB的数据文件导入到HDFS中,然后编程人员定义好map和reduce,也就是把文件的行定义为key,每行的内容定义为value,然后进行正则匹配,匹配成功则把结果通过reduce聚合起来返回。Hadoop就会把这个程序分布到N个结点去并行的操作。</p><p>那么原本可能需要计算好几天,在有了足够多的结点之后就可以把时间缩小到几小时之内。</p><p>这也就是所谓的大数据云计算了。如果还是不懂的话再举个简单的例子</p><p>比如1亿个1相加得出计算结果,我们很轻易知道结果是1亿。但是计算机不知道。那么单台计算机处理的方式做一个一亿次的循环每次结果+1</p><p>那么分布式的处理方式则变成我用1万台计算机,每个计算机只需要计算1万个1相加然后再有一台计算机把1万台计算机得到的结果再相加从而得到最后的结果。</p><p>理论上讲,计算速度就提高了1万倍。当然上面可能是一个不恰当的例子。但所谓分布式,大数据,云计算大抵也就是这么回事了。</p><p>最后，想学习Hadoop的小伙伴们，学习Hadoop没有老师指导还是比较艰难的尤其到了后期，很容易学偏，且拉长学习周期。自学的话也会缺少一个为你背书，保证你学习成绩有效性的机构。我是大讲台运营老师，已经有很多小伙伴在大讲台这家专业的最实用的Hadoop在线机构学习，自学那么辛苦，不妨来大讲台（dajiangtai.com)看看哦！</p>		</div>
+		
+	</div>
+</div>
+<div class="share">
+<div class="sharelist">
+<script type="text/javascript">
+if(navigator.userAgent.indexOf('UCBrowser') > -1) {
+    var CONFIG = {};
+        CONFIG['wx_share_link'] = 'http://test.dede168.com//news_tech/2616.html',
+        CONFIG['wx_share_title'] = '用最通俗的语言告诉你，hadoop能做什么？',
+        CONFIG['wx_share_desc'] = '用最通俗的语言告诉你，hadoop能做什么？',
+        CONFIG['img_url'] = 'http://p3.pstatp.com/large/2cc00077edf4994bcb5?123.jpg';
+document.writeln("<span class='ucshare'><a href='javascript:;' class='share-wxtimeline'></a><a href='javascript:;' class='share-wxfriend'></a></span>");
+document.writeln('<script type="text/javascript" src="/style/Zepto.js"><'+'/script><script type="text/javascript" src="/style/wx_share.js"><'+'/script>')
+}
+</script>
+<span class="bdsharebuttonbox">				
+					<a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+					<a href="javascript:;" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+					<a href="javascript:;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+</span>
+</div>
+</div>
+<div class="cmt">
+<div id="SOHUCS" sid="2616"></div>
+<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" 
+	src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=cys3T11v7&conf=prod_8d01521f822b32f1a30f058371f6eeef">
+</script>
+</div>
+<div class="article">
+<div class="listsbox boxmt10">
+<h2>推荐阅读：</h2>
+  <ul class="list_pic" id="content_list">
+				<li class="clear">
+			<a href="/news_tech/2657.html" title="微软小娜与美团外卖达成合作，智能自动订外卖？">
+				<dl>
+					<dd>
+						<h3>微软小娜与美团外卖达成合作，智能自动订外卖？</h3>
+						<i></i><em>文 / IT之家</em>
+					</dd>
+					<dt><img src="http://p3.pstatp.com/large/4ca000008cb2293d2fe?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_tech/2655.html" title="网站要给用户好的体验必须遵循视线金三角分布法">
+				<dl>
+					<dd>
+						<h3>网站要给用户好的体验必须遵循视线金三角分布法</h3>
+						<i></i><em>文 / 双成际</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/48400056470d39cf05e?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_entertainment/1842.html" title="一个帅到秒杀男人们的女人">
+				<dl>
+					<dd>
+						<h3>一个帅到秒杀男人们的女人</h3>
+						<i></i><em>文 / 美空秘密基地</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/48400069373634b7361?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_tech/2656.html" title="京盾华鼎：将整合线下资源打造O2O跨境电商">
+				<dl>
+					<dd>
+						<h3>京盾华鼎：将整合线下资源打造O2O跨境电商</h3>
+						<i></i><em>文 / </em>
+					</dd>
+					<dt><img src=""></dt>
+				</dl>
+			</a>
+		</li>
+				<li class="clear">
+			<a href="/news_society/2581.html" title="不管出于什么原因，上班工作这些事可不要干">
+				<dl>
+					<dd>
+						<h3>不管出于什么原因，上班工作这些事可不要干</h3>
+						<i></i><em>文 / 庄里职场</em>
+					</dd>
+					<dt><img src="http://p1.pstatp.com/large/484000a7b0316e4ffa9?123.jpg"></dt>
+				</dl>
+			</a>
+		</li>
+		       </ul>
+
+</div>
+</div>
+<div class="block15"></div>
+<div id="back-to-top">
+<a class="stop" href="javascript:"><span></span></a>
+<a class="scmt" href="javascript:"><span></span></a>
+</div>
+<div class="full"></div>
+<div class="side">
+<ul>
+<a href="/">首页</a>
+ <a id="sn1" href="">热点</a>
+<a id="sn1" href="">社会</a>
+<a id="sn1" href="">娱乐</a>
+<a id="sn1" href="">科技</a>
+<a id="sn1" href="">汽车</a>
+<a id="sn1" href="">体育</a>
+<a id="sn1" href="">财经</a>
+<a id="sn1" href="">军事</a>
+<a id="sn1" href="">国际</a>
+<a id="sn1" href="">时尚</a>
+<a id="sn1" href="">旅游</a>
+<a id="sn1" href="">探索</a>
+<a id="sn1" href="">育儿</a>
+<a id="sn1" href="">养生</a>
+<a id="sn1" href="">故事</a>
+<a id="sn1" href="">美文</a>
+<a id="sn1" href="">游戏</a>
+<a id="sn1" href="">历史</a>
+<a id="sn1" href="">美食</a>
+</ul>
+</div>
+
+<div style="clear: both;"></div>
+<div class="footer_main">Copyright &copy;  2015-2016 仿今日头条 版权所有
+<center>统计代码填到这里</center>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+window._bd_share_config = {
+		common : {
+			bdText : '用最通俗的语言告诉你，hadoop能做什么？',	
+			bdDesc : '用最通俗的语言告诉你，hadoop能做什么？',	
+			bdUrl : 'http://test.dede168.com//news_tech/2616.html', 	
+			bdPic : 'http://p3.pstatp.com/large/2cc00077edf4994bcb5?123.jpg'
+		},
+		share : [{
+			"bdSize" : 32
+		}],
+}
+</script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/show.js"></script>
+<script type="text/javascript" src="http://m.test.dede168.com/style/form.js"></script>
+<form action="" method="post" id="AjaxShowAll"></form>
+<div style="display:none;">
+<script src="http://m.test.dede168.com/e/extend/DoTimeRepage/"></script>
+<script src="http://test.dede168.com//e/public/ViewClick/?classid=4&id=2616&addclick=1"></script></div>

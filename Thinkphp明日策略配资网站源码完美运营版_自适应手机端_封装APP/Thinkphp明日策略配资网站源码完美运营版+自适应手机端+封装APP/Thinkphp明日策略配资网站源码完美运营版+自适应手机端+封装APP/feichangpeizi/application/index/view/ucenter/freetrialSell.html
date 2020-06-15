@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金龙策略</title>
+</head>
+<body class="sell_body grey buy-body logged-in">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+<!--点卖区-->
+<div class="br-content">
+<div class="w1024">
+<div class="stock-buy stock-sell">
+    <section class="play-area">
+        <nav>
+            <ul class="clearfix">
+                <li class=""><a href="/freetrial.html"><em> 01 </em>| 点买区</a></li>
+                <li class="active"><a href="/freetrialSell.html"><em>02 </em>| 点卖区</a></li>
+                <li class=""><a href="/freetrialHistory.html"><em>03 </em> | 结算区</a></li>
+            </ul>
+        </nav>
+        <section>
+            <center>
+                当前持仓所需递延费为&nbsp;<label id="delayLbl" style="color:#d42b2e ;font-size:22px;font-weight:600">0</label>&nbsp;元
+                &nbsp;<label style="font-size:18px">(周末及节假日免费)</label>，持仓盈利总计：<span id="totalProfit" style="font-size: 22px;"> {$profitSum} </span>元
+            </center>
+            {if condition=" $list|count gt 0 "}
+            <ul id="sell-list">
+                {volist name="list" id="vo" }
+                <li class="br-clearfix">
+                    <label class="w186"><em>{$vo.createTime}</em><em>单号：{$vo.id}</em></label>
+                    <label class="w125"><em>{$vo.dealAmount|round=###,2}万元</em><em>止损：<b>{$vo.loss}元</b></em></label>
+                    <label class="w115"><em><strong>{$vo.stockName}({$vo.stockCode})</strong></em><em><b class="">{$vo.dealQuantity * 100}</b>股可用</em></label>
+                    <label class="w140"><em><strong></strong></em><em><b class="">{$vo.dealPrice|round=###,2}</b><i class="icon icon-arrow-right"></i>-><b class="">{$list2[$i-1][nowPrice]|round=###,2}</b></em><em>
+                        <strong class="" {if condition="$list2[$i-1][profitAmount] lt 0"} style="color:green" {else if condition="$list2[$i-1][profitAmount] gt 0" } style="color:red" {/if} >
+                        {$list2[$i-1][profitAmount]}({$list2[$i-1][rate] * 100}%)</strong></em></label>
+                    <label class="w180"><button class="btnSell" id="{$vo.id}" index="{$i}" class="btn btn-pri sell-btn " >点卖（不可递延）</button></label>
+                </li>
+                {/volist}
+            </ul>
+            {$list->render()}
+            {else}
+            <div class="data-empty"><p>暂时没有等待卖出的A股</p><a href="/buy.html">立即去点买</a></div>
+            {/if}
+           
+        </section>
+    </section>
+    <!--确认点卖？-->
+    <div class="confirm-sell" style="display: none;">
+        <p>确定点卖？</p>
+        <button class="wap-confirm">确定</button>
+        <button class="wap-deny">取消</button>
+    </div>
+</div>
+
+</div>
+</div>
+<!--申请递延-->
+<div class="popup popup-middle" id="popup-delay">
+    <div class="popup-header group">
+        <h2>申请递延</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="delay-box">
+            <div class="delay-info">当前非递延申请时间,请稍后再来！</div>
+            <div class="delay-foot">
+                <button class="btn btn-pri">确定</button>
+                <a href="javascript:;" class="delay-btn f-right">递延规则<i class="icon icon-caret-up"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="delay-rule hide popup-footer">
+        <p>递延申请：点买人付费申请</p>
+        <p>申请时间：00:00:00-12:00:00</p>
+        <p>递延申请：点买人付费申请</p>
+        <p>递延申请：点买人付费申请</p>
+    </div>
+</div>
+<!--点卖确认-->
+<div class="popup popup-big" id="popup-sell">
+    <div class="popup-header group">
+        <h2>点卖确认</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <input type="hidden" id="orderId" />
+        <table border="0" cellspacing="0" cellpadding="0" class="popup-sell-tb table-sell">
+            <tbody><tr>
+                <td width="15%">交易品种：</td>
+                <td width="35%" id="t_code">-</td>
+                <td width="15%">卖出数量：</td>
+                <td width="35%" id="t_quantity">-</td>
+            </tr>
+            <tr>
+                <td>买入时间：</td>
+                <td id="t_time">-</td>
+                <td>递延天数：</td>
+                <td id="t_delayDays">-</td>
+            </tr>
+            <tr>
+                <td>浮动盈亏</td>
+                <td class="c-red" id="t_profit">-</td>
+                <td>(仅供参考)</td>
+                <td></td>
+            </tr>
+        </tbody></table>
+        <div class="btn-div">
+            <button class="btn btn-pri" id="popup-confirm-btn">确定</button>
+            <a href="javascript:;" class="js-close-popup btn btn-grey">取消</a>
+        </div>
+    </div>
+    
+</div>
+<!--即时卖出-->
+<div class="popup popup-middle" id="popup-buy-apply">
+    <div class="popup-header group">
+        <h2>即时卖出</h2>
+    </div>
+    <div class="popup-body group">
+    </div>
+</div>
+<!--限价卖出-->
+<div class="popup popup-middle" id="popup-sell-price-success">
+    <div class="popup-header group">
+        <h2>限价卖出</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <center><i class="icon icon-circle-check"></i>限价委托提交成功！</center>
+        <div class="f-right"><b class="red">5秒</b>后自动跳转至卖出区，<a href="/ucenter/history.html" class="js-close-popup">立即跳转</a></div>
+    </div>
+</div>
+<!--卖出委托价格修改-->
+<div class="popup popup-big" id="popup-change-price">
+    <div class="popup-header group">
+        <h2>卖出委托价格修改</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <table border="0" cellspacing="0" cellpadding="0" class="popup-sell-tb table-change-price">
+            <tbody><tr>
+                <td width="15%">最&nbsp;&nbsp;新&nbsp;&nbsp;价：</td>
+                <td width="35%">-</td>
+                <td width="15%">委托价格：</td>
+                <td width="35%"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="change-price-1" class="active">
+                        <input type="radio" name="change-sell-price" id="change-price-1" class="radio" checked="">即时卖出
+                    </label>
+                </td>
+                <td colspan="2">
+                    <label for="change-price-2">
+                        <input type="radio" name="change-sell-price" id="change-price-2" class="radio">最新价触发<input type="text" id="change-sell-price" size="8" placeholder="输入价格" class="text" style="position:relative">时，即时卖出
+                    </label>
+                </td>
+            </tr>
+        </tbody></table>
+        <div class="btn-div">
+            <button class="btn btn-pri" id="popup-confirm-change-price-btn">确定</button>
+            <a href="javascript:;" class="js-close-popup btn btn-grey">取消</a>
+        </div>
+    </div>
+</div>
+<!--即时卖出-->
+<div class="popup popup-middle" id="popup-sell-success">
+    <div class="popup-header group">
+        <h2>即时卖出</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <center><i class="icon icon-circle-check"></i>卖出成功！</center>
+        <div class="f-right"><b class="red">5秒</b>后自动跳转至结算区，<a href="/ucenter/history.html" class="js-close-popup">立即跳转</a></div>
+    </div>
+</div>
+<!--认证银行卡-->
+<div class="popup" id="popup-id-verify">
+    <div class="popup-header group">
+        <h2>认证银行卡</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">提现和免费体验前必须先绑定一张银行卡</li>
+                <li style="text-align:left;">请务必认真填写真实资料</li>
+                <li style="text-align:left;">银行卡采用实名认证，一个身份证只能绑定一个账号</li>
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先绑定银行卡</p>
+        </div>
+        <div class="btn-row group">
+            <a class="btn btn-pri" href="/ucenter/BankCards.html">去绑定</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">暂不绑定</a>
+        </div>
+    </div>
+</div>
+<!--实名认证-->
+<div class="popup" id="popup-realname-auth">
+    <div class="popup-header group">
+        <h2>实名认证</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">一个身份证对应一个账号</li>
+                
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先进行实名认证</p>
+        </div>
+        <div class="field-row group">
+            <label>真实姓名：</label>
+            <div class="field-val"><input id="姓名i" type="text" class="text" onchange="user_updateid_zsxm_valid()"></div>
+        </div>
+        <div id="zsxm_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>未填写姓名</div></div>
+        <div class="field-row group">
+            <label>身份证号：</label>
+            <div class="field-val">
+                <div class="field-val">
+                    <input id="身份证i" type="text" class="text" onchange="user_updateid_sfzh_valid()">
+                </div>
+            </div>
+        </div>
+        <div id="sfzh_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>请填写准确的身份证</div></div>
+        <div class="btn-row group">
+            <a id="user_UpdateSelfIdA" class="btn btn-pri" href="javascript:void(0)">确认</a>
+            <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+
+
+{include file="public:footer" /}
+<!--<script src="/public/static/home/js/sell.js"></script>-->
+</body>
+</html>
+
+<script>
+$(".btnSell").click(function(e){
+    var index = $(this).attr("index");
+    var listJson = JSON.parse('{$listJson}').data;
+    var listJson2 = JSON.parse('{$listJson2}');
+    console.log(listJson)
+
+    var i = index - 1;
+    $("#t_code").html(listJson[i]['stockName'] + "(" + listJson[i]['stockCode'] + ")");
+    $("#t_quantity").html(listJson[i]['dealQuantity'] + "手");
+    $("#t_time").html(listJson[i]['createTime']);
+    $("#t_delayDays").html(listJson2[i]['delayDays']);
+    $("#t_profit").html(listJson2[i]['profitAmount']);
+
+    var prf = parseFloat(listJson2[i]['profitAmount']);
+    if(prf < 0){
+        $("#t_profit").attr("class", "c-green");
+    }else if(prf > 0){
+        $("#t_profit").attr("class", "c-red");
+    }else{
+        $("#t_profit").removeAttr("class");
+    }
+
+    var orderId = $(this).attr('id');
+    $("#orderId").val(orderId);
+
+    tool.popup.showPopup($("#popup-sell"));
+});
+
+
+$("#popup-confirm-btn").click(function(e){
+
+    var orderId = $("#orderId").val();
+    var params = { orderId : orderId };
+    if(orderId <= 0){
+        tool.popup_err_msg("订单号不正确");
+        return;
+    }
+    $(this).attr("disabled", true);
+    $.post("/index/ucenter/doFreetrialSell", params, function(data){
+        $("#popup-confirm-btn").attr("disabled", false);
+        if(data.code == '0'){
+            tool.popup_err_msg("交易成功");
+            location.href = "/freetrialHistory.html";
+        }else{
+            tool.popup_err_msg(data.msg);
+        }
+    }, 'json');
+});
+
+
+
+</script>

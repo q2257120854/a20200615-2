@@ -1,0 +1,237 @@
+.login_reg_cont .section-form {
+	width: 100%;
+    background: url(/public/static/home/img/reg_banner.png) no-repeat center top;
+    height: 420px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+#section-reg .container-reg {
+    width: 300px;
+    float: right;
+    background-color: rgba(0,0,0,0.3);
+}
+#section-reg h2 {
+    background-color: rgba(0,0,0,0.1);
+    font-size: 18px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+.user-reg > .section-form .form {
+    padding: 20px 30px;
+}
+.section-form .form {
+    width: 100%;
+    margin: 0;
+    padding: 20px 30px 0;
+    font-size: 12px;
+}
+.section-form .form .field-wrapper {
+    padding: 0 0 10px 0;
+}
+.user-reg > .section-form .form input.text {
+    border-radius: 0;
+    border-color: #eee;
+}
+.section-form .form input.text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 11px 9px;
+    height: 35px;
+    line-height: 21px;
+    color: #444444;
+    margin-bottom: 5px;
+}
+.error-wrapper {
+    height: 20px;
+    position: relative;
+    top: -20px;
+}
+.error-wrapper > div {
+    line-height: 20px;
+    padding: 10px 0;
+    color: red;
+}
+.error-wrapper > div .icon {
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 16px;
+    vertical-align: top;
+}
+.icon-x-altx-alt:before {
+    content: "\e610";
+}
+.agree-wrapper{
+	color: #CACACA;
+    line-height: 16px;
+}
+
+.section-form .form .agree-wrapper {
+    line-height: 20px;
+    padding: 7px 0 10px 0;
+}
+.user-reg > .section-form .form .agree-wrapper {
+    padding: 0;
+    margin-top: -10px;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.section-form .form .agree-wrapper input {
+    vertical-align: top;
+    margin: 4px 8px 0 0;
+    cursor: pointer;
+}
+.section-form .form .agree-wrapper label {
+    cursor: pointer;
+}
+.group:after, .container:after, .field-wrapper:after, .row:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.section-form .form .btn-wrapper {
+    padding: 0;
+}
+#section-reg a.btn {
+    color: #fff;
+}
+.section-form .form .btn {
+    line-height: 40px;
+    font-size: 14px;
+    height: 40px;
+    display: block;
+    letter-spacing: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.name-err1,.psw-err1{
+	color: #d42b2e;
+}
+.btn-pri, .btn-pri:visited {
+    background-color: #d42b2e;
+}
+.user-reg > .section-form .quick-link-wrapper {
+    margin: 10px 0 0 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    font-size: 12px;
+}
+.section-form .quick-link-wrapper {
+    text-align: center;
+    line-height: 36px;
+    color: #cacaca;
+    border-top: 1px solid #dcdcdc;
+    border-top-width: 0;
+}
+.section-form .quick-link-wrapper a{
+	color: #fff;
+}
+#agree{
+	vertical-align: middle;
+    margin-right: 10px;
+}
+.container .form .capcha-wrapper .btn-get-capcha, .popup .form .capcha-wrapper .btn-get-capcha {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 99px;
+    line-height: 33px;
+    display: block;
+    border: 1px solid #dcdcdc;
+    border-radius: 0 3px 3px 0;
+    background: #ededed;
+    text-align: center;
+    color: #999999;
+    border-left-width: 0;
+}
+.container .form .capcha-wrapper .time-counter, .popup .form .capcha-wrapper .time-counter {
+    position: absolute;
+    top: 1px;
+    right: -55px;
+    width: 42px;
+    line-height: 33px;
+    /* display: none; */
+    border-radius: 4px;
+    background: #ededed;
+    text-align: center;
+    color: #333;
+}
+.container .form .capcha-wrapper .time-counter .icon, .popup .form .capcha-wrapper .time-counter .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: -12px;
+    font-size: 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #ededed;
+}
+.container .form .capcha-wrapper, .popup .form .capcha-wrapper {
+    position: relative;
+    padding-right: 100px;
+}
+.container .form .capcha-wrapper .active, .popup .form .capcha-wrapper .active {
+    background-color: #d42b2e;
+    color: #ffffff;
+    border-color: #d42b2e;
+}
+#reg_agree{
+	color: #fff;
+}
+/*---登录*/
+.section-form {
+    margin: 30px 0;
+}
+#page_auth_login .container {
+}
+#page_auth_login .section-border {
+    float: right;
+    width: 288px;
+    background-color: rgba(0,0,0,0.3);
+    margin: 30px 0 0 0;
+    position: relative;
+}
+.login_h2{
+	    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.1);
+    font-weight: normal;
+}
+.login_reg{
+	display: inline-block;
+    line-height: 1 !important;
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+}
+.user-reg > .login_body .link-wrapper a{
+	color: #fff;
+}
+.login_reg a{
+	font-size: 12px
+}
+.login_bw{
+	margin: 20px 0;
+}
+#login-btn{
+    color: #fff;
+}

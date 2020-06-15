@@ -1,0 +1,210 @@
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+dddddddddddd
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+dddddddddddd
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=3	dealQuantity=10
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=3	dealQuantity=10
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=2	dealQuantity=6
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=2	dealQuantity=6
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=2	dealQuantity=6
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.60	dealAmount=2	dealQuantity=6
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.250	dealAmount=2	dealQuantity=6
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.250	dealAmount=2	dealQuantity=6
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.190	dealAmount=2	dealQuantity=6
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.150	dealAmount=2	dealQuantity=6
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.160	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-4800	publicFee=135	guaranteeFee=6000	delayLine=3600	delayFee=54
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=000008	nowPrice=5.240	dealAmount=3	dealQuantity=57
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=000008	nowPrice=5.250	dealAmount=3	dealQuantity=57
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600433	nowPrice=4.070	dealAmount=2	dealQuantity=49
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600939	nowPrice=5.880	dealAmount=2	dealQuantity=34
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=000002	nowPrice=27.490	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=3	dealQuantity=10
+surplus=15000	loss=-3000	publicFee=135	guaranteeFee=3750	delayLine=2250	delayFee=54
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=1	dealQuantity=3
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=1	dealQuantity=3
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=29.26	dealAmount=1	dealQuantity=3
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=603980	nowPrice=18.150	dealAmount=2	dealQuantity=11
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600732	nowPrice=5.840	dealAmount=1	dealQuantity=17
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600732	nowPrice=5.790	dealAmount=1	dealQuantity=17
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600721	nowPrice=9.270	dealAmount=1	dealQuantity=10
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.800	dealAmount=1	dealQuantity=3
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600866	nowPrice=3.990	dealAmount=2	dealQuantity=50
+surplus=10000	loss=-2000	publicFee=90	guaranteeFee=2500	delayLine=1500	delayFee=36
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.800	dealAmount=1	dealQuantity=3
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+eeeeeeeeeeeee
+bbbbbbbbbbbbbbbb
+ccccccccccccc
+memberID=1304	stockCode=600036	nowPrice=28.71	dealAmount=1	dealQuantity=3
+surplus=5000	loss=-1000	publicFee=45	guaranteeFee=1250	delayLine=750	delayFee=18
+eeeeeeeeeeeee

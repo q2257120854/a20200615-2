@@ -1,0 +1,6 @@
+location /{ 
+alias /home/web/xxx.com/; 
+if (!-e $request_filename) { 
+rewrite /(.*)/(.*).html$ /e/chtml.php?classid=$1&id=$2&ssid=$2&check=checkcode; 
+} 
+}

@@ -1,0 +1,9320 @@
+array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 247,
+    'pid' => 214,
+    'title' => '编辑',
+    'url_value' => 'admin/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 22,
+    'pid' => 20,
+    'title' => '编辑',
+    'url_value' => 'user/index/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 233,
+    'pid' => 2,
+    'title' => '入金明细',
+    'url_value' => 'admin/index/rechargelist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 233,
+    'pid' => 2,
+    'title' => '入金明细',
+    'url_value' => 'admin/index/rechargelist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 229,
+    'pid' => 228,
+    'title' => '已读',
+    'url_value' => 'admin/notemsg/read',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 229,
+    'pid' => 228,
+    'title' => '已读',
+    'url_value' => 'admin/notemsg/read',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 212,
+    'pid' => 2,
+    'title' => '个人设置',
+    'url_value' => 'admin/index/profile',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 212,
+    'pid' => 2,
+    'title' => '个人设置',
+    'url_value' => 'admin/index/profile',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 6,
+    'pid' => 5,
+    'title' => '系统设置',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 50,
+    'pid' => 5,
+    'title' => '附件管理',
+    'url_value' => 'admin/attachment/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 64,
+    'pid' => 5,
+    'title' => '系统日志',
+    'url_value' => 'admin/log/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 41,
+    'pid' => 32,
+    'title' => '插件管理',
+    'url_value' => 'admin/plugin/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 69,
+    'pid' => 32,
+    'title' => '钩子管理',
+    'url_value' => 'admin/hook/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 66,
+    'pid' => 32,
+    'title' => '数据包管理',
+    'url_value' => 'admin/packet/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 185,
+    'pid' => 5,
+    'title' => '行为管理',
+    'url_value' => 'admin/action/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 229,
+    'pid' => 228,
+    'title' => '已读',
+    'url_value' => 'admin/notemsg/read',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 212,
+    'pid' => 2,
+    'title' => '个人设置',
+    'url_value' => 'admin/index/profile',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 227,
+    'pid' => 216,
+    'title' => '用户资金明细',
+    'url_value' => 'admin/member/fundrecord',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 50,
+    'pid' => 5,
+    'title' => '附件管理',
+    'url_value' => 'admin/attachment/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 64,
+    'pid' => 5,
+    'title' => '系统日志',
+    'url_value' => 'admin/log/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 185,
+    'pid' => 5,
+    'title' => '行为管理',
+    'url_value' => 'admin/action/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 41,
+    'pid' => 32,
+    'title' => '插件管理',
+    'url_value' => 'admin/plugin/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 69,
+    'pid' => 32,
+    'title' => '钩子管理',
+    'url_value' => 'admin/hook/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 66,
+    'pid' => 32,
+    'title' => '数据包管理',
+    'url_value' => 'admin/packet/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 234,
+    'pid' => 1,
+    'title' => '图文管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 235,
+    'pid' => 234,
+    'title' => '首页轮播图',
+    'url_value' => 'admin/article/imageslist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 227,
+    'pid' => 216,
+    'title' => '用户资金明细',
+    'url_value' => 'admin/member/fundrecord',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 233,
+    'pid' => 2,
+    'title' => '入金明细',
+    'url_value' => 'admin/index/rechargelist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 20,
+    'pid' => 19,
+    'title' => '管理员管理',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 234,
+    'pid' => 1,
+    'title' => '图文管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 238,
+    'pid' => 234,
+    'title' => '文章列表',
+    'url_value' => 'admin/article/articlelist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 51,
+    'pid' => 70,
+    'title' => '文件上传',
+    'url_value' => 'admin/attachment/upload',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 66,
+    'pid' => 32,
+    'title' => '数据包管理',
+    'url_value' => 'admin/packet/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 69,
+    'pid' => 32,
+    'title' => '钩子管理',
+    'url_value' => 'admin/hook/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 41,
+    'pid' => 32,
+    'title' => '插件管理',
+    'url_value' => 'admin/plugin/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 64,
+    'pid' => 5,
+    'title' => '系统日志',
+    'url_value' => 'admin/log/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 185,
+    'pid' => 5,
+    'title' => '行为管理',
+    'url_value' => 'admin/action/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 227,
+    'pid' => 216,
+    'title' => '用户资金明细',
+    'url_value' => 'admin/member/fundrecord',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 50,
+    'pid' => 5,
+    'title' => '附件管理',
+    'url_value' => 'admin/attachment/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 64,
+    'pid' => 5,
+    'title' => '系统日志',
+    'url_value' => 'admin/log/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 185,
+    'pid' => 5,
+    'title' => '行为管理',
+    'url_value' => 'admin/action/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 234,
+    'pid' => 1,
+    'title' => '图文管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 235,
+    'pid' => 234,
+    'title' => '首页轮播图',
+    'url_value' => 'admin/article/imageslist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 219,
+    'pid' => 217,
+    'title' => '已结算',
+    'url_value' => 'admin/order/finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 219,
+    'pid' => 217,
+    'title' => '已结算',
+    'url_value' => 'admin/order/finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 221,
+    'pid' => 216,
+    'title' => '提现申请',
+    'url_value' => 'admin/member/withdraw_apply',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 234,
+    'pid' => 1,
+    'title' => '图文管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 235,
+    'pid' => 234,
+    'title' => '首页轮播图',
+    'url_value' => 'admin/article/imageslist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 51,
+    'pid' => 70,
+    'title' => '文件上传',
+    'url_value' => 'admin/attachment/upload',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 185,
+    'pid' => 5,
+    'title' => '行为管理',
+    'url_value' => 'admin/action/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 69,
+    'pid' => 32,
+    'title' => '钩子管理',
+    'url_value' => 'admin/hook/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 41,
+    'pid' => 32,
+    'title' => '插件管理',
+    'url_value' => 'admin/plugin/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 64,
+    'pid' => 5,
+    'title' => '系统日志',
+    'url_value' => 'admin/log/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 231,
+    'pid' => 216,
+    'title' => '提现记录',
+    'url_value' => 'admin/member/withdraw_finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 231,
+    'pid' => 216,
+    'title' => '提现记录',
+    'url_value' => 'admin/member/withdraw_finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 185,
+    'pid' => 5,
+    'title' => '行为管理',
+    'url_value' => 'admin/action/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 50,
+    'pid' => 5,
+    'title' => '附件管理',
+    'url_value' => 'admin/attachment/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 229,
+    'pid' => 228,
+    'title' => '已读',
+    'url_value' => 'admin/notemsg/read',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 64,
+    'pid' => 5,
+    'title' => '系统日志',
+    'url_value' => 'admin/log/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 41,
+    'pid' => 32,
+    'title' => '插件管理',
+    'url_value' => 'admin/plugin/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 69,
+    'pid' => 32,
+    'title' => '钩子管理',
+    'url_value' => 'admin/hook/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 66,
+    'pid' => 32,
+    'title' => '数据包管理',
+    'url_value' => 'admin/packet/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 41,
+    'pid' => 32,
+    'title' => '插件管理',
+    'url_value' => 'admin/plugin/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 248,
+    'pid' => 1,
+    'title' => '盈亏列表',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 249,
+    'pid' => 248,
+    'title' => '用户盈亏列表',
+    'url_value' => 'admin/order/profitlist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 219,
+    'pid' => 217,
+    'title' => '已结算',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 215,
+    'pid' => 214,
+    'title' => '添加',
+    'url_value' => 'admin/agent/add',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 233,
+    'pid' => 2,
+    'title' => '入金明细',
+    'url_value' => 'admin/index/rechargelist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 221,
+    'pid' => 216,
+    'title' => '提现申请',
+    'url_value' => 'admin/member/withdraw_apply',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 41,
+    'pid' => 32,
+    'title' => '插件管理',
+    'url_value' => 'admin/plugin/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 50,
+    'pid' => 5,
+    'title' => '附件管理',
+    'url_value' => 'admin/attachment/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 64,
+    'pid' => 5,
+    'title' => '系统日志',
+    'url_value' => 'admin/log/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 185,
+    'pid' => 5,
+    'title' => '行为管理',
+    'url_value' => 'admin/action/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 248,
+    'pid' => 1,
+    'title' => '盈亏列表',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 249,
+    'pid' => 248,
+    'title' => '用户盈亏列表',
+    'url_value' => 'admin/order/profitlist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 221,
+    'pid' => 216,
+    'title' => '提现申请',
+    'url_value' => 'admin/member/withdraw_apply',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 66,
+    'pid' => 32,
+    'title' => '数据包管理',
+    'url_value' => 'admin/packet/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 69,
+    'pid' => 32,
+    'title' => '钩子管理',
+    'url_value' => 'admin/hook/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 41,
+    'pid' => 32,
+    'title' => '插件管理',
+    'url_value' => 'admin/plugin/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 221,
+    'pid' => 216,
+    'title' => '提现申请',
+    'url_value' => 'admin/member/withdraw_apply',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 219,
+    'pid' => 217,
+    'title' => '已结算',
+    'url_value' => 'admin/order/finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 233,
+    'pid' => 2,
+    'title' => '入金明细',
+    'url_value' => 'admin/index/rechargelist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 234,
+    'pid' => 1,
+    'title' => '图文管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 235,
+    'pid' => 234,
+    'title' => '首页轮播图',
+    'url_value' => 'admin/article/imageslist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 51,
+    'pid' => 70,
+    'title' => '文件上传',
+    'url_value' => 'admin/attachment/upload',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 229,
+    'pid' => 228,
+    'title' => '已读',
+    'url_value' => 'admin/notemsg/read',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 6,
+    'pid' => 5,
+    'title' => '系统设置',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+  3 => 
+  array (
+    'id' => 72,
+    'pid' => 67,
+    'title' => '编辑',
+    'url_value' => 'user/role/edit',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 248,
+    'pid' => 1,
+    'title' => '盈亏列表',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 249,
+    'pid' => 248,
+    'title' => '用户盈亏列表',
+    'url_value' => 'admin/order/profitlist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 231,
+    'pid' => 216,
+    'title' => '提现记录',
+    'url_value' => 'admin/member/withdraw_finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 13,
+    'pid' => 5,
+    'title' => '节点管理',
+    'url_value' => 'admin/menu/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 219,
+    'pid' => 217,
+    'title' => '已结算',
+    'url_value' => 'admin/order/finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 233,
+    'pid' => 2,
+    'title' => '入金明细',
+    'url_value' => 'admin/index/rechargelist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 219,
+    'pid' => 217,
+    'title' => '已结算',
+    'url_value' => 'admin/order/finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => '',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 228,
+    'pid' => 1,
+    'title' => '系统消息',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 230,
+    'pid' => 228,
+    'title' => '未读',
+    'url_value' => 'admin/notemsg/unread',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+  1 => 
+  array (
+    'id' => 19,
+    'pid' => 68,
+    'title' => '权限管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 67,
+    'pid' => 19,
+    'title' => '角色管理',
+    'url_value' => 'user/role/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 231,
+    'pid' => 216,
+    'title' => '提现记录',
+    'url_value' => 'admin/member/withdraw_finished',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 233,
+    'pid' => 2,
+    'title' => '入金明细',
+    'url_value' => 'admin/index/rechargelist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 217,
+    'pid' => 1,
+    'title' => '交易管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 218,
+    'pid' => 217,
+    'title' => '点买列表',
+    'url_value' => 'admin/order/buylist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 248,
+    'pid' => 1,
+    'title' => '盈亏列表',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 249,
+    'pid' => 248,
+    'title' => '用户盈亏列表',
+    'url_value' => 'admin/order/profitlist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '代理商',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 223,
+    'pid' => 214,
+    'title' => '代理商列表',
+    'url_value' => 'admin/agent/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 234,
+    'pid' => 1,
+    'title' => '图文管理',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 235,
+    'pid' => 234,
+    'title' => '首页轮播图',
+    'url_value' => 'admin/article/imageslist',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 2,
+    'pid' => 1,
+    'title' => '快捷操作',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 70,
+    'pid' => 2,
+    'title' => '后台首页',
+    'url_value' => 'admin/index/index',
+  ),
+  3 => 
+  array (
+    'id' => 51,
+    'pid' => 70,
+    'title' => '文件上传',
+    'url_value' => 'admin/attachment/upload',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 69,
+    'pid' => 32,
+    'title' => '钩子管理',
+    'url_value' => 'admin/hook/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 66,
+    'pid' => 32,
+    'title' => '数据包管理',
+    'url_value' => 'admin/packet/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 7,
+    'pid' => 5,
+    'title' => '配置管理',
+    'url_value' => 'admin/config/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 50,
+    'pid' => 5,
+    'title' => '附件管理',
+    'url_value' => 'admin/attachment/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 64,
+    'pid' => 5,
+    'title' => '系统日志',
+    'url_value' => 'admin/log/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 5,
+    'pid' => 4,
+    'title' => '系统功能',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 65,
+    'pid' => 5,
+    'title' => '数据库管理',
+    'url_value' => 'admin/database/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 69,
+    'pid' => 32,
+    'title' => '钩子管理',
+    'url_value' => 'admin/hook/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 66,
+    'pid' => 32,
+    'title' => '数据包管理',
+    'url_value' => 'admin/packet/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 4,
+    'pid' => 0,
+    'title' => '系统',
+    'url_value' => 'admin/system/index',
+  ),
+  1 => 
+  array (
+    'id' => 32,
+    'pid' => 4,
+    'title' => '扩展中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 33,
+    'pid' => 32,
+    'title' => '模块管理',
+    'url_value' => 'admin/module/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 68,
+    'pid' => 0,
+    'title' => '用户',
+    'url_value' => 'user/index/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 216,
+    'pid' => 1,
+    'title' => '用户',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 222,
+    'pid' => 216,
+    'title' => '用户列表',
+    'url_value' => 'admin/member/index',
+  ),
+)'++++++++++++
+'array (
+  0 => 
+  array (
+    'id' => 1,
+    'pid' => 0,
+    'title' => '首页',
+    'url_value' => 'admin/index/',
+  ),
+  1 => 
+  array (
+    'id' => 214,
+    'pid' => 1,
+    'title' => '运营中心',
+    'url_value' => '',
+  ),
+  2 => 
+  array (
+    'id' => 250,
+    'pid' => 214,
+    'title' => '会员列表',
+    'url_value' => 'admin/agent/member',
+  ),
+)'++++++++++++
+'

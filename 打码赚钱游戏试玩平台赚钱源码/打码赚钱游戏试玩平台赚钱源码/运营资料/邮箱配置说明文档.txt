@@ -1,0 +1,13 @@
+
+/houtai/login/show
+后台账户名   admin  admin
+
+
+1.邮箱验证码和短信验证码文件在\protected\controllers\VipindexController.php文件中修改
+2.找回密码邮箱配置： protected\controllers\IndexController.php
+3.短信通道配置：\protected\controllers\VipindexController.php   里面的参数修改就可以了
+
+
+  我们开发用的测试账号都删除了，只留了一个管理账号和测试账号 
+
+

@@ -1,0 +1,11 @@
+登录地址：http://open.55e5.com/open_api/continue_game?gid=游戏ID
+注册地址：http://open.55e5.com/open_api/goto_game/?cid=192&gid=游戏ID&uid={uid}
+等级刷新地址：http://open.55e5.com/open_api/user_game_info/?cid=192&gid=游戏ID&uid={uid}&sign={sign}
+
+servername
+role
+level
+payment
+44wl_uid
+game_uid
+

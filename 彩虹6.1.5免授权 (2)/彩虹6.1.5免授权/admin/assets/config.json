@@ -1,0 +1,34 @@
+{
+  "imageActionName": "uploadimage",
+  "imageFieldName": "upfile",
+  "imageMaxSize": 2048000,
+  "imageAllowFiles": [
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".gif",
+    ".bmp"
+  ],
+  "imageCompressEnable": true,
+  "imageCompressBorder": 1600,
+  "imageInsertAlign": "none",
+  "imageUrlPrefix": "",
+  "imagePathFormat": "/assets/article/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+  "catcherLocalDomain": [
+    "127.0.0.1",
+    "localhost",
+    "img.baidu.com"
+  ],
+  "catcherActionName": "catchimage",
+  "catcherFieldName": "source",
+  "catcherPathFormat": "/ueditor/php/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}",
+  "catcherUrlPrefix": "",
+  "catcherMaxSize": 2048000,
+  "catcherAllowFiles": [
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".gif",
+    ".bmp"
+  ]
+}

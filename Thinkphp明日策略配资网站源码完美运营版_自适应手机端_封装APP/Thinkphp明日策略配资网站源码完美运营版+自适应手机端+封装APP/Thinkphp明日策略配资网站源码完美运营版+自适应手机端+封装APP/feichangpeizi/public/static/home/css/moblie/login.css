@@ -1,0 +1,147 @@
+/*登录login,注册reg,忘记密码forgot*/
+
+[class^="icon_"]{
+	display: inline-block;
+	background-size: 100% 100%;
+}
+:root{
+	--color_red:#e60012;
+}
+img{
+	width: 100%;
+	vertical-align: middle;
+}
+html,body,.mui-content{
+	background: #fff;
+}
+/*标题*/
+.ml_header{
+	background-color: #e60012;
+}
+.ml_header .mui-action-back,.ml_header .mui-title{
+	color: #fff;
+}
+/*登录*/
+.fcml_logo{
+	width: 90px;
+    height: 90px;
+    margin: 80px auto;
+}
+.login_form{
+	padding: 0 20px;
+}
+.login_form .mui-input-row{
+	height: 45px;
+	    line-height: 45px;
+}
+input[type=text],input[type=password]{
+	height: 45px;
+	    line-height: 45px;
+	    font-size: 14px;
+}
+	.login_form:before,.login_form:after{
+		height: 0;
+	}
+	.icon_username{
+		width: 18px;
+		height: 20px;
+		background-image: url(/public/static/home/img/moblie/username.png);
+	}
+	.icon_psw{
+		width: 16px;
+		height: 19px;
+		background-image: url(/public/static/home/img/moblie/psw.png);
+	}
+.login_body .mui-input-row label{
+	width: 20%;
+}
+.login_body .mui-input-row label~input{
+	width: 80%;
+}
+.forgot_pass{
+	    color: #e60012;
+    font-size: 12px;
+    margin-left: 15px;
+        position: relative;
+    padding-left: 20px;
+}
+.forgot_pass:before{
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-image: url(/public/static/home/img/moblie/forgot_pass.png);
+	background-size: 100% 100%;
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+.ml_btn{
+	background-color: #e60012;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    margin: 30px auto 10px;
+    color: #fff;
+}
+.reg_a{
+	display: block;
+	font-size: 12px;
+	margin: 0 auto;
+	text-align: center;
+}
+.reg_a:before,.reg_a:after{
+	content: '';
+	display: inline-block;
+	height: 1px;
+	width: 80px;
+	background-color: #E9E9E9;
+	    vertical-align: middle;	
+}
+/*注册*/
+.reg_form{
+	padding-top: 20px;
+}
+
+.reg_img{
+	    width: 130px;
+    height: 35px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+.mui-input-row .mui-input-clear~.mui-icon-clear{
+	top: 12px;
+}
+.reg_form .mui-input-row:nth-of-type(2) .mui-input-clear~.mui-icon-clear,.reg_form .mui-input-row:nth-of-type(3) .mui-input-clear~.mui-icon-clear{
+	right: 140px;
+}
+.mobilenoCode_row input{
+	float: left;
+	width: 70%;
+}
+#mobileno_code_a{
+	display: block;
+    width: 25%;
+    height: 100%;
+    line-height: 45px;
+    margin-top: 10px;
+    float: right;
+    font-size: 12px;
+    border: none;
+    border-left: 1px solid #ccc;
+    color: #e60012;
+    text-align: center;
+    margin: 0;
+}  
+/*忘记密码*/
+#forgot_pass{
+	background-color: #F5191D;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    margin: 30px auto 10px;
+    color: #fff;
+}

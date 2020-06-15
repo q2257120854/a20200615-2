@@ -1,0 +1,3 @@
+        $gn = X('post.gn');
+        if($gn == 'ps'){
+            $ps = htmlspecialchars(strip_tags(X("post.ps")));

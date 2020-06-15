@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>金龙策略</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="/public/static/home/css/mui.min.css" rel="stylesheet" />
+		<style>
+			body,html{height:100%;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif}
+			body{background-color:#fff}
+			.main .logo{padding:80px 0 40px}
+			.wrapper{position:relative}
+			.wrapper h3{display:inline-block;left: 15px;position: relative;}
+			.main .logo>img{width:120px;height:120px;border-radius:17.54%}
+			.icon-ios{background:url(/public/static/home/img/moblie/ios.png)}
+			.icon-android{background:url(/public/static/home/img/moblie/android.png)}
+			.icon-android,.icon-ios{height:32px;width:32px;display:inline-block;position:absolute;right:61%;top:0}
+			.down{padding:12px 46px;min-width:200px;border-radius:40px;margin-top:20px}
+			.hint{height:0;background:url(/asset/front/merchant/450.png);background-size:cover;width:100%;transition:height 1s}
+		</style>
+	</head>
+	<!--下载-->
+
+	<body class="body mui-ios mui-ios-9 mui-ios-9-1">
+		<div class="hint mui-text-center"></div>
+		<div class="main">
+			<div class="logo mui-text-center">
+				<img src="/public/static/home/img/moblie/logo24.png">
+			</div>
+			<div class="mui-text-center wrapper">
+				<i id="icon" class="icon-ios"></i>
+				<h3>黑马策略</h3>
+			</div>
+			<div class=" mui-text-center">
+				<a id="popup" class="mui-btn down" href="https://itunes.apple.com/cn/app/yi-dai-hui/id1146332288?mt=8">下载安装</a>
+			</div>
+		</div>
+
+		<script src="/public/static/libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+		<script src="/public/static/home/js/moblie/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			})
+			$(function() {
+				var ua = navigator.userAgent.toLowerCase();
+				if(/iphone|ipad|ipod/.test(ua)) {
+					document.getElementById('icon').className = 'icon-ios';
+					$(".down").attr("href", "https://itunes.apple.com/cn/app/yi-dai-hui/id1146332288?mt=8");
+				} else {
+					document.getElementById('icon').className = 'icon-android';
+					$(".down").attr("href", "http://www.yidaih.com/data/attach/20161207/1481081808905089565.apk");
+				}
+			})
+
+			document.getElementById("popup").addEventListener("tap", function() {
+				var ua = navigator.userAgent.toLowerCase();
+				if(ua.match(/MicroMessenger/i) == "micromessenger") {
+					$(".hint").css("height", "150px");
+				}
+			});
+		</script>
+	</body>
+
+</html>

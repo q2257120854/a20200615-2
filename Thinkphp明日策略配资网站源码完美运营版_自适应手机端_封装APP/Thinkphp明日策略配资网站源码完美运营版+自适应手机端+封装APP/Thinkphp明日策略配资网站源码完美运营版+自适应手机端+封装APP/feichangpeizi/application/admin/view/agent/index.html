@@ -1,0 +1,22 @@
+{extend name="layout" /}
+
+{block name="plugins-css"}
+<link href="__LIBS__/jquery-nestable/jquery.nestable.css" rel="stylesheet" type="text/css" />
+{/block}
+
+{block name="content"}
+<div class="toolbar-btn-action">
+    <a title="新增" icon="fa fa-plus-circle" class="btn btn-primary" href="/admin.php/admin/agent/add.html"><i class="fa fa-plus-circle"></i> 新增</a>
+    <a title="启用" icon="fa fa-check-circle-o" class="btn btn-success ajax-post confirm" target-form="ids" href="/admin.php/user/index/enable/table/admin_user.html"><i class="fa fa-check-circle-o"></i> 启用</a>
+    <a title="禁用" icon="fa fa-ban" class="btn btn-warning ajax-post confirm" target-form="ids" href="/admin.php/user/index/disable/table/admin_user.html"><i class="fa fa-ban"></i> 禁用</a>
+    <a title="删除" icon="fa fa-times-circle-o" class="btn btn-danger ajax-post confirm" target-form="ids" href="/admin.php/user/index/delete/table/admin_user.html"><i class="fa fa-times-circle-o"></i> 删除</a>
+</div>
+{/block}
+
+{block name="script"}
+<script src="__LIBS__/jquery-nestable/jquery.nestable.js"></script>
+<script src="__LIBS__/jquery-ui/jquery-ui.min.js"></script>
+<script>
+
+</script>
+{/block}

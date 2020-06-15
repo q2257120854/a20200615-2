@@ -1,0 +1,78 @@
+/*充值*/
+.red_back{
+	color:#F5191E ;
+}
+.payType{
+	line-height: 30px;
+    height: 30px;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 0px 15px;
+}
+.yl{
+	    width: 37px !important;
+    height: 23px !important;
+    margin-top: 10px !important;
+}
+.zfb{
+	width: 28px !important;
+    height: 28px !important;
+    margin-top: 8px !important;
+    margin-right: 15px !important;
+}
+.payment_body ul{
+	background: none;
+}
+.payment_body li{
+	background: #fff;
+	margin-bottom: 5px;
+}
+.payment_body .mui-table-view-cell:after{
+	height: 0;
+}
+/*充值-支付宝*/
+.alipay_body header{
+	background: #fff;
+}
+.alipay_body form{
+	margin-top: 10px;
+}
+.alipay_body .mui-input-row label{
+	font-size: 14px;
+}
+#realName{
+	display: block;
+    float: right;
+    width: 65%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 14px;
+}
+.alipay_body .mui-input-row label~input{
+	font-size: 14px;
+}
+.balance_p{
+	font-size: 12px;
+    padding: 5px 15px 25px;
+    margin-bottom: 0;
+}
+.next{
+	    background-color: #F5191D;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px auto 30px;
+    color: #fff;
+    width: 95%;
+}
+.time:before,.time:after{
+	content: '';
+	display: inline-block;
+	width: 30%;
+	height: 1px;
+	background-color: #ccc;
+	vertical-align: middle;
+}
+.kefu{
+	font-size: 12px;
+}

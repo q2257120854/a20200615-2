@@ -1,0 +1,29 @@
+
+/houtai/login/show
+后台账户名   admin  admin
+
+
+ 1.数据库配置文件在：\protected\config\目录下的mail.php文件中修改第60行
+2.邮箱验证码和短信验证码文件在\protected\controllers\VipindexController.php文件中修改
+3.找回密码邮箱配置： protected\controllers\IndexController.php
+
+
+
+配置邮箱设置 
+\protected\controllers\IndexController.php
+\protected\controllers\VipindexController.php
+
+
+短信通道配置：
+
+\protected\controllers\VipindexController.php   里面的参数修改就可以了
+
+
+
+我们开发用的测试账号都删除了，只留了一个管理账号和测试账号 
+
+
+\www\protected\views\webmaster站长联盟页面修改
+\www\protected\views\design页头页尾
+\www\protected\views\vipdesign会员中心页头页尾
+\www\protected\views\index\show.php  120行修改老平台首页已支付

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金龙策略</title>
+</head>
+<body class="membercenter logged-in">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/member.css"/>
+
+<!--个人中心-充值-->
+<div class="br-content">
+<div class="w1200">
+	<!--主体-->
+<section class="page-main page-personal">
+    <div class="container clearfix">
+    	<!--public左边-->
+    	{include file="public:member_left" /}
+        <!--右边-->
+<div id="page_member_security" class="col-main">
+    <div class="personal-main">
+        <h2>账户安全</h2>
+
+        <ul class="list-personal-security">
+            <li class="group">
+                <div class="security-level security-level-middle">
+                    <label>安全级别: </label>
+                    {if condition="$realName eq '' || $IDNumber eq '' "}
+                    <div class="bar-wrapper">
+                        <div id="mem_security_lvl" class="bar"
+                             {if condition="$realName eq '' || $IDNumber eq '' "} style="width: 65%;"{else} style="width:100%;"{/if} >
+                    </div>
+                    </div>
+                    <label class="safe-ranke" id="mem_security_lv">中</label>
+                    <span class="tip" id="safe_tip">建议您完善全部安全设置，以保障账户及资金安全</span>
+                    {else} 
+                    <div class="bar-wrapper">
+                        <div id="mem_security_lvl" class="bar" style="width: 100%;"></div>
+                    </div>
+                    <label class="safe-ranke" id="mem_security_lv">高</label>
+                    {/if}
+                    
+                </div>
+            </li>
+            <li class="group">
+                <div class="col-3 security-name"><i {if condition="$realName eq '' || $IDNumber eq '' "}class='icon'{else}class='icon icon-checkmark2'{/if} id="id_card_icon"></i>实名认证</div>
+                <div class="col-5 security-desc" id="身份证">{if condition="$realName eq '' || $IDNumber eq '' "}未认证{else} {$IDNumber} {/if}</div>
+                <div class="col-4 security-action"><a href="javascript:;" name="realnameAuth" id="btn_auth_name" onclick="form_validation = false;">
+                    {if condition="$realName eq '' || $IDNumber eq '' "}认证{else} 修改{/if}
+                </a></div>
+            </li>
+            <li class="group">
+                <div class="col-3 security-name"><i class="icon icon-checkmark2" id="id_phone_icon"></i>绑定手机</div>
+                <div class="col-5 security-desc" id="手机号i">{$mobile}</div>
+                <div class="col-4 security-action"><a id="umA" href="javascript:;" data-popup="popup-edit-phone" onclick="form_validation = false;">修改</a></div>
+
+            </li>
+            
+            <li class="group">
+
+                <div class="col-3 security-name"><i class="icon icon-checkmark2" id="id_pwd_icon"></i>登录密码</div>
+                <div class="col-5 security-desc">登录网站时需要输入的密码</div>
+                <div class="col-4 security-action"><a href="javascript:;" id="editPwd" class="js-show-popup" data-popup="popup-edit-login-pwd" onclick="form_validation = false;">修改</a></div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+    </div>
+</section>
+	
+	
+	
+	
+	
+</div>
+</div>
+
+<!--认证银行卡-->
+<div class="popup" id="popup-id-verify">
+    <div class="popup-header group">
+        <h2>认证银行卡</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">提现和免费体验前必须先绑定一张银行卡</li>
+                <li style="text-align:left;">请务必认真填写真实资料</li>
+                <li style="text-align:left;">银行卡采用实名认证，一个身份证只能绑定一个账号</li>
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">{$phone}</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先绑定银行卡</p>
+        </div>
+        <div class="btn-row group">
+            <a class="btn btn-pri" href="/ucenter/bankcards.html">去绑定</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">暂不绑定</a>
+        </div>
+    </div>
+</div>
+<!--实名认证-->
+<div class="popup" id="popup-realname-auth">
+    <div class="popup-header group">
+        <h2>实名认证</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">一个身份证对应一个账号</li>
+                
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">{$phone}</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先进行实名认证</p>
+        </div>
+        <div class="field-row group">
+            <label>真实姓名：</label>
+            <div class="field-val"><input id="姓名i" type="text" class="text" value=""></div>
+        </div>
+        <div id="zsxm_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>未填写姓名</div></div>
+        <div class="field-row group">
+            <label>身份证号：</label>
+            <div class="field-val">
+                <div class="field-val">
+                    <input id="身份证i" type="text" class="text" value="">
+                </div>
+            </div>
+        </div>
+        <div id="sfzh_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>请填写准确的身份证</div></div>
+        <div class="btn-row group">
+            <a id="user_UpdateSelfIdA" class="btn btn-pri" href="javascript:void(0)">确认</a>
+            <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+
+<!--更改手机号-->
+<div class="popup" id="popup-edit-phone" style="display: none;top: 0px;">
+        <div class="popup-header group">
+            <h2>更换手机</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <form action="#">
+                <div class="field-row group">
+                    <label>当前手机号：</label>
+                    <div class="field-val" id="手机号">{$mobile}</div>
+                </div>
+                <div class="field-row group">
+                    <label>验证码：</label>
+                    <div class="field-val capcha-wrapper capcha-count-down">
+                        <input type="text" id="绑定手机校验码i" placeholder="请输入校验码" class="text" onkeyup="    this.value = this.value.replace(/\D/g, '')" onafterpaste="    this.value = this.value.replace(/\D/g, '')">
+                        <a id="sms_SendAuthAA" class="btn-get-capcha active" href="javascript:void(0);">获取校验码</a>
+                        <div class="time-counter"><span>90</span></div>
+                    </div>
+                </div>
+                <div id="bdsjjym_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i><span>请填写准确的验证码</span></div></div>
+                <div class="btn-row group">
+                    <a class="btn btn-pri" href="javascript:;" id="edit-phone-submit-next">确定</a>
+                    <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+                </div>
+                <input id="hiddenText" type="text" style="display:none" />
+            </form>
+        </div>
+    </div>
+<!--绑定手机-->   
+<div class="popup" id="popup-edit-phone-2" style="display: none;top: 0px;">
+        <div class="popup-header group">
+            <h2>绑定手机</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <form action="#">
+                <div class="field-row group">
+                    <label>新手机号：</label>
+                    <div class="field-val"><input id="新手机号i" class="text" onkeyup="    this.value = this.value.substr(0, 11).replace(/\D/g, '')" onafterpaste="    this.value = this.value.substr(0, 11).replace(/\D/g, '')"></div>
+                </div>
+                <div id="bdsjjym_err2" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>请填写准确的手机号</div></div>
+                <div class="field-row group" id="newPhone">
+                    <label>验证码：</label>
+                    <div class="field-val capcha-wrapper capcha-count-down">
+                        <input id="新手机号校验码i" type="text" name="capcha" placeholder="请输入短信校验码" class="text" onkeyup="this.value = this.value.replace(/\D/g, '')" onafterpaste="    this.value = this.value.replace(/\D/g, '')">
+                        <a id="sms_SendAuthAA2" class="btn-get-capcha active" href="javascript:;">获取校验码</a>
+                        <div class="time-counter" id="newPhoneSpeed" style="display: none;"><i class="icon icon-caret-left"></i><span>90</span></div>
+                    </div>
+                </div>
+                <div id="bdsjjym_err3" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i><span>请填写准确的验证码</span></div></div>
+                <div class="btn-row group">
+                    <a id="update_mobileA" class="btn btn-pri" href="javascript:void(0)">确定</a>
+                    <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+                </div>
+            </form>
+        </div>
+    </div>
+<!--/#popup-edit-login-pwd-修改登录密码-->
+<div class="popup" id="popup-edit-login-pwd" style="display: none;top: 0px;">
+        <div class="popup-header group">
+            <h2>登录密码</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <form action="#" style="padding: 0 0 10px 0;">
+                <div class="field-row group">
+                    <label>当前登录密码：</label>
+                    <div class="field-val"><input id="当前登录密码i" type="password" class="text"></div>
+                </div>
+                <div id="bdsjjym_err4" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>请正确填写当前密码</div></div>
+                <div class="field-row group">
+                    <label>新密码：</label>
+                    <div class="field-val"><input id="新密码i" type="password" class="text"></div>
+                </div>
+                <div id="bdsjjym_err5" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>密码长度不能少于6位</div></div>
+                <div class="field-row group">
+                    <label>确认密码：</label>
+                    <div class="field-val"><input id="确认密码i" type="password" class="text"></div>
+                </div>
+                <div id="bdsjjym_err6" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>两次密码不一致</div></div>
+                <div id="bdsjjym_err7" class="error-wrapper" style="margin:20px 0 0 140px; display:none; color:#e8331b;">000</div>
+                <div class="btn-row group">
+                    <a id="登录密码修改A" class="btn btn-pri" href="javascript:void(0)">确定</a>
+                    <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--valid-img-->
+<div class="popup" id="popup-valid-img">
+    <div class="popup-header group">
+        <h2>请先输入验证码</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <form action="#">
+            <div class="field-row group">
+                <label>验证码：</label>
+                <div class="field-val" style="width:350px">
+                    <input type="text" class="text" style="width: 80px; float: left; padding: 6px 10px;" placeholder="4位验证码" name="txt_valid_code" id="txt_valid_code">
+                    <img src="/index.php/captcha.html" id="forgot_passImg" style="height:35px;float:left;margin-right:5px;">
+                   	<a id="forgot_passImgA" href="javascript:void(0)" onclick="$('#forgot_passImg').attr('src', '/index.php/captcha.html');" style="color:#E01923">看不清楚？</a>
+                </div>
+            </div>
+            <div id="valid_code" class="error-wrapper" style="display:none; margin-top:5px;"><div><i class="icon icon-x-altx-alt"></i><span>输入的验证码有误！</span></div></div>
+
+            <div class="btn-row group">
+                <a class="btn btn-pri js-close-popup" style="display:none;" href="javascript:;">确定</a>
+            </div>
+            <input id="hiddenText" type="text" style="display:none" />
+        </form>
+    </div>
+</div>
+
+{include file="public:footer" /}
+<script src="/public/static/home/js/security.js"></script>
+<script type="text/javascript">
+	$(function(){security.init()});
+	var mobileTrue='{$mobile1}';
+</script>
+</body>
+</html>

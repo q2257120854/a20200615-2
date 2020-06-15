@@ -1,0 +1,50 @@
+﻿.code_demo{width:1004px; margin:0 auto; margin-top: 20px; margin-bottom: 20px; }
+.code_demo .tit { width: 1002px; height: 70px; display: block;}
+.code_demo .tit .biao { display: block; width: 155px; height:90px; float:left; background:url(http://009.90xqb.com/images/course/demo_code_go.png) no-repeat;  position: relative; z-index: 100;}
+.code_demo .tit .b_1 { display: block; width: 295px; height: 70px; background:url(http://009.90xqb.com/images/course/demo_code_go1.png) no-repeat; float: left;position: relative; z-index: 99px; margin-left: -10px;}
+.code_demo .tit .b_1:hover {  background:url(http://009.90xqb.com/images/course/demo_code_go1b.png) no-repeat;}
+.code_demo .tit .b_2 { display: block; width: 304px; height: 70px; background:url(http://009.90xqb.com/images/course/demo_code_go2.png) no-repeat; float: left;position: relative; z-index: 99px; margin-left: -13px;}
+.code_demo .tit .b_2:hover {  background:url(http://009.90xqb.com/images/course/demo_code_go2b.png) no-repeat;}
+.code_demo .tit .b_3 { display: block; width: 284px; height: 70px; background:url(http://009.90xqb.com/images/course/demo_code_go3.png) no-repeat; float: left;position: relative; z-index: 99px; margin-left: -13px;}
+.code_demo .tit .b_3:hover {  background:url(http://009.90xqb.com/images/course/demo_code_go3b.png) no-repeat;}
+.code_demo1 { width:1004px; margin:0 auto; margin-top: 20px; margin-bottom: 20px; background: #fff; border:1px solid #e6e6e6;}
+.code_demo1 .tit { height:42px; line-height:42px; margin:0 10px;  border-bottom:3px solid #f2f2f2;}
+.code_demo1 .tit .t{display:block; float:left; height:42px; border-bottom:3px solid #434f63;  font-size:18px; font-weight:bold; color:#434f63;}
+.code_demo1 .demo_img {  display: block; width: 1002px; height:320px; margin: 30px 0; }
+.code_demo1 .demo_img1 { background:url(http://009.90xqb.com/images/course/demo_code1.jpg) no-repeat 20px 0; }
+.code_demo1 .demo_img2 { background:url(http://009.90xqb.com/images/course/demo_code2.jpg) no-repeat -20px 0; }
+.code_demo1 .demo_img3 { background:url(http://009.90xqb.com/images/course/demo_code3.jpg) no-repeat 20px 0; }
+.code_demo1 .demo_img4 { background:url(http://009.90xqb.com/images/course/demo_code4.jpg) no-repeat -20px 0; }
+.code_demo1 .demo_img5 { background:url(http://009.90xqb.com/images/course/demo_code5.jpg) no-repeat 20px 0; }
+.code_demo1 .demo_img6 { background:url(http://009.90xqb.com/images/course/demo_code6.jpg) no-repeat -20px 0; }
+.code_demo1 .demo_img7 { background:url(http://009.90xqb.com/images/course/demo_code7.jpg) no-repeat 20px 0; }
+.code_demo1 .demo_img8 { background:url(http://009.90xqb.com/images/course/demo_code8.jpg) no-repeat -20px 0; }
+.code_demo1 .demo_img9 { background:url(http://009.90xqb.com/images/course/demo_code9.jpg) no-repeat 20px 0; }
+.code_demo1 .qqdm { display: block; margin: 0 auto; width: 100%; text-align: center; font-size:18px; margin: 50px 0;}
+.code_demo1 .qqdm a { color:#2c8fff;}
+.code_demo1 .qqdm a:hover{color:#f05454;}
+.code_demo1 .qqdm a i { font-family: "宋体";}
+
+.game_demo{width:1004px; margin:0 auto; margin-top: 20px; margin-bottom: 20px; }
+.game_demo .tit { width: 1002px; height: 70px; display: block;}
+.game_demo .tit .biao { display: block; width: 155px; height:90px; float:left; background:url(http://009.90xqb.com/images/course/demo_game_go.png) no-repeat;  position: relative; z-index: 100;}
+.game_demo .tit .b_1 { display: block; width: 295px; height: 70px; background:url(http://009.90xqb.com/images/course/demo_game_go1.png) no-repeat; float: left;position: relative; z-index: 99px; margin-left: -10px;}
+.game_demo .tit .b_1:hover {  background:url(http://009.90xqb.com/images/course/demo_game_go1b.png) no-repeat;}
+.game_demo .tit .b_2 { display: block; width: 304px; height: 70px; background:url(http://009.90xqb.com/images/course/demo_game_go2.png) no-repeat; float: left;position: relative; z-index: 99px; margin-left: -13px;}
+.game_demo .tit .b_2:hover {  background:url(http://009.90xqb.com/images/course/demo_game_go2b.png) no-repeat;}
+.game_demo .tit .b_3 { display: block; width: 284px; height: 70px; background:url(http://009.90xqb.com/images/course/demo_game_go3.png) no-repeat; float: left;position: relative; z-index: 99px; margin-left: -13px;}
+.game_demo .tit .b_3:hover {  background:url(http://009.90xqb.com/images/course/demo_game_go3b.png) no-repeat;}
+.game_demo1 { width:1004px; margin:0 auto; margin-top: 20px; margin-bottom: 20px; background: #fff; border:1px solid #e6e6e6;}
+.game_demo1 .tit { height:42px; line-height:42px; margin:0 10px;  border-bottom:3px solid #f2f2f2;}
+.game_demo1 .tit .t{display:block; float:left; height:42px; border-bottom:3px solid #434f63;  font-size:18px; font-weight:bold; color:#434f63;}
+.game_demo1 .demo_img {  display: block; width: 1002px; height:320px; margin: 30px 0; }
+.game_demo1 .demo_img1 { background:url(http://009.90xqb.com/images/course/demo_game1.jpg) no-repeat 20px 0; }
+.game_demo1 .demo_img2 { background:url(http://009.90xqb.com/images/course/demo_game2.jpg) no-repeat -20px 0; }
+.game_demo1 .demo_img3 { background:url(http://009.90xqb.com/images/course/demo_game3.jpg) no-repeat 20px 0; }
+.game_demo1 .demo_img4 { background:url(http://009.90xqb.com/images/course/demo_game4.jpg) no-repeat -20px 0; }
+.game_demo1 .demo_img5 { background:url(http://009.90xqb.com/images/course/demo_game5.jpg) no-repeat 20px 0; }
+.game_demo1 .demo_img6 { background:url(http://009.90xqb.com/images/course/demo_game6.jpg) no-repeat -20px 0; }
+.game_demo1 .qqdm { display: block; margin: 0 auto; width: 100%; text-align: center; font-size:18px; margin: 50px 0;}
+.game_demo1 .qqdm a { color:#2c8fff;}
+.game_demo1 .qqdm a:hover{color:#f05454;}
+.game_demo1 .qqdm a i { font-family: "宋体";}

@@ -1,0 +1,378 @@
+---------------------------------------------------------------
+[ 2018-11-03T00:06:20+08:00 ] 43.243.75.72 223.74.112.121 GET /
+[ info ] www.dsqqweb.com/ [运行时间：0.158296s][吞吐率：6.32req/s] [内存消耗：4,004.78kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqweb.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://43.243.75.72:8888/site',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000666s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.014465s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/feichangpeizi/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/index/index.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'count',
+  3 => 'earnSum',
+  4 => 'buyList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000435s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select a.stockCode, c.`name` as stockName,  a.createTime, b.username,b.mobile
+			from xh_stock_order as a, xh_member as b, xh_shares as c
+			 WHERE isFreetrial=0 and a.memberId = b.id and a.stockCode=c.`code`
+			order by a.id desc limit 7 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.003046s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order` WHERE  (  isFreetrial=0 ) LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT SUM((sellPrice - dealPrice) * dealQuantity * 100) AS tp_sum FROM `xh_stock_order` WHERE  (  isFreetrial=0 and status=2 and sellPrice - dealPrice > 0 ) LIMIT 1 [ RunTime:0.000523s ]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:24]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:29]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:36]
+[ error ] [8]未定义变量: usableSum[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:41]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:120]
+---------------------------------------------------------------
+[ 2018-11-03T00:06:23+08:00 ] 43.243.75.72 223.74.112.121 GET /
+[ info ] www.yuelunhh.top/ [运行时间：0.209125s][吞吐率：4.78req/s] [内存消耗：4,004.37kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yuelunhh.top',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://43.243.75.72:8888/site',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001196s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.018678s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/feichangpeizi/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/index/index.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'count',
+  3 => 'earnSum',
+  4 => 'buyList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000464s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select a.stockCode, c.`name` as stockName,  a.createTime, b.username,b.mobile
+			from xh_stock_order as a, xh_member as b, xh_shares as c
+			 WHERE isFreetrial=0 and a.memberId = b.id and a.stockCode=c.`code`
+			order by a.id desc limit 7 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.009820s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order` WHERE  (  isFreetrial=0 ) LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT SUM((sellPrice - dealPrice) * dealQuantity * 100) AS tp_sum FROM `xh_stock_order` WHERE  (  isFreetrial=0 and status=2 and sellPrice - dealPrice > 0 ) LIMIT 1 [ RunTime:0.000553s ]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:24]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:29]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:36]
+[ error ] [8]未定义变量: usableSum[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:41]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:120]
+---------------------------------------------------------------
+[ 2018-11-03T00:06:25+08:00 ] 43.243.75.72 223.74.112.121 GET /
+[ info ] www.dsqqapp.com/ [运行时间：0.223664s][吞吐率：4.47req/s] [内存消耗：4,007.50kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dsqqapp.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://43.243.75.72:8888/site',
+  'connection' => 'keep-alive',
+  'cookie' => 'dolphin_home_uid=1; dolphin_home_signin_token=427d7f2a3733460e0bc73071a6f7d8adde8a9cf2; PHPSESSID=e8f1296i6avo5eu8o8e9qa61d3; dolphin_home___forward__=%2Fadmin.php%2Fadmin%2Fagent%2Findex.html',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001188s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.020638s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/feichangpeizi/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/index/index.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'count',
+  3 => 'earnSum',
+  4 => 'buyList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001007s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select a.stockCode, c.`name` as stockName,  a.createTime, b.username,b.mobile
+			from xh_stock_order as a, xh_member as b, xh_shares as c
+			 WHERE isFreetrial=0 and a.memberId = b.id and a.stockCode=c.`code`
+			order by a.id desc limit 7 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.008048s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order` WHERE  (  isFreetrial=0 ) LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT SUM((sellPrice - dealPrice) * dealQuantity * 100) AS tp_sum FROM `xh_stock_order` WHERE  (  isFreetrial=0 and status=2 and sellPrice - dealPrice > 0 ) LIMIT 1 [ RunTime:0.000602s ]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:24]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:29]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:36]
+[ error ] [8]未定义变量: usableSum[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:41]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:120]
+---------------------------------------------------------------
+[ 2018-11-03T00:06:38+08:00 ] 43.243.75.72 223.74.112.121 GET /
+[ info ] dsqqapp.com/ [运行时间：0.193656s][吞吐率：5.16req/s] [内存消耗：4,004.83kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dsqqapp.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://43.243.75.72:8888/site',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000874s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.020006s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/feichangpeizi/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/index/index.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'count',
+  3 => 'earnSum',
+  4 => 'buyList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001377s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select a.stockCode, c.`name` as stockName,  a.createTime, b.username,b.mobile
+			from xh_stock_order as a, xh_member as b, xh_shares as c
+			 WHERE isFreetrial=0 and a.memberId = b.id and a.stockCode=c.`code`
+			order by a.id desc limit 7 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_order` [ RunTime:0.002453s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xh_stock_order` WHERE  (  isFreetrial=0 ) LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT SUM((sellPrice - dealPrice) * dealQuantity * 100) AS tp_sum FROM `xh_stock_order` WHERE  (  isFreetrial=0 and status=2 and sellPrice - dealPrice > 0 ) LIMIT 1 [ RunTime:0.000349s ]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:24]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:29]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:36]
+[ error ] [8]未定义变量: usableSum[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:41]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/5289974b5325501916b202e5501f958c.php:120]
+---------------------------------------------------------------
+[ 2018-11-03T00:06:48+08:00 ] 43.243.75.72 223.74.112.121 GET /buy.html
+[ info ] dsqqapp.com/buy.html [运行时间：0.209426s][吞吐率：4.77req/s] [内存消耗：3,984.84kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'buy',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dsqqapp.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dsqqapp.com/',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=iss5u100rbk79dh2nfpiitpm33',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.002307s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.019567s ]
+[ info ] [ RUN ] app\index\controller\Index->buy[ /www/wwwroot/feichangpeizi/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/feichangpeizi/application/index/view/index/buy.html [ array (
+  0 => 'phone',
+  1 => 'QQ',
+  2 => 'dealPoundage',
+  3 => 'delayFee',
+  4 => 'dealFee',
+  5 => 'delayLineRate',
+  6 => 'stopLossRate',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/application/index/controller/Index.php:74]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/d9f461d5d936b649e97f7e18fae75bbc.php:23]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/d9f461d5d936b649e97f7e18fae75bbc.php:28]
+[ error ] [8]未定义数组索引: member[/www/wwwroot/feichangpeizi/runtime/temp/d9f461d5d936b649e97f7e18fae75bbc.php:35]
+[ error ] [8]未定义变量: usableSum[/www/wwwroot/feichangpeizi/runtime/temp/d9f461d5d936b649e97f7e18fae75bbc.php:40]
+[ error ] [8]未定义变量: left[/www/wwwroot/feichangpeizi/runtime/temp/d9f461d5d936b649e97f7e18fae75bbc.php:217]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000626s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_sys_params` [ RunTime:0.002210s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'dealPoundage' ) LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'delayFee' ) LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'dealFee' ) LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'delayLineRate' ) LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT `value` FROM `xh_sys_params` WHERE  (  `key` = 'stopLossRate' ) LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2018-11-03T00:06:50+08:00 ] 43.243.75.72 223.74.112.121 POST /index/Alistock/getStockInfo
+[ info ] dsqqapp.com/index/Alistock/getStockInfo [运行时间：0.347361s][吞吐率：2.88req/s] [内存消耗：3,847.86kb] [文件加载：56]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Alistock',
+    2 => 'getStockInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dsqqapp.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dsqqapp.com/buy.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=iss5u100rbk79dh2nfpiitpm33',
+  'content-length' => '11',
+)
+[ info ] [ PARAM ] array (
+  'code' => '600036',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000945s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.016428s ]
+[ info ] [ RUN ] app\index\controller\Alistock->getStockInfo[ /www/wwwroot/feichangpeizi/application/index/controller/Alistock.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_stock_visit_record` [ RunTime:0.002089s ]
+[ sql ] [ SQL ] INSERT INTO `xh_stock_visit_record` (`code` , `createTime` , `createTimeStamp`) VALUES ('600036' , '2018-11-03 00:06:50' , 1541174810) [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_online_stock_detail` [ RunTime:0.002092s ]
+[ sql ] [ SQL ] SELECT * FROM `xh_online_stock_detail` WHERE  (  code='600036' and createTimeStamp >= 1541174795  ) ORDER BY id desc LIMIT 1 [ RunTime:0.000918s ]
+---------------------------------------------------------------
+[ 2018-11-03T00:06:50+08:00 ] 43.243.75.72 223.74.112.121 POST /index/Alistock/getTimeLine
+[ info ] dsqqapp.com/index/Alistock/getTimeLine [运行时间：0.596519s][吞吐率：1.68req/s] [内存消耗：2,979.96kb] [文件加载：52]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Alistock',
+    2 => 'getTimeLine',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dsqqapp.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dsqqapp.com/buy.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=iss5u100rbk79dh2nfpiitpm33',
+  'content-length' => '11',
+)
+[ info ] [ PARAM ] array (
+  'code' => '600036',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001039s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.027832s ]
+[ info ] [ RUN ] app\index\controller\Alistock->getTimeLine[ /www/wwwroot/feichangpeizi/application/index/controller/Alistock.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-03T00:06:50+08:00 ] 43.243.75.72 223.74.112.121 POST /index/Alistock/getKLine
+[ info ] dsqqapp.com/index/Alistock/getKLine [运行时间：0.834230s][吞吐率：1.20req/s] [内存消耗：2,979.88kb] [文件加载：52]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Alistock',
+    2 => 'getKLine',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'dsqqapp.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dsqqapp.com/buy.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=iss5u100rbk79dh2nfpiitpm33',
+  'content-length' => '11',
+)
+[ info ] [ PARAM ] array (
+  'code' => '600036',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.001238s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.027584s ]
+[ info ] [ RUN ] app\index\controller\Alistock->getKLine[ /www/wwwroot/feichangpeizi/application/index/controller/Alistock.php ]
+[ info ] [ LOG ] INIT File

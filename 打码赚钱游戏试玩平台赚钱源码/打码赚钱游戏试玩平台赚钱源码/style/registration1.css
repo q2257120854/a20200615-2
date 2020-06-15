@@ -1,0 +1,59 @@
+/* 修正IE6振动bug */  
+* html,* html body{background-image:url(about:blank);background-attachment:fixed;}
+
+* { margin: 0; padding: 0; }
+body { font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; color:#4d4d4d;  background:#f2f2f2;}
+ol, ul, li, dd, dl, dt { list-style: none; }
+*:focus { outline: 0; }
+em, i { font-style: normal; }
+img, fieldset { border: 0; }
+input, textarea { appearance: none;  border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -webkit-border-radius: 0; -o-border-radius: 0; }
+a {cursor: pointer; text-decoration: none; color: #4d4d4d; }
+a:visited { color: #000 }
+a:hover, a:active { text-decoration: none; color:#f05454; }
+.clearfix:after { content: "."; display: block; clear: both; height: 0; overflow: hidden; visibility: hidden; }
+/*用户注册、登录弹出框*/
+.registration_bk { width:100%; height:100%; position:absolute; top:0; z-index:100; background:#000;opacity:0.4;filter:alpha(opacity=40);}
+.registration { position:fixed; width:390px; background:#fff; top:200px; left:50%; z-index:200; margin:0 0 0 -200px; border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; padding-bottom:20px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -ms-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -o-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); border:1px solid #808080;_position:absolute; _margin: 0 auto; _left:40%;}
+.registration .tit { display:block; height:53px; line-height:53px; border-bottom:1px solid #b4c0d5;}
+.registration .tit .t_1 { display:block; font-size:20px; color:#434f63; font-weight:bold; background:url(/images/img/registration_ico.gif) no-repeat 10px 15px; padding-left:48px; float:left; height:49px; border-bottom:4px solid  #434f63;}
+.registration .tit .t_2 { display:block; float:left; color:#b2b2b2; margin:5px 0 0 10px;height:20px;}
+.registration .tit .t_3 { display:block; float:left; margin:5px 0 0 10px; height:20px;}
+.registration .tit .t_3 .a_1 { color:#00a8ff;}
+.registration .tit .t_3 .a_1:hover {color:#f05454;  }
+.registration .tit .t_3 .a_1 i { font-family:"宋体";}
+.registration .tit .t_4 { display:block; width:12px; height:12px; background:url(/images/img/registration_x.gif) 0 0 no-repeat; float:right; cursor:pointer; margin:6px 6px 0 0;}
+.registration .input_k { display:block; border-bottom:1px dashed #ccc; padding-bottom:10px;}
+.registration .input_k li { display:block;width:350px; margin:0 auto; margin-top:16px;  *margin-top:13px; position:relative;}
+.registration .input_k li .shu{ width:283px; padding-left:65px;  height:32px; border:1px solid #e6e6e6; background:url(/images/img/input_bk.gif) repeat-x; margin:0 auto; line-height:32px; color:#808080; font-size:14px;}
+.registration .input_k li .shu_1{ width:298px; padding-left:50px; height:32px; border:1px solid #e6e6e6; background:url(/images/img/input_bk.gif) repeat-x; margin:0 auto; line-height:32px; color:#808080; font-size:14px;}
+.registration .input_k li .yan { width:130px; float:left;}
+.registration .input_k li .code_1 { display:block; float:left; margin-left:10px;}
+.registration .input_k li .code_1 img { width:64px; height:34px;}
+.registration .input_k li .em_1 { display:block; float:left; width:17px; height:34px; background:url(/images/img/refresh_1.gif) no-repeat center; cursor:pointer; margin-left:10px;}
+.registration .input_k li i { position:absolute; top:0; right:0; width:32px; height:32px; z-index:100;}
+.registration .input_k li .ico_1 { background:url(/images/img/registration_yx.png) no-repeat center;}
+.registration .input_k li .ico_2 { background:url(/images/img/registration_mm.png) no-repeat center;}
+.registration .input_k li .ico_3  { background:url(/images/img/registration_name.png) no-repeat center;}
+.registration .input_k li .safety { display:block; margin-top:6px; width:350px; height:24px;}
+.registration .input_k .hover_2 .ico_1 { background:url(/images/img/registration_yx_b.png) no-repeat center !important; }
+.registration .input_k .hover_2 .ico_2 { background:url(/images/img/registration_mm_b.png) no-repeat center !important;  }
+.registration .input_k .hover_2 .ico_3 { background:url(/images/img/registration_name_b.png) no-repeat center !important; }
+.registration .input_k li .text { color:#00a8ff;}
+.registration .input_k li .text:hover { color:#f05454; }
+.registration .input_k li .text_1 { position:absolute; left: 10px; top: 0; display:block; height:34px; line-height: 34px; font-size: 14px; color:#808080;}
+.registration .input_k .hover .shu_1 { display:block !important;}
+.registration .input_k .hover .shu { display:none;}
+.registration .cont .ann_1 { display:block; width:350px; height:40px; margin:0 auto; background:#4b6289; border:none; border-bottom:4px solid #2c3f5f; font-size:20px; color:#fff; text-align:center; font-family: "微软雅黑";}
+.registration .cont .wj { display:block; text-align:right; height:30px; line-height:30px;}
+.registration .cont .ann_1:hover { background:#516b97;}
+.registration .cont .shej { display:block; padding:10px 0 0 10px;}
+.registration .cont .shej p{ display:block;}
+.registration .cont .shej a { width:38px; height:37px; display:block; float:left; margin:10px 0 0 10px; }
+.registration .cont .shej .xinl { background:url(/images/img/registration_ico.png) 0 0;}
+.registration .cont .shej .xinl:hover { background:url(/images/img/registration_ico.png) 0 76px; opacity: 0.6; filter:alpha(opacity=60);}
+.registration .cont .shej .qq { background:url(/images/img/registration_ico.png) 0 -39px; margin-left:20px;}
+.registration .cont .shej .qq:hover {background:url(/images/img/registration_ico.png) 0 -117px; opacity: 0.6; filter:alpha(opacity=60);}
+.on_changes { position: absolute; left: 0; top: 35px; z-index: 1000; background: #fff; border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; padding: 0 10px 10px 10px; width: 328px; display: none;}
+.on_changes li { cursor: pointer; display: block; margin:0 !important; width: 318px !important; padding: 0 0 0 10px; height: 30px; line-height: 30px;}
+.on_changes li:hover { background: #f79a37; color: #fff;}

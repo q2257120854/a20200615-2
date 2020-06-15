@@ -1,0 +1,18 @@
+---------------------------------------------------------------
+[ 2018-11-29T09:35:49+08:00 ] 27.151.29.104 112.17.236.197 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=10000&bankCard=6217231202000626512&realName=%E5%BC%A0%E4%B8%80%E9%AA%8F&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-11-29T09:36:36+08:00 ] 27.151.29.104 183.129.255.242 GET /index/lianlianpay/doPay?b-pay-amount=10000
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:238]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php:310]
+[ error ] [2]Missing argument 3 for LLpaySubmit::buildRequestForm(), called in /www/wwwroot/feichangpeizi/application/index/controller/Lianlianpay.php on line 337 and defined[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:100]
+[ error ] [8]未定义数组索引: info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:116]
+[ error ] [8]未定义数组索引: userreq_ip[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:120]
+[ error ] [8]未定义数组索引: url_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:121]
+[ error ] [8]未定义数组索引: bank_code[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:123]
+[ error ] [8]未定义数组索引: pay_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:124]
+[ error ] [8]未定义数组索引: no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:125]
+[ error ] [8]未定义数组索引: shareing_data[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:126]
+[ error ] [8]未定义数组索引: card_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:132]
+[ error ] [8]未定义数组索引: back_url[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:133]
+[ error ] [8]未定义变量: button_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_submit.class.php:135]

@@ -1,0 +1,7 @@
+//{hook a_user_edit_4}
+            cookie('HYBBS_HEX',$UserLib->set_cookie($this->_user));
+            return $this->message("修改成功",true);
+        }
+
+        
+        return $this->message("提交出错，请输入签名内容");

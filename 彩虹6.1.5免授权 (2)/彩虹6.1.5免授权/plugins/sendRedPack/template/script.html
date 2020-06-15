@@ -1,0 +1,171 @@
+<link rel="stylesheet" href="{$static}/css/new-year.css">
+<link rel="stylesheet" href="{$static}/css/windows1.css">
+<style>
+    .plugin-share {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .plugin-share-back-img {
+        width: 70px;
+        position: fixed;
+        top: 30%;
+        right: 20px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .plugin-share-back-img img {
+        position: relative;
+        float: right;
+        width: 100%;
+    }
+</style>
+
+<div class="plugin-share-back-img"><img class="plugin-red-pack-trigger" src="/assets/plugins/sendRedPack/images/asdsad.gif" alt="share-img"></div>
+
+<script src="{$cdnpublic}clipboard.js/1.7.1/clipboard.min.js"></script>
+<script>
+    $(document).ready(function () {
+        loadImg('/assets/plugins/sendRedPack/images/new_year_bg1.jpg', addImg);
+        loadImg('/assets/plugins/sendRedPack/images/new_year_but1.png', addImg);
+        loadImg('/assets/plugins/sendRedPack/images/new_year_icon2.png', addImg);
+        loadImg('/assets/plugins/sendRedPack/images/new_year_icon3.png', addImg);
+        loadImg('/assets/plugins/sendRedPack/images/new_year_but2.png', addImg);
+        loadImg('/assets/plugins/sendRedPack/images/new_year_icon4.png', addImg);
+        // 图片预加载
+        function loadImg(url, callback) {
+            let img = new Image();
+            img.onload = function () {
+                img.onload = null;
+                callback(img);
+            };
+            img.src = url;
+            img.width = 200;
+            img.height = 200;
+        }
+        function addImg(img) {
+            $(img).appendTo($(".imgload li"))
+        }
+        var is_red_pack = false;
+        $('.plugin-red-pack-trigger').click(function () {
+            layer.open({
+                type: 1
+                , title: false
+                , closeBtn: true
+                , area: ['300px', '450px']
+                , shade: 0.8
+                , id: 'LAY_layuipro'
+                , btnAlign: 'c'
+                , skin: 'plugin-open'
+                , moveType: 1 //拖拽模式，0或者1
+                , content: `{$content}`
+                , end: function () {
+                    if (!is_red_pack) return;
+                    setTimeout(function () {
+                        location.reload();
+                    }, 200);
+                }
+                , success(layero) {
+                    $(".new-year-a1").click(function () {
+                        $('#rules').show();
+                    });
+
+                    $(".rules-but1").click(function () {
+                        $('#rules').hide();
+                    });
+
+                    var resData = {};
+                    // 关闭红包弹窗
+                    function closeRedPack() {
+                        $('.plugin-share-back-img').hide();
+                        window.location.reload();
+                    }
+                    // 领完红包后的确定事件
+                    $(".receive1-but1").click(function () {
+                        $('#receive1').hide();
+                        is_red_pack = false;
+                        layer.closeAll();
+                        if (resData['status'] > 0) return;
+                        if (resData['data']['type'] === 0) return; // 没领到，不弹出分享
+                        // {literal}
+                        const clipboard = new Clipboard('.receive1-but1');
+                        clipboard.on('success', function (e) {
+                            layer.alert(e.text.replace(/\n/g, '<br>') + '<br>(请复制链接到浏览器打开)',
+                                {icon: 6, closeBtn: false
+                                , btn: ['点击立即分享3个群使用红包', '马上下单']
+                                , yes: function (index) {
+                                    layer.close(index);
+                                    setTimeout(function () {
+                                        closeRedPack();
+                                    }, 1000);
+                                }, btn2: function (index) {
+                                    layer.close(index);
+                                    closeRedPack();
+                                }
+                            });
+                            e.clearSelection();
+                        });
+                        clipboard.on('error', function (e) { // 复制失败，请保存该页面链接后手动分享或手动复制以下链接分享<br>
+                            layer.alert(e.text.replace(/\n/g, '<br>') + '<br>(请复制链接到浏览器打开)<br>温馨提示：自动复制到剪贴板失败，请手动复制链接分享',
+                                {icon: 6, closeBtn: false
+                                , btn: ['点击立即分享3个群使用红包', '马上下单']
+                                , yes: function (index) {
+                                    layer.close(index);
+                                    setTimeout(function () {
+                                        closeRedPack();
+                                    }, 1000);
+                                }, btn2: function (index) {
+                                    layer.close(index);
+                                    closeRedPack();
+                                }
+                            });
+                        });
+                        // {/literal}
+                    });
+
+                    $(".new-year-but1").click(function () {
+                        $(this).attr('disabled', true);
+                        $(".new-year-but1").addClass("main_jb2");
+                        let y = "{date('Y')}";
+                        setTimeout(function () {
+                            // {literal}
+                            // layer.load(2);
+                            $.post('/ajax.php?act=call_plugin_ajax&p_name=sendRedPack&type=loot').done(function (res) {
+                                is_red_pack = true;
+                                $(".new-year-but1").removeClass("main_jb2");
+                                // layer.closeAll('loading');
+                                $(this).removeAttr('disabled');
+                                resData = res;
+                                if (res['status'] === 0) {
+                                    let text = '特价名片赞0.1元起\n刷免费领名片赞，免费拉圈圈99+\n' +
+                                        '空间人气、刷钻、名片赞、空间访问、KF双击、全民K歌、音乐视频、等等..\n' + res['data']['share_url'];
+                                    $('.receive1-but1').attr('data-clipboard-text', text);
+                                    if (res['data']['type'] === 1) {
+                                        $('.receive1-head h1').html('￥' + res['data']['money'] + '<br>红包');
+                                    }
+                                    if (res['data']['type'] === 0) {
+                                        $('.receive1-head h1').html('红包<br>飞走了？');
+                                        // $('.receive1-body').html('<p>恭喜您<br>成功领取<br>'+y+'年新春红包<br>恭喜发财，大吉大利</p>');
+                                        $('.receive1-body').html(''); // 语言组织
+                                    }
+                                    $('#receive1').show();
+                                } else if (res['status'] === 2) {
+                                    $('.receive1-head h1').html('红包<br>已抢光');
+                                    $('.receive1-body').html('<p>你来晚了<br>红包已抢光咯<br></p>'); // 语言组织
+                                    $('#receive1').show();
+                                } else {
+                                    layer.msg(res['msg'], {icon: 2});
+                                }
+                            }).error(function () {
+                                // layer.closeAll('loading');
+                            });
+                            // {/literal}
+                            }, 1000);
+                    });
+                }
+            });
+        });
+    });
+</script>

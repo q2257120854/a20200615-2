@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金龙策略</title>
+</head>
+<body class="membercenter logged-in">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/member.css"/>
+
+<!--个人中心-充值-->
+<div class="br-content">
+<div class="w1200">
+	<!--主体-->
+<section class="page-main page-personal">
+    <div class="container clearfix">
+    	<!--public左边-->
+    	{include file="public:member_left" /}
+        <!--右边-->
+<div id="page_member_payment" class="col-main page-member-payment">
+    <div class="tabs-wrapper" id="pay-method-tabs">
+        <nav>
+            <ul class="clearfix">
+                 <li class="active"><a href="javascript:;" id="pm4">银行转账</a></li>
+                <li><a href="javascript:;" id="pm3">支付宝转账</a></li>
+                <!--<li><a href="javascript:;" id="pm2">微信转账</a></li>-->
+                <li><a href="javascript:;" id="pm1">网银支付 </a></li>
+
+            </ul>
+        </nav>
+        <div class="tabs">
+                <div class="tab-item hide" id="tab-pm1">
+                    <form action="/index/lianlianpay/doPay" id="payForm" target="_blank">
+                        <div class="field-row group">
+                            <label>可用资金:</label>
+                            <div class="input-wrapper">
+                                <span class="acount-val"><strong id="账户余额">0</strong><span class="unit">元</span></span>
+                            </div>
+                        </div>
+                        <div class="field-row group">
+                            <label>充值金额:</label>
+                            <div class="input-wrapper">
+                                <input type="text" class="text  b-pay-amount" name="b-pay-amount"  onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                            </div>
+                        </div>
+                        <div class="btn-row group">
+                            <button id="bankRecharge" type="button" class="btn btn-pri">提 交</button>
+                        </div>
+                        <div id="bankRecharge_rmk" class="field-row group" style="display: none">
+                            <label>特别说明:</label>
+                            <div class="input-wrapper">
+                                <span class="acount-val"></span>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="bank-notes">
+                        <h3>温馨提示</h3>
+                        <ol>
+                            <li>为了您的资金安全，请务必牢记账号密码；</li>
+                            <li>充值前请注意您的银行卡充值限制，以免造成不便；</li>
+                            <li>禁止洗钱、信用卡套现、虚假交易等行为，一经发现并确认，将终止该账户的使用；</li>
+                            <li>为了您的资金安全，建议充值前进行实名认证、手机绑定；</li>
+                            <li>如果充值遇到任何问题，请联系客服QQ：<label id="m_basic_mobile">806247358</label>。</li>
+                        </ol>
+                    </div>
+                </div>
+         
+            <!--/.tab-item -->
+
+            <div class="tab-item hide" id="tab-pm3">
+                <div class="alipay-trans-wrapper">
+                    <form action="#">
+                        <input type="hidden" id="tab-pm1-bank" name="tab-pm1-bank" value="">
+                        
+                        <img src="/public/static/home/img/alipay.png" style="width:250px;margin-left:140px; display:block; margin-bottom:20px;">
+                        <p>
+                            <span style="color: red">请扫码充值，并务必在转账备注中填写注册手机号，这样方便我们多重信息确认您的汇款。</span><br>
+                            转账成功后，请联系客服QQ：<label id="m_basic_mobile">806247358</label>以便我们及时帮您处理
+                            <br>
+                            <br>户名：宁波鑫钰网络科技有限公司
+                        </p>
+                    </form>
+                    <div class="bank-notes">
+                        <p>如需马上到帐或长时间未到帐，请联系客服QQ：<label id="m_basic_mobile">806247358</label><br>08：30- 17：00 （30分钟内到账）<br>17:00以后 （次日09：00前到账）
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/.tab-item -->
+            <!--<div class="tab-item hide" id="tab-pm2">
+                <div class="alipay-trans-wrapper">
+                    <form action="#">
+                        <input type="hidden" id="tab-pm1-bank" name="tab-pm1-bank" value="">
+                        
+                        <img src="/public/static/home/img/wxpay.png" style="width:250px;margin-left:140px; display:block; margin-bottom:20px;">
+                        <p>请用微信扫描二维码</p>
+                        <p>
+                            <span style="color: red">请扫码充值，并务必在转账备注中填写注册手机号，这样方便我们多重信息确认您的汇款。</span><br>
+                            转账成功后，请联系客服QQ：<label id="m_basic_mobile">806247358</label>以便我们及时帮您处理
+                            <br>账号：黑马策略
+                            <!--<br>户名：杭州鼎蓝商贸有限公司‍-->
+                       <!--</p>
+                    </form>
+                    <div class="bank-notes">
+                        <p>如需马上到帐或长时间未到帐，请联系客服QQ：<label id="m_basic_mobile">806247358</label><br>08：30- 17：00 （30分钟内到账）<br>17:00以后 （次日09：00前到账）
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/.tab-item -->
+            <div class="tab-item " id="tab-pm4">
+
+                <h3><strong>您可以通过网上银行、银行柜台或ATM机向<label id="m_basic_netName">我们</label>转账（手续费单笔最高50元）</strong>
+                </h3>
+                <p>请务必联系客户QQ：806247358 索取转账银行账户，在转账备注中填写注册手机号，这样方便我们多重信息确认您的汇款。<br>转账成功后，请告知客服QQ：<label id="m_basic_mobile">806247358</label>以便我们及时帮您处理
+                </p>
+
+
+               <!--   <table class="simple-tbl">
+                    <colgroup>
+                        <col class="col1">
+                        <col class="col2">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                       <td><span class="bank-logo bank-logo-cmb" style="background-image: url(/public/static/home/img/bbb.png);width:150px;background-size:contain;background-position:center"></span></td>
+                        <td>帐号：<label id="m_basic_bankNo">33050161668000000115</label><br>户名：<label id="m_basic_bankOn">杭州鼎蓝商贸有限公司</label><br>开户行：<label id="m_basic_bankNm">建设银行杭州城站支行</label></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="group upload-screenshot-wrapper">
+                    <div class="col-12">
+                        <p>用户网银转账之后，请务必保留网银转账成功时的截图，并在资金或者转账用途中备注清自己要转入的<label id="m_basic_netName">黑马策略</label>用户名，将回单发到QQ客服，以便尽快到账！
+                        </p>
+
+                        <div class="btn-wrapper" style="text-align: center">
+                            <a id="m_basic_qq2" target="_blank" href="/" class="aside-support">
+                                <i class="icon trans-04 icon-float_02"></i>
+                                <span class="trans-04">在线咨询</span>
+                            </a>
+                        </div>
+                    </div>-->
+                    
+
+                </div>
+            </div>
+            <!--/.tab-item -->
+            <!--/.tabs-->
+        </div>
+    </div>
+</div>
+
+    </div>
+</section>
+	
+	
+	
+	
+	
+</div>
+</div>
+
+
+{include file="public:footer" /}
+<script type="text/javascript">
+	$('#bankRecharge').click(function(){
+		var _val=$('input[name="b-pay-amount"]').val();
+        if( _val == 0 ){
+            tool.popup_err_msg("请输入充值金额");
+            return false;
+        }
+        var a=/^[0-9]*(\.[0-9]{1,2})?$/;
+        if(!a.test(_val)) {
+            tool.popup_err_msg("充值金额格式不正确");
+            return false;
+        }
+		$("#payForm").submit();
+	});
+</script>
+</body>
+</html>

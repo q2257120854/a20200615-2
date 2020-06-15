@@ -1,0 +1,48 @@
+.mian { width:100%; height:600px; margin:0 auto; }
+.mian .zhu { width:1004px; margin:0 auto;}
+/*用户注册、登录弹出框*/
+.registration_3 {width:390px; background:#fff;  z-index:10000;  border-radius:5px; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; padding-bottom:20px; float:right; margin-top:40px;}
+.registration_3 .tit { display:block; height:53px; line-height:53px; border-bottom:1px solid #b4c0d5;}
+.registration_3 .tit .t_1 { display:block; font-size:20px; color:#434f63; font-weight:bold; background:url(/images/img/registration_ico.gif) no-repeat 10px 15px; padding-left:48px; float:left; height:49px; border-bottom:4px solid  #434f63;}
+.registration_3 .tit .t_2 { display:block; float:left; color:#b2b2b2; margin:5px 0 0 10px;height:20px;}
+.registration_3 .tit .t_3 { display:block; float:left; margin:5px 0 0 10px; height:20px;}
+.registration_3 .tit .t_3 .a_1 { color:#00a8ff;}
+.registration_3 .tit .t_3 .a_1:hover {color:#f05454;  }
+.registration_3 .tit .t_3 .a_1 i { font-family:"宋体";}
+.registration_3 .tit .t_4 { display:block; width:12px; height:12px; background:url(/images/img/registration_x.gif) 0 0 no-repeat; float:right; cursor:pointer; margin:6px 6px 0 0;}
+.registration_3 .input_k { display:block; border-bottom:1px dashed #ccc; padding-bottom:10px;}
+.registration_3 .input_k li { display:block;width:350px; margin:0 auto; margin-top:16px;  *margin-top:13px; position:relative;}
+.registration_3 .input_k li .shu{ width:293px; padding-left:55px;  height:32px; border:1px solid #e6e6e6; background:url(/images/img/input_bk.gif) repeat-x; margin:0 auto; line-height:32px; color:#333; font-size:14px;}
+.registration_3 .input_k li .shu_1{ width:263px; padding-left:85px; height:32px; border:1px solid #e6e6e6; background:url(/images/img/input_bk.gif) repeat-x; margin:0 auto; line-height:32px; color:#333; font-size:14px;}
+.registration_3 .input_k li .shu_2{ width:263px; padding-left:65px; height:32px; border:1px solid #e6e6e6; background:url(/images/img/input_bk.gif) repeat-x; margin:0 auto; line-height:32px; color:#333; font-size:14px;}
+.registration_3 .input_k li .yan { width:130px; float:left;}
+.registration_3 .input_k li .code_1 { display:block; float:left; margin-left:10px;}
+.registration_3 .input_k li .code_1 img { width:64px; height:34px;}
+.registration_3 .input_k li .em_1 { display:block; float:left; width:17px; height:34px; background:url(/images/img/refresh_1.gif) no-repeat center; cursor:pointer; margin-left:10px;}
+.registration_3 .input_k li i { position:absolute; top:0; right:0; width:32px; height:32px; z-index:100;}
+.registration_3 .input_k li .ico_1 { background:url(/images/img/registration_yx.png) no-repeat center;}
+.registration_3 .input_k li .ico_2 { background:url(/images/img/registration_mm.png) no-repeat center;}
+.registration_3 .input_k li .ico_3  { background:url(/images/img/registration_name.png) no-repeat center;}
+.registration_3 .input_k li .safety { display:block; margin-top:6px; width:350px; height:24px;}
+.registration_3 .input_k .hover_2 .ico_1 { background:url(/images/img/registration_yx_b.png) no-repeat center !important; }
+.registration_3 .input_k .hover_2 .ico_2 { background:url(/images/img/registration_mm_b.png) no-repeat center !important;  }
+.registration_3 .input_k .hover_2 .ico_3 { background:url(/images/img/registration_name_b.png) no-repeat center !important; }
+.registration_3 .input_k li .text { color:#00a8ff;}
+.registration_3 .input_k li .text:hover { color:#f05454; }
+.registration_3 .input_k li .prompt { display:block; position:absolute; left:-183px; top:-3px; width:186px; height:40px; line-height:40px; background:url(/images/img/sframe_tisbk.png) no-repeat; color:#fff; font-weight:bold; z-index:100; padding-left:10px;}
+.registration_3 .input_k li .text_1 { position:absolute; left: 10px; top: 0; display:block; height:34px; line-height: 34px; font-size: 14px; color:#808080;}
+.registration_3 .input_k .hover .shu_1 { display:block !important;}
+.registration_3 .input_k .hover .shu { display:none;}
+.registration_3 .cont .ann_1 { display:block; width:350px; height:40px; margin:0 auto; background:#4b6289; border:none; border-bottom:4px solid #2c3f5f; font-size:20px; color:#fff; text-align:center; font-family: "微软雅黑"; cursor:pointer;}
+.registration_3 .cont .wj { display:block; text-align:right; height:30px; line-height:30px;}
+.registration_3 .cont .ann_1:hover { background:#516b97;}
+.registration_3 .cont .shej { display:block; padding:10px 0 0 10px;}
+.registration_3 .cont .shej p{ display:block;}
+.registration_3 .cont .shej a { width:38px; height:37px; display:block; float:left; margin:10px 0 0 10px; }
+.registration_3 .cont .shej .xinl { background:url(/images/img/registration_ico.png) 0 0;}
+.registration_3 .cont .shej .xinl:hover { background:url(/images/img/registration_ico.png) 0 76px; opacity: 0.6; filter:alpha(opacity=60);}
+.registration_3 .cont .shej .qq { background:url(/images/img/registration_ico.png) 0 -39px; margin-left:20px;}
+.registration_3 .cont .shej .qq:hover {background:url(/images/img/registration_ico.png) 0 -117px; opacity: 0.6; filter:alpha(opacity=60);}
+.on_changes { position: absolute; left: 0; top: 35px; z-index: 1000; background: #fff; border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; padding: 0 10px 10px 10px; width: 328px; display: none;}
+.on_changes li { cursor: pointer; display: block; margin:0 !important; width: 318px !important; padding: 0 0 0 10px; height: 30px; line-height: 30px;}
+.on_changes li:hover { background: #f79a37; color: #fff;}

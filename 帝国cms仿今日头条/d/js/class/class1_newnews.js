@@ -1,0 +1,1 @@
+document.write("<li><a href=\"/news_hot/2667.html\" title=\"绿营集体沉默噤若寒蝉 网民:只会出力维护诈骗犯吗?\">绿营集体沉默噤若寒蝉 网民:只会出</a></li>");

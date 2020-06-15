@@ -1,0 +1,43 @@
+---------------------------------------------------------------
+[ 2018-10-05T18:26:33+08:00 ] 202.53.138.176 58.243.254.75 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E6%B6%82%E4%BC%9F&IDCard=342422199005165524&b-pay-amount=1000
+[ info ] www.5chevip.com/index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E6%B6%82%E4%BC%9F&IDCard=342422199005165524&b-pay-amount=1000 [运行时间：0.228177s][吞吐率：4.38req/s] [内存消耗：4,082.44kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.5chevip.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.2; MI 6  Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'referer' => 'http://www.5chevip.com/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=2muvr89vnm2kealp4t8mqktrh0',
+  'x-requested-with' => 'www5chevip.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'bankCard' => '6212261001048874595',
+  'realName' => '王涂伟',
+  'IDCard' => '342422199005165524',
+  'b-pay-amount' => '1000',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000706s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.022807s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000791s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.002605s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1313 ) LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.003636s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1313 , 1000 , 0 , '13131538735193637239' , '2018-10-05 18:26:33') [ RunTime:0.000985s ]

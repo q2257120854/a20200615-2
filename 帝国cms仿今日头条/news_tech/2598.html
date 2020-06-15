@@ -1,0 +1,543 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.test.dede168.com/news_tech/2598.html" >
+    <meta charset="gb2312" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script><script type="text/javascript">uaredirect("http://m.test.dede168.com/news_tech/2598.html");</script>
+    
+    <title>技术干货（3 of 5）：大型网站系统架构 - 仿今日头条(TouTiao.com)</title>
+    <meta name="keywords" content="科技,浏览器,电信,软件,">
+	<meta name="description" content="技术干货（3 of 5）：大型网站系统架构">
+
+    <link type="text/css" rel="stylesheet" href="/style/ndetail_65199b6.css">
+    <link type="text/css" rel="stylesheet" href="/style/nbase_b0dd754.css">
+    <link type="text/css" rel="stylesheet" href="/style/core_e4b8984.css">
+    
+	<script type="text/javascript" charset="gb2312" src="/style/lib_538033e.js"></script>
+	<script type="text/javascript" charset="gb2312" src="/style/qrcode.min_1dc0697.js"></script>
+	<script type="text/javascript" charset="gb2312" src="/style/asyncmap_2c7ae8b.js"></script>
+</head>
+<body class="v2016">
+    
+    
+  <div id="wrapper" class="detail-wrapper">
+    <div id="pagelet-nnav" class="nohome">
+	<!-- 滚动条效果 -->
+	<div id="instantclick">
+		<div id="instantclick-bar" class="instantclick-bar">
+		</div>
+	</div>
+	<div class="topbarWrapper" class="clearfix">
+		
+		<ul class="left topNav">
+									<li class="tb-item"><a class="tb-link" href="/news_hot/" target="_blank" ga_event="">热点</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_society/" target="_blank" ga_event="">社会</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_entertainment/" target="_blank" ga_event="">娱乐</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_tech/" target="_blank" ga_event="">科技</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_car/" target="_blank" ga_event="">汽车</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_sports/" target="_blank" ga_event="">体育</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_finance/" target="_blank" ga_event="">财经</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_military/" target="_blank" ga_event="">军事</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_world/" target="_blank" ga_event="">国际</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_fashion/" target="_blank" ga_event="">时尚</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_travel/" target="_blank" ga_event="">旅游</a></li>
+									<li class="tb-item"><a class="tb-link" href="/news_discovery/" target="_blank" ga_event="">探索</a></li>
+						<li class="tb-item" data-node="moreNav" id="moreNav">
+				<a class="tb-link moreNav" href="javascript:;" ga_event="">更多</a>
+				<div class="nav-layer">
+					<ul>
+	                    							                    <li><a href="/news_baby/" class="layer-item" ga_event="">育儿</a></li>
+													                    <li><a href="/news_regimen/" class="layer-item" ga_event="">养生</a></li>
+													                    <li><a href="/news_story/" class="layer-item" ga_event="">故事</a></li>
+													                    <li><a href="/news_essay/" class="layer-item" ga_event="">美文</a></li>
+													                    <li><a href="/news_game/" class="layer-item" ga_event="">游戏</a></li>
+													                    <li><a href="/news_history/" class="layer-item" ga_event="">历史</a></li>
+													                    <li><a href="/news_food/" class="layer-item" ga_event="">美食</a></li>
+											</ul>
+				</div>
+			</li>
+		</ul>
+	<!--反馈 start-->
+<script>
+$(function(){
+	$('.feedbtn').click(function(){$('.feedback_dialog').toggleClass('on')});
+	$('.feedback_dialog .close').click(function(){$('.feedback_dialog').removeClass('on')})
+});
+function submitfeedback(obj){
+  var name='匿名';
+var email=$('[name=email]').val();
+var lytext=$('[name=lytext]').val();
+if(!email){alert('请填写联系方式');return false;}
+if(!lytext){alert('您的意见');return false;}
+
+}
+</script>
+<div class="dialog feedback_dialog">
+    <div class="dialog-header">
+        <h3>意见反馈</h3>
+    </div>
+    <div class="dialog-inner" data-node="inner">
+        <div class="feedback_panel">
+            <form action="/e/enews/index.php" method="post" name="form1" onsubmit="return submitfeedback(this)">
+                <ul>
+                    <li>
+                        <p class="label">联系方式（必填）</p>
+                        <div class="input-group">
+                            <input class="email" placeholder="您的邮箱" type="text" name="email">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="label">您的意见（必填）</p>
+                        <div class="input-group">
+                            <textarea style="height:100px;" name="lytext" class="content" maxlength="140" placeholder="请填写您的意见，不超过140字"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                               <input name="name" type="hidden" id="name" value="匿名">
+                            <input type="submit" name="Submit3" class="submit-btn" value="提交">
+                                <input name="enews" type="hidden" id="enews" value="AddGbook" />
+                                <input type="hidden" name="ecmsfrom" value="/">
+                            <span class="msg" data-node="msg"></span>
+                            <a data-node="close" class="close" href="javascript:;">[关闭]</a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>
+<!--反馈 end-->
+
+
+		<ul class="right">
+                         <li class="tb-item"><span><script src="/e/member/login/loginjs2.php"></script></span></li>
+			<li class="tb-item" id="mth"><a class="tb-link" href="/e/member/login" target="_blank">媒体号</a></li>
+			
+			<li class="tb-item"><a class="tb-link feedbtn" href="javascript:;" >反馈</a></li>
+			<li class="tb-item" data-node="more" id="moreAbout">
+				<a class="tb-link" href="/about/" ga_event="nav_more">更多</a>
+				<div class="layer">
+					<ul>
+						<li><a href="/about/about.html" class="layer-item">关于我们</a></li>
+						<li><a href="/about/join.html" class="layer-item">加入头条</a></li>
+						<li><a href="/about/report.html" class="layer-item">媒体报道</a></li>
+						<li><a href="/about/media_partners.html" class="layer-item">媒体合作</a></li>
+						<li><a href="/about/cooperation.html" class="layer-item">产品合作</a></li>
+						<li><a href="/about/media_cooperation.html" class="layer-item">合作说明</a></li>
+						<li><a href="/about/contact.html" class="layer-item">联系我们</a></li>
+						<li><a href="/about/user_agreement.html" class="layer-item">用户协议</a></li>
+						<li><a href="/about/complain.html" class="layer-item">投诉指引</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!--[if lt IE 9 ]><style>.midbarWrapper{border-bottom:1px solid #e8e8e8;}</style><![endif]-->
+	<div class="midbarWrapper">
+		<div class="midbar-inner">
+			<div class="logo-box">
+				<a class="logo-link" href="/" ga_event="nav_icon"><img class="logo" src="/style/logo.png"></a>
+			</div>
+			<div class="search-box" data-node="searchBox">
+				<form action="/e/search/" method="get" data-node="searchForm" target="_blank">
+	                <div class="input-group clearfix">
+										<!-- <span class="placeholder" data-node="placeholder"></span> -->
+	                    <input autocomplete="off" ga_event="nav_search_input" data-node="searchInput" name="keyword" type="text" placeholder="" value="">
+	                    <div class="btn-submit">
+	                        <button ga_event="nav_search" type="submit" href="javascript:;" data-node="searchSubmit">
+	                            <i class="icon icon-search"></i>
+	                        </button>
+	                    </div>
+	                </div>
+	            </form>
+	            <div class="slayer">
+	            	<div class="slayer-con">
+	            		<div class="search-tip">热门搜索</div>
+                    	<ul data-node="searchMenu"></ul>
+                    </div>
+                </div>
+			</div>
+			<div class="user-box" data-node="userbox" >
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+    <div id="container" class="clearfix">
+      <div class="detail-main">
+        <div id="pagelet-article">
+	
+	<div class="curpos">
+		<a href="/" target="_blank" ga_event="click_index">首页</a>
+		&gt;
+		<a href="#" target="_blank" ga_event="click_channel">科技</a>
+	</div>
+	
+	<div class="article-header">
+		<h1 class="title">技术干货（3 of 5）：大型网站系统架构</h1>
+		<div class="minibar clearfix">
+			
+            
+            <span class="time">2016-04-20 20:13</span>
+		</div>
+	</div>
+	<div class="article-content"><p>&gt;&gt;&gt;&gt;<strong>咨询君导读</strong></p><p><strong>从前面微信红包的场景设计</strong>（分析与实战：微信红包体系的整理）<strong>，到电商秒杀系统的设计</strong>（秒杀系统架构分析与实战）<strong>的过渡，我们管中窥豹来看一下大型网站系统架构的演化及其性能 。</strong></p><p><strong>一个成熟的大型网站（如淘宝、京东等）的系统架构并不是开始设计就具备完整的高性能、高可用、安全等特性，它总是随着用户量的增加，业务功能的扩展逐渐演变完善的。</strong>在这个过程中，开发模式、技术架构、设计思想也发生了很大的变化，就连技术人员也从几个人发展到一个部门甚至一条产品线。</p><p>所以成熟的系统架构是随业务扩展而完善出来的，并不是一蹴而就；不同业务特征的系统，会有各自的侧重点，例如淘宝，要解决海量的商品信息的搜索、下单、支付，例如腾讯，要解决数亿的用户实时消息传输，百度它要处理海量的搜索请求，他们都有各自的业务特性，系统架构也有所不同。</p><p>尽管如此我们也可以从这些不同的网站背景下，找出其中共用的技术，这些技术和手段可以广泛运行在大型网站系统的架构中，下面就通过介绍大型网站系统的演化过程，来认识这些技术和手段。</p><p>一、最开始的网站架构</p><p>最初的架构，应用程序、数据库、文件都部署在一台服务器上，如图：</p><p>二、应用、数据、文件分离</p><p>随着业务的扩展，一台服务器已经不能满足性能需求，故将应用程序、数据库、文件各自部署在独立的服务器上，并且根据服务器的用途配置不同的硬件，达到最佳的性能效果。</p><p>三、利用缓存改善网站性能</p><p>在硬件优化性能的同时，同时也通过软件进行性能优化，在大部分的网站系统中，都会利用缓存技术改善系统的性能，使用缓存主要源于热点数据的存在，大部分网站访问都遵循28原则（即80%的访问请求，最终落在20%的数据上），所以我们可以对热点数据进行缓存，减少这些数据的访问路径，提高用户体验。</p><p>缓存实现常见的方式是本地缓存、分布式缓存。当然还有CDN、反向代理等，这个后面再讲。本地缓存，顾名思义是将数据缓存在应用服务器本地，可以存在内存中，也可以存在文件，OSCache就是常用的本地缓存组件。本地缓存的特点是速度快，但因为本地空间有限所以缓存数据量也有限。分布式缓存的特点是，可以缓存海量的数据，并且扩展非常容易，在门户类网站中常常被使用，速度按理没有本地缓存快，常用的分布式缓存是Memcached、Redis。</p><p>四、使用集群改善应用服务器性能</p><p>应用服务器作为网站的入口，会承担大量的请求，我们往往通过应用服务器集群来分担请求数。应用服务器前面部署负载均衡服务器调度用户请求，根据分发策略将请求分发到多个应用服务器节点。</p><p>常用的负载均衡技术硬件的有F5，价格比较贵，软件的有LVS、Nginx、HAProxy。LVS是四层负载均衡，根据目标地址和端口选择内部服务器，Nginx是七层负载均衡和HAProxy支持四层、七层负载均衡，可以根据报文内容选择内部服务器，因此LVS分发路径优于Nginx和HAProxy，性能要高些，而Nginx和HAProxy则更具配置性，如可以用来做动静分离（根据请求报文特征，选择静态资源服务器还是应用服务器）。</p><p>五、数据库读写分离和分库分表</p><p>随着用户量的增加，数据库成为最大的瓶颈，改善数据库性能常用的手段是进行读写分离以及分表，读写分离顾名思义就是将数据库分为读库和写库，通过主备功能实现数据同步。分库分表则分为水平切分和垂直切分，水平切换则是对一个数据库特大的表进行拆分，例如用户表。垂直切分则是根据业务不同来切换，如用户业务、商品业务相关的表放在不同的数据库中。</p><p>六、使用CDN和反向代理提高网站性能</p><p>假如我们的服务器都部署在成都的机房，对于四川的用户来说访问是较快的，而对于北京的用户访问是较慢的，这是由于四川和北京分别属于电信和联通的不同发达地区，北京用户访问需要通过互联路由器经过较长的路径才能访问到成都的服务器，返回路径也一样，所以数据传输时间比较长。对于这种情况，常常使用CDN解决，CDN将数据内容缓存到运营商的机房，用户访问时先从最近的运营商获取数据，这样大大减少了网络访问的路径。比较专业的CDN运营商有蓝汛、网宿。</p><p>而反向代理，则是部署在网站的机房，当用户请求达到时首先访问反向代理服务器，反向代理服务器将缓存的数据返回给用户，如果没有没有缓存数据才会继续走应用服务器获取，也减少了获取数据的成本。反向代理有Squid，Nginx。</p><p>七、使用分布式文件系统</p><p>用户一天天增加，业务量越来越大，产生的文件越来越多，单台的文件服务器已经不能满足需求。需要分布式的文件系统支撑。常用的分布式文件系统有NFS。</p><p>八、使用NoSql和搜索引擎</p><p>对于海量数据的查询，我们使用nosql数据库加上搜索引擎可以达到更好的性能。并不是所有的数据都要放在关系型数据中。常用的NOSQL有mongodb和redis，搜索引擎有lucene。</p><p>九、将应用服务器进行业务拆分</p><p>随着业务进一步扩展，应用程序变得非常臃肿，这时我们需要将应用程序进行业务拆分，如百度分为新闻、网页、图片等业务。每个业务应用负责相对独立的业务运作。业务之间通过消息进行通信或者同享数据库来实现。</p><p>十、搭建分布式服务</p><p>这时我们发现各个业务应用都会使用到一些基本的业务服务，例如用户服务、订单服务、支付服务、安全服务，这些服务是支撑各业务应用的基本要素。我们将这些服务抽取出来利用分部式服务框架搭建分布式服务。淘宝的Dubbo是一个不错的选择。</p><p>&gt;&gt;&gt;&gt;</p><p><strong>小结</strong></p><p><strong>大型网站的架构是根据业务需求不断完善的，根据不同的业务特征会做特定的设计和考虑，本文只是讲述一个常规大型网站会涉及的一些技术和手段。</strong></p><p>咨询君有话说：</p><p>在<strong>大型网站系统架构的演化</strong>中，介绍了<strong>大型网站的演化过程</strong>，<strong>期间穿插了一些技术和手段，</strong>我们可以从中看出一个大型网站的轮廓，但想要掌握设计开发维护大型网站的技术，需要我们一步一步去研究实践。</p><p><strong>接着，我们将继续讲述大型网站中一个重要的要素：</strong><strong>性能，它是大型网站的灵魂。</strong></p><p>什么是性能</p><p>有人说性能就是访问速度快慢，这是最直观的说法，也是用户的真实体验。一个用户从输入网址到按下回车键，看到网页的快慢，这就是性能。对于我们来说，需要去挖掘这个过程，因为这决定我们怎么去做性能优化。</p><p><strong>这中间发生了什么？</strong></p><p>用户访问网站的整个流程：用户输入网站域名，通过DNS解析，找到目标服务器IP，请求数据经互联网达到目标服务器，目标服务器收到请求数据，进行处理（执行程序、访问数据库、文件服务器等）。处理完成，将响应数据又经互联网返回给用户浏览器，浏览器得到结果进行计算渲染显示给用户。</p><p><strong>我们把整个过程，分为三段路径：</strong></p><p>1、第一段在用户和浏览器端，主要负责发出用户请求，以及接受响应数据进行计算渲染显示给用户；</p><p>2、第二段在网络上，负责对请求数据、响应数据的传输；</p><p>3、第三段在网站服务器端，负责对请求数据进行处理（执行程序、访问数据库、文件等），并将结果返回；</p><p>&gt;&gt;&gt;&gt;</p><p>第一路径</p><p>第一路径花费的时间包括输入域名发起请求的时间和浏览器收到响应后计算渲染的时间。</p><p><strong>输入域名发起请求，实质过程是：</strong></p><p>1、用户在浏览器输入要访问的网站域名；</p><p>2、本地DNS请求网站授权的DNS服务器对域名进行解析，并得到解析结果即IP地址（并将IP地址缓存起来）。</p><p>3、向目标IP地址发出请求。</p><p>从这个过程我们可以看到，优化的地方主要是减少DNS解析次数，而如果用户浏览器设置了缓存，则再第二次访问相同域名的时候就不会去请求DNS服务器，直接用缓存中的IP地址发出请求。因此这个过程主要取决于浏览器的设置。现在主流的浏览器默认设置了DNS的预取功能（DNS Prefetch），当然你也可以主动告知浏览器我的网站需要做DNS预取：</p><p><strong>&lt;meta http-equiv="x-dns-prefetch-control" content="on" /&gt;</strong></p><p><strong>浏览器将数据进行计算渲染的过程：</strong></p><p>1、浏览器解析响应数据；</p><p>2、浏览器创建DOM树；</p><p>3、浏览器下载CSS样式，并应用到DOM树，进行渲染；</p><p>4、浏览器下载JS文件，开始解析执行；</p><p>5、显示给用户。</p><p>从这个过程，我们可以找出不少可以优化的地方。首先我们可以尽量控制页面大小，使得浏览器解析的时间更短；并且将多个CSS文件、JS文件文件合并压缩减少文件下载的次数和大小；另外注意将CSS放在页面前面，JS访问页面后面，这样便于页面首先能渲染出来，再执行js脚本，对于用户来说有更好的体验。最后我还可以设置浏览器缓存，下次访问时从缓存读取内容，减少http请求。</p><p><strong>&lt;meta http-equiv="Cache-Control" content="max-age=5" /&gt;</strong></p><p>该代码说明了浏览器启用了缓存并在5秒内不会再次访问服务器。注意缓存的设置需要结合你的业务特性来适当配置。</p><p><strong>以下是京东商城的HTML简图：</strong></p><p>css样式放在html前面，并且进行了合并。</p><p>大多数的JS文件放在页尾。</p><p>&gt;&gt;&gt;&gt;</p><p>第二路径</p><p>第二路径在网络上，花费的时间同样包括请求数据的传输时间和响应数据的传输时间，这个两个时间取决于数据传输的速度，这里我们要讲一个名词“带宽”。</p><p>什么是带宽，我们经常说带宽10M，20M是什么意思？我的带宽20M，这意味着什么？我们知道带宽速度分为上行、下行速度，也就是上传和下载的速度。带宽20M对于用户来说则是下载速度20M（20×1024×1024比特率），换算成字节20M/8=2.5M。也就是说20M的带宽下载速度理论可达2.5M/s，而对于家庭用户而言上传速度一般比下载速度小的多，大约是不到十分之一。</p><p>而对于网站服务器（企业用户）来说，则不然，一般上行速度等于下载速度。这也是运营商根据实际需求分配的，毕竟用户的主要需求是下载数据，而不是上传数据。</p><p>整个流程从传输方式看就是：用户发送请求数据（上传），网站服务器接受请求数据（下载），网站服务器返回响应数据（上传），用户接受响应数据（下载）。</p><p><strong>对于用户来说，上传数据是很小的（Url参数），而下载数据是较大的（响应数据）；</strong></p><p><strong>对于服务器来说，下载数据是很小的（url参数），上传数据是较大（响应数据）。</strong></p><p>理解了这个，我们可以解释为什么有时用户反映为什么自己的带宽足够，但打开某些网站仍然很慢，就是因为尽管用户的下载速度很快，但网站服务器的上传速度很慢，这就像一个抽水管和一个出水管，不管抽水管再大，但出水管很小，同样抽到的水量是有限的。</p><p>了解了这个原理我们来看怎么提高数据传输的速度，首先用户的上传、下载速度我们是无法决定的，我们能决定的是网站服务器的上传、下载速度，所以我们可以做的是适当的增加服务器带宽（带宽是很贵的，盲目的增加只会增加不必要成本）。</p><p>购买合适的带宽需要根据网站业务特性、规模以及结合运维人员的经验来选择。通常可以考虑的算法，即根据一次响应数据的大小，乘以PV数，除以对应的高峰时间段，从而大致估算出网站带宽的需求。</p><p><strong>下面我们继续进一步研究第二路径：</strong></p><p>上图表示用户访问网站服务器时网络的大致情况，从图上可以看出假设网站服务器从电信网络接入，而用户A作为电信的宽带用户，则可以通过电信骨干网快速的访问到网站服务器。用户B,用户C作为移动和联通用户需要通过运营商的互联互通经过较长路径才能访问到服务器。</p><p><strong>针对这种情况，我们可以采取以下方法来优化：</strong></p><p>1、在各运营商发达的地区的IDC（互联网数据中心，可以理解成机房）部署网站服务器，各运营商的用户即可通过各自的骨干网访问服务器。</p><p>2、购买代理服务，也就是原来联通用户需要通过联通骨干网——&gt;联通互联互通路由器——&gt;电信骨干网——&gt;网站服务器的过程。通过代理服务，代理服务器直连到电信骨干网，访问网站服务器。</p><p>2、在主要地区城市购买CDN服务，缓存对应的数据，用户可先从最近的CDN运营商获取请求数据。</p><p>&gt;&gt;&gt;&gt;</p><p>第三路径</p><p>第三路径主要是网站服务器内部处理的过程，当中包括执行程序、访问文件、数据库等资源。</p><p><strong>这是对于我们来说最可以发挥的地方：</strong></p><p>1、使用缓存，根据需要使用本地缓存或分布式缓存；</p><p>2、使用异步操作，这种方式不仅可以提高性能，也提高了系统的扩展性；</p><p>3、代码优化；</p><p>4、存储优化；</p><p>&gt;&gt;&gt;&gt;</p><p>缓存</p><p>如果缓存数据较少，可以利用OSCache实现本地缓存：</p><p>当缓存数据过多时，利用Memcached实现分布式缓存：</p><p>Memcached实现分布式缓存，缓存服务器之间是互不通信的，也就是我们可以方便的通过增加Memcached服务器对系统进行扩展。</p><p>&gt;&gt;&gt;&gt;</p><p>异步操作</p><p>使用同步请求的方式，在高并发的情况下，会对数据库造成很大的压力，也会让用户感觉响应时间过长。异步请求方式，则可以快速的对用户做出响应，而具体的数据库操作请求，则通过消息队列服务器发送给数据库服务器，做具体的插入操作。插入操作的结果则已其他方式通知客户端。例如一般在订票系统当中，出票行为就是异步完成，最终的出票结果会以邮件或其他方式告知用户。</p><p>&gt;&gt;&gt;&gt;</p><p>代码优化</p><p>这里就不在详细描述，另一篇随笔《怎样编写高质量的java代码》对代码质量和风格做过大致的介绍，有兴趣可以看一下。</p><p>&gt;&gt;&gt;&gt;</p><p>存储优化</p><p>大型网站中海量的数据读写对磁盘造成很大压力，系统最大的瓶颈还是在磁盘的读写。可以考虑使用磁盘阵列、分布式储存来改善存储的性能。</p><p><strong>性能的指标和测试</strong></p><p>上面通过解析用户访问网站的过程来思考怎么提高用户感知的性能，对于用户来言性能就是快和慢。但对于我们来说，不能这样简单描述，我们需要去量化他，用一些数据指标去衡量它。这里讲到几个名词：响应时间、并发量、吞吐量。</p><p><strong>响应时间：</strong>就是用户发出请求到收到响应数据的时间；</p><p><strong>并发量：</strong>就是系统同时能处理多少用户请求；</p><p><strong>吞吐量：</strong>就是单位时间内系统处理的请求数量；</p><p>为了通俗的了解这三个概念，我们以高速公路的收费站为例子：响应时间是指一辆车经过收费站的时间，也就是车辆从进入收费站、付钱、开闸、离开收费站的时间；并发量是指这个收费站同时能通行多少辆车，可以理解为收费站的出口数量。吞吐量是指：在一段时间内，这个收费站通往了多少了车。</p><p><strong>这个例子不晓得恰不恰当。</strong></p><p>对于性能测试来说，基本也是围绕这些方面来测试，下图说明了性能测试的过程：</p><p>左图表示响应时间和并发用户量的二维坐标图，从图上可以看出，并发用户量在一定量增加时，响应时间很短，并且没有太大的起伏，这表示系统目前处于日常运行期，可以很快处理用户请求（A点之前）；</p><p>随着并发量的增加，系统处于请求高峰期，但仍然可以有序的处理用户请求，响应时间较日常有所增加（A、B之间）；当并发量增加到一定数量时，超过了系统的负载能力，系统处于濒临崩溃的边缘（B、C之间），响应时间严重过长，直到系统崩溃。</p><p>右图表示吞吐量与并发用户量的二维坐标图，可以看出，随着并发用户量的增加，吞吐量逐渐增加；在并发量到达一定量时，由于系统处理能力达到最大，吞吐量增加放缓；当并发量超过系统负载时（E点），系统处理能力开始下降，不能再请求增加的用户请求，吞吐量反而降低。</p><p>&gt;&gt;&gt;&gt;</p><p><strong>小结</strong></p><p><span>本文通过用户访问网站的过程，分析了三个路径过程中提高性能的想法和手段，最后介绍了描述性能的指标，并对性能测试做了简要说明。</span></p><p>来源：咨询范订阅号 zixunfan</p></div>
+	<div class="article-actions">
+		<div class="top-actions clearfix">
+			
+			<ul class="tag-list">
+				<a href="/e/tags/?tagname=%BF%C6%BC%BC" target="_blank">科技</a> <a href="/e/tags/?tagname=%E4%AF%C0%C0%C6%F7" target="_blank">浏览器</a> <a href="/e/tags/?tagname=%B5%E7%D0%C5" target="_blank">电信</a> <a href="/e/tags/?tagname=%C8%ED%BC%FE" target="_blank">软件</a> <a href="/e/tags/?tagname=" target="_blank"></a>				
+			</ul>
+			
+			<a class="areport feedbtn" href="javascript:;">投诉</a>
+		</div>
+		<div class="bottom-actions clearfix" data-node="articleAction" data-groupid="6271897696975126786" >
+			<div class="snsbox">
+            	<div class="snsbox-inner">
+		            <span>分享到：</span>
+					<div class="bdsharebuttonbox snszone">
+						<a href="#" class="sns-btn sns-qzone bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+						<a href="#" class="sns-btn sns-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+						<a href="#" class="sns-btn sns-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+					</div>
+					<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"技术干货（3 of 5）：大型网站系统架构 来自仿今日头条","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+				</div>
+			</div>
+
+			<!-- <a class="abtn abtn-fav" data-type="repin" data-node="fav" href="javascript:;">收藏</a> -->
+			
+		</div>
+	</div>
+</div>
+
+        
+        <div id="pagelet-relatednews">
+	<div class="dtag">相关阅读</div>
+	<ul class="relatednews" data-node="listBox">
+				<li class="item clearfix" data-node="item">
+			<div class="item-inner">
+				<div class="lbox left">
+					<a href="/news_tech/2657.html" target="_blank">
+						<img class="feedimg middle-mode" src="http://p3.pstatp.com/large/4ca000008cb2293d2fe?123.jpg" onload="this.style.opacity=1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+						<div class="title-box">
+							<a ga_event="click_title_relevant" class="link title" href="/news_tech/2657.html" target="_blank" data-node="title">
+								微软小娜与美团外卖达成合作，智能自动订外卖？							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_abstract_relevant" class="link" href="/news_tech/2657.html" target="_blank">微软在Build2016开发者大会上宣布全新的人工智能机器人项目，微软小娜（Cortana）将作为Win10向其他移动平台扩展的新型开发桥梁，现在微软小娜已经与中国本土美团外卖达成合</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								
+								<a class="lbtn source" href="/news_tech/" target="_blank">news_tech&nbsp;&sdot;</a>	
+									
+								<!-- <span class="lbtn comment">0评论&nbsp;&sdot;</span> -->
+								<span class="lbtn time">04-20 20:13</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+				<li class="item clearfix" data-node="item">
+			<div class="item-inner">
+				<div class="lbox left">
+					<a href="/news_tech/2655.html" target="_blank">
+						<img class="feedimg middle-mode" src="http://p1.pstatp.com/large/48400056470d39cf05e?123.jpg" onload="this.style.opacity=1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+						<div class="title-box">
+							<a ga_event="click_title_relevant" class="link title" href="/news_tech/2655.html" target="_blank" data-node="title">
+								网站要给用户好的体验必须遵循视线金三角分布法							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_abstract_relevant" class="link" href="/news_tech/2655.html" target="_blank">视线分布金三角是根据人体习惯得出来的一个词，表示用户打开搜索结果页面后， 
+目光会首先放在最左上角，然后向正下方移动挨个浏览搜索结果，当看到感兴趣的页面时，横向向</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								
+								<a class="lbtn source" href="/news_tech/" target="_blank">news_tech&nbsp;&sdot;</a>	
+									
+								<!-- <span class="lbtn comment">0评论&nbsp;&sdot;</span> -->
+								<span class="lbtn time">04-20 20:13</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+				<li class="item clearfix" data-node="item">
+			<div class="item-inner">
+				<div class="lbox left">
+					<a href="/news_tech/2634.html" target="_blank">
+						<img class="feedimg middle-mode" src="http://p3.pstatp.com/large/4cb00030d9bd0789555?123.jpg" onload="this.style.opacity=1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+						<div class="title-box">
+							<a ga_event="click_title_relevant" class="link title" href="/news_tech/2634.html" target="_blank" data-node="title">
+								创业者友情的小船咋说翻就翻？ 心疼最后一张图...							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_abstract_relevant" class="link" href="/news_tech/2634.html" target="_blank">（漫画作者：喃东尼内容改编：小桔妹）如果你有个朋友在创业，你想约他撸串/吃饭/KTV等等等...很可能是这样的（好心疼最后一张图T_T）：以上纯属YY，如有雷同，那你一定是个</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								
+								<a class="lbtn source" href="/news_tech/" target="_blank">news_tech&nbsp;&sdot;</a>	
+									
+								<!-- <span class="lbtn comment">0评论&nbsp;&sdot;</span> -->
+								<span class="lbtn time">04-20 20:13</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+				<li class="item clearfix" data-node="item">
+			<div class="item-inner">
+				<div class="lbox left">
+					<a href="/news_tech/2654.html" target="_blank">
+						<img class="feedimg middle-mode" src="http://p1.pstatp.com/large/4ca0001199b304a64b5?123.jpg" onload="this.style.opacity=1;">
+					</a>
+				</div>
+				<div class="rbox"><!--hold-->
+					<div class="rbox-inner">
+						<div class="title-box">
+							<a ga_event="click_title_relevant" class="link title" href="/news_tech/2654.html" target="_blank" data-node="title">
+								平安银行成立首个专业电商俱乐部							</a>
+						</div>
+						<div class="abstract">
+							<a ga_event="click_abstract_relevant" class="link" href="/news_tech/2654.html" target="_blank">日前，2016世界电子商务大会在浙江义乌召开。作为我国目前规模最大的电子商务大会，本次大会云集了国内外电商行业龙头。会议期间，平安银行还发起成立了首个专业电商俱乐部</a>
+						</div>
+						<div class="footer clearfix">
+							<div class="left lfooter">
+								
+								<a class="lbtn source" href="/news_tech/" target="_blank">news_tech&nbsp;&sdot;</a>	
+									
+								<!-- <span class="lbtn comment">0评论&nbsp;&sdot;</span> -->
+								<span class="lbtn time">04-20 20:13</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+			</ul>
+</div>
+        
+
+        <div class="d-union-1"></div>
+
+        
+
+<div id="pagelet-ncomment">
+	<!-- 用来实现在首页点击评论跳转至详情页评论区 -->
+	<div id="comment_area"></div>
+	<div class="cheader clearfix">
+		<div class="dtag">文章评论 · <a href="/e/pl/?classid=4&id=2598" target="_blank">所有评论</a></div>
+		<div class="ctotal">
+			<span class="ctotalnum" data-node="ctotalnum"><script type="text/javascript" src="/e/public/ViewClick/?classid=4&id=2598&down=2"></script></span>条
+		</div>
+	</div>
+	<form action="/e/pl/doaction.php" method="post" name="saypl" id="saypl" >
+	<input name="username" type="hidden" class="inputText" id="username" value="" size="16" />
+	<input name="password" type="hidden" class="inputText" id="password" value="" size="16" />
+	<input name="id" type="hidden" id="id" value="2598" />
+	<input name="classid" type="hidden" id="classid" value="4" />
+	<input name="enews" type="hidden" id="enews" value="AddPl" />
+	<input name="repid" type="hidden" id="repid" value="0" />
+	<input type="hidden" name="ecmsfrom" value="/news_tech/2598.html">
+	<div class="ceditzone clearfix">
+		<div class="cavatar" data-node="cavatar"><img src="" onload="this.style.opacity=1" style="opacity: 1;"></div>
+		<div class="cbody cedit" data-node="cedit">
+			<div class="ctextarea">
+				<textarea class="cinput" name="saytext" placeholder="写下你的评论..." onfocus="$(this).parent().parent().addClass('focus');$('#yzm').show()"></textarea>
+			</div>
+			<div class="caction">
+				<div class="cshare">
+					<div class="snsbox" style="font-size:13px">
+						 评论请遵守当地法律法规
+					</div>
+				</div>
+<span style="position:relative;top:5px;left:40px;display:none;" id="yzm">
+				<input name="key" type="text" class="inputText" size="10"  />
+				<img style="position: relative;top: 5px;" src="/e/ShowKey/?v=pl" align="absmiddle" name="plKeyImg" id="plKeyImg" onclick="plKeyImg.src='/e/ShowKey/?v=pl&t='+Math.random()" title="看不清楚,点击刷新" />
+				匿名:<input name="nomember" type="checkbox" id="nomember" value="1" checked="checked" />
+</span>
+				<input type="submit" name="imageField" value="发表" class="csubmit" style="    border: none;">
+			</div>
+		</div>
+	</div>
+	</form>
+	<ul id="clist" class="clist" data-node="listBox">
+		<script>
+		//登录头像
+		$.get('/e/pl/more/userpic.php',{},function(ret){
+			$('.cavatar img').attr('src',ret);
+		})
+		//评论内容
+		var p=1;
+		function getmorepl(){
+			var plurl='/e/pl/more/more.php?classid=4&id=2598&num=5&p='+p;
+			$.get(plurl,{},function(ret){
+				$('#clist').append(ret);
+				p=p+1;
+				var re = 'digg-num';
+				var len = ret.split(re).length;
+				if(len<6){
+					$('.cloadmore').text('全部加载完毕').attr('onclick','');
+				}
+			});
+		}
+		$(function(){getmorepl();})
+		</script>
+		
+	</ul>
+	
+	<a class="cloadmore" href="javascript:;" style="display:block;text-align:center;" onclick="getmorepl()">点击加载更多</a>
+</div>
+
+      </div>
+      <div class="detail-right">
+                <div id="pagelet-nsubscribe" class="sideGap">
+      <div class="Pgc_info">
+        <div class="image_head" style="background:url(/style/admin.jpg) no-repeat;background-size:100% 100%;">
+          
+          <img onload="this.style.opacity=1" src="" alt="" />
+
+        </div>
+
+        <span class="Pgc_name">
+          admin 
+        </span>
+        <span class="Pgc_details"></span>
+
+        
+        
+        <!-- <a data-action="like" class="Pgc_btn" data-node="Pgc_subscribe"  data-mediaid="">
+          关注本文作者
+        </a> -->
+        
+        
+
+      </div>
+
+<div class="article_container">
+      <div class="Pgc_article">
+        <ul>
+                    <li >
+              <a target="_blank" href="/news_hot/2667.html">绿营集体沉默噤若寒蝉 网民:只会出</a>
+          </li>
+                    <li >
+              <a target="_blank" href="/gonggao/2662.html">今日头条上线</a>
+          </li>
+                    <li >
+              <a target="_blank" href="/news_tech/2657.html">微软小娜与美团外卖达成合作，智能</a>
+          </li>
+                    <li >
+              <a target="_blank" href="/news_tech/2656.html">京盾华鼎：将整合线下资源打造O2O跨</a>
+          </li>
+                    <li >
+              <a target="_blank" href="/news_tech/2655.html">网站要给用户好的体验必须遵循视线</a>
+          </li>
+          
+        </ul>
+      </div>
+      </div>
+</div>
+
+        
+
+        <div id="pagelet-iad" class="sideGap">
+			<script src=/d/js/acmsd/thea2.js></script>
+		</div>
+        
+		<div id="pagelet-hotvideo" class="sideGap">
+			<div class="hotvideo_head dtag">本月点击排行</div>
+			<ul class="monthhot">
+							</ul>
+		</div>
+		
+        <div id="pagelet-hotgallery" class="sideGap">
+			<div class="dtag">精彩图片</div>
+			<ul class="hotgallery_show">
+							</ul>
+		</div>
+        
+
+      </div>
+    </div>
+    <div id="pagelet-sidetool">
+		<div class="sidetool-innner">
+		<a class="stool rhome" href="/" target="_self" ga_event="click_homepage_interactive"></a>
+		<a class="stool rcomment" href="javascript:;" onclick="$('html,body').animate({scrollTop:$('#comment_area').offset().top-30}, 800);">
+			<span class="sidetxttip">文章评论</span>
+		</a>
+		
+		<a class="stool rarticle" href="javascript:;" onclick="$('html,body').animate({scrollTop:$('#pagelet-relatednews').offset().top-90}, 800);">
+			<span class="sidetxttip">相关阅读</span>
+		</a>
+		
+		<span class="stool rshare" href="javascript:;" data-node="rshare">
+			<div class="sidesnstip">
+				<div class="snsbox">
+					<div class="snsbox-inner">
+			            <span style="line-height: 40px;">分享到：</span>
+			            <div class="bdsharebuttonbox snszone">
+							<a href="#" class="sns-btn sns-qzone bds_qzone" data-cmd="qzone" title="分享到QQ空间" style="margin-left:5px"></a>
+							<a href="#" class="sns-btn sns-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博" style="margin-left:5px"></a>
+							<a href="#" class="sns-btn sns-weixin bds_weixin" data-cmd="weixin" title="分享到微信" style="margin-left:5px"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</span>
+		
+		<a class="stool rtop" href="javascript:;" onclick="$('html,body').animate({scrollTop: '0px'}, 800);"></a>
+	</div>
+</div>
+
+  </div>
+
+
+   <div id="aboutus">
+        <div>
+            <span class="fitem">&#169; 2016 仿今日头条 http://test.dede168.com/</span>
+            
+            <a class="fitem" href="http://www.12377.cn/" target="_blank">中国互联网举报中心</a>
+            
+            <a class="fitem" href="http://www.miibeian.gov.cn/" target="_blank">京ICP证140141号</a>
+            <a class="fitem" href="http://www.miibeian.gov.cn/" target="_blank">
+			京公网安备 11010802020116号</a>
+            
+        </div>
+        <div>
+            <span class="fitem">违法和不良信息举报：xxx@xxx.com</span>
+            <span style="display:none">统计代码填到这里 </span>
+            
+            
+        </div>
+    </div>
+    
+ <script src="/e/extend/DoTimeRepage/"></script>
+    <script src="/e/public/ViewClick/?classid=4&id=2598&addclick=1"></script>
+</body>
+</html>

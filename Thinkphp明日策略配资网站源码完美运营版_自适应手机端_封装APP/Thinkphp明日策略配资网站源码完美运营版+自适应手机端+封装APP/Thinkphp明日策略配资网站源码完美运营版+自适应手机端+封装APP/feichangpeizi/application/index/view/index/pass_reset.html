@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>黑马策略</title>
+</head>
+<body class="grey buy-body">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/forgot.css"/>
+
+<!--忘记密码-01账户名-->
+<div class="br-content">
+<section class="section section-forgot-pwd" id="forgot-pwd-step1">
+   	<div class="container">
+        <nav class="step-bar-thin">
+            <ul class="group">
+            	<li class="col-3 active step-done"><a href="javascript:;"><i>1</i>密码重置</a></li>
+                <li class="col-3 active"><a href="javascript:;"><i>2</i>密码找回</a></li>
+                <li class="col-3 last"><a href="javascript:;"><i>3</i>完成</a></li>
+            </ul>
+        </nav>
+        <div class="step-body group">
+            <form action="#" data-success="">
+                <div class="field-wrapper">
+                    <input class="text" placeholder="请重新设置密码" name="pwd" id="pwd" type="password">
+                </div>
+                <div id="pwd_err1" class="error-wrapper" style="display:none"><div><i class="icon icon-x-altx-alt"></i>密码长度不能少于6位</div></div>
+                <div class="field-wrapper">
+                    <input class="text" placeholder="请再次输入密码" name="cpwd" id="cpwd" type="password">
+                </div>
+                <div id="cpwd_err1" class="error-wrapper" style="display:none"><div><i class="icon icon-x-altx-alt"></i>两次密码不一致</div></div>
+                <div class="btn-wrapper">
+                    <a href="javascript:;" id="step3-btn" class="btn btn-pri">下一步</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+</div>
+{include file="public:footer" /}
+<!--认证银行卡-->
+<div class="popup" id="popup-id-verify">
+    <div class="popup-header group">
+        <h2>认证银行卡</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">提现和免费体验前必须先绑定一张银行卡</li>
+                <li style="text-align:left;">请务必认真填写真实资料</li>
+                <li style="text-align:left;">银行卡采用实名认证，一个身份证只能绑定一个账号</li>
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先绑定银行卡</p>
+        </div>
+        <div class="btn-row group">
+            <a class="btn btn-pri" href="/ucenter/bankCards.html">去绑定</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">暂不绑定</a>
+        </div>
+    </div>
+</div>
+<!--实名认证-->
+<div class="popup" id="popup-realname-auth">
+    <div class="popup-header group">
+        <h2>实名认证</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <div class="field-row group" style="text-align:center">
+            <ol class="popup-note">
+                <li style="text-align:left;">一个身份证对应一个账号</li>
+                
+                <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+            </ol>
+            <p>为了保障您的账户安全，请先进行实名认证</p>
+        </div>
+        <div class="field-row group">
+            <label>真实姓名：</label>
+            <div class="field-val"><input id="姓名i" type="text" class="text" onchange="user_updateid_zsxm_valid()"></div>
+        </div>
+        <div id="zsxm_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>未填写姓名</div></div>
+        <div class="field-row group">
+            <label>身份证号：</label>
+            <div class="field-val">
+                <div class="field-val">
+                    <input id="身份证i" type="text" class="text" onchange="user_updateid_sfzh_valid()">
+                </div>
+            </div>
+        </div>
+        <div id="sfzh_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i>请填写准确的身份证</div></div>
+        <div class="btn-row group">
+            <a id="user_UpdateSelfIdA" class="btn btn-pri" href="javascript:void(0)">确认</a>
+            <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+<!--valid-img-->
+<div class="popup" id="popup-valid-img">
+    <div class="popup-header group">
+        <h2>请先输入验证码</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <form action="#">
+            <div class="field-row group">
+                <label>验证码：</label>
+                <div class="field-val" style="width:350px">
+                    <input type="text" class="text" style="width: 80px; float: left; padding: 6px 10px;" placeholder="4位验证码" name="txt_valid_code" id="txt_valid_code">
+                    <img src="/index.php/captcha.html" id="forgot_passImg" style="height:35px;float:left;margin-right:5px;">
+                   	<a id="forgot_passImgA" href="javascript:void(0)" onclick="$('#forgot_passImg').attr('src', '/index.php/captcha.html');" style="color:#E01923">看不清楚？</a>
+                </div>
+            </div>
+            <div id="valid_code" class="error-wrapper" style="display:none; margin-top:5px;"><div><i class="icon icon-x-altx-alt"></i><span>输入的验证码有误！</span></div></div>
+
+            <div class="btn-row group">
+                <a class="btn btn-pri js-close-popup" style="display:none;" href="javascript:;">确定</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/public/static/home/js/forgot.js"></script>
+<script type="text/javascript">
+	$(function(){forgot.init();})
+</script>
+</body>
+</html>
+
+
+

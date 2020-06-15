@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>金龙策略</title>
+</head>
+<body class="membercenter logged-in">
+{include file="public:top" /}
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/buy.css"/>
+<link rel="stylesheet" type="text/css" href="/public/static/home/css/member.css"/>
+
+<!--个人中心-提现-->
+<div class="br-content">
+<div class="w1200">
+	<!--主体-->
+<section class="page-main page-personal">
+    <div class="container clearfix">
+    	<!--public左边-->
+    	{include file="public:member_left" /}
+        <!--右边-->
+<div id="page_member_withdraw" class="col-main">
+    <div class="personal-main">
+        <h2>我要提现</h2>
+        <input type="text" name="" id="" class="hide">
+        <input type="password" name="" id="" class="hide">  
+        <div class="withdraw-wrapper">
+            <div class="std-form">
+                <div class="field-row group">
+                    <label>可用资金</label>
+                    <div class="input-wrapper">
+                        <span class="acount-val"><strong id="账户余额">{$usableSum}</strong><span class="unit">元</span></span>
+                    </div>
+                </div>
+                <div class="field-row group">
+                    <label>提现金额</label>
+                    <div class="input-wrapper"><input id="提现金额i" type="text" class="text"></div><div class="f-left" style="line-height:30px; margin-left:20px;">余额小于{$minWithdraw}元必须全部提取</div>
+                </div>
+                <div id="txje_err1" class="error-wrapper" style="margin-left:120px; display:none"><div><i class="icon icon-x-altx-alt"></i>请输入正确提款额</div></div>
+                <div class="field-row group">
+                    <label>提现银行卡</label>
+                    <div class="input-wrapper bankcard"><span id="branch">{$bankcard.branch}</span><span id="cardNumber">{$bankcard.cardNumber}</span></div>
+                    <a href="/ucenter/bankcards.html" class="f-left">银行卡管理</a>
+                </div>
+                <div id="yhk_err1" class="error-wrapper" style="margin-left:120px;  display:none"><div><i class="icon icon-x-altx-alt"></i>未选择银行卡</div></div>
+                
+                <div class="btn-row group">
+                    <button id="mem_wdA" href="javascript:;" class="btn btn-pri">提 交</button>
+                </div>
+            </div>
+        </div>
+        <!--/.withdraw-wrapper-->
+
+        <div class="withdraw-note-wrapper group">
+            <ul class="group">
+                <li class="col-10-4 ">
+                    <h3>提款<strong>T+0</strong>到账！</h3>
+                    <p>最快5分钟，一般情况24小时到账<br>法定节假日或银行特殊原因除外</p>
+                </li>
+                <li class="col-10-3">
+                    <h3>提现<strong>0</strong>手续费</h3>
+
+                    <p>提现产生的银行手续费全免<br>更多优质服务只在金龙策略</p>
+
+                </li>
+                <li class="col-10-3">
+                    <h3>支持银行多达<strong>10</strong>多家</h3>
+                    <p>推荐您使用工商银行、建设银行、<br>招商银行、农业银行提现，到账最快</p>
+                </li>
+            </ul>
+            <div class="f-clear">
+                <p>温馨提示：禁止洗钱、信用卡套现、虚假交易等行为，一经发现并确认，将终止该账户的使用。</p>
+            </div>
+        </div>
+        <!--/.withdraw-note-wrapper-->
+    </div>
+</div>
+    </div>
+</section>
+	
+	
+	
+	
+	
+</div>
+</div>
+<!--发送验证码-->
+<!--验证手机号-->
+<div class="popup" id="popup-edit-phone" style="display: none;top: 0px;">
+        <div class="popup-header group">
+            <h2>验证手机号</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <form action="#">
+                <div class="field-row group">
+                    <label>当前手机号：</label>
+                    <div class="field-val" id="手机号">{$mobile}</div>
+                </div>
+                <div class="field-row group">
+                    <label>验证码：</label>
+                    <div class="field-val capcha-wrapper capcha-count-down">
+                        <input type="text" id="绑定手机校验码i" placeholder="请输入校验码" class="text" onkeyup="    this.value = this.value.replace(/\D/g, '')" onafterpaste="    this.value = this.value.replace(/\D/g, '')">
+                        <a id="sms_SendAuthAA" class="btn-get-capcha active" href="javascript:void(0);">获取校验码</a>
+                        <div class="time-counter"><span>90</span></div>
+                    </div>
+                </div>
+                <div id="bdsjjym_err1" class="error-wrapper" style="margin-left:100px; display:none"><div><i class="icon icon-x-altx-alt"></i><span>请填写准确的验证码</span></div></div>
+                <div class="btn-row group">
+                    <a class="btn btn-pri" href="javascript:;" id="edit-phone-submit-next">确定</a>
+                    <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+                </div>
+                <input id="hiddenText" type="text" style="display:none" />
+            </form>
+        </div>
+    </div>
+    <!--valid-img-->
+<div class="popup" id="popup-valid-img">
+    <div class="popup-header group">
+        <h2>请先输入验证码</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <form action="#">
+            <div class="field-row group">
+                <label>验证码：</label>
+                <div class="field-val" style="width:350px">
+                    <input type="text" class="text" style="width: 80px; float: left; padding: 6px 10px;" placeholder="4位验证码" name="txt_valid_code" id="txt_valid_code">
+                    <img src="/index.php/captcha.html" id="forgot_passImg" style="height:35px;float:left;margin-right:5px;">
+                   	<a id="forgot_passImgA" href="javascript:void(0)" onclick="$('#forgot_passImg').attr('src', '/index.php/captcha.html');" style="color:#E01923">看不清楚？</a>
+                </div>
+            </div>
+            <div id="valid_code" class="error-wrapper" style="display:none; margin-top:5px;"><div><i class="icon icon-x-altx-alt"></i><span>输入的验证码有误！</span></div></div>
+
+            <div class="btn-row group">
+                <a class="btn btn-pri js-close-popup" style="display:none;" href="javascript:;">确定</a>
+            </div>
+            <input id="hiddenText" type="text" style="display:none" />
+        </form>
+    </div>
+</div>
+
+{include file="public:footer" /}
+<script src="/public/static/home/js/payment.js"></script>
+<script>
+    var bankId = "{$bankcard.id}";
+    var mobileTrue='{$mobile}';
+</script>
+</body>
+</html>

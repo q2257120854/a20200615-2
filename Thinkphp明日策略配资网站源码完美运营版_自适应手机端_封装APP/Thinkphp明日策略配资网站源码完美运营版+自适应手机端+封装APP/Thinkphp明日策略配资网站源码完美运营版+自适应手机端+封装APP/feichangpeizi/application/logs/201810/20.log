@@ -1,0 +1,44 @@
+---------------------------------------------------------------
+[ 2018-10-20T16:26:30+08:00 ] 43.243.75.72 58.243.250.86 GET /index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=50
+[ info ] www.535t.cn/index/lianlianauthpay/authllpay_wap?bankCard=6212261001048874595&realName=%E7%8E%8B%E4%BC%9F&IDCard=342422199106185535&b-pay-amount=50 [运行时间：0.198992s][吞吐率：5.03req/s] [内存消耗：4,082.44kb] [文件加载：68]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] /www/wwwroot/feichangpeizi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lianlianauthpay',
+    2 => 'authllpay_wap',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.535t.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.1.2; zh-CN; Redmi 5 Plus Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.1.1.991 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.535t.cn/ucenter/quick_pay.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=htefdc9m6hbaot13d7h0p10903',
+  'x-ucbrowser-ua' => 'dv(Redmi 5 Plus);pr(UCBrowser/12.1.1.991);ov(Android 7.1.2);ss(392*738);pi(1080*2030);bt(YZ);pm(1);bv(1);nm(0);im(0);sr(0);nt(1);',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'bankCard' => '6212261001048874595',
+  'realName' => '王伟',
+  'IDCard' => '342422199106185535',
+  'b-pay-amount' => '50',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.000857s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.015077s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ info ] [ RUN ] app\index\controller\Lianlianauthpay->authllpay_wap[ /www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:dbname=fcpeizi;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member` [ RunTime:0.001971s ]
+[ sql ] [ SQL ] SELECT `usableSum` FROM `xh_member` WHERE  (  id=1322 ) LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xh_member_recharge` [ RunTime:0.006330s ]
+[ sql ] [ SQL ] INSERT INTO `xh_member_recharge` (`memberId` , `amount` , `status` , `no_order` , `createTime`) VALUES (1322 , 50 , 0 , '13221540023990751151' , '2018-10-20 16:26:30') [ RunTime:0.000956s ]

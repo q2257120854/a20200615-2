@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row">
+        <div class="col-mb-12 col-tb-8 col-tb-offset-2">
+            <div class="column-14 start-06 typecho-install">
+                <form method="post" action="?act=installStart">
+                    <h1 class="typecho-install-title">确认您的配置</h1>
+                    <div class="typecho-install-body">
+                        <h2>数据库配置</h2>
+                        <ul class="typecho-option">
+                            <li>
+                                <label class="typecho-label" for="dbHost">数据库地址</label>
+                                <input type="text" class="text" name="dbHost" id="dbHost" value="localhost"/>
+                                <p class="description">您可能会使用 "localhost"</p>
+                            </li>
+                            <li>
+                                <label class="typecho-label" for="dbPort">数据库端口</label>
+                                <input type="text" class="text" name="dbPort" id="dbPort" value="3306"/>
+                                <p class="description">如果您不知道此选项的意义, 请保留默认设置</p>
+                            </li>
+                            <li>
+                                <label class="typecho-label" for="dbUser">数据库用户名</label>
+                                <input type="text" class="text" name="dbUser" id="dbUser" value="root" />
+                                <p class="description">您可能会使用 "root"</p>
+                            </li>
+                            <li>
+                                <label class="typecho-label" for="dbPassword">数据库密码</label>
+                                <input type="password" class="text" name="dbPassword" id="dbPassword" value="" />
+                            </li>
+                            <li>
+                                <label class="typecho-label" for="dbDatabase">数据库名</label>
+                                <input type="text" class="text" name="dbDatabase" id="dbDatabase" value="yingshi" />
+                                <p class="description">请您指定数据库名称</p>
+                            </li>
+                        </ul>
+
+                        <h2>基本信息配置</h2>
+                        <ul class="typecho-option">
+                            <li>
+                                <label class="typecho-label" for="userUrl">网站名称</label>
+                                <input type="text" name="siteName" id="userUrl" class="text" value="爱蜗影视" />
+                                <p class="description">请填写影视网站的网站名称</p>
+                            </li>
+                            <li>
+                                <label class="typecho-label" for="userUrl">网站域名</label>
+                                <input type="text" name="siteDomain" id="siteDomain" class="text" value="{$domain}" />
+                                <p class="description">程序自动识别域名, 如果不正确请修改它，不包含http(s)://</p>
+                            </li>
+                            <li>
+                                <label class="typecho-label" for="userName">用户名</label>
+                                <input type="text" name="userName" id="userName" class="text" value="admin" />
+                                <p class="description">请填写您的用户名</p>
+                            </li>
+                            <li>
+                                <label class="typecho-label" for="userPassword">微信号</label>
+                                <input type="text" name="userWechat" id="userWechat" class="text" value="" />
+                                <p class="description">请填写您的微信号</p>
+                            </li>
+                            <li>
+                                <label class="typecho-label" for="userPassword">登录密码</label>
+                                <input type="password" name="userPassword" id="userPassword" class="text" value="" />
+                                <p class="description">请填写您的登录密码, 如果留空系统将为您随机生成一个</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="submit"><button type="submit" class="btn primary">确认, 开始安装 &raquo;</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

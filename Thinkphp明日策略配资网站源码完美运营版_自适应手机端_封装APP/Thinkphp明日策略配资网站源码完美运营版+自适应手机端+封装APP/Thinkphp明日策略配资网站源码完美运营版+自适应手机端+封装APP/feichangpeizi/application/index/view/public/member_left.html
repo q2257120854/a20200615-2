@@ -1,0 +1,81 @@
+
+        <aside class="col-left">
+            <div class="userinfo">
+            	<form name="user_head" id="user_head">
+					<input type="file" name="myfile222" id="img_upload" />
+					<div class="img_download">
+						<img class="user-pic" id="headImg" src="{$member['headImg']|default='/public/static/home/img/user.png'}" >
+					</div>
+				</form>
+                <!--<img src="/public/static/home/img/user.png" alt="" class="user-pic">-->
+                <p class="user-info">Hi，<strong id="shared_layout_mem_lnm">{$_SESSION['member']['username']}</strong></p>
+                <div class="iconrow">
+                   <a href="/ucenter/security.html"><span class="user-2"></span></a>
+                    <a href="/ucenter/security.html"><span class="user-3"></span></a>
+                    <a href="/ucenter/security.html"><span class="user-4"></span></a>
+                </div>
+            </div>
+            <h4 class="new-head-line"><span class="user-5"></span>会员中心</h4>
+            <nav id="personal-nav" class="left-nav">
+                <ul>
+
+                    <li class=""><a href="/ucenter/index.html">我的首页&nbsp;<span class="mem_gt">&gt;</span></a></li>
+                    
+                    <li class=""><a href="/ucenter/bankcards.html">银行卡管理&nbsp;<span class="mem_gt">&gt;</span></a></li>
+                    <li class=""><a href="/ucenter/security.html">账户安全&nbsp;<span class="mem_gt">&gt;</span></a></li>
+					<li class=""><a href="/ucenter/payment.html">充值&nbsp;<span class="mem_gt">&gt;</span></a></li>
+					<li class=""><a href="/ucenter/withdraw.html">提现&nbsp;<span class="mem_gt">&gt;</span></a></li>
+                    <li class=""><a href="/ucenter/agent.html" style="display: none;">推广赚钱&nbsp;<span class="mem_gt">&gt;</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+<script src="/public/static/home/js/moblie/jquery.ajaxfileupload.js"></script>
+<script type="text/javascript">
+	
+	$(function() {
+		/**
+		 * active
+		 */
+			//console.log(window.location.pathname)
+		$('#personal-nav li').removeClass('active');
+
+		//遍历
+		$('#personal-nav li>a').each(function () {
+			if ($($(this))[0].getAttribute('href') == String(window.location.pathname)) {
+				$(this).parent().addClass('active');
+			}
+		});
+		
+		
+		/**
+		 * 上传头像
+		 */
+        $('#img_upload').AjaxFileUpload({
+			//处理文件上传操作的服务器端地址
+			//上传图片，返回图片地址
+			action: '/index/index/doImgUpload',
+			onComplete: function(filename, resp) { //服务器响应成功时的处理函数
+				if(resp.code == '0') {
+					$('#headImg').attr('src', resp.(resp.code == '0') {
+					$('#headImg').attr('src', resp.data);
+					var params = {};
+					params['headImg'] = resp.data;
+					//保存图片到数据库，分两个地址是为了在很多地方公用
+					$.post("/index/ucenter/savePeopleImg", params, function(data) {
+						if(data.code == '0') {
+							tool.popup_err_msg("修改成功");
+						} else {
+							tool.popup_err_msg(data.msg);
+						}
+					}, 'json');
+				} else {
+					tool.popup_err_msg(resp.msg );
+				}
+			}
+		});
+		
+		
+		
+	});
+
+</script>

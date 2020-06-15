@@ -1,0 +1,397 @@
+/*Forgot Password Page*/
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-10-1, .col-10-2, .col-10-3, .col-10-4, .col-10-5, .col-10-6, .col-10-7, .col-10-8, .col-10-9, .col-10-10 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.section-forgot-pwd .step-body {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 120px 375px 157px 375px;
+}
+.group:after, .container:after, .field-wrapper:after, .row:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+input.text {
+    border: 1px solid #eee;
+    background-color: #ffffff;
+}
+.error-wrapper {
+    height: 20px;
+    position: relative;
+    top: -20px;
+}
+.error-wrapper > div {
+    line-height: 20px;
+    padding: 10px 0;
+    color: #e8331b;
+}
+.section-forgot-pwd .step-bar-thin {
+    padding: 30px 0;
+}
+
+.step-bar-thin ul {
+    border-radius: 4px;
+    overflow: hidden;
+    height: 35px;
+}
+	.col-3 {
+    	width: 33%;
+	}
+    .step-bar-thin ul li {
+        text-align: center;
+        background: #e5e5e5 url(/public/static/home/img/step-bar-thin-bg.png) 100% 0 no-repeat;
+        font-size: 16px;
+        color: #999999;
+        font-weight: bold;
+        position: relative;
+        padding: 0 30px 0 0;
+        height: 35px;
+        line-height: 35px;
+    }
+
+        .step-bar-thin ul li.last {
+            padding: 0;
+            background-image: none;
+        }
+
+        .step-bar-thin ul li a {
+            color: #999999;
+        }
+
+            .step-bar-thin ul li a:hover {
+                text-decoration: none;
+                cursor: default;
+            }
+
+            .step-bar-thin ul li a i {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                border-radius: 50%;
+                vertical-align: top;
+                margin: 8px 8px 0 0;
+                background-color: #d1d1d1;
+                font-style: normal;
+                font-size: 16px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+
+        .step-bar-thin ul li.active {
+            background-color: #96938c;
+            background-position: 100% -35px;
+        }
+
+        .step-bar-thin ul li.step-done {
+            background-color: #96938c;
+            background-position: 100% -70px;
+        }
+
+        .step-bar-thin ul li.active i {
+            color: #96938c;
+            background-color: #ffffff;
+        }
+
+        .step-bar-thin ul li.active a, .step-bar-thin ul li.active a:hover, .step-bar-thin ul li.active a:visited {
+            color: #FFFFFF;
+        }
+
+            .step-bar-thin ul li.active a:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+.section-forgot-pwd .step-body {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 120px 375px 157px 375px;
+}
+
+.section-forgot-pwd .field-wrapper {
+    padding: 0 0 20px 0;
+    position: relative;
+}
+
+.section-forgot-pwd .text {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding: 11px 10px;
+    line-height: 21px;
+}
+
+.section-forgot-pwd .captcha-img-wrapper .text {
+    width: 176px;
+    float: left;
+}
+
+.section-forgot-pwd .captcha-img-wrapper .captcha-img {
+    display: block;
+    float: left;
+    width: 130px;
+    height: 43px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    margin: 0 10px 0 7px;
+}
+
+.section-forgot-pwd .captcha-img-wrapper a {
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+    color: #666666;
+    cursor: pointer;
+}
+
+    .section-forgot-pwd .captcha-img-wrapper a:hover {
+        color: #f96515;
+    }
+
+.btn-wrapper {
+    padding-top: 10px;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    /* border-radius: 4px; */
+}
+.btn-pri, .btn-pri:visited {
+    color: #ffffff !important;
+    font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #f96515;
+}
+.btn-pri, .btn-pri:visited {
+    background-color: #d42b2e;
+}
+
+.section-forgot-pwd .btn-wrapper .btn {
+    width: 100%;
+}
+
+#forgot-pwd-step2 h3 {
+    color: #444444;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 0 0 15px 0;
+}
+
+#forgot-pwd-step2 .field-wrapper .col-9 {
+    padding: 0 5px 0 0;
+}
+
+#forgot-pwd-step2 .field-wrapper .col-3 {
+    padding: 0 0 0 5px;
+}
+
+    #forgot-pwd-step2 .field-wrapper .col-3 .btn {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+#forgot-pwd-step4 .step-body {
+    padding: 120px 175px 157px 175px;
+}
+
+    #forgot-pwd-step4 .step-body .btn-wrapper {
+        padding: 2px 200px 0 200px;
+        font-size: 18px;
+        color: #666666;
+    }
+
+.section-forgot-pwd .status-msg {
+    padding: 53px 0 0 0;
+    line-height: 55px;
+    text-align: center;
+    color: #444444;
+    font-size: 18px;
+}
+
+    .section-forgot-pwd .status-msg .icon {
+        display: inline-block;
+        width: 24x;
+        height: 24px;
+        line-height: 24px;
+        vertical-align: top;
+        font-size: 20px;
+        margin: 16px 10px 0 0;
+    }
+
+.section-forgot-pwd .status-msg-success .icon {
+    color: #4491f0;
+    font-size: 24px;
+}
+
+.section-forgot-pwd .status-msg-failed .icon {
+    color: #e8331b;
+    width: 1100px;
+}
+
+.notice-more {
+    min-height: 650px;
+}
+
+.pb-about-active .atype, .pb-about-active-desc .atype {
+    background: #F00;
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #FFF;
+    margin-right: 15px;
+}
+
+.pb-about-active .alist li a {
+    font-size: 16px;
+    color: #666;
+}
+
+.pb-about-active .atime, .pb-about-active-desc .atime {
+    float: right;
+    color: #C9C9C9;
+}
+
+.pb-about-active .alist li {
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.pb-about-active ul, li {
+    list-style: none;
+}
+
+.pb-about-active {
+    min-height: 550px;
+    padding: 0 40px 30px;
+}
+/*Page Announcement*/
+.section-border {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.page-announcement {
+    margin-bottom: 30px;
+}
+
+    .page-announcement .section-border {
+        border-top-width: 0;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+        .page-announcement .section-border > .col-5 {
+            width: 38.5%;
+        }
+
+        .page-announcement .section-border > .col-7 {
+            width: 61.5%;
+            padding: 0;
+        }
+
+.section-announcement {
+    padding: 24px 30px 20px 30px;
+}
+
+    .section-announcement .section-title {
+        position: relative;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 0 15px 0;
+    }
+
+        .section-announcement .section-title h2 {
+            font-size: 16px;
+            color: #444444;
+            font-weight: normal;
+        }
+
+            .section-announcement .section-title h2 i {
+                font-size: 22px;
+                color: #999999;
+                font-weight: normal;
+                vertical-align: top;
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                width: 23px;
+            }
+
+        .section-announcement .section-title a {
+            font-size: 12px;
+            color: #999999;
+            font-weight: normal;
+        }
+
+    .section-announcement .list-announcement li {
+        line-height: 24px;
+        height: 24px;
+        padding: 6px 0;
+        width: 370px;
+        overflow: hidden;
+    }
+
+        .section-announcement .list-announcement li a {
+            color: #888888;
+        }
+
+            .section-announcement .list-announcement li a:hover, .section-announcement .list-announcement li a:hover span {
+                color: #666666;
+                text-decoration: underline;
+            }
+
+.section-summary {
+    height: 145px;
+    margin: 33px 0 30px 0;
+    padding: 28px 20px 0 10px;
+}
+
+    .section-summary:first-child {
+        border-left: 1px solid #f1f1f1;
+        padding: 30px 20px 0 30px;
+    }
+
+    .section-summary h2 {
+        line-height: 30px;
+        color: #333333;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .section-summary p {
+        color: #f85407;
+    }
+
+        .section-summary p span {
+            display: inline-block;
+            line-height: 58px;
+            font-size: 40px;
+            font-weight: bold;
+            vertical-align: top;
+            font-family: Arial,tahoma;
+        }
+
+        .section-summary p label {
+            display: inline-block;
+            line-height: 30px;
+            font-size: 16px;
+            vertical-align: top;
+            padding: 22px 0 0 4px;
+        }

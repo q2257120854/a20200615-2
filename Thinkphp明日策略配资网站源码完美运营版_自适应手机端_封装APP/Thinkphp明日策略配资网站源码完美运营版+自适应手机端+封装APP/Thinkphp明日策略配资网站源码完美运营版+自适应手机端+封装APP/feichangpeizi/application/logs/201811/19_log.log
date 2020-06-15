@@ -1,0 +1,48 @@
+---------------------------------------------------------------
+[ 2018-11-19T09:50:27+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01020000","dt_order":"20181119094955","money_order":"50000.0","no_order":"14471542592195921601","oid_partner":"201810190002237014","oid_paybill":"2018111942331056","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181119","sign":"frDL9VZr1uPX1U2CiBiLct6FceUOXqmS6uFjJ5PJZxPTZaJEIbzKJXA948FKgLFWiZhJX9+Y/IoxlOxB+QqfJYepesBizgRXzuyFly72n3SsKlTI+ZA5sFhrIw7D3Twem/qF2rR6DOoGqzmmpw44CE5r4cJ5bjYwA5MXP9xB93k=","sign_type":"RSA"} 
+---------------------------------------------------------------
+[ 2018-11-19T10:26:48+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01020000","dt_order":"20181119102620","money_order":"20000.0","no_order":"14081542594380971857","oid_partner":"201810190002237014","oid_paybill":"2018111942566325","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181119","sign":"iU61ZAMr+kwHviN33/M6t1819z0IL/r2aCUyak7wEsLIQ+VoGVLFKzRZTZ7v6rl2XWdzwgs/V2dkbKJFalIEdG+3RVSMYTe7ub620MqOmloGRhM2WVPlxdthssCSjfnCX4E7nkP3oTjzbN4J03g10whZpDLu8ln0IrgKVaEKX7s=","sign_type":"RSA"} 
+---------------------------------------------------------------
+[ 2018-11-19T13:31:53+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01040000","dt_order":"20181119133140","money_order":"6000.0","no_order":"14191542605500728104","oid_partner":"201810190002237014","oid_paybill":"2018111943581468","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181119","sign":"KKZKhbN8Xe0lhRtOI2GQLFK170ObnuBNxicbtC4vfl3yqyLyUlLLNPpG0oab93k6YIN8ltWcniBDNqSJ3ELO+r8cg0gosldkCUWxuNd6LGepVlnkY8BtwLZXXgXvlcI13GKM9pDTOIsL0budjpRBjTUoyY5YMSi8mt8+PHhRkKE=","sign_type":"RSA"} 
+---------------------------------------------------------------
+[ 2018-11-19T13:52:42+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01030000","dt_order":"20181119135124","money_order":"800.0","no_order":"14571542606684447844","oid_partner":"201810190002237014","oid_paybill":"2018111943735320","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181119","sign":"gZUEu70XAjpD4MyImCJoOYWYszscMlpzYeNntB1j7/uyAQJqKg7KWNPRkqwLyRac5igLLRLrWVtR568Zm2QvfI45Tpt8XIwB2UIkqZImat/bTKNASySDLTM689DZjhXjDsC7mI4S8oNwJ46wy4U8pmzEXtyVrFv7JK6UlsZAZCE=","sign_type":"RSA"} 
+---------------------------------------------------------------
+[ 2018-11-19T13:59:42+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01030000","dt_order":"20181119135926","money_order":"2000.0","no_order":"14571542607166045641","oid_partner":"201810190002237014","oid_paybill":"2018111944117991","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181119","sign":"VMz86cnbz66gZWpRc8400R5ToAEwg4RV7+G4JL5VYlt/DlzjlR1kS/kkIpkY0kjYBoOywqYfnUsIppDDV6uSTgyWqO0u9vwZ/ii6KSC2X0OM/MLsZFiQw2IdYuuoRip8vKzSRZAI3H9MzllVpZmm06xvxi1By8i/FXbDurPJybE=","sign_type":"RSA"} 
+---------------------------------------------------------------
+[ 2018-11-19T14:19:48+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01050000","dt_order":"20181119141933","money_order":"100.0","no_order":"13921542608373883666","oid_partner":"201810190002237014","oid_paybill":"2018111944289627","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181119","sign":"WYr+fQdO5qWYi7UendiLeRTnOpOhlqY7/Xq6Dha5/H0RSEUsvwwv+iT5+BMfXLvVH2jxJrYRfwQuoti75ymwA+GGwTEaC61ulnoGqP23GxNl1qZP0q6MdsN7E9WVA5wbFpdXiTN7bJrIFGcttyPqrJMe5JutvQ+uEGNJSLeq8J8=","sign_type":"RSA"} 
+---------------------------------------------------------------
+[ 2018-11-19T14:21:07+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01020000","dt_order":"20181119142048","money_order":"1000.0","no_order":"14331542608448598549","oid_partner":"201810190002237014","oid_paybill":"2018111944294616","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181119","sign":"IK2JH9wrV/FZJCvmxjskFxvQ9XgNWdkvrxtJ+WP49v6B1uvTCMpImpyvKjzg6X9kONbQYr6p+DdwrKxGJRw83ZrLeD+6oCiHriZP37fSt6FhWggDK+A3U5FKxKnF0oKavQN50GuZ1r6DKd39c0DOjOuUR/pljBuJ27BRQhEmoRQ=","sign_type":"RSA"} 
+---------------------------------------------------------------
+[ 2018-11-19T14:50:47+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"01050000","dt_order":"20181119145033","money_order":"5000.0","no_order":"13951542610233334496","oid_partner":"201810190002237014","oid_paybill":"2018111944393145","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181119","sign":"VctFzj00TxuT9W3h4FWXh2xJcI9DGjqeVatAAT9d3fvkstfr+ogRLNqxedJ/0T2tPY0EMFkcVx8jgT48yMqzoTFoCJj4jj9PBSPK72uGiAsJAx7tWWo4rp5yo92cxHsDbY4wTHb80N+OQBhmCwA43i6mMPakb4o6PODc6njYmCk=","sign_type":"RSA"} 

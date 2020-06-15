@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2018-11-18T15:46:21+08:00 ] 27.151.29.104 115.236.102.36 POST /index/lianlianpay/notify_url
+[ log ] notify_url, start....
+[ log ] verify_result = 1
+[ log ] 验证成功
+[ log ] file_get_contents | str=<br/> {"bank_code":"03080000","dt_order":"20181118154528","money_order":"1400.0","no_order":"14321542527128593908","oid_partner":"201810190002237014","oid_paybill":"2018111840804062","pay_type":"P","result_pay":"SUCCESS","settle_date":"20181118","sign":"CR+o7IQhOLltptAWGgJCS+0oQWua6/9Y+Y0tgLICGMIILXicaqm4ecNxYP3EkRV52jIRCikuconDZgVF8xM/2ot5Wvp4UK+DLGIgBk9boc2PSMSOI+HJ7aa/2+OZz1qkAdNg5b18unmotQ1SZG+hoMjyMf5z75tYUksn/0GFePM=","sign_type":"RSA"} 

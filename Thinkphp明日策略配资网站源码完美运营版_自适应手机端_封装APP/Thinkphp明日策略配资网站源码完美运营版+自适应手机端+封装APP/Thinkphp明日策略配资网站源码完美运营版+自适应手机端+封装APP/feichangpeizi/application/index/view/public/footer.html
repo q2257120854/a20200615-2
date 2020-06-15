@@ -1,0 +1,172 @@
+<!--底部-->
+<footer class="br-w100">
+    <div class="footer_top">
+        <a href="/company.html">关于我们</a>
+        <a href="/contact.html">联系我们</a>
+    </div>
+    <div class="footer_bot">
+        <div class="w1024 br-clearfix">
+            <div class="bot_l br-fl">
+                <p>宁波鑫钰网络科技有限公司<br>客服QQ ：806247358<br>客服服务时间工作日：9:00-18:00</p></div>
+            <div class="bot_r br-fr br-text-center">
+                <div class="bot_r_img br-clearfix ">
+                    <span class="br-fl"><img src="/public/static/home/img/f1.png"/></span>
+                    <span class="br-fr"><img src="/public/static/home/img/f2.png"/></span>
+                </div>
+                <p>版权所有 © 宁波鑫钰网络科技有限公司  </p>
+                <p>浙ICP备17030011号  投资有风险 入市需谨慎</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Start Pop-ups-->
+<!--遮罩层-->
+<div class="mask"></div>
+<!--确认，取消提示框-->
+<div class="popup" id="popup-p-confirm">
+    <div class="popup-header group">
+        <h2>提示</h2>
+    </div>
+    <div class="popup-body group">
+        <div class="btn-row group">
+            <a class="btn btn-pri js-close-popup" href="javascript:popup_confirm_go()">确定</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">取消</a>
+        </div>
+    </div>
+</div>
+<!--开设账户提示-->
+<div class="popup" id="popup-yeepay">
+    <div id="yeepayPopupContent" class="popup-header group">
+        <h2>提示</h2>
+    </div>
+    <div class="popup-body group">
+        <div class="btn-row group">
+            <a id="yeepayNextLink" target="_blank" class="btn btn-pri" href="javascript:;">开设账户</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">暂不充值</a>
+        </div>
+    </div>
+</div>
+<!--是，否提示框-->
+<div class="popup" id="popup-yeepay-confirm" >
+    <div id="yeepayConfirmContent" class="popup-header group">
+        <h2>提示</h2>
+    </div>
+    <div class="popup-body group">
+        <div class="btn-row group">
+            <a class="btn btn-pri js-close-popup" href="javascript:;">是</a>
+            <a class="btn btn-pri js-close-popup" href="javascript:;">否</a>
+        </div>
+    </div>
+</div>
+<!--提示信息提示框-->
+<div id="popup-p-error" class="popup">
+    <div class="popup-header group">
+        <h2>提示</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <p id="popup-p-error-msg">提示信息</p>
+    </div>
+</div>
+<!--意见反馈提示框-->
+<div class="popup" id="popup-feedback">
+    <div class="popup-header group">
+        <h2>意见反馈</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group">
+        <form action="#">
+            <div class="field-row group">
+                <label>留言类型：</label>
+                <div class="field-val">
+                    <select id="留言类型s">
+                        <option value="">请选择留言类型</option>
+                        <option value="1">交易问题</option>
+                        <option value="2">充值/提款问题</option>
+                        <option value="3">交易问题</option>
+                        <option value="4">我要投诉</option>
+                        <option value="5">意见反馈</option>
+                        <option value="6">其它</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field-row group show-logout">
+                <label>手机/邮箱：</label>
+                <div class="field-val"><input type="text" class="text" placeholder="请输入手机号或邮箱"></div>
+            </div>
+            <div class="field-row group">
+                <label>&nbsp;</label>
+                <div class="field-val">
+                    <textarea id="留言内容i" placeholder="请填写留言内容" class="textarea"></textarea>
+                </div>
+            </div>
+            <div class="btn-row group">
+                <a class="btn btn-pri" href="javascript:feedback_Insert()">提交</a>
+            </div>
+        </form>
+    </div>
+</div>
+<!--账户登录提示框-->
+<div class="popup popup-small" id="popup-user-login">
+    <div class="popup-header group">
+        <h2>账户登录</h2>
+        <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+    </div>
+    <div class="popup-body group" style="padding-bottom:10px">
+        <div class="group section-form" style="margin: 0px;" id="popup-login-section">
+            <div class="form">
+                <div class="field-wrapper">
+                    <input type="text" class="text" placeholder="用户名/手机号" name="phone" id="popup_user_login_name">
+                </div>
+                <div id="error_name" class="error-wrapper" style="display:none; margin-top:5px;"><div>用户名不能为空！</div></div>
+                <div class="field-wrapper">
+                    <input type="password" class="text" placeholder="请输入密码" name="pwd" id="popup_user_login_pwd">
+                </div>
+                <div id="error_psw" class="error-wrapper" style="display:none; margin-top:5px;"><div>密码不能为空！</div></div>
+                <div class="field-wrapper" id="popup-user-login-valid-img" style="display:none;">
+                    <input type="text" class="text" style="width:100px; margin-right:5px; float: left;" placeholder="4位验证码" name="txt_valid_code">
+                    <img name="img-block" class="captcha-img" alt="">
+                    <a name="btn-change-img" style="font-size:13px; line-height:45px;" href="javascript:void(0)">看不清楚？</a>
+                </div>
+                <div class="error-wrapper" style="display:none; margin-top:5px;"><div>验证码错误！</div></div>
+               
+                <!--<div class="error-wrapper" style="display:none;  margin-top:5px;"><div></div></div>-->
+               
+                <div class="btn-wrapper">
+                    <a href="javascript:void(0);" id="popup_user_login_submit" class="btn btn-pri">登录</a>
+                </div>
+                <div class="link-wrapper group clearfix" style="margin-top:10px;">
+                    <a href="/forgot_pass.html" class="f-left">忘记密码</a><a href="/reg.html" class="f-right">马上注册</a>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+</div>
+<!-- 浮窗
+<ul class="side-pannel">
+				<li class="wechat">
+					<i class="icon-kf"></i>
+					<span>微信客服</span>
+					<div class="wechat" style="top: 0px; height: 30px; line-height: 30px; color: rgb(249, 89, 86); display: none;">
+						客服微信号：y1572440627
+						<img src="/public/static/home/img/kfwx.jpg" style="width:100%">
+					</div>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="window.open('tencent://message/?uin={$QQ}&amp;Site=qq&amp;Menu=yes');">						
+						<i class="icon-qq"></i>
+						<span>QQ客服</span>
+					</a>
+				</li> -->
+			
+				
+</ul>
+			<script>
+				$(".side-pannel>li.wechat").hover(function(){
+					$(this).children("div.wechat").show();
+				},function(){
+					$(this).children("div.wechat").hide();
+				});
+			</script>

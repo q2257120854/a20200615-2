@@ -1,0 +1,45 @@
+<style>
+    .plugin-open {
+        border-radius: 20px;
+        background: none;
+    }
+    #LAY_layuipro {
+        border-radius: 20px;
+        background: url(/assets/plugins/sendRedPack/images/new_year_bg1.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: "microsoft yahei";
+        font-size: 13px;
+        line-height: 1.5;
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        position: relative
+    }
+    .red-pack-title {
+        margin-top: 71px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        text-shadow: 1px 1px 5px #f4ca06;
+    }
+    .red-pack-title h1 {
+        margin-bottom: 8px;
+        font-family: 楷体;
+    }
+</style>
+<div class="red-pack-title">
+    <h1>红包大放送</h1>
+    <h1>新春抢个够</h1>
+</div>
+<button class="new-year-but1"></button>
+<div id="receive1" class="win1">
+    <div class="winBody2">
+        <div class="receive1-bg1">
+            <div class="receive1-head"><h1>￥200.00<br>红包</h1></div>
+            <div class="receive1-body"><p>恭喜您<br>成功领取<br>{date('Y')}年新春红包<br>恭喜发财，大吉大利</p></div>
+            <button class="receive1-but1" data-clipboard-text="{$copy_text}">确定</button>
+            <div class="receive1-bg2"></div>
+        </div>
+    </div>
+</div>

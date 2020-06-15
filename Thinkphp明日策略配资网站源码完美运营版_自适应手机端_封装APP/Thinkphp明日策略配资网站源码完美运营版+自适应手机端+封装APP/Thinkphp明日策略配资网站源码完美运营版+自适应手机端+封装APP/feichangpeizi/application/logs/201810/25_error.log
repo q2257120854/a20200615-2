@@ -1,0 +1,38 @@
+---------------------------------------------------------------
+[ 2018-10-25T12:20:06+08:00 ] 43.243.75.72 223.104.34.94 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=10000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-10-25T13:07:51+08:00 ] 43.243.75.72 117.136.90.142 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-10-25T13:08:12+08:00 ] 43.243.75.72 117.136.90.142 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-10-25T13:08:33+08:00 ] 43.243.75.72 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-25T13:40:47+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1000&bankCard=&realName=&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-10-25T14:50:04+08:00 ] 43.243.75.72 117.136.90.142 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=6000&bankCard=6217858100016249224&realName=%E5%BC%A0%E5%9B%BD%E6%97%BA&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-10-25T14:50:17+08:00 ] 43.243.75.72 115.236.102.36 POST /index/lianlianpay/notify_url
+[ error ] [8]Undefined property: stdClass::$info_order[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:60]
+[ error ] [8]Undefined property: stdClass::$no_agree[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:66]
+[ error ] [8]Undefined property: stdClass::$id_type[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:68]
+[ error ] [8]Undefined property: stdClass::$id_no[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:70]
+[ error ] [8]Undefined property: stdClass::$acct_name[/www/wwwroot/feichangpeizi/application/llpay/lib/llpay_notify.class.php:72]
+---------------------------------------------------------------
+[ 2018-10-25T19:41:24+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=1000&bankCard=&realName=&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-10-25T19:52:46+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=6000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
+---------------------------------------------------------------
+[ 2018-10-25T20:00:08+08:00 ] 43.243.75.72 36.35.214.170 GET /index/lianlianauthpay/authllpay_wap?b-pay-amount=100000&bankCard=6217001730014864594&realName=%E6%9D%8E%E8%B5%B7%E5%A8%81&IDCard=
+[ error ] [8192]mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead.[/www/wwwroot/feichangpeizi/application/index/controller/Lianlianauthpay.php:267]
